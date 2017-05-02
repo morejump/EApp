@@ -22,6 +22,13 @@ namespace EApp.Views
             
         }
 
+        private void MenuPage_SelectedMenu(object sender, MenuItem e)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
         private void DetailsPage_SelectedMenu(object sender, MenuItem e)
         {
             if (IsPresented)

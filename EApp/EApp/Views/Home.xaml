@@ -4,8 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:EApp.Views"
     x:Class="EApp.Views.Home">
-    
     <MasterDetailPage.Detail>
-        <views:Page1 Title="la chet" />
+        <views:Page3 Title="la chet" />
     </MasterDetailPage.Detail>
 </MasterDetailPage>

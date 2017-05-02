@@ -2,5 +2,5 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EApp.Views.Page1">
-    <Label Text="Day La Details" />
+    <Label Text="This is a page 1" />
 </ContentPage>

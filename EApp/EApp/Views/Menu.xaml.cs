@@ -26,13 +26,13 @@ namespace EApp.Views
                 {
                     Text = "Menu2"
                     ,
-                    Type = typeof(Page1)
+                    Type = typeof(Page2)
                 },
                 new MenuItem
                 {
                     Text = "Menu3"
                     ,
-                    Type = typeof(Page1)
+                    Type = typeof(ListDownloadedAudioPage)
                 },
             };
             lstView.ItemSelected += LstView_ItemSelected;
