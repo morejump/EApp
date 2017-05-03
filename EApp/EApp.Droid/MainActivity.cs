@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
+using FFImageLoading.Forms.Droid;
 
 namespace EApp.Droid
 {
@@ -23,6 +24,7 @@ namespace EApp.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App(new AndroidInitializer()));
+            CachedImageRenderer.Init();
         }
     }
 

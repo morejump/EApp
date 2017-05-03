@@ -6,6 +6,7 @@ using Foundation;
 using UIKit;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
+using FFImageLoading.Forms.Touch;
 
 namespace EApp.iOS
 {
@@ -26,7 +27,7 @@ namespace EApp.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App(new iOSInitializer()));
-
+            CachedImageRenderer.Init();
             return base.FinishedLaunching(app, options);
         }
     }

@@ -11,8 +11,8 @@ namespace EApp
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync($"{Pages.home}");
-            //NavigationService.NavigateAsync($"{Pages.NavBar}/{Pages.}");
+            //NavigationService.NavigateAsync($"{Pages.home}");
+            NavigationService.NavigateAsync($"{Pages.Home}");
         }
 
         protected override void RegisterTypes()
@@ -21,16 +21,18 @@ namespace EApp
             Container.RegisterTypeForNavigation<TestLayoutPage>();
             Container.RegisterTypeForNavigation<ListSentencePage>();
             Container.RegisterTypeForNavigation<ListDownloadedAudioPage>();
-            Container.RegisterTypeForNavigation<Home>();
+            Container.RegisterTypeForNavigation<HomePage>();
         }
     }
+    
     public static class Pages
     {
+        // test navigation bar later :))
         public static string NavBar = nameof(NavigationPage);
         public static string TestLayout = nameof(TestLayoutPage);
         public static string ListSentence = nameof(ListSentencePage);
         public static string ListAudioDownload = nameof(ListDownloadedAudioPage);
-        public static string home = nameof(Home);
+        public static string Home = nameof(HomePage);
 
     }
 }

@@ -2,13 +2,14 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="EApp.Views.TestLayoutPage">
     <Grid
         ColumnSpacing="0"
         VerticalOptions="Start"
         Margin="16,8"
-        RowSpacing="0"
-        >
+        RowSpacing="0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition
                 Width="100" />
@@ -52,8 +53,7 @@
             <Image
                 WidthRequest="20"
                 HeightRequest="30"
-                Source="BookMark.png"
-                 />
+                Source="BookMark.png" />
             <Image
                 VerticalOptions="EndAndExpand"
                 WidthRequest="20"
@@ -61,7 +61,6 @@
                 Source="More.png" />
 
         </StackLayout>
-        
 
     </Grid>
 
