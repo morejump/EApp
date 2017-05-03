@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +26,9 @@ namespace EApp.ViewModels
             }
         }
 
-        private List<int> mylist;
+        private List<ItemDemo> mylist;
 
-        public List<int> MyList
+        public List<ItemDemo> MyList
         {
             get { return mylist; }
             set
@@ -59,11 +60,52 @@ namespace EApp.ViewModels
             // the BookMark is uncheck by default
             CheckBookMark = false;
             // this list just is used to test
-            MyList = new List<int>();
+            MyList = new List<ItemDemo>();
             for (int i = 0; i < 4; i++)
             {
-                MyList.Add(i);
+                MyList.Add(new ItemDemo());
             }
         }
+
+        private ItemDemo _ItemSeletect;
+
+        public ItemDemo ItemSeletect
+        {
+            get { return _ItemSeletect; }
+            set
+            {
+                if (_ItemSeletect != value && value != null)
+                {
+                    if (_ItemSeletect != null)
+                        _ItemSeletect.IsBookmark = false;
+                    _ItemSeletect = value;
+
+                    _ItemSeletect.IsBookmark = true;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+
+    }
+
+    public class ItemDemo : BindableBase
+    {
+        private bool _IsBookmark;
+
+        public bool IsBookmark
+        {
+            get { return _IsBookmark; }
+            set
+            {
+                if (_IsBookmark != value)
+                {
+                    _IsBookmark = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+
     }
 }

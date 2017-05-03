@@ -10,6 +10,7 @@
     <ListView
         x:Name="lstView"
         HasUnevenRows="True"
+        SelectedItem="{Binding ItemSeletect}"
         ItemsSource="{Binding MyList}">
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -36,6 +37,7 @@
                                 Height="80" />
                         </Grid.RowDefinitions>
                         <controls:MyImage
+                            DownsampleToViewSize="True"
                             Grid.Row="0"
                             Grid.Column="0"
                             Grid.RowSpan="2"
@@ -69,7 +71,7 @@
                                 <Image.Triggers>
                                     <DataTrigger
                                         TargetType="Image"
-                                        Binding="{Binding Path=BindingContext.CheckBookMark,Source={Reference Name=lstView}  }"
+                                        Binding="{Binding IsBookmark}"
                                         Value="false">
                                         <Setter
                                             Property="Source"
@@ -77,11 +79,11 @@
                                     </DataTrigger>
                                     <DataTrigger
                                         TargetType="Image"
-                                        Binding="{Binding Path=BindingContext.CheckBookMark,Source={Reference Name=lstView}  }"
+                                        Binding="{Binding IsBookmark}"
                                         Value="true">
                                         <Setter
                                             Property="Source"
-                                            Value="GreenBookMark.png" />
+                                            Value="BlueBookMark.png" />
                                     </DataTrigger>
                                 </Image.Triggers>
                                 <Image.GestureRecognizers>

@@ -26,20 +26,30 @@ namespace EApp.ViewModels
             {
                new MyMenuItem
                {
-                   Text="menu 1",
-                   Type= typeof(ListDownloadedAudioPage)
+                   Text="Recent",
+                   Type= typeof(ListDownloadedAudioPage),
+                   Icon="Recent.png"
                },
                new MyMenuItem
                {
-                   Text="menu 2",
-                   Type= typeof(ListDownloadedAudioPage)
-               },
-               new MyMenuItem
-               {
-                   Text="menu 3",
-                   Type= typeof(ListDownloadedAudioPage)
-               },
+                   Text="Favorites",
+                   Type= typeof(ListDownloadedAudioPage),
+                   Icon="Favourite.png"
 
+               },
+               new MyMenuItem
+               {
+                   Text="Downloaded",
+                   Type= typeof(ListDownloadedAudioPage),
+                   Icon="Downloaded.png"
+
+               },
+               new MyMenuItem
+               {
+                   Text="Storage",
+                   Type= typeof(ListDownloadedAudioPage),
+                   Icon="Storage.png"
+               },
             };
         }
     }

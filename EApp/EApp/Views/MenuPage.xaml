@@ -26,8 +26,19 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Label
-                            Text="{Binding Text}" />
+                        <StackLayout
+                            Margin="16,0,0,0"
+                            Spacing="24"
+                            Orientation="Horizontal">
+                            <Image
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                Source="{Binding Icon}" />
+                            <Label
+                                VerticalTextAlignment="Center"
+                                Text="{Binding Text}" />
+                        </StackLayout>
+                        
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

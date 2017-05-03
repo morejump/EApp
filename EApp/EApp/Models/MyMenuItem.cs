@@ -10,5 +10,6 @@ namespace EApp.Models
     {
         public string Text { get; set; }
         public Type Type { set; get; }
+        public string Icon { get; set; }
     }
 }
