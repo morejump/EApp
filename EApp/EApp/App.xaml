@@ -2,6 +2,14 @@
 <prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                         xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+                        xmlns:converters="clr-namespace:EApp.Converter"
                         x:Class="EApp.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <converters:BoolToImageConverter
+        x:Key="BoolToImage"
+    />
+    </ResourceDictionary>
+  </Application.Resources>
 
 </prism:PrismApplication>

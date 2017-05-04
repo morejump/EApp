@@ -12,6 +12,10 @@ namespace EApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TestLayoutPage : ContentPage
     {
+
+
+        
+
         public TestLayoutPage()
         {
             InitializeComponent();

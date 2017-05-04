@@ -7,6 +7,21 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.ListDownloadedAudioPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Array
+                x:Key="IconBooMark"
+                Type="{x:Type x:String}">
+                <x:String>
+                    BlueBookMark.png
+                </x:String>
+                <x:String>
+                    BookMark.png
+                </x:String>
+            </x:Array>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ListView
         x:Name="lstView"
         HasUnevenRows="True"
@@ -67,25 +82,7 @@
                             <Image
                                 WidthRequest="20"
                                 HeightRequest="30"
-                                Source="BookMark.png">
-                                <Image.Triggers>
-                                    <DataTrigger
-                                        TargetType="Image"
-                                        Binding="{Binding IsBookmark}"
-                                        Value="false">
-                                        <Setter
-                                            Property="Source"
-                                            Value="BookMark.png" />
-                                    </DataTrigger>
-                                    <DataTrigger
-                                        TargetType="Image"
-                                        Binding="{Binding IsBookmark}"
-                                        Value="true">
-                                        <Setter
-                                            Property="Source"
-                                            Value="BlueBookMark.png" />
-                                    </DataTrigger>
-                                </Image.Triggers>
+                                Source="{Binding IsBookmark, Converter={StaticResource BoolToImage}, ConverterParameter={StaticResource IconBooMark}}">
                                 <Image.GestureRecognizers>
                                     <TapGestureRecognizer
                                         Command="{Binding Path=BindingContext.TapBookMark,Source={Reference Name=lstView}  }" />

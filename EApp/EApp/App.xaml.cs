@@ -11,8 +11,7 @@ namespace EApp
         protected override void OnInitialized()
         {
             InitializeComponent();
-            //NavigationService.NavigateAsync($"{Pages.home}");
-            NavigationService.NavigateAsync($"{Pages.Home}");
+            NavigationService.NavigateAsync($"{Pages.TestLayout}");
         }
 
         protected override void RegisterTypes()

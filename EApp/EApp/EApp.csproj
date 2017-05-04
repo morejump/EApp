@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Converter\BoolToImageConverter.cs" />
     <Compile Include="CustomControl\ItemOnList.xaml.cs">
       <DependentUpon>ItemOnList.xaml</DependentUpon>
     </Compile>
@@ -126,7 +127,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Converter\" />
     <Folder Include="Images\" />
     <Folder Include="Renderers\" />
   </ItemGroup>
