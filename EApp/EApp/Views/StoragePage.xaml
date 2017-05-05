@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:EApp.CustomControl"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    x:Class="EApp.Views.StoragePage">
+    <StackLayout>
+        <SearchBar
+            Margin="0,0,0,24"
+            Placeholder="Enter name of audio" />
+        <ListView
+            HasUnevenRows="True"
+            ItemsSource="{Binding MyList}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <controls:ItemOnStoragePage
+                            PerCent="67.0"
+                            Title="thao dep trai nhe"
+                            Author="more jump"
+                            Description="Superman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster"
+                            Download="69"
+                            Thumbnail="http://img.f31.vnecdn.net/2017/05/04/top-1493873115_500x300.jpg" />
+                    </ViewCell>
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

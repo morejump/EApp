@@ -8,8 +8,8 @@
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.TestLayoutPage">
     <controls:ItemOnList
-        Thumbnail="http://img.f32.vnecdn.net/2017/05/03/DJI0017-1493828128_500x300.jpg"
-        Title="thao dep trai"
-        Description="this is a descritption"
+        Title="voa english listening "
+        Description="English may not be the most spoken language in the world, but it is the official language in a large number of countries. It is estimated that the number of people in the world that use in English to communicate on a regular basis is 2 billion"
+        
         />
 </ContentPage>

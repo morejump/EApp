@@ -6,8 +6,9 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     prism:ViewModelLocator.AutowireViewModel="True"
     WidthRequest="176"
+    BackgroundColor="Transparent"
     x:Class="EApp.Views.MenuPage">
-    <Grid>
+    <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="100" />
             <RowDefinition Height="Auto" />
@@ -30,7 +31,8 @@
                             Margin="16,0,0,0"
                             Spacing="24"
                             Orientation="Horizontal">
-                            <Image
+                            <controls:MyImage
+                                DownsampleToViewSize="True"
                                 HeightRequest="30"
                                 WidthRequest="30"
                                 Source="{Binding Icon}" />

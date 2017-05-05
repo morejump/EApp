@@ -25,6 +25,33 @@ namespace EApp.CustomControl
             }
         }
 
+
+
+        public static BindableProperty hasMoreOptionsProperty = BindableProperty.Create(
+          propertyName: "hasMoreOptions",
+          returnType: typeof(bool),
+          declaringType: typeof(ItemOnList),
+          defaultValue: true,
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged:OnHasMoreOptionsChanged
+      );
+
+        private static void OnHasMoreOptionsChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as ItemOnList;
+            if(view!=null && newValue != null)
+            {
+                view.MoreImage.IsVisible = view.hasMoreOptions;
+            }
+        }
+
+        public bool hasMoreOptions
+        {
+            get { return (bool)GetValue(hasMoreOptionsProperty); }
+            set { SetValue(hasMoreOptionsProperty, value); }
+        }
+
+
         public static BindableProperty ThumbnailProperty = BindableProperty.Create(
           propertyName: "Thumbnail",
           returnType: typeof(string),

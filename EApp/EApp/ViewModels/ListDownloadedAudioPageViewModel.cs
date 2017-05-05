@@ -11,101 +11,31 @@ namespace EApp.ViewModels
 {
     public class ListDownloadedAudioPageViewModel : CoreViewModel
     {
-        private bool _checkBookMark;
+        private List<int> _myList;
 
-        public bool CheckBookMark
+        public List<int> MyList
         {
-            get { return _checkBookMark; }
+            get { return _myList; }
             set
             {
-                if (_checkBookMark != value)
+                if (_myList != value)
                 {
-                    _checkBookMark = value;
+                    _myList = value;
                     OnPropertyChanged();
                 }
             }
         }
-
-        private List<ItemDemo> mylist;
-
-        public List<ItemDemo> MyList
-        {
-            get { return mylist; }
-            set
-            {
-                if (mylist != value)
-                {
-                    mylist = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-        private ICommand _tapBookMark;
-
-        public ICommand TapBookMark
-        {
-            get { return _tapBookMark = _tapBookMark ?? new Command(RuntapBookMark); }
-
-        }
-
-        void RuntapBookMark()
-        {
-            CheckBookMark = !CheckBookMark;
-        }
-
-
 
         public ListDownloadedAudioPageViewModel()
         {
-            // the BookMark is uncheck by default
-            CheckBookMark = false;
-            // this list just is used to test
-            MyList = new List<ItemDemo>();
-            for (int i = 0; i < 4; i++)
+            MyList = new List<int>();
+            for (int i = 0; i < 30; i++)
             {
-                MyList.Add(new ItemDemo());
+                MyList.Add(1);
             }
         }
-
-        private ItemDemo _ItemSeletect;
-
-        public ItemDemo ItemSeletect
-        {
-            get { return _ItemSeletect; }
-            set
-            {
-                if (_ItemSeletect != value && value != null)
-                {
-                    if (_ItemSeletect != null)
-                        _ItemSeletect.IsBookmark = false;
-                    _ItemSeletect = value;
-
-                    _ItemSeletect.IsBookmark = true;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
 
     }
 
-    public class ItemDemo : BindableBase
-    {
-        private bool _IsBookmark;
-
-        public bool IsBookmark
-        {
-            get { return _IsBookmark; }
-            set
-            {
-                if (_IsBookmark != value)
-                {
-                    _IsBookmark = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-
-    }
+   
 }

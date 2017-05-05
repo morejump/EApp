@@ -4,7 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
-    x:Class="EApp.CustomControl.ItemOnList">
+    x:Class="EApp.CustomControl.ItemOnList"
+    >
     <ContentView.Resources>
         <ResourceDictionary>
             <x:Array
@@ -59,21 +60,20 @@
             </controls:MyImage>
             <Label
                 x:Name="MyTitle"
+                FontSize="17"
+                LineBreakMode="TailTruncation"
                 Margin="16,0,0,0"
                 Grid.Row="0"
                 Grid.Column="1"
                 FontAttributes="Bold"
-                FontSize="Medium"
-                Text="This is a title of the audio" />
+                />
             <Label
                 x:Name="MyDescription"
                 Margin="16,0,0,0"
+                FontSize="17"
                 Grid.Row="1"
                 Grid.Column="1"
-                Text="English has developed over the course 
-                            of more than 1,400 years. The earliest forms of English, 
-                            Old English. Middle English began in the late 11th century with the Norman conquest of England, and was a period in which the language was influenced by French.[9] Early Modern English began
-                            in the late 15th century with the introduction of the" />
+                />
             <StackLayout
                 x:Name="MyStackLayout"
                 Grid.Row="0"
@@ -91,6 +91,7 @@
                     </controls:MyImage.GestureRecognizers>
                 </controls:MyImage>
                 <controls:MyImage
+                    x:Name="MoreImage"
                     VerticalOptions="EndAndExpand"
                     WidthRequest="20"
                     HeightRequest="40"

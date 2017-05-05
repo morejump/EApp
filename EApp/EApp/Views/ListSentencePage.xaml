@@ -5,17 +5,22 @@
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="EApp.Views.ListSentencePage">
-   
     <ListView
+        SeparatorColor="Black"
         HasUnevenRows="True"
         ItemsSource="{Binding Listentence}">
         <ListView.ItemTemplate>
-            <DataTemplate >
-                <TextCell
-                    DetailColor="Green"
-                    Detail="{Binding Sentence}" />
+            <DataTemplate>
+                <ViewCell>
+                    <Label
+                        Margin="16,8"
+                        HorizontalTextAlignment="Start"
+                        VerticalTextAlignment="Center"
+                        Text="{Binding .}">
+                    </Label>
+                </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-        
+
     </ListView>
 </ContentPage>

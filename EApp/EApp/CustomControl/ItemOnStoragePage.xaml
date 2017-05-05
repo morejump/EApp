@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns:controls="clr-namespace:EApp.CustomControl"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="EApp.CustomControl.ItemOnStoragePage">
+    <ContentView.Content>
+        <Grid
+            Margin="16,8"
+            ColumnSpacing="8"
+            RowSpacing="0"
+            VerticalOptions="Start"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="80" />
+                <ColumnDefinition
+                    Width="*" />
+                <ColumnDefinition
+                    Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="80" />
+                <RowDefinition
+                    Height="Auto" />
+
+            </Grid.RowDefinitions>
+            <controls:MyImage
+                x:Name="MyThumbnail"
+                Aspect="Fill"
+                Grid.Column="0"
+                ErrorPlaceholder="errorloading.png"
+                LoadingPlaceholder="loading.png"
+                VerticalOptions="Center"
+                Source="wearheadphone.jpg">
+                <controls:MyImage.Transformations>
+                    <fftransformations:RoundedTransformation
+                        Radius="60" />
+                </controls:MyImage.Transformations>
+
+            </controls:MyImage>
+              <!--need to edit here--> 
+            <Grid
+                HorizontalOptions="Start"
+                RowSpacing="0"
+                Grid.Row="0"
+                Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Row="0"
+                    x:Name="MyTitle"
+                    LineBreakMode="TailTruncation"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    Text="No Title" />
+                <Grid
+                    Grid.Row="1"
+                    ColumnSpacing="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            Width="Auto" />
+                        <ColumnDefinition
+                            Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Column="0"
+                        FontSize="13"
+                        Text="by" />
+                    <Label
+                        x:Name="MyAuthor"
+                        LineBreakMode="TailTruncation"
+                        Grid.Column="1"
+                        FontSize="13"
+                        Text="Anonymous" />
+                </Grid>
+
+                <Label
+                    Grid.Row="2"
+                    x:Name="MyDescription"
+                    FontSize="16"
+                    Text="this is a description" />
+
+            </Grid>
+            <Grid
+                Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid
+                    ColumnSpacing="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            Width="Auto" />
+                        <ColumnDefinition
+                            Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        x:Name="MyDownload"
+                        Grid.Column="0"
+                        FontSize="15"
+                        FontAttributes="Bold"
+                        Text="0" />
+                    <Label
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        Text="download(s)" />
+                </Grid>
+                <Grid Grid.Row="1"
+                      x:Name="MyTotal"
+                      ColumnSpacing="0"
+                      IsVisible="False"
+                      Margin="0,0,0,16"
+                      HorizontalOptions="Center"
+                      VerticalOptions="End"
+                      >
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            Width="Auto" />
+                        <ColumnDefinition
+                            Width="Auto" />
+
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        x:Name="MyPercent"
+                        FontSize="20"
+                        Text="64" />
+                    <Label
+                        FontSize="20"
+                        Grid.Column="1"
+                        Text="%" />
+
+                </Grid>
+
+                <controls:MyImage
+                    Grid.Row="1"
+                    VerticalOptions="End"
+                    x:Name="MyImageDownload"
+                    HeightRequest="30"
+                    WidthRequest="30"
+                    Source="Downloaded.png">
+                    <controls:MyImage.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapDownloadImage" />
+                    </controls:MyImage.GestureRecognizers>
+                </controls:MyImage>
+                
+            </Grid>
+            <ProgressBar
+                IsVisible="False"
+                x:Name="MyProgressBar"
+                VerticalOptions="End"
+                Grid.Row="1"
+                Grid.ColumnSpan="3"
+                HeightRequest="8"
+                Progress="0.7" />
+
+        </Grid>
+
+    </ContentView.Content>
+</ContentView>

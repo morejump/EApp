@@ -24,9 +24,9 @@ namespace EApp.ViewModels
             }
         }
 
-        private List<ListSentenceModel> _listSentencwe;
+        private List<string> _listSentencwe;
 
-        public List<ListSentenceModel> Listentence
+        public List<string> Listentence
         {
             get { return _listSentencwe; }
             set
@@ -41,16 +41,14 @@ namespace EApp.ViewModels
 
         public ListSentencePageViewModel()
         {
-            //MyList = new List<int>();
-            //for (int i = 0; i < 30; i++)
-            //{
-            //    MyList.Add(1);
-
-            //}
-            Listentence = new List<ListSentenceModel>();
+            Listentence = new List<string>();
             for (int i = 0; i < 30; i++)
             {
-                Listentence.Add(new ListSentenceModel());
+                Listentence.Add("Are you a football fan? " +
+                    "Try this game to see how " +
+                    "many football words you" +
+                    " know in English. Can you beat the " +
+                    "goalkeeper? Good luck!");
             }
         }
     }

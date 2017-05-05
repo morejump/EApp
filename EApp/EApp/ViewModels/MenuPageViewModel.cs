@@ -47,7 +47,7 @@ namespace EApp.ViewModels
                new MyMenuItem
                {
                    Text="Storage",
-                   Type= typeof(ListDownloadedAudioPage),
+                   Type= typeof(StoragePage),
                    Icon="Storage.png"
                },
             };

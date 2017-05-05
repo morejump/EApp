@@ -7,97 +7,19 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.ListDownloadedAudioPage">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <x:Array
-                x:Key="IconBooMark"
-                Type="{x:Type x:String}">
-                <x:String>
-                    BlueBookMark.png
-                </x:String>
-                <x:String>
-                    BookMark.png
-                </x:String>
-            </x:Array>
-
-        </ResourceDictionary>
-    </ContentPage.Resources>
     <ListView
         x:Name="lstView"
         HasUnevenRows="True"
-        SelectedItem="{Binding ItemSeletect}"
         ItemsSource="{Binding MyList}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <Grid
-                        ColumnSpacing="0"
-                        VerticalOptions="Start"
-                        Margin="16,8"
-                        RowSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition
-                                Width="100" />
-                            <ColumnDefinition
-                                Width="*" />
-                            <ColumnDefinition
-                                Width="16" />
-                            <ColumnDefinition
-                                Width="30" />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition
-                                Height="20" />
-                            <RowDefinition
-                                Height="80" />
-                        </Grid.RowDefinitions>
-                        <controls:MyImage
-                            DownsampleToViewSize="True"
-                            Grid.Row="0"
-                            Grid.Column="0"
-                            Grid.RowSpan="2"
-                            Aspect="Fill"
-                            Source="avatar.png">
-                            <controls:MyImage.Transformations>
-                                <fftransformations:CircleTransformation />
-                            </controls:MyImage.Transformations>
-                        </controls:MyImage>
-                        <Label
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            FontAttributes="Bold"
-                            FontSize="Medium"
-                            Text="This is a title of the audio" />
-                        <Label
-                            Grid.Row="1"
-                            Grid.Column="1"
-                            Text="English has developed over the course 
-                            of more than 1,400 years. The earliest forms of English, 
-                            Old English. Middle English began in the late 11th century with the Norman conquest of England, and was a period in which the language was influenced by French.[9] Early Modern English began
-                            in the late 15th century with the introduction of the" />
-                        <StackLayout
-                            Grid.Row="0"
-                            Grid.Column="3"
-                            Grid.RowSpan="2">
-                            <Image
-                                WidthRequest="20"
-                                HeightRequest="30"
-                                Source="{Binding IsBookmark, Converter={StaticResource BoolToImage}, ConverterParameter={StaticResource IconBooMark}}">
-                                <Image.GestureRecognizers>
-                                    <TapGestureRecognizer
-                                        Command="{Binding Path=BindingContext.TapBookMark,Source={Reference Name=lstView}  }" />
-                                </Image.GestureRecognizers>
-                            </Image>
-                            <Image
-                                VerticalOptions="EndAndExpand"
-                                WidthRequest="20"
-                                HeightRequest="40"
-                                Source="More.png" />
-
-                        </StackLayout>
-
-                    </Grid>
-
+                    <controls:ItemOnList
+                        hasMoreOptions="True"
+                        Title="thao dep trai super man"
+                        Description="uperman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster"
+                        Thumbnail="avatar.png"
+                        />
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>

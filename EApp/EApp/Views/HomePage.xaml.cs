@@ -17,7 +17,6 @@ namespace EApp.Views
             InitializeComponent();
             menu.SelectedMenu += Menu_SelectedMenu;
 
-
         }
 
         private void Menu_SelectedMenu(object sender, MyMenuItem e)
