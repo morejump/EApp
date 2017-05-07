@@ -34,7 +34,7 @@ namespace EApp.ViewModels
                {
                    Text="Favorites",
                    Type= typeof(ListDownloadedAudioPage),
-                   Icon="Favourite.png"
+                   Icon="heart.png"
 
                },
                new MyMenuItem

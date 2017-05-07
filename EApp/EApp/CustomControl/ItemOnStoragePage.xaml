@@ -3,6 +3,7 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:Effects="clr-namespace:EApp.Effects"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="EApp.CustomControl.ItemOnStoragePage">
     <ContentView.Content>
@@ -85,8 +86,12 @@
                     Grid.Row="2"
                     x:Name="MyDescription"
                     FontSize="16"
-                    Text="this is a description" />
-
+                    Text="this is a description">
+                    <Label.Effects>
+                        <Effects:MaxLineLabelEffect
+                            MaxLine="2" />
+                    </Label.Effects>
+                </Label>
             </Grid>
             <Grid
                 Grid.Column="2">

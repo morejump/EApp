@@ -27,6 +27,31 @@ namespace EApp.CustomControl
 
 
 
+
+        public static BindableProperty AuthorProperty = BindableProperty.Create(
+          propertyName: "Author",
+          returnType: typeof(string),
+          declaringType: typeof(ItemOnList),
+          defaultValue: "No Author",
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged:OnAuthorPropertyChanged
+      );
+
+        private static void OnAuthorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as ItemOnList;
+            if (view != null && newValue != null)
+            {
+                view.MyAuthor.Text = "by "+view.Author;
+            }
+        }
+
+        public string Author
+        {
+            get { return (string)GetValue(AuthorProperty); }
+            set { SetValue(AuthorProperty, value); }
+        }
+
         public static BindableProperty hasMoreOptionsProperty = BindableProperty.Create(
           propertyName: "hasMoreOptions",
           returnType: typeof(bool),
@@ -141,7 +166,7 @@ namespace EApp.CustomControl
         // this event is fired when tap the bookmark image
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            MyBookMark.Source = CheckBookMark ? "BlueBookMark.png" : "BookMark.png";
+            MyBookMark.Source = CheckBookMark ? "heart.png" : "redheart.png";
             CheckBookMark = !CheckBookMark;
         }
     }

@@ -7,23 +7,29 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.ListDownloadedAudioPage">
-    <ListView
-        x:Name="lstView"
-        HasUnevenRows="True"
-        ItemsSource="{Binding MyList}">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <controls:ItemOnList
-                        hasMoreOptions="True"
-                        Title="thao dep trai super man"
-                        Description="uperman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster"
-                        Thumbnail="avatar.png"
-                        />
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
+    <StackLayout>
+        <SearchBar
+            Margin="16,0,16,16"
+            Placeholder="Enter name of audio..." />
+        <ListView
+            x:Name="lstView"
+            HasUnevenRows="True"
+            ItemsSource="{Binding MyList}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <controls:ItemOnList
+                            hasMoreOptions="False"
+                            Author="Thao Chi Fu"
+                            Title="thao dep trai super man"
+                            Description="uperman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster"
+                            Thumbnail="avatar.png" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
 
-    </ListView>
+        </ListView>
+
+    </StackLayout>
 
 </ContentPage>

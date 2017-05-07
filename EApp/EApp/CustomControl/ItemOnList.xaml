@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:EApp.CustomControl"
+    xmlns:Effects="clr-namespace:EApp.Effects"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.CustomControl.ItemOnList"
     >
@@ -12,10 +13,10 @@
                 x:Key="IconBooMark"
                 Type="{x:Type x:String}">
                 <x:String>
-                    BlueBookMark.png
+                    heart.png
                 </x:String>
                 <x:String>
-                    BookMark.png
+                    blueheart.png
                 </x:String>
             </x:Array>
 
@@ -42,25 +43,30 @@
                 <RowDefinition
                     Height="20" />
                 <RowDefinition
-                    Height="80" />
+                    Height="20" />
+                <RowDefinition
+                    Height="60"
+                    />
             </Grid.RowDefinitions>
             <controls:MyImage
                 x:Name="MyThumbnail"
                 DownsampleToViewSize="True"
                 Grid.Row="0"
                 Grid.Column="0"
-                Grid.RowSpan="2"
+                Grid.RowSpan="3"
                 Aspect="Fill"
-                Source="avatar.png"
+                Source="chiphu.jpg"
                 ErrorPlaceholder="noconnection"
                 LoadingPlaceholder="loading.png">
                 <controls:MyImage.Transformations>
-                    <fftransformations:CircleTransformation />
+                    <fftransformations:RoundedTransformation 
+                        Radius="60"
+                        />
                 </controls:MyImage.Transformations>
             </controls:MyImage>
             <Label
                 x:Name="MyTitle"
-                FontSize="17"
+                FontSize="16"
                 LineBreakMode="TailTruncation"
                 Margin="16,0,0,0"
                 Grid.Row="0"
@@ -68,21 +74,32 @@
                 FontAttributes="Bold"
                 />
             <Label
+                x:Name="MyAuthor"
+                LineBreakMode="TailTruncation"
+                Margin="16,0,0,0"
+                FontSize="14"
+                Grid.Row="1"
+                Grid.Column="1">
+            </Label>
+            <Label
                 x:Name="MyDescription"
                 Margin="16,0,0,0"
                 FontSize="17"
-                Grid.Row="1"
-                Grid.Column="1"
-                />
+                Grid.Row="2"
+                Grid.Column="1">
+                <Label.Effects>
+                    <Effects:MaxLineLabelEffect MaxLine="3" />
+                </Label.Effects>
+            </Label>
             <StackLayout
                 x:Name="MyStackLayout"
                 Grid.Row="0"
                 Grid.Column="3"
-                Grid.RowSpan="2">
+                Grid.RowSpan="3">
                 <controls:MyImage
                     x:Name="MyBookMark"
                     DownsampleToViewSize="True"
-                    Source="BookMark.png"
+                    Source="heart.png"
                     WidthRequest="20"
                     HeightRequest="30">
                     <controls:MyImage.GestureRecognizers>
