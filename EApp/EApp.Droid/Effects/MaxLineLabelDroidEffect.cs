@@ -14,7 +14,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using EApp.Effects;
 
-[assembly:ResolutionGroupName("EApp.Effects")]// refactor this line later
+[assembly: ResolutionGroupName("EApp.Effects")]
 [assembly: ExportEffect(typeof(MaxLineLabelDroidEffect), "MaxLineLabelEffect")]
 namespace EApp.Droid.Effects
 {

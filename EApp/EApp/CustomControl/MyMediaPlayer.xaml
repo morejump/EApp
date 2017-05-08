@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:EApp.CustomControl"
+    xmlns:Effects="clr-namespace:EApp.Effects"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    x:Class="EApp.CustomControl.MyMediaPlayer">
+    <ContentView.Content>
+        <Grid
+           VerticalOptions="Start"
+            BackgroundColor="#E1BEE7"
+            ColumnSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="46" />
+                <ColumnDefinition
+                    Width="Auto" />
+                <ColumnDefinition
+                    Width="*" />
+                <ColumnDefinition
+                    Width="Auto" />
+                <ColumnDefinition
+                    Width="46" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="50" />
+            </Grid.RowDefinitions>
+            <!--this boxview is used to fill a background for this control-->
+            <BoxView
+                Grid.ColumnSpan="5"
+                />
+            <controls:MyImage
+                x:Name="MyPlayButton"
+                Margin="16,0,0,0"
+                Aspect="Fill"
+                HeightRequest="30"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Source="playbutton.png">
+                <controls:MyImage.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"
+                        />
+
+                </controls:MyImage.GestureRecognizers>
+                
+            </controls:MyImage>
+
+            <Label
+                Margin="8,0,0,0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Grid.Column="1"
+                FontSize="15"
+                Text="0:00" />
+            <Slider
+                x:Name="MySlider"
+                Margin="8,0"
+                Grid.Column="2" />
+            <Label
+                Margin="0,0,8,0"
+                Grid.Column="3"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="15"
+                Text="0:69" />
+
+            <controls:MyImage
+                x:Name="MySpeedButton"
+                Margin="0,0,16,0"
+                Grid.Column="4"
+                Aspect="Fill"
+                HeightRequest="30"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Source="icon_xxx.png">
+                <controls:MyImage.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+
+                </controls:MyImage.GestureRecognizers>
+                
+            </controls:MyImage>
+        </Grid>
+
+    </ContentView.Content>
+</ContentView>

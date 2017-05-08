@@ -27,13 +27,13 @@ namespace EApp.ViewModels
                new MyMenuItem
                {
                    Text="Recent",
-                   Type= typeof(ListDownloadedAudioPage),
+                   Type= typeof(RecentPage),
                    Icon="Recent.png"
                },
                new MyMenuItem
                {
-                   Text="Favorites",
-                   Type= typeof(ListDownloadedAudioPage),
+                   Text="Favourites",
+                   Type= typeof(FavouritePage),
                    Icon="heart.png"
 
                },

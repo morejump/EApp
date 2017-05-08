@@ -3,28 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace EApp.CustomControl
 {
     public partial class ItemOnList : ContentView
     {
-        private bool _checkBookMark;
 
-        public bool CheckBookMark
+
+        public static BindableProperty isFavouriteProperty = BindableProperty.Create(
+          propertyName: "isFavourite",
+          returnType: typeof(bool),
+          declaringType: typeof(ItemOnList),
+          defaultValue: false,
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged: OnIsFavouriteChanged
+      );
+
+        private static void OnIsFavouriteChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            get { return _checkBookMark; }
-            set
+            var view = bindable as ItemOnList;
+            if (view != null && newValue != null)
             {
-                if (_checkBookMark != value)
-                {
-                    _checkBookMark = value;
-                    OnPropertyChanged();
-                }
+               
             }
+
         }
 
+        public bool isFavourite
+        {
+            get { return (bool)GetValue(isFavouriteProperty); }
+            set { SetValue(isFavouriteProperty, value); }
+        }
 
 
 
@@ -34,7 +45,7 @@ namespace EApp.CustomControl
           declaringType: typeof(ItemOnList),
           defaultValue: "No Author",
           defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged:OnAuthorPropertyChanged
+          propertyChanged: OnAuthorPropertyChanged
       );
 
         private static void OnAuthorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
@@ -42,7 +53,7 @@ namespace EApp.CustomControl
             var view = bindable as ItemOnList;
             if (view != null && newValue != null)
             {
-                view.MyAuthor.Text = "by "+view.Author;
+                view.MyAuthor.Text = "by " + view.Author;
             }
         }
 
@@ -58,13 +69,13 @@ namespace EApp.CustomControl
           declaringType: typeof(ItemOnList),
           defaultValue: true,
           defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged:OnHasMoreOptionsChanged
+          propertyChanged: OnHasMoreOptionsChanged
       );
 
         private static void OnHasMoreOptionsChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var view = bindable as ItemOnList;
-            if(view!=null && newValue != null)
+            if (view != null && newValue != null)
             {
                 view.MoreImage.IsVisible = view.hasMoreOptions;
             }
@@ -160,14 +171,38 @@ namespace EApp.CustomControl
         {
             InitializeComponent();
             MyThumbnail.CacheDuration = TimeSpan.FromDays(60);
-            CheckBookMark = true;
+            
 
         }
-        // this event is fired when tap the bookmark image
+
+
+
+        public static BindableProperty IsFavouriteCommandProperty = BindableProperty.Create(
+          propertyName: "IsFavouriteCommand",
+          returnType: typeof(ICommand),
+          declaringType: typeof(ItemOnList),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+
+
+        public ICommand IsFavouriteCommand
+        {
+            get { return (ICommand)GetValue(IsFavouriteCommandProperty); }
+            set { SetValue(IsFavouriteCommandProperty, value); }
+        }
+
+
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            MyBookMark.Source = CheckBookMark ? "heart.png" : "redheart.png";
-            CheckBookMark = !CheckBookMark;
+            isFavourite = !isFavourite;
+            MyFavourite.Source = isFavourite ? "redheart.png" : "heart.png";
+
+            if (IsFavouriteCommand.CanExecute(BindingContext))
+            {
+                IsFavouriteCommand.Execute(BindingContext);
+            }
         }
     }
 }

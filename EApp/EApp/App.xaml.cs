@@ -1,6 +1,10 @@
 ﻿using Prism.Unity;
+using Prism.Unity.Extensions;
+using Microsoft.Practices.Unity;
 using EApp.Views;
 using Xamarin.Forms;
+using EApp.Service;
+using EApp.Repository;
 
 namespace EApp
 {
@@ -12,10 +16,12 @@ namespace EApp
         {
             InitializeComponent();
             //NavigationService.NavigateAsync($"{Pages.NavBar}/{Pages.Storage}");
-            NavigationService.NavigateAsync($"{Pages.Recent}");
+            NavigationService.NavigateAsync($"{Pages.TestLayout}");
         }
         protected override void RegisterTypes()
         {
+            Container.RegisterType<ILessonRepository, LessonRepository>();
+            //
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<TestLayoutPage>();
             Container.RegisterTypeForNavigation<ListSentencePage>();

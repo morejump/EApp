@@ -5,23 +5,7 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:Effects="clr-namespace:EApp.Effects"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
-    x:Class="EApp.CustomControl.ItemOnList"
-    >
-    <ContentView.Resources>
-        <ResourceDictionary>
-            <x:Array
-                x:Key="IconBooMark"
-                Type="{x:Type x:String}">
-                <x:String>
-                    heart.png
-                </x:String>
-                <x:String>
-                    blueheart.png
-                </x:String>
-            </x:Array>
-
-        </ResourceDictionary>
-    </ContentView.Resources>
+    x:Class="EApp.CustomControl.ItemOnFavouritePage">
     <ContentView.Content>
         <Grid
             x:Name="MyGrid"
@@ -34,10 +18,6 @@
                     Width="100" />
                 <ColumnDefinition
                     Width="*" />
-                <ColumnDefinition
-                    Width="16" />
-                <ColumnDefinition
-                    Width="30" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition
@@ -45,8 +25,7 @@
                 <RowDefinition
                     Height="20" />
                 <RowDefinition
-                    Height="60"
-                    />
+                    Height="60" />
             </Grid.RowDefinitions>
             <controls:MyImage
                 x:Name="MyThumbnail"
@@ -59,68 +38,41 @@
                 ErrorPlaceholder="noconnection"
                 LoadingPlaceholder="loading.png">
                 <controls:MyImage.Transformations>
-                    <fftransformations:RoundedTransformation 
-                        Radius="60"
-                        />
+                    <fftransformations:RoundedTransformation
+                        Radius="60" />
                 </controls:MyImage.Transformations>
             </controls:MyImage>
             <Label
                 x:Name="MyTitle"
+                Text="this is a title"
                 FontSize="16"
                 LineBreakMode="TailTruncation"
-                Margin="16,0,0,0"
+                Margin="16,0"
                 Grid.Row="0"
                 Grid.Column="1"
-                FontAttributes="Bold"
-                />
+                FontAttributes="Bold" />
             <Label
                 x:Name="MyAuthor"
+                Text="by Thao handsome"
                 LineBreakMode="TailTruncation"
-                Margin="16,0,0,0"
+                Margin="16,0"
                 FontSize="14"
                 Grid.Row="1"
                 Grid.Column="1">
             </Label>
             <Label
                 x:Name="MyDescription"
-                Margin="16,0,0,0"
-                FontSize="17"
+                Text="t was first spoken in early medieval England and is now the global lingua franca.[4][5] Named after the Angles, one of the Germanic tribes that migrated to"
+                Margin="16,0"
+                FontSize="16"
                 Grid.Row="2"
                 Grid.Column="1">
                 <Label.Effects>
-                    <Effects:MaxLineLabelEffect MaxLine="3" />
+                    <Effects:MaxLineLabelEffect
+                        MaxLine="4"
+                        />
                 </Label.Effects>
             </Label>
-            <StackLayout
-                x:Name="MyStackLayout"
-                Grid.Row="0"
-                Grid.Column="3"
-                Grid.RowSpan="3">
-                <controls:MyImage
-                    x:Name="MyFavourite"
-                    DownsampleToViewSize="True"
-                    Source="heart.png"
-                    WidthRequest="20"
-                    HeightRequest="30">
-                    <controls:MyImage.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                    </controls:MyImage.GestureRecognizers>
-                    </controls:MyImage>
-                <controls:MyImage
-                    x:Name="MoreImage"
-                    VerticalOptions="EndAndExpand"
-                    WidthRequest="20"
-                    HeightRequest="40"
-                    DownsampleToViewSize="True"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Grid.RowSpan="2"
-                    Source="More.png">
-                </controls:MyImage>
-
-            </StackLayout>
-
         </Grid>
-
     </ContentView.Content>
 </ContentView>

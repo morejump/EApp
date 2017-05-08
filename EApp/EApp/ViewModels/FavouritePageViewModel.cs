@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace EApp.ViewModels
 {
-    public class RecentPageViewModel: CoreViewModel
+    public class FavouritePageViewModel: CoreViewModel
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
@@ -29,12 +29,12 @@ namespace EApp.ViewModels
             }
         }
 
-
-        public RecentPageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
+        public FavouritePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
             MyList = new ObservableCollection<Lesson>(LessonRepo.GetAllLesson().Result);
+           
         }
     }
 }

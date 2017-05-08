@@ -1,4 +1,5 @@
 ﻿using Prism.Mvvm;
+using Realms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,37 @@ namespace EApp.Models
 {
     public class Lesson: BindableBase
     {
+
+        private int _id;
+
+        public int ID
+        {
+            get { return _id; }
+            set
+            {
+                if (_id != value)
+                {
+                    _id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private int _downloadCount;
+
+        public int DownloadCount
+        {
+            get { return _downloadCount; }
+            set
+            {
+                if (_downloadCount != value)
+                {
+                    _downloadCount = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private string _title;
 
         public string Title
@@ -67,6 +99,37 @@ namespace EApp.Models
                 }
             }
         }
+
+        private bool _recent;
+
+        public bool Recent
+        {
+            get { return _recent; }
+            set
+            {
+                if (_recent != value)
+                {
+                    _recent = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private string _author;
+
+        public string Author
+        {
+            get { return _author; }
+            set
+            {
+                if (_author != value)
+                {
+                    _author = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        // a list sentence when clicking a lesson
 
         private List<string> _listSentence;
 

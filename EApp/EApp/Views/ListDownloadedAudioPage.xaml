@@ -6,30 +6,33 @@
     prism:ViewModelLocator.AutowireViewModel="True"
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
-    x:Class="EApp.Views.ListDownloadedAudioPage">
+    x:Class="EApp.Views.ListDownloadedAudioPage"
+    Title="Downloaded"
+    >
     <StackLayout>
         <SearchBar
-            Margin="16,0,16,16"
+            Margin="16,0,16,8"
             Placeholder="Enter name of audio..." />
         <ListView
             x:Name="lstView"
-            HasUnevenRows="True"
+            HasUnevenRows="True" 
             ItemsSource="{Binding MyList}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnList
-                            hasMoreOptions="False"
-                            Author="Thao Chi Fu"
-                            Title="thao dep trai super man"
-                            Description="uperman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster"
-                            Thumbnail="avatar.png" />
+                            hasMoreOptions="False" 
+                            IsFavouriteCommand="{Binding Source={Reference Name=lstView},Path=BindingContext.CmdCheckFavourite}"
+                            Author="{Binding Author}"
+                            Title="{Binding Title}"
+                            Description="{Binding Description}"
+                            Thumbnail="{Binding LinkThumbnail}">
+                        </controls:ItemOnList>
+
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-
         </ListView>
-
     </StackLayout>
 
 </ContentPage>

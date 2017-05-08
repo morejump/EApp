@@ -1,5 +1,9 @@
-﻿using System;
+﻿using EApp.Models;
+using EApp.Service;
+using Prism.Navigation;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,30 +12,29 @@ namespace EApp.ViewModels
 {
     public class StoragePageViewModel: CoreViewModel
     {
-        private List<int> _mylist;
+        readonly INavigationService navigationService;
+        ILessonRepository LessonRepo;
+        private ObservableCollection<Lesson> _myList;
 
-        public List<int> MyList
+        public ObservableCollection<Lesson> MyList
         {
-            get { return _mylist; }
+            get { return _myList; }
             set
             {
-                if (_mylist != value)
+                if (_myList != value)
                 {
-                    _mylist = value;
+                    _myList = value;
                     OnPropertyChanged();
                 }
             }
         }
 
 
-        public StoragePageViewModel()
+        public StoragePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {
-            MyList = new List<int>();
-            for (int i = 0; i < 20; i++)
-            {
-                MyList.Add(i);
-            }
-
+            this.navigationService = navigationService;
+            this.LessonRepo = LessonRepo;
+            MyList = new ObservableCollection<Lesson>(LessonRepo.GetAllLesson().Result);
         }
     }
 }
