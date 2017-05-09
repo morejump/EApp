@@ -7,6 +7,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace EApp.ViewModels
 {
@@ -14,6 +16,27 @@ namespace EApp.ViewModels
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
+
+        private ICommand _cmSelectedLesson;
+
+        public ICommand cmSelectedLesson
+        {
+            get { return _cmSelectedLesson = _cmSelectedLesson ?? new Command(RuncmSelectedLesson); }
+
+        }
+
+        void RuncmSelectedLesson(object obj)
+        {
+            NavigationParameters param = new NavigationParameters();
+            param.Add("lesson", obj as Lesson);
+            navigationService.NavigateAsync(Pages.ListSentence, param);
+
+        }
+
+
+
+
+
         private ObservableCollection<Lesson> _myList;
 
         public ObservableCollection<Lesson> MyList

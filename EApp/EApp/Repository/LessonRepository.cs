@@ -11,7 +11,6 @@ namespace EApp.Repository
 {
     public class LessonRepository : ILessonRepository
     {
-        readonly Realm realm;
         public async Task<Lesson[]> GetAllLesson()
         {
             // Do something here later :))
@@ -30,7 +29,7 @@ namespace EApp.Repository
                     DownloadCount = 96,
                     ID = 123,
                     LinkThumbnail = "chiphu.jpg",
-                    IsFavourite = true
+                    IsFavourite = true,
                 });
             }
 
@@ -38,9 +37,8 @@ namespace EApp.Repository
         }
 
         // a constructor here
-        public LessonRepository(Realm realm)
+        public LessonRepository( )
         {
-            this.realm = realm;
 
         }
     }

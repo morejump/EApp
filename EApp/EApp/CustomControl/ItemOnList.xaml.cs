@@ -10,34 +10,7 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnList : ContentView
     {
-
-
-        public static BindableProperty isFavouriteProperty = BindableProperty.Create(
-          propertyName: "isFavourite",
-          returnType: typeof(bool),
-          declaringType: typeof(ItemOnList),
-          defaultValue: false,
-          defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged: OnIsFavouriteChanged
-      );
-
-        private static void OnIsFavouriteChanged(BindableObject bindable, object oldValue, object newValue)
-        {
-            var view = bindable as ItemOnList;
-            if (view != null && newValue != null)
-            {
-               
-            }
-
-        }
-
-        public bool isFavourite
-        {
-            get { return (bool)GetValue(isFavouriteProperty); }
-            set { SetValue(isFavouriteProperty, value); }
-        }
-
-
+        public bool isFavourite { get; set; }
 
         public static BindableProperty AuthorProperty = BindableProperty.Create(
           propertyName: "Author",
@@ -171,7 +144,7 @@ namespace EApp.CustomControl
         {
             InitializeComponent();
             MyThumbnail.CacheDuration = TimeSpan.FromDays(60);
-            
+            isFavourite = false;
 
         }
 
@@ -196,8 +169,8 @@ namespace EApp.CustomControl
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            isFavourite = !isFavourite;
             MyFavourite.Source = isFavourite ? "redheart.png" : "heart.png";
+            isFavourite = !isFavourite;
 
             if (IsFavouriteCommand.CanExecute(BindingContext))
             {

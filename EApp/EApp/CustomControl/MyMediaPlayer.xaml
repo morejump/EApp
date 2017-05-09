@@ -28,9 +28,6 @@
                     Height="50" />
             </Grid.RowDefinitions>
             <!--this boxview is used to fill a background for this control-->
-            <BoxView
-                Grid.ColumnSpan="5"
-                />
             <controls:MyImage
                 x:Name="MyPlayButton"
                 Margin="16,0,0,0"

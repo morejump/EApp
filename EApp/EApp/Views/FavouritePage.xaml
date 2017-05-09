@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True"
+    xmlns:behavior="clr-namespace:EApp.Behavior"
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.FavouritePage"
@@ -15,7 +16,9 @@
             Placeholder="Enter name of audio..." />
         <ListView
             x:Name="lstView"
+            behavior:listView.Command="{Binding cmSelectedLesson}"
             HasUnevenRows="True"
+            ItemSelected="lstView_ItemSelected"
             ItemsSource="{Binding MyList}">
             <ListView.ItemTemplate>
                 <DataTemplate>

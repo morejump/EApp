@@ -10,12 +10,12 @@ namespace EApp.ViewModels
 {
     public class CoreViewModel : BindableBase, INavigationAware
     {
-        public void OnNavigatedFrom(NavigationParameters parameters)
+        public virtual void OnNavigatedFrom(NavigationParameters parameters)
         {
              
         }
 
-        public void OnNavigatedTo(NavigationParameters parameters)
+        public virtual void OnNavigatedTo(NavigationParameters parameters)
         {
            
         }

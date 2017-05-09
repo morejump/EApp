@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Prism.Navigation;
 
 namespace EApp.ViewModels
 {
@@ -39,17 +40,19 @@ namespace EApp.ViewModels
             }
         }
 
+
+        public override void OnNavigatedTo(NavigationParameters parameters)
+        {
+            base.OnNavigatedTo(parameters);
+            Lesson lesson = parameters.GetValue<Lesson>("lesson");
+            Listentence = lesson.ListSentence;
+        }
+
+
         public ListSentencePageViewModel()
         {
-            Listentence = new List<string>();
-            for (int i = 0; i < 30; i++)
-            {
-                Listentence.Add("Are you a football fan? " +
-                    "Try this game to see how " +
-                    "many football words you" +
-                    " know in English. Can you beat the " +
-                    "goalkeeper? Good luck!");
-            }
+            
+            
         }
     }
 }
