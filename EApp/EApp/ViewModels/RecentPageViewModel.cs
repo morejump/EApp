@@ -7,6 +7,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace EApp.ViewModels
 {
@@ -29,6 +31,34 @@ namespace EApp.ViewModels
             }
         }
 
+        private ICommand _cmSelectedLesson;
+
+        public ICommand cmSelectedLesson
+        {
+            get { return _cmSelectedLesson = _cmSelectedLesson ?? new Command(RuncmSelectedLesson); }
+
+        }
+
+        void RuncmSelectedLesson(object obj)
+        {
+            NavigationParameters param = new NavigationParameters();
+            param.Add("lesson", obj as Lesson);
+            navigationService.NavigateAsync(Pages.ListSentence, param);
+
+        }
+        private ICommand _cmdCheckFavourite;
+
+        public ICommand CmdCheckFavourite
+        {
+            get { return _cmdCheckFavourite = _cmdCheckFavourite ?? new Command(RuncmdCheckFavourite); }
+
+        }
+
+        void RuncmdCheckFavourite(object obj)
+        {
+           // do something here later :))
+
+        }
 
         public RecentPageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {

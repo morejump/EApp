@@ -3,6 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:behavior="clr-namespace:EApp.Behavior"
+    xmlns:effects="clr-namespace:EApp.Effects"
     prism:ViewModelLocator.AutowireViewModel="True"
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
@@ -11,12 +13,14 @@
     >
     <ListView
         x:Name="lstView"
+        behavior:listView.Command="{Binding cmSelectedLesson}"
         HasUnevenRows="True"
         ItemsSource="{Binding MyList}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <controls:ItemOnList
+                        IsFavouriteCommand="{Binding Source={Reference Name=lstView},Path=BindingContext.CmdCheckFavourite}"
                         hasMoreOptions="False"
                         Author="{Binding Author}"
                         Title="{Binding Title}"
@@ -25,6 +29,8 @@
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-
+        <ListView.Effects>
+            <effects:SelectedItemColorEffect />
+        </ListView.Effects>
     </ListView>
 </ContentPage>

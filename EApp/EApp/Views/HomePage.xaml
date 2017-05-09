@@ -15,7 +15,7 @@
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <views:ListSentencePage />
+                <views:RecentPage />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

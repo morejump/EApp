@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EApp.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +14,12 @@ namespace EApp.Views
     public partial class TestLayoutPage : ContentPage
     {
 
-
-        
-
         public TestLayoutPage()
         {
             InitializeComponent();
+            //button.Command = new Command(()=> {
+            //    DependencyService.Get<IAudio>().PlayAudioFile("MySong.mp3");
+            //});
         }
     }
 }

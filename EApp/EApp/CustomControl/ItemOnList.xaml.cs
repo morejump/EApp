@@ -169,7 +169,7 @@ namespace EApp.CustomControl
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            MyFavourite.Source = isFavourite ? "redheart.png" : "heart.png";
+            MyFavourite.Source = isFavourite ? "heart.png" : "redheart.png";
             isFavourite = !isFavourite;
 
             if (IsFavouriteCommand.CanExecute(BindingContext))

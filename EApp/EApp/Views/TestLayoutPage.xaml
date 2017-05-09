@@ -8,6 +8,7 @@
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.TestLayoutPage">
     <controls:MyMediaPlayer
-        SlierValue="0.2"
-        />
+        cmdTapPlayButton="{Binding cmdTapPlayButon}" 
+                            />
+
 </ContentPage>

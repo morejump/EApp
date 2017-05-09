@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace EApp.CustomControl
@@ -11,22 +11,40 @@ namespace EApp.CustomControl
     public partial class MyMediaPlayer : ContentView
     {
         int i = 0;
-
-        public static BindableProperty isTapPlayButtonProperty = BindableProperty.Create(
-          propertyName: "isTapPlayButton",
-          returnType: typeof(bool),
+        
+        public bool isTapPlayButton { get; set; }
+        //
+        public static BindableProperty cmdTapPlayButtonProperty = BindableProperty.Create(
+          propertyName: "cmdTapPlayButton",
+          returnType: typeof(ICommand),
           declaringType: typeof(MyMediaPlayer),
-          defaultValue: false,
+          defaultValue: null,
           defaultBindingMode: BindingMode.TwoWay
       );
 
-        public bool isTapPlayButton
+        public ICommand cmdTapPlayButton
         {
-            get { return (bool)GetValue(isTapPlayButtonProperty); }
-            set { SetValue(isTapPlayButtonProperty, value); }
+            get { return (ICommand)GetValue(cmdTapPlayButtonProperty); }
+            set { SetValue(cmdTapPlayButtonProperty, value); }
+        }
+        //
+
+
+        public static BindableProperty cmdTapSpeedButtonProperty = BindableProperty.Create(
+          propertyName: "cmdTapSpeedButton",
+          returnType: typeof(ICommand),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+        public ICommand cmdTapSpeedButton
+        {
+            get { return (ICommand)GetValue(cmdTapSpeedButtonProperty); }
+            set { SetValue(cmdTapSpeedButtonProperty, value); }
         }
 
-
+        //
         public static BindableProperty SlierValueProperty = BindableProperty.Create(
           propertyName: "SlierValue",
           returnType: typeof(double),
@@ -60,13 +78,24 @@ namespace EApp.CustomControl
         // change an image when tapping a play button
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
+            if (cmdTapPlayButton.CanExecute("par"))
+            {
+                cmdTapPlayButton.Execute("par");
+            }
+
+
             isTapPlayButton = !isTapPlayButton;
             MyPlayButton.Source = isTapPlayButton ? "pausebutton.png" : "playbutton.png";
         }
 
-        // change an image when taaping a speed button
+        // change an image when tapping a speed button
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
+            if (cmdTapSpeedButton.CanExecute("par"))
+            {
+                cmdTapSpeedButton.Execute("par");
+            }
+
             if (i == 0)
             {
                 MySpeedButton.Source = "icon_xx.png";

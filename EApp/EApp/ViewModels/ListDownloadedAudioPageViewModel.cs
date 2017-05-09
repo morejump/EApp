@@ -46,8 +46,9 @@ namespace EApp.ViewModels
 
         void RuncmdCheckFavourite(object obj)
         {
-            var lesson = obj as Lesson;
-         
+            //var lesson = obj as Lesson;
+            DependencyService.Get<IAudio>().PlayAudioFile("MySong.mp3");
+
         }
         
         private ObservableCollection<Lesson> _myList;
@@ -63,6 +64,21 @@ namespace EApp.ViewModels
                     OnPropertyChanged();
                 }
             }
+        }
+        private ICommand _cmSelectedLesson;
+
+        public ICommand cmSelectedLesson
+        {
+            get { return _cmSelectedLesson = _cmSelectedLesson ?? new Command(RuncmSelectedLesson); }
+
+        }
+
+        void RuncmSelectedLesson(object obj)
+        {
+            NavigationParameters param = new NavigationParameters();
+            param.Add("lesson", obj as Lesson);
+            navigationService.NavigateAsync(Pages.ListSentence, param);
+
         }
 
 

@@ -17,9 +17,9 @@
         </Grid.ColumnDefinitions>
         <controls:MyImage
             Aspect="Fill"
-            BackgroundColor="Red"
+            BackgroundColor="Green"
             DownsampleToViewSize="True"
-            Source="CoverInMasterDetail.png" />
+            Source="NewCover.png" />
         <ListView
             Grid.Row="1"
             x:Name="myList"

@@ -1,5 +1,6 @@
 ﻿<resources>
   <color name="primary">#2196F3</color>
+  <drawable name="ListViewSelected">#4CAF50</drawable>
   <color name="primaryDark">#1976D2</color>
   <color name="accent">#FFC107</color>
   <color name="window_background">#F5F5F5</color>
