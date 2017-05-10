@@ -24,6 +24,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnFavouritePage
+                            Level="{Binding Level}"
                             Title="{Binding Title}"
                             Thumbnail="{Binding LinkThumbnail}"
                             Author="{Binding Author}"

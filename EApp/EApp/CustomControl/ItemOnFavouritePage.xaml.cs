@@ -10,6 +10,43 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnFavouritePage : ContentView
     {
+        public static BindableProperty LevelProperty = BindableProperty.Create(
+           propertyName: "Level",
+           returnType: typeof(int),
+           declaringType: typeof(ItemOnFavouritePage),
+           defaultValue: -1,
+           defaultBindingMode: BindingMode.OneWay,
+           propertyChanged: OnLevelChanged
+       );
+
+        private static void OnLevelChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as ItemOnFavouritePage;
+            if (view != null && newValue != null)
+            {
+                if (view.Level == 0)
+                {
+                    view.MyLevel.BackgroundColor = Color.Blue;
+
+                }
+                if (view.Level == 1)
+                {
+                    view.MyLevel.BackgroundColor = Color.Purple;
+
+                }
+                if (view.Level == 2)
+                {
+                    view.MyLevel.BackgroundColor = Color.Red;
+                }
+
+            }
+
+        }
+        public int Level
+        {
+            get { return (int)GetValue(LevelProperty); }
+            set { SetValue(LevelProperty, value); }
+        }
         public static BindableProperty DescriptionProperty = BindableProperty.Create(
           propertyName: "Description",
           returnType: typeof(string),

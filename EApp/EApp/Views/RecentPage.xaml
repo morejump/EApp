@@ -9,8 +9,7 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.RecentPage"
-    Title="Recent"
-    >
+    Title="Recent">
     <ListView
         x:Name="lstView"
         behavior:listView.Command="{Binding cmSelectedLesson}"
@@ -20,11 +19,11 @@
             <DataTemplate>
                 <ViewCell>
                     <controls:ItemOnList
+                        Level="{Binding Level}"
                         IsFavouriteCommand="{Binding Source={Reference Name=lstView},Path=BindingContext.CmdCheckFavourite}"
                         hasMoreOptions="False"
                         Author="{Binding Author}"
                         Title="{Binding Title}"
-                        Description="{Binding Description}"
                         Thumbnail="{Binding LinkThumbnail}" />
                 </ViewCell>
             </DataTemplate>

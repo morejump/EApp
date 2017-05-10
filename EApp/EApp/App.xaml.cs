@@ -28,6 +28,7 @@ namespace EApp
             Container.RegisterTypeForNavigation<ListDownloadedAudioPage>();
             Container.RegisterTypeForNavigation<HomePage>();
             Container.RegisterTypeForNavigation<RecentPage>();
+            Container.RegisterTypeForNavigation<RecordMyVoicePage>();
         }
     }
     
@@ -40,6 +41,6 @@ namespace EApp
         public static string Home = nameof(HomePage);
         public static string Storage = nameof(StoragePage);
         public static string Recent = nameof(RecentPage);
-
+        public static string Record = nameof(RecordMyVoicePage);
     }
 }

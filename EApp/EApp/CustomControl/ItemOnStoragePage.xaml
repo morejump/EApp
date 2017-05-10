@@ -9,27 +9,36 @@
     <ContentView.Content>
         <Grid
             Margin="16,8"
-            ColumnSpacing="8"
+            ColumnSpacing="0"
             RowSpacing="0"
-            VerticalOptions="Start"
-            >
+            VerticalOptions="Start">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition
-                    Width="80" />
+                    Width="100" />
                 <ColumnDefinition
                     Width="*" />
                 <ColumnDefinition
                     Width="Auto" />
+                <ColumnDefinition Width="12" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition
-                    Height="80" />
+                    Height="100" />
                 <RowDefinition
                     Height="Auto" />
-
             </Grid.RowDefinitions>
+            
+                <!--set level here-->
+                <BoxView
+                x:Name="MyLevel"
+                Margin="8,8,0,8"
+                Grid.Column="3"
+                BackgroundColor="Red" />
             <controls:MyImage
+                DownsampleToViewSize="True"
                 x:Name="MyThumbnail"
+                Margin="0,0,8,0"
+                HeightRequest="100"
                 Aspect="Fill"
                 Grid.Column="0"
                 ErrorPlaceholder="errorloading.png"
@@ -40,18 +49,21 @@
                     <fftransformations:RoundedTransformation
                         Radius="60" />
                 </controls:MyImage.Transformations>
-
             </controls:MyImage>
-              <!--need to edit here--> 
+            <!--need to edit here-->
+            
             <Grid
                 HorizontalOptions="Start"
                 RowSpacing="0"
                 Grid.Row="0"
                 Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
 
                 </Grid.RowDefinitions>
                 <Label
@@ -89,15 +101,18 @@
                     Text="this is a description">
                     <Label.Effects>
                         <Effects:MaxLineLabelEffect
-                            MaxLine="2" />
+                            MaxLine="3" />
                     </Label.Effects>
                 </Label>
             </Grid>
             <Grid
+                Margin="8,0,0,0"
                 Grid.Column="2">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="*" />
                 </Grid.RowDefinitions>
                 <Grid
                     ColumnSpacing="3">
@@ -112,43 +127,24 @@
                         Grid.Column="0"
                         FontSize="15"
                         FontAttributes="Bold"
-                        Text="0" />
-                    <Label
+                        Text="69" />
+                    <controls:MyImage
                         Grid.Column="1"
-                        FontAttributes="Bold"
-                        FontSize="15"
-                        Text="download(s)" />
+                        DownsampleToViewSize="True"
+                        HeightRequest="12"
+                        WidthRequest="15"
+                        Source="DownloadedButton.png" />
                 </Grid>
-                <Grid Grid.Row="1"
-                      x:Name="MyTotal"
-                      ColumnSpacing="0"
-                      IsVisible="False"
-                      Margin="0,0,0,16"
-                      HorizontalOptions="Center"
-                      VerticalOptions="End"
-                      >
-                    <Grid.RowDefinitions>
-                        <RowDefinition
-                            Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition
-                            Width="Auto" />
-                        <ColumnDefinition
-                            Width="Auto" />
-
-                    </Grid.ColumnDefinitions>
                     <Label
+                        Grid.Row="1"
+                        IsVisible="False"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        Margin="0,0,0,16"
                         x:Name="MyPercent"
                         FontSize="20"
-                        Text="64" />
-                    <Label
-                        FontSize="20"
-                        Grid.Column="1"
-                        Text="%" />
-
-                </Grid>
-
+                        />
+                  
                 <controls:MyImage
                     Grid.Row="1"
                     VerticalOptions="End"
@@ -157,20 +153,20 @@
                     WidthRequest="30"
                     Source="Downloaded.png">
                     <controls:MyImage.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapDownloadImage" />
+                        <TapGestureRecognizer
+                            Tapped="TapDownloadImage" />
                     </controls:MyImage.GestureRecognizers>
                 </controls:MyImage>
-                
+
             </Grid>
             <ProgressBar
                 IsVisible="False"
                 x:Name="MyProgressBar"
                 VerticalOptions="End"
                 Grid.Row="1"
-                Grid.ColumnSpan="3"
+                Grid.ColumnSpan="4"
                 HeightRequest="8"
                 Progress="0.7" />
-
         </Grid>
 
     </ContentView.Content>

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using EApp.Utils;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +12,44 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnList : ContentView
     {
+        public static BindableProperty LevelProperty = BindableProperty.Create(
+           propertyName: "Level",
+           returnType: typeof(int),
+           declaringType: typeof(ItemOnList),
+           defaultValue: -1,
+           defaultBindingMode: BindingMode.OneWay,
+           propertyChanged: OnLevelChanged
+       );
+
+        private static void OnLevelChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as ItemOnList;
+            if (view != null && newValue != null)
+            {
+                if (view.Level == 0)
+                {
+                    view.MyLevel.BackgroundColor = Color.Blue;
+
+                }
+                if (view.Level == 1)
+                {
+                    view.MyLevel.BackgroundColor = Color.Purple;
+
+                }
+                if (view.Level == 2)
+                {
+                    view.MyLevel.BackgroundColor = Color.Red;
+                }
+
+            }
+
+        }
+        public int Level
+        {
+            get { return (int)GetValue(LevelProperty); }
+            set { SetValue(LevelProperty, value); }
+        }
+
         public bool isFavourite { get; set; }
 
         public static BindableProperty AuthorProperty = BindableProperty.Create(
@@ -111,8 +151,6 @@ namespace EApp.CustomControl
             get { return (string)GetValue(TitleProperty); }
             set { SetValue(TitleProperty, value); }
         }
-        //
-
 
         public static BindableProperty DescriptionProperty = BindableProperty.Create(
           propertyName: "Description",
@@ -128,7 +166,7 @@ namespace EApp.CustomControl
             var view = bindable as ItemOnList;
             if (view != null && newValue != null)
             {
-                view.MyDescription.Text = view.Description;
+                view.MyDescription.Text = view.Description+"...";
 
             }
         }
@@ -145,6 +183,7 @@ namespace EApp.CustomControl
             InitializeComponent();
             MyThumbnail.CacheDuration = TimeSpan.FromDays(60);
             isFavourite = false;
+            this.MyDescription.Text = this.Description;
 
         }
 

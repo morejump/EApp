@@ -18,6 +18,8 @@
                     Width="100" />
                 <ColumnDefinition
                     Width="*" />
+                <ColumnDefinition
+                    Width="12" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition
@@ -73,6 +75,13 @@
                         />
                 </Label.Effects>
             </Label>
+            <BoxView
+                x:Name="MyLevel"
+                BackgroundColor="Red"
+                Grid.Column="2"
+                Grid.RowSpan="3"
+                Margin="8,8,0,8"
+                />
         </Grid>
     </ContentView.Content>
 </ContentView>

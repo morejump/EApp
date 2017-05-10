@@ -1,4 +1,5 @@
-﻿using Prism.Mvvm;
+﻿using EApp.Utils;
+using Prism.Mvvm;
 using Realms;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,23 @@ using System.Threading.Tasks;
 
 namespace EApp.Models
 {
+   
     public class Lesson: BindableBase
     {
+        private Level _level;
+
+        public Level Level
+        {
+            get { return _level; }
+            set
+            {
+                if (_level != value)
+                {
+                    _level = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         private int _id;
 
@@ -21,6 +37,20 @@ namespace EApp.Models
                 if (_id != value)
                 {
                     _id = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        private int _percent;
+
+        public int Percent
+        {
+            get { return _percent; }
+            set
+            {
+                if (_percent != value)
+                {
+                    _percent = value;
                     OnPropertyChanged();
                 }
             }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EApp.Models;
+using EApp.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,14 +13,16 @@ namespace EApp.CustomControl
     public partial class ItemOnStoragePage : ContentView
     {
 
-
+        // this property is used to set value for  "text "+ % and a progress bar
+        // in range 1 to 100
+        // used int type
         public static BindableProperty PerCentProperty = BindableProperty.Create(
           propertyName: "PerCent",
-          returnType: typeof(double),
+          returnType: typeof(int),
           declaringType: typeof(ItemOnStoragePage),
-          defaultValue: 60.0,
+          defaultValue: 60,
           defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged:OnPercentChanged
+          propertyChanged: OnPercentChanged
       );
 
         private static void OnPercentChanged(BindableObject bindable, object oldValue, object newValue)
@@ -26,40 +30,53 @@ namespace EApp.CustomControl
             var view = bindable as ItemOnStoragePage;
             if (view != null && newValue != null)
             {
-                view.MyPercent.Text = view.PerCent.ToString();
+                view.MyPercent.Text = view.PerCent.ToString() + "%";
+                view.MyProgressBar.Progress = (double)view.PerCent / 100; // becuase a value of progress bar form 0 to 1
             }
         }
 
-        public double PerCent
+        public int PerCent
         {
-            get { return (double)GetValue(PerCentProperty); }
+            get { return (int)GetValue(PerCentProperty); }
             set { SetValue(PerCentProperty, value); }
         }
 
-
-
-        public static BindableProperty CompletedDownloadProperty = BindableProperty.Create(
-          propertyName: "CompletedDownload",
-          returnType: typeof(double),
+        public static BindableProperty LevelProperty = BindableProperty.Create(
+          propertyName: "Level",
+          returnType: typeof(int),
           declaringType: typeof(ItemOnStoragePage),
-          defaultValue: 0.7,
-          defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged:OnCompletedDownloadChanged
+          defaultValue: -1,
+          defaultBindingMode: BindingMode.OneWay,
+          propertyChanged: OnLevelChanged
       );
 
-        private static void OnCompletedDownloadChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void OnLevelChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var view = bindable as ItemOnStoragePage;
             if (view != null && newValue != null)
             {
-                view.MyProgressBar.Progress = view.CompletedDownload;
-            }
-        }
+                if (view.Level == 0)
+                {
+                    view.MyLevel.BackgroundColor = Color.Blue;
 
-        public double CompletedDownload
+                }
+                if (view.Level == 1)
+                {
+                    view.MyLevel.BackgroundColor = Color.Purple;
+
+                }
+                if (view.Level == 2)
+                {
+                    view.MyLevel.BackgroundColor = Color.Red;
+                }
+
+            }
+
+        }
+        public int Level
         {
-            get { return (double)GetValue(CompletedDownloadProperty); }
-            set { SetValue(CompletedDownloadProperty, value); }
+            get { return (int)GetValue(LevelProperty); }
+            set { SetValue(LevelProperty, value); }
         }
 
 
@@ -75,7 +92,7 @@ namespace EApp.CustomControl
         private static void OnTitleChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var view = bindable as ItemOnStoragePage;
-            if(view!=null && newValue != null)
+            if (view != null && newValue != null)
             {
                 view.MyTitle.Text = view.Title;
             }
@@ -95,7 +112,7 @@ namespace EApp.CustomControl
           declaringType: typeof(ItemOnStoragePage),
           defaultValue: "No Author",
           defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged:OnAuthorChanged
+          propertyChanged: OnAuthorChanged
       );
 
         private static void OnAuthorChanged(BindableObject bindable, object oldValue, object newValue)
@@ -121,7 +138,7 @@ namespace EApp.CustomControl
           declaringType: typeof(ItemOnStoragePage),
           defaultValue: "No Description",
           defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged:OnDescriptionChanged
+          propertyChanged: OnDescriptionChanged
       );
 
         private static void OnDescriptionChanged(BindableObject bindable, object oldValue, object newValue)
@@ -142,13 +159,13 @@ namespace EApp.CustomControl
 
 
 
-        public static BindableProperty DownloadProperty = BindableProperty.Create(
-          propertyName: "Download",
-          returnType: typeof(string),
+        public static BindableProperty DownloadCountProperty = BindableProperty.Create(
+          propertyName: "DownloadCount",
+          returnType: typeof(int),
           declaringType: typeof(ItemOnStoragePage),
-          defaultValue: "0",
+          defaultValue: 40,
           defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged:OnDownloadChanged
+          propertyChanged: OnDownloadChanged
       );
 
         private static void OnDownloadChanged(BindableObject bindable, object oldValue, object newValue)
@@ -156,14 +173,14 @@ namespace EApp.CustomControl
             var view = bindable as ItemOnStoragePage;
             if (view != null && newValue != null)
             {
-                view.MyDownload.Text = view.Download;
+                view.MyDownload.Text = view.DownloadCount.ToString();
             }
         }
 
-        public string Download
+        public int DownloadCount
         {
-            get { return (string)GetValue(DownloadProperty); }
-            set { SetValue(DownloadProperty, value); }
+            get { return (int)GetValue(DownloadCountProperty); }
+            set { SetValue(DownloadCountProperty, value); }
         }
 
 
@@ -174,7 +191,7 @@ namespace EApp.CustomControl
           declaringType: typeof(ItemOnStoragePage),
           defaultValue: "avatar.png",
           defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged:OnThumbnailChanged
+          propertyChanged: OnThumbnailChanged
       );
 
         private static void OnThumbnailChanged(BindableObject bindable, object oldValue, object newValue)
@@ -199,10 +216,9 @@ namespace EApp.CustomControl
 
         private void TapDownloadImage(object sender, EventArgs e)
         {
-            // do something here :))
             MyImageDownload.IsVisible = false;
             MyProgressBar.IsVisible = true;
-            MyTotal.IsVisible = true;
+            MyPercent.IsVisible = true;// 
 
         }
     }

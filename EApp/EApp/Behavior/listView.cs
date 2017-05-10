@@ -24,19 +24,24 @@ namespace EApp.Behavior
             var list = bindable as ListView;
             if (list == null)
                 return;
-            list.ItemTapped +=(sender, e)=>{
+            //list.ItemTapped += List_ItemTapped;
+            list.ItemTapped += (sender, e) =>
+            {
                 // do something here
                 var command = newValue as ICommand;
-                if (command == null) 
-                return;
+                if (command == null)
+                    return;
                 if (command.CanExecute(e.Item))
                 {
                     command.Execute(e.Item);
                 }
             };
-            
+
         }
 
-        
+        //private static void List_ItemTapped(object sender, ItemTappedEventArgs e)
+        //{
+        //    //throw new NotImplementedException();
+        //}
     }
 }

@@ -50,6 +50,12 @@ namespace EApp.ViewModels
                    Type= typeof(StoragePage),
                    Icon="Storage.png"
                },
+               new MyMenuItem
+               {
+                   Text="Record My Voice",
+                   Type= typeof(RecordMyVoicePage),
+                   Icon="Mic.png"
+               }
             };
         }
     }
