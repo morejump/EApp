@@ -4,6 +4,7 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,7 +33,32 @@ namespace EApp.ViewModels
             navigationService.NavigateAsync(Pages.ListSentence, param);
 
         }
+        // delete a lessom when swipe an item to right side
+        private ICommand _cmdDeleteLesson;
 
+        public ICommand cmdDeleteLesson
+        {
+            get { return _cmdDeleteLesson = _cmdDeleteLesson ?? new Command(RuncmdDeleteLesson); }
+
+        }
+
+        void RuncmdDeleteLesson(object obj)
+        {
+            MyList.Remove(obj as Lesson);
+        }
+        // remove a lesson from a favourite when swiping an item to left side
+        private ICommand _cmdRemoveLesson;
+
+        public ICommand cmdRemoveLesson
+        {
+            get { return _cmdRemoveLesson = _cmdRemoveLesson ?? new Command(RuncmdRemoveLesson); }
+
+        }
+
+        void RuncmdRemoveLesson(object obj)
+        {
+            MyList.Remove(obj as Lesson);
+        }
 
 
 

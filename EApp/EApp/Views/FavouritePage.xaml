@@ -16,14 +16,15 @@
             Placeholder="Enter name of audio..." />
         <ListView
             x:Name="lstView"
-            behavior:listView.Command="{Binding cmSelectedLesson}"
             HasUnevenRows="True"
-            ItemSelected="lstView_ItemSelected"
             ItemsSource="{Binding MyList}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnFavouritePage
+                            cmdClick="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmSelectedLesson}"
+                            cmdDelete="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdDeleteLesson}"
+                            cmdRemoveFavourite="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdRemoveLesson}"
                             Level="{Binding Level}"
                             Title="{Binding Title}"
                             Thumbnail="{Binding LinkThumbnail}"

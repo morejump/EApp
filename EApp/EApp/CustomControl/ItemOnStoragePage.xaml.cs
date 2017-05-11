@@ -221,5 +221,6 @@ namespace EApp.CustomControl
             MyPercent.IsVisible = true;// 
 
         }
+       
     }
 }

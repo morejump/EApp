@@ -37,7 +37,7 @@ namespace EApp.Repository
 
                 list.Add(new Lesson
                 {
-                    Title = "this is a title",
+                    Title = "thao dep trai nhe",
                     Author = "more jump ",
                     Description = "Từ đầu năm 3 mình bắt đầu đi thực " +
                     "tập, nơi đầu tiên thực tập 6 tháng, mang lạ" +
@@ -46,7 +46,7 @@ namespace EApp.Repository
                     "Sau đó mình có đi thực tập vị trí tương đương ở 1 công ty nữa",
                     DownloadCount = 96,
                     ID = 123,
-                    LinkThumbnail = "chiphu.jpg",
+                    LinkThumbnail = "ChiPhu01.jpg",
                     IsFavourite = false,
                     Percent = 40,
                     Level = Level.normal

@@ -2,6 +2,7 @@
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:EApp.Utils"
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:Effects="clr-namespace:EApp.Effects"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
@@ -71,8 +72,7 @@
                 Grid.Column="1">
                 <Label.Effects>
                     <Effects:MaxLineLabelEffect
-                        MaxLine="4"
-                        />
+                        MaxLine="4" />
                 </Label.Effects>
             </Label>
             <BoxView
@@ -80,8 +80,14 @@
                 BackgroundColor="Red"
                 Grid.Column="2"
                 Grid.RowSpan="3"
-                Margin="8,8,0,8"
-                />
+                Margin="8,8,0,8" />
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="TapGestureRecognizer_Tapped"
+                    />
+                <PanGestureRecognizer
+                    PanUpdated="PanGestureRecognizer_PanUpdated" />
+            </Grid.GestureRecognizers>
         </Grid>
     </ContentView.Content>
 </ContentView>

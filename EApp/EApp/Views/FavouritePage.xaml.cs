@@ -17,9 +17,6 @@ namespace EApp.Views
             InitializeComponent();
         }
 
-        private void lstView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-
-        }
+        
     }
 }

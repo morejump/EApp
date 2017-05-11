@@ -15,7 +15,6 @@
             <local:AddPercentConverter
                 x:Key="addPercentcvt" />
         </ResourceDictionary>
-        
     </ContentPage.Resources>
     <StackLayout>
         <SearchBar
@@ -36,11 +35,10 @@
                             DownloadCount="{Binding DownloadCount}"
                             Thumbnail="{Binding LinkThumbnail}" />
                     </ViewCell>
-
                 </DataTemplate>
-
+               
             </ListView.ItemTemplate>
-
+            
         </ListView>
 
     </StackLayout>

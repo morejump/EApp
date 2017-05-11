@@ -16,5 +16,6 @@ namespace EApp.Views
         {
             InitializeComponent();
         }
+
     }
 }

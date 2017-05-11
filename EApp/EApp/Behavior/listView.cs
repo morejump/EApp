@@ -24,7 +24,6 @@ namespace EApp.Behavior
             var list = bindable as ListView;
             if (list == null)
                 return;
-            //list.ItemTapped += List_ItemTapped;
             list.ItemTapped += (sender, e) =>
             {
                 // do something here
@@ -39,9 +38,6 @@ namespace EApp.Behavior
 
         }
 
-        //private static void List_ItemTapped(object sender, ItemTappedEventArgs e)
-        //{
-        //    //throw new NotImplementedException();
-        //}
+      
     }
 }

@@ -3,13 +3,65 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace EApp.CustomControl
 {
     public partial class ItemOnFavouritePage : ContentView
     {
+        // cmd click
+
+
+        public static BindableProperty cmdClickProperty = BindableProperty.Create(
+          propertyName: "cmdClick",
+          returnType: typeof(ICommand),
+          declaringType: typeof(ItemOnFavouritePage),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+
+        public ICommand cmdClick
+        {
+            get { return (ICommand)GetValue(cmdClickProperty); }
+            set { SetValue(cmdClickProperty, value); }
+        }
+
+
+        // delete an item when swiping the item to right side
+        public static BindableProperty cmdDeleteProperty = BindableProperty.Create(
+          propertyName: "cmdDelete",
+          returnType: typeof(ICommand),
+          declaringType: typeof(ItemOnFavouritePage),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+        public ICommand cmdDelete
+        {
+            get { return (ICommand)GetValue(cmdDeleteProperty); }
+            set { SetValue(cmdDeleteProperty, value); }
+        }
+        // remove an item from a favourite list 
+
+
+        public static BindableProperty cmdRemoveFavouriteProperty = BindableProperty.Create(
+          propertyName: "cmdRemoveFavourite",
+          returnType: typeof(ICommand),
+          declaringType: typeof(ItemOnFavouritePage),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+
+        public ICommand cmdRemoveFavourite
+        {
+            get { return (ICommand)GetValue(cmdRemoveFavouriteProperty); }
+            set { SetValue(cmdRemoveFavouriteProperty, value); }
+        }
+
+
         public static BindableProperty LevelProperty = BindableProperty.Create(
            propertyName: "Level",
            returnType: typeof(int),
@@ -110,7 +162,7 @@ namespace EApp.CustomControl
             var view = bindable as ItemOnFavouritePage;
             if (view != null && newValue != null)
             {
-               view.MyAuthor.Text  = "by " + view.Author;
+                view.MyAuthor.Text = "by " + view.Author;
             }
         }
 
@@ -146,6 +198,33 @@ namespace EApp.CustomControl
         public ItemOnFavouritePage()
         {
             InitializeComponent();
+        }
+
+        private void PanGestureRecognizer_PanUpdated(object sender, PanUpdatedEventArgs e)
+        {
+            if (e.TotalX > 30)
+            {
+                if (cmdDelete.CanExecute(BindingContext))
+                {
+                    cmdDelete.Execute(BindingContext);
+                }
+            }
+            if (e.TotalX < -30)
+            {
+                if (cmdRemoveFavourite.CanExecute(BindingContext))
+                {
+                    cmdRemoveFavourite.Execute(BindingContext);
+                }
+            }
+
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            if (cmdClick.CanExecute(BindingContext))
+            {
+                cmdClick.Execute(BindingContext);
+            }
         }
     }
 }
