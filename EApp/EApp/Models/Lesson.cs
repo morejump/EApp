@@ -12,6 +12,9 @@ namespace EApp.Models
    
     public class Lesson: BindableBase
     {
+
+       
+
         private Level _level;
 
         public Level Level

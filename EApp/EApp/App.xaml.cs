@@ -16,7 +16,7 @@ namespace EApp
         {
             InitializeComponent();
             //NavigationService.NavigateAsync($"{Pages.NavBar}/{Pages.Storage}");
-            NavigationService.NavigateAsync($"{Pages.Home}");
+            NavigationService.NavigateAsync($"{Pages.Favourite}");
         }
         protected override void RegisterTypes()
         {

@@ -13,7 +13,7 @@ using Xamarin.Forms;
 
 namespace EApp.ViewModels
 {
-    public class FavouritePageViewModel: CoreViewModel
+    public class FavouritePageViewModel : CoreViewModel
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
@@ -33,6 +33,7 @@ namespace EApp.ViewModels
             navigationService.NavigateAsync(Pages.ListSentence, param);
 
         }
+
         // delete a lessom when swipe an item to right side
         private ICommand _cmdDeleteLesson;
 
@@ -42,10 +43,12 @@ namespace EApp.ViewModels
 
         }
 
-        void RuncmdDeleteLesson(object obj)
+        async void RuncmdDeleteLesson(object obj)
         {
-            MyList.Remove(obj as Lesson);
+            var less = obj as Lesson;
+            MyList.Remove(less);
         }
+
         // remove a lesson from a favourite when swiping an item to left side
         private ICommand _cmdRemoveLesson;
 
@@ -57,11 +60,8 @@ namespace EApp.ViewModels
 
         void RuncmdRemoveLesson(object obj)
         {
-            MyList.Remove(obj as Lesson);
+
         }
-
-
-
 
         private ObservableCollection<Lesson> _myList;
 
@@ -83,7 +83,7 @@ namespace EApp.ViewModels
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
             MyList = new ObservableCollection<Lesson>(LessonRepo.GetAllLesson().Result);
-           
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,9 @@ using Xamarin.Forms;
 
 namespace EApp.CustomControl
 {
-    public partial class ItemOnFavouritePage : ContentView
+    public partial class ItemOnFavouritePage : StackLayout
     {
         // cmd click
-
-
         public static BindableProperty cmdClickProperty = BindableProperty.Create(
           propertyName: "cmdClick",
           returnType: typeof(ICommand),
@@ -43,9 +42,8 @@ namespace EApp.CustomControl
             get { return (ICommand)GetValue(cmdDeleteProperty); }
             set { SetValue(cmdDeleteProperty, value); }
         }
+
         // remove an item from a favourite list 
-
-
         public static BindableProperty cmdRemoveFavouriteProperty = BindableProperty.Create(
           propertyName: "cmdRemoveFavourite",
           returnType: typeof(ICommand),
@@ -94,6 +92,8 @@ namespace EApp.CustomControl
             }
 
         }
+
+       
         public int Level
         {
             get { return (int)GetValue(LevelProperty); }
@@ -195,6 +195,8 @@ namespace EApp.CustomControl
             get { return (string)GetValue(ThumbnailProperty); }
             set { SetValue(ThumbnailProperty, value); }
         }
+
+        // contructor here :))
         public ItemOnFavouritePage()
         {
             InitializeComponent();
@@ -207,18 +209,24 @@ namespace EApp.CustomControl
                 if (cmdDelete.CanExecute(BindingContext))
                 {
                     cmdDelete.Execute(BindingContext);
+
                 }
+
+
             }
             if (e.TotalX < -30)
             {
-                if (cmdRemoveFavourite.CanExecute(BindingContext))
+
+                if (cmdDelete.CanExecute(BindingContext))
                 {
-                    cmdRemoveFavourite.Execute(BindingContext);
+                    cmdDelete.Execute(BindingContext);
+
                 }
+
             }
 
         }
-
+        // clickinng an item
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             if (cmdClick.CanExecute(BindingContext))
@@ -226,5 +234,6 @@ namespace EApp.CustomControl
                 cmdClick.Execute(BindingContext);
             }
         }
+
     }
 }
