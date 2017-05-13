@@ -12,6 +12,21 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnList : ContentView
     {
+        public static BindableProperty cmdClickProperty = BindableProperty.Create(
+          propertyName: "cmdClick",
+          returnType: typeof(ICommand),
+          declaringType: typeof(ItemOnList),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+
+        public ICommand cmdClick
+        {
+            get { return (ICommand)GetValue(cmdClickProperty); }
+            set { SetValue(cmdClickProperty, value); }
+        }
+
         public static BindableProperty LevelProperty = BindableProperty.Create(
            propertyName: "Level",
            returnType: typeof(int),
@@ -205,7 +220,7 @@ namespace EApp.CustomControl
             set { SetValue(IsFavouriteCommandProperty, value); }
         }
 
-
+        // this event is fired when tapping heart button
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             MyFavourite.Source = isFavourite ? "heart.png" : "redheart.png";
@@ -214,6 +229,15 @@ namespace EApp.CustomControl
             if (IsFavouriteCommand.CanExecute(BindingContext))
             {
                 IsFavouriteCommand.Execute(BindingContext);
+            }
+        }
+        // this event is fired when tapping an item
+        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+        {
+
+            if (cmdClick.CanExecute(BindingContext))
+            {
+                cmdClick.Execute(BindingContext);
             }
         }
     }

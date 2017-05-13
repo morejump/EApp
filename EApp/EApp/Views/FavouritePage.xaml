@@ -23,7 +23,6 @@
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnFavouritePage
-                            x:Name="MyItem"
                             cmdClick="{Binding Source={Reference Name=content}, Path=BindingContext.cmSelectedLesson}"
                             cmdDelete="{Binding Source={Reference Name=content}, Path=BindingContext.cmdDeleteLesson}"
                             cmdRemoveFavourite="{Binding Source={Reference Name=content}, Path=BindingContext.cmdRemoveLesson}"

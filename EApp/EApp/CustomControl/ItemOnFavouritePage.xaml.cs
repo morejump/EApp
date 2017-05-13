@@ -11,6 +11,7 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnFavouritePage : ContentView
     {
+        public static event EventHandler<Lesson> SwipeToRight_Event;
         // cmd click
         public static BindableProperty cmdClickProperty = BindableProperty.Create(
           propertyName: "cmdClick",
@@ -93,7 +94,7 @@ namespace EApp.CustomControl
 
         }
 
-       
+
         public int Level
         {
             get { return (int)GetValue(LevelProperty); }
@@ -196,18 +197,20 @@ namespace EApp.CustomControl
             set { SetValue(ThumbnailProperty, value); }
         }
 
-        // contructor here :))
+        // contructor
         public ItemOnFavouritePage()
         {
             InitializeComponent();
         }
 
-        private  void PanGestureRecognizer_PanUpdated(object sender, PanUpdatedEventArgs e)
+        private void PanGestureRecognizer_PanUpdated(object sender, PanUpdatedEventArgs e)
         {
             // swipe to right side
             if (e.TotalX > 60)
             {
-            
+                // firing an event to  page hasing a list view
+                //SwipeToRight_Event?.Invoke(this, BindingContext as Lesson);
+
                 //if (cmdDelete.CanExecute(BindingContext))
                 //{
                 //    cmdDelete.Execute(BindingContext);

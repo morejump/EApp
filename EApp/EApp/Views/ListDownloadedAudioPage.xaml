@@ -16,13 +16,13 @@
         <ListView
             x:Name="lstView"
             HasUnevenRows="True"
-            behavior:listView.Command="{Binding cmSelectedLesson}"
             ItemsSource="{Binding MyList}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnList
                             hasMoreOptions="False"
+                            cmdClick="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmSelectedLesson}"
                             Level="{Binding Level}"
                             IsFavouriteCommand="{Binding Source={Reference Name=lstView},Path=BindingContext.CmdCheckFavourite}"
                             Author="{Binding Author}"
