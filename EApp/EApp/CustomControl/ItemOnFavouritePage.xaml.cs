@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace EApp.CustomControl
 {
-    public partial class ItemOnFavouritePage : StackLayout
+    public partial class ItemOnFavouritePage : ContentView
     {
         // cmd click
         public static BindableProperty cmdClickProperty = BindableProperty.Create(
@@ -202,26 +202,27 @@ namespace EApp.CustomControl
             InitializeComponent();
         }
 
-        private void PanGestureRecognizer_PanUpdated(object sender, PanUpdatedEventArgs e)
+        private  void PanGestureRecognizer_PanUpdated(object sender, PanUpdatedEventArgs e)
         {
-            if (e.TotalX > 30)
+            // swipe to right side
+            if (e.TotalX > 60)
             {
-                if (cmdDelete.CanExecute(BindingContext))
-                {
-                    cmdDelete.Execute(BindingContext);
+            
+                //if (cmdDelete.CanExecute(BindingContext))
+                //{
+                //    cmdDelete.Execute(BindingContext);
 
-                }
-
+                //}
 
             }
-            if (e.TotalX < -30)
+            // swipe to left side
+            if (e.TotalX < -60)
             {
 
-                if (cmdDelete.CanExecute(BindingContext))
-                {
-                    cmdDelete.Execute(BindingContext);
-
-                }
+                //if (cmdDelete.CanExecute(BindingContext))
+                //{
+                //    cmdDelete.Execute(BindingContext);
+                //}
 
             }
 

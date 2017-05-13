@@ -20,7 +20,7 @@ namespace EApp.ViewModels
            
         }
 
-        public void OnNavigatingTo(NavigationParameters parameters)
+        public virtual void OnNavigatingTo(NavigationParameters parameters)
         {
              
         }

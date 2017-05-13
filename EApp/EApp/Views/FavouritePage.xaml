@@ -6,6 +6,7 @@
     prism:ViewModelLocator.AutowireViewModel="True"
     xmlns:behavior="clr-namespace:EApp.Behavior"
     xmlns:controls="clr-namespace:EApp.CustomControl"
+    x:Name="content"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.FavouritePage"
     Title="Favourites"
@@ -22,9 +23,10 @@
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnFavouritePage
-                            cmdClick="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmSelectedLesson}"
-                            cmdDelete="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdDeleteLesson}"
-                            cmdRemoveFavourite="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdRemoveLesson}"
+                            x:Name="MyItem"
+                            cmdClick="{Binding Source={Reference Name=content}, Path=BindingContext.cmSelectedLesson}"
+                            cmdDelete="{Binding Source={Reference Name=content}, Path=BindingContext.cmdDeleteLesson}"
+                            cmdRemoveFavourite="{Binding Source={Reference Name=content}, Path=BindingContext.cmdRemoveLesson}"
                             Level="{Binding Level}"
                             Title="{Binding Title}"
                             Thumbnail="{Binding LinkThumbnail}"
