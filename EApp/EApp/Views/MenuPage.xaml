@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     xmlns:controls="clr-namespace:EApp.CustomControl"
+    xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     prism:ViewModelLocator.AutowireViewModel="True"
     WidthRequest="176"
     BackgroundColor="Transparent"
@@ -11,7 +12,7 @@
     <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="100" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>
@@ -20,11 +21,13 @@
             BackgroundColor="Green"
             DownsampleToViewSize="True"
             Source="NewCover.png" />
-        <ListView
+        <syncfusion:SfListView
+            SelectionBackgroundColor="Green"
+            ItemSize="62"
             Grid.Row="1"
             x:Name="myList"
             ItemsSource="{Binding ListItem}">
-            <ListView.ItemTemplate>
+            <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout
@@ -45,8 +48,8 @@
                         
                     </ViewCell>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </syncfusion:SfListView.ItemTemplate>
+        </syncfusion:SfListView>
 
     </Grid>
     

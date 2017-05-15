@@ -4,28 +4,25 @@
     xmlns:effects="clr-namespace:EApp.Effects"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="EApp.Views.ListSentencePage"
     Title="Sentences"
     >
     <ListView
-        SeparatorColor="Black"
         HasUnevenRows="True"
         ItemsSource="{Binding Listentence}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <Label
-                        Margin="16,8"
-                        HorizontalTextAlignment="Start"
-                        VerticalTextAlignment="Center"
-                        Text="{Binding .}">
-                    </Label>
+                        <Label
+                            Margin="16,8"
+                            HorizontalTextAlignment="Start"
+                            VerticalTextAlignment="Center"
+                            Text="{Binding .}">
+                        </Label>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-        <ListView.Effects>
-            <effects:SelectedItemColorEffect />
-        </ListView.Effects>
     </ListView>
 </ContentPage>

@@ -182,15 +182,20 @@ namespace EApp.Models
         public Lesson()
         {
             ListSentence = new List<string>();
-            for (int i = 0; i <15; i++)
+            for (int i = 0; i <5; i++)
             {
+                ListSentence.Add("thao dep trai hihihihihihihihiihihihihihihi");
+                ListSentence.Add("Binh dep trai");
+                ListSentence.Add("Nghia xau trai");
                 ListSentence.Add("Không ai muốn" +
                     " có những việc như thế này" +
                     " trước buổi gặp mặt của Thủ tướng với các doanh nghiệp." +
                     " Nhưng nếu đã xảy ra thì cần nhìn thẳng vào thực tế hành vi nói trên là sự điển hình về việc gi" +
                     "ải quyết thủ tục hành chính vô cảm, thiếu trách nhiệm");
             }
+            
+            }
 
         }
     }
-}
+

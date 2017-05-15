@@ -85,8 +85,6 @@
             <TapGestureRecognizer
                 NumberOfTapsRequired="2"
                 Tapped="TapGestureRecognizer_Tapped" />
-            <PanGestureRecognizer
-                PanUpdated="PanGestureRecognizer_PanUpdated" />
         </Grid.GestureRecognizers>
     </Grid>
 

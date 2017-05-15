@@ -17,17 +17,26 @@ namespace EApp.Views
         public MenuPage()
         {
             InitializeComponent();
-            myList.ItemSelected += MyList_ItemSelected;
+            myList.ItemTapped += MyList_ItemTapped;
+            //myList.ItemSelected += MyList_ItemSelected;
             Padding = Device.OnPlatform(
                 iOS: new Thickness(0, 20, 0, 0),
                 Android: new Thickness(0, 20, 0, 0),
                 WinPhone: new Thickness(0, 20, 0, 0));
 
         }
-        private void MyList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+
+        private void MyList_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
         {
-            SelectedMenu?.Invoke(this, e.SelectedItem as MyMenuItem);//
+            //throw new NotImplementedException();
+            SelectedMenu?.Invoke(this, e.ItemData as MyMenuItem);//
+
         }
+
+        //private void MyList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        //{
+        //    SelectedMenu?.Invoke(this, e.SelectedItem as MyMenuItem);//
+        //}
     }
 
 }

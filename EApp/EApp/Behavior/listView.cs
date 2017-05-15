@@ -24,6 +24,7 @@ namespace EApp.Behavior
             var list = bindable as ListView;
             if (list == null)
                 return;
+
             list.ItemTapped += (sender, e) =>
             {
                 // do something here
@@ -38,6 +39,6 @@ namespace EApp.Behavior
 
         }
 
-      
+       
     }
 }

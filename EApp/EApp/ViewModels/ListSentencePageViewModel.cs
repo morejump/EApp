@@ -10,6 +10,21 @@ namespace EApp.ViewModels
 {
     public class ListSentencePageViewModel: CoreViewModel
     {
+        private string selectedItem;
+
+        public string SelectedItem
+        {
+            get { return selectedItem; }
+            set
+            {
+                if (selectedItem != value)
+                {
+                    selectedItem = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private List<int> mylist;
 
         public List<int> MyList
@@ -45,7 +60,7 @@ namespace EApp.ViewModels
         {
             base.OnNavigatedTo(parameters);
             Lesson lesson = parameters.GetValue<Lesson>("lesson");
-            Listentence = lesson.ListSentence;
+            Listentence = new List<string>(lesson.ListSentence);
         }
 
 

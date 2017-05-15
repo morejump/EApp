@@ -7,14 +7,26 @@
     xmlns:effects="clr-namespace:EApp.Effects"
     prism:ViewModelLocator.AutowireViewModel="True"
     xmlns:controls="clr-namespace:EApp.CustomControl"
+    xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.RecentPage"
     Title="Recent">
-    <ListView
+    <syncfusion:SfListView
         x:Name="lstView"
-        HasUnevenRows="True"
+        AllowSwiping="True"
+        RowSpacing="0"
+        ItemSize="116"
+        SelectionBackgroundColor="Green"
         ItemsSource="{Binding MyList}">
-        <ListView.ItemTemplate>
+        <syncfusion:SfListView.RightSwipeTemplate>
+            <DataTemplate>
+                <controls:SwipeControl
+                    Command="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdDeleteLesson}"
+                    Image="dustbin.png" />
+            </DataTemplate>
+        </syncfusion:SfListView.RightSwipeTemplate>
+
+        <syncfusion:SfListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <controls:ItemOnList
@@ -27,9 +39,6 @@
                         Thumbnail="{Binding LinkThumbnail}" />
                 </ViewCell>
             </DataTemplate>
-        </ListView.ItemTemplate>
-        <ListView.Effects>
-            <effects:SelectedItemColorEffect />
-        </ListView.Effects>
-    </ListView>
+        </syncfusion:SfListView.ItemTemplate>
+    </syncfusion:SfListView>
 </ContentPage>

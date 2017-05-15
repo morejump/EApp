@@ -78,10 +78,10 @@ namespace EApp.CustomControl
         // change an image when tapping a play button
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            if (cmdTapPlayButton.CanExecute("par"))
-            {
-                cmdTapPlayButton.Execute("par");
-            }
+            //if (cmdTapPlayButton.CanExecute("par"))
+            //{
+            //    cmdTapPlayButton.Execute("par");
+            //}
 
 
             isTapPlayButton = !isTapPlayButton;
@@ -91,10 +91,10 @@ namespace EApp.CustomControl
         // change an image when tapping a speed button
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
-            if (cmdTapSpeedButton.CanExecute("par"))
-            {
-                cmdTapSpeedButton.Execute("par");
-            }
+            //if (cmdTapSpeedButton.CanExecute("par"))
+            //{
+            //    cmdTapSpeedButton.Execute("par");
+            //}
 
             if (i == 0)
             {

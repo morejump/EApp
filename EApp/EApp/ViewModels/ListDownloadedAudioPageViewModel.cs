@@ -80,7 +80,20 @@ namespace EApp.ViewModels
             navigationService.NavigateAsync(Pages.ListSentence, param);
 
         }
+        // delete command
+        private ICommand _cmdDeleteLesson;
 
+        public ICommand cmdDeleteLesson
+        {
+            get { return _cmdDeleteLesson = _cmdDeleteLesson ?? new Command(RuncmdDeleteLesson); }
+
+        }
+
+        void RuncmdDeleteLesson(object obj)
+        {
+            var lesson = obj as Lesson;
+            MyList.Remove(lesson);
+        }
 
         public ListDownloadedAudioPageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {

@@ -6,6 +6,7 @@
     xmlns:local="clr-namespace:EApp.Converter"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True"
+    xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.StoragePage"
     Title="Storage"
@@ -20,10 +21,11 @@
         <SearchBar
             Margin="0,0,0,8"
             Placeholder="Enter name of audio" />
-        <ListView
-            HasUnevenRows="True"
+        <syncfusion:SfListView
+            SelectionBackgroundColor="Green"
+            ItemSize="116"
             ItemsSource="{Binding MyList}">
-            <ListView.ItemTemplate>
+            <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnStoragePage
@@ -37,9 +39,9 @@
                     </ViewCell>
                 </DataTemplate>
                
-            </ListView.ItemTemplate>
+            </syncfusion:SfListView.ItemTemplate>
             
-        </ListView>
+        </syncfusion:SfListView>
 
     </StackLayout>
 </ContentPage>

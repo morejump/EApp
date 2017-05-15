@@ -7,6 +7,7 @@ using UIKit;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
 using FFImageLoading.Forms.Touch;
+using Syncfusion.ListView.XForms.iOS;
 
 namespace EApp.iOS
 {
@@ -26,6 +27,7 @@ namespace EApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            SfListViewRenderer.Init();
             LoadApplication(new App(new iOSInitializer()));
             CachedImageRenderer.Init();
             return base.FinishedLaunching(app, options);

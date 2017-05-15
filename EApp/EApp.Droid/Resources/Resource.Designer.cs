@@ -64,6 +64,1643 @@ namespace EApp.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::EApp.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::EApp.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
 			global::Splat.Resource.String.library_name = global::EApp.Droid.Resource.String.library_name;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_fade_in = global::EApp.Droid.Resource.Animation.abc_fade_in;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_fade_out = global::EApp.Droid.Resource.Animation.abc_fade_out;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::EApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_popup_enter = global::EApp.Droid.Resource.Animation.abc_popup_enter;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_popup_exit = global::EApp.Droid.Resource.Animation.abc_popup_exit;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::EApp.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_slide_in_bottom = global::EApp.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_slide_in_top = global::EApp.Droid.Resource.Animation.abc_slide_in_top;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_slide_out_bottom = global::EApp.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.abc_slide_out_top = global::EApp.Droid.Resource.Animation.abc_slide_out_top;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.design_bottom_sheet_slide_in = global::EApp.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.design_bottom_sheet_slide_out = global::EApp.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.design_fab_in = global::EApp.Droid.Resource.Animation.design_fab_in;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.design_fab_out = global::EApp.Droid.Resource.Animation.design_fab_out;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.design_snackbar_in = global::EApp.Droid.Resource.Animation.design_snackbar_in;
+			global::Syncfusion.ListView.XForms.Android.Resource.Animation.design_snackbar_out = global::EApp.Droid.Resource.Animation.design_snackbar_out;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarDivider = global::EApp.Droid.Resource.Attribute.actionBarDivider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarItemBackground = global::EApp.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarPopupTheme = global::EApp.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarSize = global::EApp.Droid.Resource.Attribute.actionBarSize;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarSplitStyle = global::EApp.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarStyle = global::EApp.Droid.Resource.Attribute.actionBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarTabBarStyle = global::EApp.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarTabStyle = global::EApp.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarTabTextStyle = global::EApp.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarTheme = global::EApp.Droid.Resource.Attribute.actionBarTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionBarWidgetTheme = global::EApp.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionButtonStyle = global::EApp.Droid.Resource.Attribute.actionButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionDropDownStyle = global::EApp.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionLayout = global::EApp.Droid.Resource.Attribute.actionLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionMenuTextAppearance = global::EApp.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionMenuTextColor = global::EApp.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeBackground = global::EApp.Droid.Resource.Attribute.actionModeBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeCloseButtonStyle = global::EApp.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeCloseDrawable = global::EApp.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeCopyDrawable = global::EApp.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeCutDrawable = global::EApp.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeFindDrawable = global::EApp.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModePasteDrawable = global::EApp.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModePopupWindowStyle = global::EApp.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeSelectAllDrawable = global::EApp.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeShareDrawable = global::EApp.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeSplitBackground = global::EApp.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeStyle = global::EApp.Droid.Resource.Attribute.actionModeStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionModeWebSearchDrawable = global::EApp.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionOverflowButtonStyle = global::EApp.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionOverflowMenuStyle = global::EApp.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionProviderClass = global::EApp.Droid.Resource.Attribute.actionProviderClass;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.actionViewClass = global::EApp.Droid.Resource.Attribute.actionViewClass;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.activityChooserViewStyle = global::EApp.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::EApp.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.alertDialogCenterButtons = global::EApp.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.alertDialogStyle = global::EApp.Droid.Resource.Attribute.alertDialogStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.alertDialogTheme = global::EApp.Droid.Resource.Attribute.alertDialogTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.allowStacking = global::EApp.Droid.Resource.Attribute.allowStacking;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.arrowHeadLength = global::EApp.Droid.Resource.Attribute.arrowHeadLength;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.arrowShaftLength = global::EApp.Droid.Resource.Attribute.arrowShaftLength;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.autoCompleteTextViewStyle = global::EApp.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.background = global::EApp.Droid.Resource.Attribute.background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.backgroundSplit = global::EApp.Droid.Resource.Attribute.backgroundSplit;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.backgroundStacked = global::EApp.Droid.Resource.Attribute.backgroundStacked;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.backgroundTint = global::EApp.Droid.Resource.Attribute.backgroundTint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.backgroundTintMode = global::EApp.Droid.Resource.Attribute.backgroundTintMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.barLength = global::EApp.Droid.Resource.Attribute.barLength;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.behavior_hideable = global::EApp.Droid.Resource.Attribute.behavior_hideable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.behavior_overlapTop = global::EApp.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.behavior_peekHeight = global::EApp.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.borderWidth = global::EApp.Droid.Resource.Attribute.borderWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.borderlessButtonStyle = global::EApp.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.bottomSheetDialogTheme = global::EApp.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.bottomSheetStyle = global::EApp.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonBarButtonStyle = global::EApp.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::EApp.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::EApp.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::EApp.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonBarStyle = global::EApp.Droid.Resource.Attribute.buttonBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonPanelSideLayout = global::EApp.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonStyle = global::EApp.Droid.Resource.Attribute.buttonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonStyleSmall = global::EApp.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonTint = global::EApp.Droid.Resource.Attribute.buttonTint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.buttonTintMode = global::EApp.Droid.Resource.Attribute.buttonTintMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.cardBackgroundColor = global::EApp.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.cardCornerRadius = global::EApp.Droid.Resource.Attribute.cardCornerRadius;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.cardElevation = global::EApp.Droid.Resource.Attribute.cardElevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.cardMaxElevation = global::EApp.Droid.Resource.Attribute.cardMaxElevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.cardPreventCornerOverlap = global::EApp.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.cardUseCompatPadding = global::EApp.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.checkboxStyle = global::EApp.Droid.Resource.Attribute.checkboxStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.checkedTextViewStyle = global::EApp.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.closeIcon = global::EApp.Droid.Resource.Attribute.closeIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.closeItemLayout = global::EApp.Droid.Resource.Attribute.closeItemLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.collapseContentDescription = global::EApp.Droid.Resource.Attribute.collapseContentDescription;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.collapseIcon = global::EApp.Droid.Resource.Attribute.collapseIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.collapsedTitleGravity = global::EApp.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.collapsedTitleTextAppearance = global::EApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.color = global::EApp.Droid.Resource.Attribute.color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.colorAccent = global::EApp.Droid.Resource.Attribute.colorAccent;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.colorButtonNormal = global::EApp.Droid.Resource.Attribute.colorButtonNormal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.colorControlActivated = global::EApp.Droid.Resource.Attribute.colorControlActivated;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.colorControlHighlight = global::EApp.Droid.Resource.Attribute.colorControlHighlight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.colorControlNormal = global::EApp.Droid.Resource.Attribute.colorControlNormal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.colorPrimary = global::EApp.Droid.Resource.Attribute.colorPrimary;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.colorPrimaryDark = global::EApp.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.colorSwitchThumbNormal = global::EApp.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.commitIcon = global::EApp.Droid.Resource.Attribute.commitIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentInsetEnd = global::EApp.Droid.Resource.Attribute.contentInsetEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentInsetLeft = global::EApp.Droid.Resource.Attribute.contentInsetLeft;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentInsetRight = global::EApp.Droid.Resource.Attribute.contentInsetRight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentInsetStart = global::EApp.Droid.Resource.Attribute.contentInsetStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentPadding = global::EApp.Droid.Resource.Attribute.contentPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentPaddingBottom = global::EApp.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentPaddingLeft = global::EApp.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentPaddingRight = global::EApp.Droid.Resource.Attribute.contentPaddingRight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentPaddingTop = global::EApp.Droid.Resource.Attribute.contentPaddingTop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.contentScrim = global::EApp.Droid.Resource.Attribute.contentScrim;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.controlBackground = global::EApp.Droid.Resource.Attribute.controlBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.counterEnabled = global::EApp.Droid.Resource.Attribute.counterEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.counterMaxLength = global::EApp.Droid.Resource.Attribute.counterMaxLength;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.counterOverflowTextAppearance = global::EApp.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.counterTextAppearance = global::EApp.Droid.Resource.Attribute.counterTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.customNavigationLayout = global::EApp.Droid.Resource.Attribute.customNavigationLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.defaultQueryHint = global::EApp.Droid.Resource.Attribute.defaultQueryHint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.dialogPreferredPadding = global::EApp.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.dialogTheme = global::EApp.Droid.Resource.Attribute.dialogTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.displayOptions = global::EApp.Droid.Resource.Attribute.displayOptions;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.divider = global::EApp.Droid.Resource.Attribute.divider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.dividerHorizontal = global::EApp.Droid.Resource.Attribute.dividerHorizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.dividerPadding = global::EApp.Droid.Resource.Attribute.dividerPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.dividerVertical = global::EApp.Droid.Resource.Attribute.dividerVertical;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.drawableSize = global::EApp.Droid.Resource.Attribute.drawableSize;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.drawerArrowStyle = global::EApp.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.dropDownListViewStyle = global::EApp.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::EApp.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.editTextBackground = global::EApp.Droid.Resource.Attribute.editTextBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.editTextColor = global::EApp.Droid.Resource.Attribute.editTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.editTextStyle = global::EApp.Droid.Resource.Attribute.editTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.elevation = global::EApp.Droid.Resource.Attribute.elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.errorEnabled = global::EApp.Droid.Resource.Attribute.errorEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.errorTextAppearance = global::EApp.Droid.Resource.Attribute.errorTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::EApp.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.expanded = global::EApp.Droid.Resource.Attribute.expanded;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.expandedTitleGravity = global::EApp.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.expandedTitleMargin = global::EApp.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.expandedTitleMarginBottom = global::EApp.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.expandedTitleMarginEnd = global::EApp.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.expandedTitleMarginStart = global::EApp.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.expandedTitleMarginTop = global::EApp.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.expandedTitleTextAppearance = global::EApp.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.externalRouteEnabledDrawable = global::EApp.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.fabSize = global::EApp.Droid.Resource.Attribute.fabSize;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.foregroundInsidePadding = global::EApp.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.gapBetweenBars = global::EApp.Droid.Resource.Attribute.gapBetweenBars;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.goIcon = global::EApp.Droid.Resource.Attribute.goIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.headerLayout = global::EApp.Droid.Resource.Attribute.headerLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.height = global::EApp.Droid.Resource.Attribute.height;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.hideOnContentScroll = global::EApp.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.hintAnimationEnabled = global::EApp.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.hintEnabled = global::EApp.Droid.Resource.Attribute.hintEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.hintTextAppearance = global::EApp.Droid.Resource.Attribute.hintTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.homeAsUpIndicator = global::EApp.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.homeLayout = global::EApp.Droid.Resource.Attribute.homeLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.icon = global::EApp.Droid.Resource.Attribute.icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.iconifiedByDefault = global::EApp.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.imageButtonStyle = global::EApp.Droid.Resource.Attribute.imageButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.indeterminateProgressStyle = global::EApp.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.initialActivityCount = global::EApp.Droid.Resource.Attribute.initialActivityCount;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.insetForeground = global::EApp.Droid.Resource.Attribute.insetForeground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.isLightTheme = global::EApp.Droid.Resource.Attribute.isLightTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.itemBackground = global::EApp.Droid.Resource.Attribute.itemBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.itemIconTint = global::EApp.Droid.Resource.Attribute.itemIconTint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.itemPadding = global::EApp.Droid.Resource.Attribute.itemPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.itemTextAppearance = global::EApp.Droid.Resource.Attribute.itemTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.itemTextColor = global::EApp.Droid.Resource.Attribute.itemTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.keylines = global::EApp.Droid.Resource.Attribute.keylines;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layout = global::EApp.Droid.Resource.Attribute.layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layoutManager = global::EApp.Droid.Resource.Attribute.layoutManager;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layout_anchor = global::EApp.Droid.Resource.Attribute.layout_anchor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layout_anchorGravity = global::EApp.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layout_behavior = global::EApp.Droid.Resource.Attribute.layout_behavior;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layout_collapseMode = global::EApp.Droid.Resource.Attribute.layout_collapseMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::EApp.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layout_keyline = global::EApp.Droid.Resource.Attribute.layout_keyline;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layout_scrollFlags = global::EApp.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layout_scrollInterpolator = global::EApp.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::EApp.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listDividerAlertDialog = global::EApp.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listItemLayout = global::EApp.Droid.Resource.Attribute.listItemLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listLayout = global::EApp.Droid.Resource.Attribute.listLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listPopupWindowStyle = global::EApp.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listPreferredItemHeight = global::EApp.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listPreferredItemHeightLarge = global::EApp.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listPreferredItemHeightSmall = global::EApp.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::EApp.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.listPreferredItemPaddingRight = global::EApp.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.logo = global::EApp.Droid.Resource.Attribute.logo;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.logoDescription = global::EApp.Droid.Resource.Attribute.logoDescription;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.maxActionInlineWidth = global::EApp.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.maxButtonHeight = global::EApp.Droid.Resource.Attribute.maxButtonHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.measureWithLargestChild = global::EApp.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.mediaRouteAudioTrackDrawable = global::EApp.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.mediaRouteButtonStyle = global::EApp.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.mediaRouteCloseDrawable = global::EApp.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.mediaRouteDefaultIconDrawable = global::EApp.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.mediaRoutePauseDrawable = global::EApp.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.mediaRoutePlayDrawable = global::EApp.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::EApp.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::EApp.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.mediaRouteTvIconDrawable = global::EApp.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.menu = global::EApp.Droid.Resource.Attribute.menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.multiChoiceItemLayout = global::EApp.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.navigationContentDescription = global::EApp.Droid.Resource.Attribute.navigationContentDescription;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.navigationIcon = global::EApp.Droid.Resource.Attribute.navigationIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.navigationMode = global::EApp.Droid.Resource.Attribute.navigationMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.overlapAnchor = global::EApp.Droid.Resource.Attribute.overlapAnchor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.paddingEnd = global::EApp.Droid.Resource.Attribute.paddingEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.paddingStart = global::EApp.Droid.Resource.Attribute.paddingStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.panelBackground = global::EApp.Droid.Resource.Attribute.panelBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.panelMenuListTheme = global::EApp.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.panelMenuListWidth = global::EApp.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.popupMenuStyle = global::EApp.Droid.Resource.Attribute.popupMenuStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.popupTheme = global::EApp.Droid.Resource.Attribute.popupTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.popupWindowStyle = global::EApp.Droid.Resource.Attribute.popupWindowStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.preserveIconSpacing = global::EApp.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.pressedTranslationZ = global::EApp.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.progressBarPadding = global::EApp.Droid.Resource.Attribute.progressBarPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.progressBarStyle = global::EApp.Droid.Resource.Attribute.progressBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.queryBackground = global::EApp.Droid.Resource.Attribute.queryBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.queryHint = global::EApp.Droid.Resource.Attribute.queryHint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.radioButtonStyle = global::EApp.Droid.Resource.Attribute.radioButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.ratingBarStyle = global::EApp.Droid.Resource.Attribute.ratingBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.ratingBarStyleIndicator = global::EApp.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.ratingBarStyleSmall = global::EApp.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.reverseLayout = global::EApp.Droid.Resource.Attribute.reverseLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.rippleColor = global::EApp.Droid.Resource.Attribute.rippleColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.searchHintIcon = global::EApp.Droid.Resource.Attribute.searchHintIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.searchIcon = global::EApp.Droid.Resource.Attribute.searchIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.searchViewStyle = global::EApp.Droid.Resource.Attribute.searchViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.seekBarStyle = global::EApp.Droid.Resource.Attribute.seekBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.selectableItemBackground = global::EApp.Droid.Resource.Attribute.selectableItemBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::EApp.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.showAsAction = global::EApp.Droid.Resource.Attribute.showAsAction;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.showDividers = global::EApp.Droid.Resource.Attribute.showDividers;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.showText = global::EApp.Droid.Resource.Attribute.showText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.singleChoiceItemLayout = global::EApp.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.spanCount = global::EApp.Droid.Resource.Attribute.spanCount;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.spinBars = global::EApp.Droid.Resource.Attribute.spinBars;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.spinnerDropDownItemStyle = global::EApp.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.spinnerStyle = global::EApp.Droid.Resource.Attribute.spinnerStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.splitTrack = global::EApp.Droid.Resource.Attribute.splitTrack;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.srcCompat = global::EApp.Droid.Resource.Attribute.srcCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.stackFromEnd = global::EApp.Droid.Resource.Attribute.stackFromEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.state_above_anchor = global::EApp.Droid.Resource.Attribute.state_above_anchor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.statusBarBackground = global::EApp.Droid.Resource.Attribute.statusBarBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.statusBarScrim = global::EApp.Droid.Resource.Attribute.statusBarScrim;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.submitBackground = global::EApp.Droid.Resource.Attribute.submitBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.subtitle = global::EApp.Droid.Resource.Attribute.subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.subtitleTextAppearance = global::EApp.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.subtitleTextColor = global::EApp.Droid.Resource.Attribute.subtitleTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.subtitleTextStyle = global::EApp.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.suggestionRowLayout = global::EApp.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.switchMinWidth = global::EApp.Droid.Resource.Attribute.switchMinWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.switchPadding = global::EApp.Droid.Resource.Attribute.switchPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.switchStyle = global::EApp.Droid.Resource.Attribute.switchStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.switchTextAppearance = global::EApp.Droid.Resource.Attribute.switchTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabBackground = global::EApp.Droid.Resource.Attribute.tabBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabContentStart = global::EApp.Droid.Resource.Attribute.tabContentStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabGravity = global::EApp.Droid.Resource.Attribute.tabGravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabIndicatorColor = global::EApp.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabIndicatorHeight = global::EApp.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabMaxWidth = global::EApp.Droid.Resource.Attribute.tabMaxWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabMinWidth = global::EApp.Droid.Resource.Attribute.tabMinWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabMode = global::EApp.Droid.Resource.Attribute.tabMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabPadding = global::EApp.Droid.Resource.Attribute.tabPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabPaddingBottom = global::EApp.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabPaddingEnd = global::EApp.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabPaddingStart = global::EApp.Droid.Resource.Attribute.tabPaddingStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabPaddingTop = global::EApp.Droid.Resource.Attribute.tabPaddingTop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabSelectedTextColor = global::EApp.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabTextAppearance = global::EApp.Droid.Resource.Attribute.tabTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.tabTextColor = global::EApp.Droid.Resource.Attribute.tabTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textAllCaps = global::EApp.Droid.Resource.Attribute.textAllCaps;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::EApp.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textAppearanceListItem = global::EApp.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textAppearanceListItemSmall = global::EApp.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::EApp.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::EApp.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::EApp.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textColorAlertDialogListItem = global::EApp.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textColorError = global::EApp.Droid.Resource.Attribute.textColorError;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.textColorSearchUrl = global::EApp.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.theme = global::EApp.Droid.Resource.Attribute.theme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.thickness = global::EApp.Droid.Resource.Attribute.thickness;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.thumbTextPadding = global::EApp.Droid.Resource.Attribute.thumbTextPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.title = global::EApp.Droid.Resource.Attribute.title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.titleEnabled = global::EApp.Droid.Resource.Attribute.titleEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.titleMarginBottom = global::EApp.Droid.Resource.Attribute.titleMarginBottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.titleMarginEnd = global::EApp.Droid.Resource.Attribute.titleMarginEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.titleMarginStart = global::EApp.Droid.Resource.Attribute.titleMarginStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.titleMarginTop = global::EApp.Droid.Resource.Attribute.titleMarginTop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.titleMargins = global::EApp.Droid.Resource.Attribute.titleMargins;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.titleTextAppearance = global::EApp.Droid.Resource.Attribute.titleTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.titleTextColor = global::EApp.Droid.Resource.Attribute.titleTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.titleTextStyle = global::EApp.Droid.Resource.Attribute.titleTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.toolbarId = global::EApp.Droid.Resource.Attribute.toolbarId;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::EApp.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.toolbarStyle = global::EApp.Droid.Resource.Attribute.toolbarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.track = global::EApp.Droid.Resource.Attribute.track;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.useCompatPadding = global::EApp.Droid.Resource.Attribute.useCompatPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.voiceIcon = global::EApp.Droid.Resource.Attribute.voiceIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowActionBar = global::EApp.Droid.Resource.Attribute.windowActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowActionBarOverlay = global::EApp.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowActionModeOverlay = global::EApp.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowFixedHeightMajor = global::EApp.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowFixedHeightMinor = global::EApp.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowFixedWidthMajor = global::EApp.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowFixedWidthMinor = global::EApp.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowMinWidthMajor = global::EApp.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowMinWidthMinor = global::EApp.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.windowNoTitle = global::EApp.Droid.Resource.Attribute.windowNoTitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::EApp.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Syncfusion.ListView.XForms.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::EApp.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::EApp.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Syncfusion.ListView.XForms.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::EApp.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Syncfusion.ListView.XForms.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::EApp.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::EApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::EApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_color_highlight_material = global::EApp.Droid.Resource.Color.abc_color_highlight_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_input_method_navigation_guard = global::EApp.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::EApp.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::EApp.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_primary_text_material_dark = global::EApp.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_primary_text_material_light = global::EApp.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_search_url_text = global::EApp.Droid.Resource.Color.abc_search_url_text;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_search_url_text_normal = global::EApp.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_search_url_text_pressed = global::EApp.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_search_url_text_selected = global::EApp.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_secondary_text_material_dark = global::EApp.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.abc_secondary_text_material_light = global::EApp.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.accent_material_dark = global::EApp.Droid.Resource.Color.accent_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.accent_material_light = global::EApp.Droid.Resource.Color.accent_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.background_floating_material_dark = global::EApp.Droid.Resource.Color.background_floating_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.background_floating_material_light = global::EApp.Droid.Resource.Color.background_floating_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.background_material_dark = global::EApp.Droid.Resource.Color.background_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.background_material_light = global::EApp.Droid.Resource.Color.background_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.bright_foreground_disabled_material_dark = global::EApp.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.bright_foreground_disabled_material_light = global::EApp.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.bright_foreground_inverse_material_dark = global::EApp.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.bright_foreground_inverse_material_light = global::EApp.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.bright_foreground_material_dark = global::EApp.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.bright_foreground_material_light = global::EApp.Droid.Resource.Color.bright_foreground_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.button_material_dark = global::EApp.Droid.Resource.Color.button_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.button_material_light = global::EApp.Droid.Resource.Color.button_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.cardview_dark_background = global::EApp.Droid.Resource.Color.cardview_dark_background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.cardview_light_background = global::EApp.Droid.Resource.Color.cardview_light_background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.cardview_shadow_end_color = global::EApp.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.cardview_shadow_start_color = global::EApp.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_fab_shadow_end_color = global::EApp.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_fab_shadow_mid_color = global::EApp.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_fab_shadow_start_color = global::EApp.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_fab_stroke_end_inner_color = global::EApp.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_fab_stroke_end_outer_color = global::EApp.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_fab_stroke_top_inner_color = global::EApp.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_fab_stroke_top_outer_color = global::EApp.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_snackbar_background_color = global::EApp.Droid.Resource.Color.design_snackbar_background_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_textinput_error_color_dark = global::EApp.Droid.Resource.Color.design_textinput_error_color_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.design_textinput_error_color_light = global::EApp.Droid.Resource.Color.design_textinput_error_color_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.dim_foreground_disabled_material_dark = global::EApp.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.dim_foreground_disabled_material_light = global::EApp.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.dim_foreground_material_dark = global::EApp.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.dim_foreground_material_light = global::EApp.Droid.Resource.Color.dim_foreground_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.foreground_material_dark = global::EApp.Droid.Resource.Color.foreground_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.foreground_material_light = global::EApp.Droid.Resource.Color.foreground_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.highlighted_text_material_dark = global::EApp.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.highlighted_text_material_light = global::EApp.Droid.Resource.Color.highlighted_text_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_blue_grey_800 = global::EApp.Droid.Resource.Color.material_blue_grey_800;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_blue_grey_900 = global::EApp.Droid.Resource.Color.material_blue_grey_900;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_blue_grey_950 = global::EApp.Droid.Resource.Color.material_blue_grey_950;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_deep_teal_200 = global::EApp.Droid.Resource.Color.material_deep_teal_200;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_deep_teal_500 = global::EApp.Droid.Resource.Color.material_deep_teal_500;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_grey_100 = global::EApp.Droid.Resource.Color.material_grey_100;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_grey_300 = global::EApp.Droid.Resource.Color.material_grey_300;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_grey_50 = global::EApp.Droid.Resource.Color.material_grey_50;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_grey_600 = global::EApp.Droid.Resource.Color.material_grey_600;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_grey_800 = global::EApp.Droid.Resource.Color.material_grey_800;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_grey_850 = global::EApp.Droid.Resource.Color.material_grey_850;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.material_grey_900 = global::EApp.Droid.Resource.Color.material_grey_900;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.primary_dark_material_dark = global::EApp.Droid.Resource.Color.primary_dark_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.primary_dark_material_light = global::EApp.Droid.Resource.Color.primary_dark_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.primary_material_dark = global::EApp.Droid.Resource.Color.primary_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.primary_material_light = global::EApp.Droid.Resource.Color.primary_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.primary_text_default_material_dark = global::EApp.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.primary_text_default_material_light = global::EApp.Droid.Resource.Color.primary_text_default_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.primary_text_disabled_material_dark = global::EApp.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.primary_text_disabled_material_light = global::EApp.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.ripple_material_dark = global::EApp.Droid.Resource.Color.ripple_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.ripple_material_light = global::EApp.Droid.Resource.Color.ripple_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.secondary_text_default_material_dark = global::EApp.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.secondary_text_default_material_light = global::EApp.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.secondary_text_disabled_material_dark = global::EApp.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.secondary_text_disabled_material_light = global::EApp.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.switch_thumb_disabled_material_dark = global::EApp.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.switch_thumb_disabled_material_light = global::EApp.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.switch_thumb_material_dark = global::EApp.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.switch_thumb_material_light = global::EApp.Droid.Resource.Color.switch_thumb_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.switch_thumb_normal_material_dark = global::EApp.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Color.switch_thumb_normal_material_light = global::EApp.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::EApp.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_default_height_material = global::EApp.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::EApp.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::EApp.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::EApp.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::EApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::EApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::EApp.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::EApp.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::EApp.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::EApp.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::EApp.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_button_min_height_material = global::EApp.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_button_min_width_material = global::EApp.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::EApp.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::EApp.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::EApp.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_button_inset_vertical_material = global::EApp.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::EApp.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_button_padding_vertical_material = global::EApp.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_config_prefDialogWidth = global::EApp.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_control_corner_material = global::EApp.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_control_inset_material = global::EApp.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_control_padding_material = global::EApp.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::EApp.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::EApp.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::EApp.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::EApp.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dialog_min_width_major = global::EApp.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dialog_min_width_minor = global::EApp.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dialog_padding_material = global::EApp.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dialog_padding_top_material = global::EApp.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::EApp.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::EApp.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::EApp.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::EApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::EApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::EApp.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::EApp.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::EApp.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_floating_window_z = global::EApp.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::EApp.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_panel_menu_list_width = global::EApp.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_search_view_preferred_width = global::EApp.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::EApp.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::EApp.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::EApp.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_switch_padding = global::EApp.Droid.Resource.Dimension.abc_switch_padding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_body_1_material = global::EApp.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_body_2_material = global::EApp.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_button_material = global::EApp.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_caption_material = global::EApp.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_display_1_material = global::EApp.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_display_2_material = global::EApp.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_display_3_material = global::EApp.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_display_4_material = global::EApp.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_headline_material = global::EApp.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_large_material = global::EApp.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_medium_material = global::EApp.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_menu_material = global::EApp.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_small_material = global::EApp.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_subhead_material = global::EApp.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::EApp.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_title_material = global::EApp.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::EApp.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.cardview_compat_inset_shadow = global::EApp.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.cardview_default_elevation = global::EApp.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.cardview_default_radius = global::EApp.Droid.Resource.Dimension.cardview_default_radius;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_appbar_elevation = global::EApp.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::EApp.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_fab_border_width = global::EApp.Droid.Resource.Dimension.design_fab_border_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_fab_elevation = global::EApp.Droid.Resource.Dimension.design_fab_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_fab_image_size = global::EApp.Droid.Resource.Dimension.design_fab_image_size;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_fab_size_mini = global::EApp.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_fab_size_normal = global::EApp.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_fab_translation_z_pressed = global::EApp.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_navigation_elevation = global::EApp.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_navigation_icon_padding = global::EApp.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_navigation_icon_size = global::EApp.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_navigation_max_width = global::EApp.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_navigation_padding_bottom = global::EApp.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::EApp.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::EApp.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::EApp.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_elevation = global::EApp.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::EApp.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_max_width = global::EApp.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_min_width = global::EApp.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::EApp.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_padding_vertical = global::EApp.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::EApp.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_snackbar_text_size = global::EApp.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_tab_max_width = global::EApp.Droid.Resource.Dimension.design_tab_max_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_tab_scrollable_min_width = global::EApp.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_tab_text_size = global::EApp.Droid.Resource.Dimension.design_tab_text_size;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.design_tab_text_size_2line = global::EApp.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.disabled_alpha_material_dark = global::EApp.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.disabled_alpha_material_light = global::EApp.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.highlight_alpha_material_colored = global::EApp.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.highlight_alpha_material_dark = global::EApp.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.highlight_alpha_material_light = global::EApp.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::EApp.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::EApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::EApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.mr_controller_volume_group_list_item_height = global::EApp.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::EApp.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.mr_controller_volume_group_list_max_height = global::EApp.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::EApp.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.mr_dialog_fixed_width_major = global::EApp.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.mr_dialog_fixed_width_minor = global::EApp.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.notification_large_icon_height = global::EApp.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.notification_large_icon_width = global::EApp.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.notification_subtext_size = global::EApp.Droid.Resource.Dimension.notification_subtext_size;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_action_bar_item_background_material = global::EApp.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_borderless_material = global::EApp.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_check_material = global::EApp.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::EApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::EApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_colored_material = global::EApp.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::EApp.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_radio_material = global::EApp.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::EApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::EApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::EApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::EApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_cab_background_internal_bg = global::EApp.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_cab_background_top_material = global::EApp.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_control_background_material = global::EApp.Droid.Resource.Drawable.abc_control_background_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_edit_text_material = global::EApp.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::EApp.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::EApp.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_star_black_16dp = global::EApp.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_star_black_36dp = global::EApp.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::EApp.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::EApp.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_item_background_holo_dark = global::EApp.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_item_background_holo_light = global::EApp.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_focused_holo = global::EApp.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_longpressed_holo = global::EApp.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::EApp.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_pressed_holo_light = global::EApp.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::EApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::EApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::EApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::EApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_selector_holo_dark = global::EApp.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_list_selector_holo_light = global::EApp.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::EApp.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::EApp.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::EApp.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_ratingbar_small_material = global::EApp.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::EApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::EApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_seekbar_thumb_material = global::EApp.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_seekbar_track_material = global::EApp.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::EApp.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::EApp.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_switch_thumb_material = global::EApp.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_tab_indicator_material = global::EApp.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_text_cursor_material = global::EApp.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::EApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.abc_textfield_search_material = global::EApp.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.design_fab_background = global::EApp.Droid.Resource.Drawable.design_fab_background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.design_snackbar_background = global::EApp.Droid.Resource.Drawable.design_snackbar_background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.ic_audiotrack_light = global::EApp.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.mr_dialog_material_background_dark = global::EApp.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.mr_dialog_material_background_light = global::EApp.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.notification_template_icon_bg = global::EApp.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action0 = global::EApp.Droid.Resource.Id.action0;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_bar = global::EApp.Droid.Resource.Id.action_bar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_bar_activity_content = global::EApp.Droid.Resource.Id.action_bar_activity_content;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_bar_container = global::EApp.Droid.Resource.Id.action_bar_container;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_bar_root = global::EApp.Droid.Resource.Id.action_bar_root;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_bar_spinner = global::EApp.Droid.Resource.Id.action_bar_spinner;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_bar_subtitle = global::EApp.Droid.Resource.Id.action_bar_subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_bar_title = global::EApp.Droid.Resource.Id.action_bar_title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_context_bar = global::EApp.Droid.Resource.Id.action_context_bar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_divider = global::EApp.Droid.Resource.Id.action_divider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_menu_divider = global::EApp.Droid.Resource.Id.action_menu_divider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_menu_presenter = global::EApp.Droid.Resource.Id.action_menu_presenter;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_mode_bar = global::EApp.Droid.Resource.Id.action_mode_bar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_mode_bar_stub = global::EApp.Droid.Resource.Id.action_mode_bar_stub;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.action_mode_close_button = global::EApp.Droid.Resource.Id.action_mode_close_button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.activity_chooser_view_content = global::EApp.Droid.Resource.Id.activity_chooser_view_content;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.alertTitle = global::EApp.Droid.Resource.Id.alertTitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.always = global::EApp.Droid.Resource.Id.always;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.beginning = global::EApp.Droid.Resource.Id.beginning;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.bottom = global::EApp.Droid.Resource.Id.bottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.buttonPanel = global::EApp.Droid.Resource.Id.buttonPanel;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.cancel_action = global::EApp.Droid.Resource.Id.cancel_action;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.center = global::EApp.Droid.Resource.Id.center;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.center_horizontal = global::EApp.Droid.Resource.Id.center_horizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.center_vertical = global::EApp.Droid.Resource.Id.center_vertical;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.checkbox = global::EApp.Droid.Resource.Id.checkbox;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.chronometer = global::EApp.Droid.Resource.Id.chronometer;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.clip_horizontal = global::EApp.Droid.Resource.Id.clip_horizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.clip_vertical = global::EApp.Droid.Resource.Id.clip_vertical;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.collapseActionView = global::EApp.Droid.Resource.Id.collapseActionView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.contentPanel = global::EApp.Droid.Resource.Id.contentPanel;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.custom = global::EApp.Droid.Resource.Id.custom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.customPanel = global::EApp.Droid.Resource.Id.customPanel;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.decor_content_parent = global::EApp.Droid.Resource.Id.decor_content_parent;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.default_activity_button = global::EApp.Droid.Resource.Id.default_activity_button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.design_bottom_sheet = global::EApp.Droid.Resource.Id.design_bottom_sheet;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.design_menu_item_action_area = global::EApp.Droid.Resource.Id.design_menu_item_action_area;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.design_menu_item_action_area_stub = global::EApp.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.design_menu_item_text = global::EApp.Droid.Resource.Id.design_menu_item_text;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.design_navigation_view = global::EApp.Droid.Resource.Id.design_navigation_view;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.disableHome = global::EApp.Droid.Resource.Id.disableHome;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.edit_query = global::EApp.Droid.Resource.Id.edit_query;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.end = global::EApp.Droid.Resource.Id.end;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.end_padder = global::EApp.Droid.Resource.Id.end_padder;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.enterAlways = global::EApp.Droid.Resource.Id.enterAlways;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.enterAlwaysCollapsed = global::EApp.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.exitUntilCollapsed = global::EApp.Droid.Resource.Id.exitUntilCollapsed;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.expand_activities_button = global::EApp.Droid.Resource.Id.expand_activities_button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.expanded_menu = global::EApp.Droid.Resource.Id.expanded_menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.fill = global::EApp.Droid.Resource.Id.fill;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.fill_horizontal = global::EApp.Droid.Resource.Id.fill_horizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.fill_vertical = global::EApp.Droid.Resource.Id.fill_vertical;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.@fixed = global::EApp.Droid.Resource.Id.@fixed;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.home = global::EApp.Droid.Resource.Id.home;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.homeAsUp = global::EApp.Droid.Resource.Id.homeAsUp;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.icon = global::EApp.Droid.Resource.Id.icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.ifRoom = global::EApp.Droid.Resource.Id.ifRoom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.image = global::EApp.Droid.Resource.Id.image;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.info = global::EApp.Droid.Resource.Id.info;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.item_touch_helper_previous_elevation = global::EApp.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.left = global::EApp.Droid.Resource.Id.left;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.line1 = global::EApp.Droid.Resource.Id.line1;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.line3 = global::EApp.Droid.Resource.Id.line3;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.listMode = global::EApp.Droid.Resource.Id.listMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.list_item = global::EApp.Droid.Resource.Id.list_item;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.media_actions = global::EApp.Droid.Resource.Id.media_actions;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.middle = global::EApp.Droid.Resource.Id.middle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mini = global::EApp.Droid.Resource.Id.mini;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_art = global::EApp.Droid.Resource.Id.mr_art;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_chooser_list = global::EApp.Droid.Resource.Id.mr_chooser_list;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_chooser_route_desc = global::EApp.Droid.Resource.Id.mr_chooser_route_desc;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_chooser_route_icon = global::EApp.Droid.Resource.Id.mr_chooser_route_icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_chooser_route_name = global::EApp.Droid.Resource.Id.mr_chooser_route_name;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_close = global::EApp.Droid.Resource.Id.mr_close;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_control_divider = global::EApp.Droid.Resource.Id.mr_control_divider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_control_subtitle = global::EApp.Droid.Resource.Id.mr_control_subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_control_title = global::EApp.Droid.Resource.Id.mr_control_title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_control_title_container = global::EApp.Droid.Resource.Id.mr_control_title_container;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_custom_control = global::EApp.Droid.Resource.Id.mr_custom_control;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_default_control = global::EApp.Droid.Resource.Id.mr_default_control;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_dialog_area = global::EApp.Droid.Resource.Id.mr_dialog_area;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_expandable_area = global::EApp.Droid.Resource.Id.mr_expandable_area;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_group_expand_collapse = global::EApp.Droid.Resource.Id.mr_group_expand_collapse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_media_main_control = global::EApp.Droid.Resource.Id.mr_media_main_control;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_name = global::EApp.Droid.Resource.Id.mr_name;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_playback_control = global::EApp.Droid.Resource.Id.mr_playback_control;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_title_bar = global::EApp.Droid.Resource.Id.mr_title_bar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_volume_control = global::EApp.Droid.Resource.Id.mr_volume_control;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_volume_group_list = global::EApp.Droid.Resource.Id.mr_volume_group_list;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_volume_item_icon = global::EApp.Droid.Resource.Id.mr_volume_item_icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.mr_volume_slider = global::EApp.Droid.Resource.Id.mr_volume_slider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.multiply = global::EApp.Droid.Resource.Id.multiply;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.navigation_header_container = global::EApp.Droid.Resource.Id.navigation_header_container;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.never = global::EApp.Droid.Resource.Id.never;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.none = global::EApp.Droid.Resource.Id.none;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.normal = global::EApp.Droid.Resource.Id.normal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.parallax = global::EApp.Droid.Resource.Id.parallax;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.parentPanel = global::EApp.Droid.Resource.Id.parentPanel;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.pin = global::EApp.Droid.Resource.Id.pin;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.progress_circular = global::EApp.Droid.Resource.Id.progress_circular;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.progress_horizontal = global::EApp.Droid.Resource.Id.progress_horizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.radio = global::EApp.Droid.Resource.Id.radio;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.right = global::EApp.Droid.Resource.Id.right;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.screen = global::EApp.Droid.Resource.Id.screen;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.scroll = global::EApp.Droid.Resource.Id.scroll;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.scrollIndicatorDown = global::EApp.Droid.Resource.Id.scrollIndicatorDown;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.scrollIndicatorUp = global::EApp.Droid.Resource.Id.scrollIndicatorUp;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.scrollView = global::EApp.Droid.Resource.Id.scrollView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.scrollable = global::EApp.Droid.Resource.Id.scrollable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_badge = global::EApp.Droid.Resource.Id.search_badge;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_bar = global::EApp.Droid.Resource.Id.search_bar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_button = global::EApp.Droid.Resource.Id.search_button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_close_btn = global::EApp.Droid.Resource.Id.search_close_btn;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_edit_frame = global::EApp.Droid.Resource.Id.search_edit_frame;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_go_btn = global::EApp.Droid.Resource.Id.search_go_btn;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_mag_icon = global::EApp.Droid.Resource.Id.search_mag_icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_plate = global::EApp.Droid.Resource.Id.search_plate;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_src_text = global::EApp.Droid.Resource.Id.search_src_text;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.search_voice_btn = global::EApp.Droid.Resource.Id.search_voice_btn;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.select_dialog_listview = global::EApp.Droid.Resource.Id.select_dialog_listview;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.shortcut = global::EApp.Droid.Resource.Id.shortcut;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.showCustom = global::EApp.Droid.Resource.Id.showCustom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.showHome = global::EApp.Droid.Resource.Id.showHome;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.showTitle = global::EApp.Droid.Resource.Id.showTitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.snackbar_action = global::EApp.Droid.Resource.Id.snackbar_action;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.snackbar_text = global::EApp.Droid.Resource.Id.snackbar_text;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.snap = global::EApp.Droid.Resource.Id.snap;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.spacer = global::EApp.Droid.Resource.Id.spacer;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.split_action_bar = global::EApp.Droid.Resource.Id.split_action_bar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.src_atop = global::EApp.Droid.Resource.Id.src_atop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.src_in = global::EApp.Droid.Resource.Id.src_in;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.src_over = global::EApp.Droid.Resource.Id.src_over;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.start = global::EApp.Droid.Resource.Id.start;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.status_bar_latest_event_content = global::EApp.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.submit_area = global::EApp.Droid.Resource.Id.submit_area;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.tabMode = global::EApp.Droid.Resource.Id.tabMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.text = global::EApp.Droid.Resource.Id.text;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.text2 = global::EApp.Droid.Resource.Id.text2;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.textSpacerNoButtons = global::EApp.Droid.Resource.Id.textSpacerNoButtons;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.time = global::EApp.Droid.Resource.Id.time;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.title = global::EApp.Droid.Resource.Id.title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.title_template = global::EApp.Droid.Resource.Id.title_template;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.top = global::EApp.Droid.Resource.Id.top;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.topPanel = global::EApp.Droid.Resource.Id.topPanel;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.touch_outside = global::EApp.Droid.Resource.Id.touch_outside;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.up = global::EApp.Droid.Resource.Id.up;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.useLogo = global::EApp.Droid.Resource.Id.useLogo;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.view_offset_helper = global::EApp.Droid.Resource.Id.view_offset_helper;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.volume_item_container = global::EApp.Droid.Resource.Id.volume_item_container;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.withText = global::EApp.Droid.Resource.Id.withText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.wrap_content = global::EApp.Droid.Resource.Id.wrap_content;
+			global::Syncfusion.ListView.XForms.Android.Resource.Integer.abc_config_activityDefaultDur = global::EApp.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Syncfusion.ListView.XForms.Android.Resource.Integer.abc_config_activityShortDur = global::EApp.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Syncfusion.ListView.XForms.Android.Resource.Integer.bottom_sheet_slide_duration = global::EApp.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Syncfusion.ListView.XForms.Android.Resource.Integer.cancel_button_image_alpha = global::EApp.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Integer.design_snackbar_text_max_lines = global::EApp.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Syncfusion.ListView.XForms.Android.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::EApp.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Syncfusion.ListView.XForms.Android.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::EApp.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Syncfusion.ListView.XForms.Android.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::EApp.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Syncfusion.ListView.XForms.Android.Resource.Integer.status_bar_notification_info_maxnum = global::EApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Syncfusion.ListView.XForms.Android.Resource.Interpolator.mr_fast_out_slow_in = global::EApp.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Syncfusion.ListView.XForms.Android.Resource.Interpolator.mr_linear_out_slow_in = global::EApp.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_action_bar_title_item = global::EApp.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_action_bar_up_container = global::EApp.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_action_bar_view_list_nav_layout = global::EApp.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_action_menu_item_layout = global::EApp.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_action_menu_layout = global::EApp.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_action_mode_bar = global::EApp.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_action_mode_close_item_material = global::EApp.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_activity_chooser_view = global::EApp.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::EApp.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::EApp.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_alert_dialog_material = global::EApp.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_dialog_title_material = global::EApp.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_expanded_menu_layout = global::EApp.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_list_menu_item_checkbox = global::EApp.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_list_menu_item_icon = global::EApp.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_list_menu_item_layout = global::EApp.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_list_menu_item_radio = global::EApp.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_popup_menu_item_layout = global::EApp.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_screen_content_include = global::EApp.Droid.Resource.Layout.abc_screen_content_include;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_screen_simple = global::EApp.Droid.Resource.Layout.abc_screen_simple;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::EApp.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_screen_toolbar = global::EApp.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::EApp.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_search_view = global::EApp.Droid.Resource.Layout.abc_search_view;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.abc_select_dialog_material = global::EApp.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_bottom_sheet_dialog = global::EApp.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_layout_snackbar = global::EApp.Droid.Resource.Layout.design_layout_snackbar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_layout_snackbar_include = global::EApp.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_layout_tab_icon = global::EApp.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_layout_tab_text = global::EApp.Droid.Resource.Layout.design_layout_tab_text;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_menu_item_action_area = global::EApp.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_navigation_item = global::EApp.Droid.Resource.Layout.design_navigation_item;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_navigation_item_header = global::EApp.Droid.Resource.Layout.design_navigation_item_header;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_navigation_item_separator = global::EApp.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_navigation_item_subheader = global::EApp.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_navigation_menu = global::EApp.Droid.Resource.Layout.design_navigation_menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.design_navigation_menu_item = global::EApp.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.mr_chooser_dialog = global::EApp.Droid.Resource.Layout.mr_chooser_dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.mr_chooser_list_item = global::EApp.Droid.Resource.Layout.mr_chooser_list_item;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.mr_controller_material_dialog_b = global::EApp.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.mr_controller_volume_item = global::EApp.Droid.Resource.Layout.mr_controller_volume_item;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.mr_playback_control = global::EApp.Droid.Resource.Layout.mr_playback_control;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.mr_volume_control = global::EApp.Droid.Resource.Layout.mr_volume_control;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.notification_media_action = global::EApp.Droid.Resource.Layout.notification_media_action;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.notification_media_cancel_action = global::EApp.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.notification_template_big_media = global::EApp.Droid.Resource.Layout.notification_template_big_media;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.notification_template_big_media_narrow = global::EApp.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.notification_template_media = global::EApp.Droid.Resource.Layout.notification_template_media;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.notification_template_part_chronometer = global::EApp.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.notification_template_part_time = global::EApp.Droid.Resource.Layout.notification_template_part_time;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.select_dialog_item_material = global::EApp.Droid.Resource.Layout.select_dialog_item_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.select_dialog_multichoice_material = global::EApp.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.select_dialog_singlechoice_material = global::EApp.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Syncfusion.ListView.XForms.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::EApp.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.ApplicationName = global::EApp.Droid.Resource.String.ApplicationName;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Hello = global::EApp.Droid.Resource.String.Hello;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_action_bar_home_description = global::EApp.Droid.Resource.String.abc_action_bar_home_description;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_action_bar_home_description_format = global::EApp.Droid.Resource.String.abc_action_bar_home_description_format;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_action_bar_home_subtitle_description_format = global::EApp.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_action_bar_up_description = global::EApp.Droid.Resource.String.abc_action_bar_up_description;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_action_menu_overflow_description = global::EApp.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_action_mode_done = global::EApp.Droid.Resource.String.abc_action_mode_done;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_activity_chooser_view_see_all = global::EApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_activitychooserview_choose_application = global::EApp.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_capital_off = global::EApp.Droid.Resource.String.abc_capital_off;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_capital_on = global::EApp.Droid.Resource.String.abc_capital_on;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_search_hint = global::EApp.Droid.Resource.String.abc_search_hint;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_searchview_description_clear = global::EApp.Droid.Resource.String.abc_searchview_description_clear;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_searchview_description_query = global::EApp.Droid.Resource.String.abc_searchview_description_query;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_searchview_description_search = global::EApp.Droid.Resource.String.abc_searchview_description_search;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_searchview_description_submit = global::EApp.Droid.Resource.String.abc_searchview_description_submit;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_searchview_description_voice = global::EApp.Droid.Resource.String.abc_searchview_description_voice;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_shareactionprovider_share_with = global::EApp.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_shareactionprovider_share_with_application = global::EApp.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.abc_toolbar_collapse_description = global::EApp.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.appbar_scrolling_view_behavior = global::EApp.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.bottom_sheet_behavior = global::EApp.Droid.Resource.String.bottom_sheet_behavior;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.character_counter_pattern = global::EApp.Droid.Resource.String.character_counter_pattern;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_button_content_description = global::EApp.Droid.Resource.String.mr_button_content_description;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_chooser_searching = global::EApp.Droid.Resource.String.mr_chooser_searching;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_chooser_title = global::EApp.Droid.Resource.String.mr_chooser_title;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_casting_screen = global::EApp.Droid.Resource.String.mr_controller_casting_screen;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_close_description = global::EApp.Droid.Resource.String.mr_controller_close_description;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_collapse_group = global::EApp.Droid.Resource.String.mr_controller_collapse_group;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_disconnect = global::EApp.Droid.Resource.String.mr_controller_disconnect;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_expand_group = global::EApp.Droid.Resource.String.mr_controller_expand_group;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_no_info_available = global::EApp.Droid.Resource.String.mr_controller_no_info_available;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_no_media_selected = global::EApp.Droid.Resource.String.mr_controller_no_media_selected;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_pause = global::EApp.Droid.Resource.String.mr_controller_pause;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_play = global::EApp.Droid.Resource.String.mr_controller_play;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_controller_stop = global::EApp.Droid.Resource.String.mr_controller_stop;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_system_route_name = global::EApp.Droid.Resource.String.mr_system_route_name;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.mr_user_route_category_name = global::EApp.Droid.Resource.String.mr_user_route_category_name;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.status_bar_notification_info_overflow = global::EApp.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.AlertDialog_AppCompat = global::EApp.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.AlertDialog_AppCompat_Light = global::EApp.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Animation_AppCompat_Dialog = global::EApp.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::EApp.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::EApp.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_AlertDialog_AppCompat = global::EApp.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::EApp.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::EApp.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::EApp.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_CardView = global::EApp.Droid.Resource.Style.Base_CardView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::EApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::EApp.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::EApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::EApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::EApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::EApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::EApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::EApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::EApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::EApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::EApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::EApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::EApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::EApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::EApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::EApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V21_Theme_AppCompat = global::EApp.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::EApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::EApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::EApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V22_Theme_AppCompat = global::EApp.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::EApp.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V23_Theme_AppCompat = global::EApp.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::EApp.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V7_Theme_AppCompat = global::EApp.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::EApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::EApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::EApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::EApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::EApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::EApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Base_Widget_Design_TabLayout = global::EApp.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.CardView = global::EApp.Droid.Resource.Style.CardView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.CardView_Dark = global::EApp.Droid.Resource.Style.CardView_Dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.CardView_Light = global::EApp.Droid.Resource.Style.CardView_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_AppCompat = global::EApp.Droid.Resource.Style.Platform_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_AppCompat_Light = global::EApp.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::EApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::EApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::EApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_V11_AppCompat = global::EApp.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_V11_AppCompat_Light = global::EApp.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_V14_AppCompat = global::EApp.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_V14_AppCompat_Light = global::EApp.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::EApp.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::EApp.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::EApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::EApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::EApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Button = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Large = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Small = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Title = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::EApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::EApp.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Design_Counter = global::EApp.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::EApp.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Design_Error = global::EApp.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Design_Hint = global::EApp.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::EApp.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Design_Tab = global::EApp.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_StatusBar_EventContent = global::EApp.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::EApp.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::EApp.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::EApp.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::EApp.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::EApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::EApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::EApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat = global::EApp.Droid.Resource.Style.Theme_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::EApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_DayNight = global::EApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::EApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::EApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::EApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::EApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::EApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::EApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Dialog = global::EApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::EApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::EApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::EApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Light = global::EApp.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::EApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::EApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::EApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::EApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::EApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::EApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::EApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_Design = global::EApp.Droid.Resource.Style.Theme_Design;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::EApp.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_Design_Light = global::EApp.Droid.Resource.Style.Theme_Design_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::EApp.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::EApp.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_Design_NoActionBar = global::EApp.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_MediaRouter = global::EApp.Droid.Resource.Style.Theme_MediaRouter;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_MediaRouter_Light = global::EApp.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::EApp.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Theme_MediaRouter_LightControlPanel = global::EApp.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.ThemeOverlay_AppCompat = global::EApp.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::EApp.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::EApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::EApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::EApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActionButton = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActionMode = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::EApp.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::EApp.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Button = global::EApp.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::EApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::EApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::EApp.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::EApp.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Button_Small = global::EApp.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::EApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::EApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::EApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::EApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::EApp.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::EApp.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_EditText = global::EApp.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ImageButton = global::EApp.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::EApp.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ListView = global::EApp.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::EApp.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::EApp.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::EApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::EApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::EApp.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::EApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_RatingBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::EApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::EApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_SearchView = global::EApp.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_SeekBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Spinner = global::EApp.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::EApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::EApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::EApp.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::EApp.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Toolbar = global::EApp.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::EApp.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_AppBarLayout = global::EApp.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::EApp.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::EApp.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::EApp.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_FloatingActionButton = global::EApp.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_NavigationView = global::EApp.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::EApp.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_Snackbar = global::EApp.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_TabLayout = global::EApp.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_Design_TextInputLayout = global::EApp.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::EApp.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::EApp.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar = global::EApp.Droid.Resource.Styleable.ActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_background = global::EApp.Droid.Resource.Styleable.ActionBar_background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_backgroundSplit = global::EApp.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_backgroundStacked = global::EApp.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::EApp.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::EApp.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_contentInsetRight = global::EApp.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_contentInsetStart = global::EApp.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::EApp.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_displayOptions = global::EApp.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_divider = global::EApp.Droid.Resource.Styleable.ActionBar_divider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_elevation = global::EApp.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_height = global::EApp.Droid.Resource.Styleable.ActionBar_height;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::EApp.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::EApp.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_homeLayout = global::EApp.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_icon = global::EApp.Droid.Resource.Styleable.ActionBar_icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::EApp.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_itemPadding = global::EApp.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_logo = global::EApp.Droid.Resource.Styleable.ActionBar_logo;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_navigationMode = global::EApp.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_popupTheme = global::EApp.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_progressBarPadding = global::EApp.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_progressBarStyle = global::EApp.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_subtitle = global::EApp.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::EApp.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_title = global::EApp.Droid.Resource.Styleable.ActionBar_title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBar_titleTextStyle = global::EApp.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBarLayout = global::EApp.Droid.Resource.Styleable.ActionBarLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::EApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMenuItemView = global::EApp.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::EApp.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMenuView = global::EApp.Droid.Resource.Styleable.ActionMenuView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMode = global::EApp.Droid.Resource.Styleable.ActionMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMode_background = global::EApp.Droid.Resource.Styleable.ActionMode_background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMode_backgroundSplit = global::EApp.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMode_closeItemLayout = global::EApp.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMode_height = global::EApp.Droid.Resource.Styleable.ActionMode_height;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::EApp.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActionMode_titleTextStyle = global::EApp.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActivityChooserView = global::EApp.Droid.Resource.Styleable.ActivityChooserView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::EApp.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::EApp.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AlertDialog = global::EApp.Droid.Resource.Styleable.AlertDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AlertDialog_android_layout = global::EApp.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::EApp.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AlertDialog_listItemLayout = global::EApp.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AlertDialog_listLayout = global::EApp.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::EApp.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::EApp.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppBarLayout = global::EApp.Droid.Resource.Styleable.AppBarLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppBarLayout_android_background = global::EApp.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppBarLayout_elevation = global::EApp.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppBarLayout_expanded = global::EApp.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatImageView = global::EApp.Droid.Resource.Styleable.AppCompatImageView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatImageView_android_src = global::EApp.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::EApp.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTextView = global::EApp.Droid.Resource.Styleable.AppCompatTextView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::EApp.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::EApp.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme = global::EApp.Droid.Resource.Styleable.AppCompatTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::EApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::EApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::EApp.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::EApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::EApp.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::EApp.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::EApp.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::EApp.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::EApp.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::EApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::EApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::EApp.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::EApp.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::EApp.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::EApp.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::EApp.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::EApp.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::EApp.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::EApp.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::EApp.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::EApp.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::EApp.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::EApp.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::EApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::EApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::EApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::EApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::EApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::EApp.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::EApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::EApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::EApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::EApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::EApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::EApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::EApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::EApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::EApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::EApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::EApp.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::EApp.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::EApp.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ButtonBarLayout = global::EApp.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::EApp.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView = global::EApp.Droid.Resource.Styleable.CardView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_android_minHeight = global::EApp.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_android_minWidth = global::EApp.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_cardBackgroundColor = global::EApp.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_cardCornerRadius = global::EApp.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_cardElevation = global::EApp.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_cardMaxElevation = global::EApp.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::EApp.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::EApp.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_contentPadding = global::EApp.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_contentPaddingBottom = global::EApp.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_contentPaddingLeft = global::EApp.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_contentPaddingRight = global::EApp.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CardView_contentPaddingTop = global::EApp.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::EApp.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CompoundButton = global::EApp.Droid.Resource.Styleable.CompoundButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CompoundButton_android_button = global::EApp.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CompoundButton_buttonTint = global::EApp.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::EApp.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CoordinatorLayout = global::EApp.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CoordinatorLayout_keylines = global::EApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::EApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DesignTheme = global::EApp.Droid.Resource.Styleable.DesignTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::EApp.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::EApp.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DesignTheme_textColorError = global::EApp.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DrawerArrowToggle = global::EApp.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::EApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::EApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::EApp.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DrawerArrowToggle_color = global::EApp.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::EApp.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::EApp.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::EApp.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::EApp.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.FloatingActionButton = global::EApp.Droid.Resource.Styleable.FloatingActionButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::EApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::EApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::EApp.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.FloatingActionButton_elevation = global::EApp.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.FloatingActionButton_fabSize = global::EApp.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::EApp.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::EApp.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::EApp.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ForegroundLinearLayout = global::EApp.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::EApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::EApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::EApp.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_divider = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::EApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ListPopupWindow = global::EApp.Droid.Resource.Styleable.ListPopupWindow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::EApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::EApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MediaRouteButton = global::EApp.Droid.Resource.Styleable.MediaRouteButton;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MediaRouteButton_android_minHeight = global::EApp.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MediaRouteButton_android_minWidth = global::EApp.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::EApp.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuGroup = global::EApp.Droid.Resource.Styleable.MenuGroup;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::EApp.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuGroup_android_enabled = global::EApp.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuGroup_android_id = global::EApp.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::EApp.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::EApp.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuGroup_android_visible = global::EApp.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem = global::EApp.Droid.Resource.Styleable.MenuItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_actionLayout = global::EApp.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_actionProviderClass = global::EApp.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_actionViewClass = global::EApp.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::EApp.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_checkable = global::EApp.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_checked = global::EApp.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_enabled = global::EApp.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_icon = global::EApp.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_id = global::EApp.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_menuCategory = global::EApp.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::EApp.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_onClick = global::EApp.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::EApp.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_title = global::EApp.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::EApp.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_android_visible = global::EApp.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuItem_showAsAction = global::EApp.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuView = global::EApp.Droid.Resource.Styleable.MenuView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuView_android_headerBackground = global::EApp.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::EApp.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuView_android_itemBackground = global::EApp.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::EApp.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::EApp.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuView_android_verticalDivider = global::EApp.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::EApp.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::EApp.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView = global::EApp.Droid.Resource.Styleable.NavigationView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_android_background = global::EApp.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::EApp.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_android_maxWidth = global::EApp.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_elevation = global::EApp.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_headerLayout = global::EApp.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_itemBackground = global::EApp.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_itemIconTint = global::EApp.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::EApp.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_itemTextColor = global::EApp.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.NavigationView_menu = global::EApp.Droid.Resource.Styleable.NavigationView_menu;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.PopupWindow = global::EApp.Droid.Resource.Styleable.PopupWindow;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::EApp.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::EApp.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.PopupWindowBackgroundState = global::EApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::EApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView = global::EApp.Droid.Resource.Styleable.RecyclerView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_android_orientation = global::EApp.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_layoutManager = global::EApp.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_reverseLayout = global::EApp.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_spanCount = global::EApp.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::EApp.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::EApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::EApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView = global::EApp.Droid.Resource.Styleable.SearchView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_android_focusable = global::EApp.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_android_imeOptions = global::EApp.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_android_inputType = global::EApp.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_android_maxWidth = global::EApp.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_closeIcon = global::EApp.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_commitIcon = global::EApp.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_defaultQueryHint = global::EApp.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_goIcon = global::EApp.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::EApp.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_layout = global::EApp.Droid.Resource.Styleable.SearchView_layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_queryBackground = global::EApp.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_queryHint = global::EApp.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_searchHintIcon = global::EApp.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_searchIcon = global::EApp.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_submitBackground = global::EApp.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::EApp.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SearchView_voiceIcon = global::EApp.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SnackbarLayout = global::EApp.Droid.Resource.Styleable.SnackbarLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::EApp.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SnackbarLayout_elevation = global::EApp.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::EApp.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Spinner = global::EApp.Droid.Resource.Styleable.Spinner;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::EApp.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Spinner_android_entries = global::EApp.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Spinner_android_popupBackground = global::EApp.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Spinner_android_prompt = global::EApp.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Spinner_popupTheme = global::EApp.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat = global::EApp.Droid.Resource.Styleable.SwitchCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_android_textOff = global::EApp.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_android_textOn = global::EApp.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_android_thumb = global::EApp.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_showText = global::EApp.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_splitTrack = global::EApp.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::EApp.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_switchPadding = global::EApp.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::EApp.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::EApp.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.SwitchCompat_track = global::EApp.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabItem = global::EApp.Droid.Resource.Styleable.TabItem;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabItem_android_icon = global::EApp.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabItem_android_layout = global::EApp.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabItem_android_text = global::EApp.Droid.Resource.Styleable.TabItem_android_text;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout = global::EApp.Droid.Resource.Styleable.TabLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabBackground = global::EApp.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabContentStart = global::EApp.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabGravity = global::EApp.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::EApp.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::EApp.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::EApp.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabMinWidth = global::EApp.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabMode = global::EApp.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabPadding = global::EApp.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::EApp.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::EApp.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::EApp.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::EApp.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::EApp.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::EApp.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TabLayout_tabTextColor = global::EApp.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance = global::EApp.Droid.Resource.Styleable.TextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::EApp.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::EApp.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::EApp.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::EApp.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance_android_textColor = global::EApp.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance_android_textSize = global::EApp.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance_android_textStyle = global::EApp.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance_android_typeface = global::EApp.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextAppearance_textAllCaps = global::EApp.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout = global::EApp.Droid.Resource.Styleable.TextInputLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_android_hint = global::EApp.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::EApp.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::EApp.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::EApp.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::EApp.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::EApp.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::EApp.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::EApp.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::EApp.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::EApp.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::EApp.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar = global::EApp.Droid.Resource.Styleable.Toolbar;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_android_gravity = global::EApp.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_android_minHeight = global::EApp.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::EApp.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_collapseIcon = global::EApp.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::EApp.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::EApp.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_contentInsetRight = global::EApp.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_contentInsetStart = global::EApp.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_logo = global::EApp.Droid.Resource.Styleable.Toolbar_logo;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_logoDescription = global::EApp.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::EApp.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::EApp.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_navigationIcon = global::EApp.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_popupTheme = global::EApp.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_subtitle = global::EApp.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::EApp.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::EApp.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_title = global::EApp.Droid.Resource.Styleable.Toolbar_title;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::EApp.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::EApp.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_titleMarginStart = global::EApp.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_titleMarginTop = global::EApp.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_titleMargins = global::EApp.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::EApp.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.Toolbar_titleTextColor = global::EApp.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.View = global::EApp.Droid.Resource.Styleable.View;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.View_android_focusable = global::EApp.Droid.Resource.Styleable.View_android_focusable;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.View_android_theme = global::EApp.Droid.Resource.Styleable.View_android_theme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.View_paddingEnd = global::EApp.Droid.Resource.Styleable.View_paddingEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.View_paddingStart = global::EApp.Droid.Resource.Styleable.View_paddingStart;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.View_theme = global::EApp.Droid.Resource.Styleable.View_theme;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ViewBackgroundHelper = global::EApp.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::EApp.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::EApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::EApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ViewStubCompat = global::EApp.Droid.Resource.Styleable.ViewStubCompat;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ViewStubCompat_android_id = global::EApp.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::EApp.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.ViewStubCompat_android_layout = global::EApp.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::EApp.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2020,8 +3657,8 @@ namespace EApp.Droid
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7f020135
-			public const int ListViewSelected = 2130837813;
+			// aapt resource value: 0x7f020137
+			public const int ListViewSelected = 2130837815;
 			
 			// aapt resource value: 0x7f020000
 			public const int abc_ab_share_pack_mtrl_alpha = 2130837504;
@@ -2278,26 +3915,26 @@ namespace EApp.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020136
-			public const int avd_hide_password_1 = 2130837814;
-			
-			// aapt resource value: 0x7f020137
-			public const int avd_hide_password_2 = 2130837815;
-			
 			// aapt resource value: 0x7f020138
-			public const int avd_hide_password_3 = 2130837816;
+			public const int avd_hide_password_1 = 2130837816;
+			
+			// aapt resource value: 0x7f020139
+			public const int avd_hide_password_2 = 2130837817;
+			
+			// aapt resource value: 0x7f02013a
+			public const int avd_hide_password_3 = 2130837818;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f020139
-			public const int avd_show_password_1 = 2130837817;
-			
-			// aapt resource value: 0x7f02013a
-			public const int avd_show_password_2 = 2130837818;
-			
 			// aapt resource value: 0x7f02013b
-			public const int avd_show_password_3 = 2130837819;
+			public const int avd_show_password_1 = 2130837819;
+			
+			// aapt resource value: 0x7f02013c
+			public const int avd_show_password_2 = 2130837820;
+			
+			// aapt resource value: 0x7f02013d
+			public const int avd_show_password_3 = 2130837821;
 			
 			// aapt resource value: 0x7f020056
 			public const int BlueBookMark = 2130837590;
@@ -2339,634 +3976,640 @@ namespace EApp.Droid
 			public const int design_snackbar_background = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int Downloaded = 2130837603;
+			public const int Dislike = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int DownloadedButton = 2130837604;
+			public const int Downloaded = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int errorloading = 2130837605;
+			public const int DownloadedButton = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int Favourite = 2130837606;
+			public const int dustbin = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int GreenBookMark = 2130837607;
+			public const int errorloading = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int heart = 2130837608;
+			public const int Favourite = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_audiotrack_dark = 2130837609;
+			public const int GreenBookMark = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_audiotrack_light = 2130837610;
+			public const int heart = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_dialog_close_dark = 2130837611;
+			public const int ic_audiotrack_dark = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_dialog_close_light = 2130837612;
+			public const int ic_audiotrack_light = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_errorstatus = 2130837613;
+			public const int ic_dialog_close_dark = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_00 = 2130837614;
+			public const int ic_dialog_close_light = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_collapse_01 = 2130837615;
+			public const int ic_errorstatus = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_collapse_02 = 2130837616;
+			public const int ic_group_collapse_00 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_collapse_03 = 2130837617;
+			public const int ic_group_collapse_01 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_collapse_04 = 2130837618;
+			public const int ic_group_collapse_02 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_collapse_05 = 2130837619;
+			public const int ic_group_collapse_03 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_collapse_06 = 2130837620;
+			public const int ic_group_collapse_04 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_collapse_07 = 2130837621;
+			public const int ic_group_collapse_05 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_collapse_08 = 2130837622;
+			public const int ic_group_collapse_06 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_collapse_09 = 2130837623;
+			public const int ic_group_collapse_07 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_collapse_10 = 2130837624;
+			public const int ic_group_collapse_08 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_collapse_11 = 2130837625;
+			public const int ic_group_collapse_09 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_collapse_12 = 2130837626;
+			public const int ic_group_collapse_10 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_collapse_13 = 2130837627;
+			public const int ic_group_collapse_11 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_collapse_14 = 2130837628;
+			public const int ic_group_collapse_12 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_collapse_15 = 2130837629;
+			public const int ic_group_collapse_13 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_00 = 2130837630;
+			public const int ic_group_collapse_14 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_expand_01 = 2130837631;
+			public const int ic_group_collapse_15 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_group_expand_02 = 2130837632;
+			public const int ic_group_expand_00 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_group_expand_03 = 2130837633;
+			public const int ic_group_expand_01 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_group_expand_04 = 2130837634;
+			public const int ic_group_expand_02 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_expand_05 = 2130837635;
+			public const int ic_group_expand_03 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_group_expand_06 = 2130837636;
+			public const int ic_group_expand_04 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_group_expand_07 = 2130837637;
+			public const int ic_group_expand_05 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_group_expand_08 = 2130837638;
+			public const int ic_group_expand_06 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_group_expand_09 = 2130837639;
+			public const int ic_group_expand_07 = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_group_expand_10 = 2130837640;
+			public const int ic_group_expand_08 = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_group_expand_11 = 2130837641;
+			public const int ic_group_expand_09 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_group_expand_12 = 2130837642;
+			public const int ic_group_expand_10 = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_group_expand_13 = 2130837643;
+			public const int ic_group_expand_11 = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_group_expand_14 = 2130837644;
+			public const int ic_group_expand_12 = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_group_expand_15 = 2130837645;
+			public const int ic_group_expand_13 = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_media_pause_dark = 2130837646;
+			public const int ic_group_expand_14 = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_media_pause_light = 2130837647;
+			public const int ic_group_expand_15 = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_media_play_dark = 2130837648;
+			public const int ic_media_pause_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_media_play_light = 2130837649;
+			public const int ic_media_pause_light = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_media_stop_dark = 2130837650;
+			public const int ic_media_play_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_media_stop_light = 2130837651;
+			public const int ic_media_play_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_00_dark = 2130837652;
+			public const int ic_media_stop_dark = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_00_light = 2130837653;
+			public const int ic_media_stop_light = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_01_dark = 2130837654;
+			public const int ic_mr_button_connected_00_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_01_light = 2130837655;
+			public const int ic_mr_button_connected_00_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_02_dark = 2130837656;
+			public const int ic_mr_button_connected_01_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_02_light = 2130837657;
+			public const int ic_mr_button_connected_01_light = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_03_dark = 2130837658;
+			public const int ic_mr_button_connected_02_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_03_light = 2130837659;
+			public const int ic_mr_button_connected_02_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_04_dark = 2130837660;
+			public const int ic_mr_button_connected_03_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_04_light = 2130837661;
+			public const int ic_mr_button_connected_03_light = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_05_dark = 2130837662;
+			public const int ic_mr_button_connected_04_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_05_light = 2130837663;
+			public const int ic_mr_button_connected_04_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_06_dark = 2130837664;
+			public const int ic_mr_button_connected_05_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_06_light = 2130837665;
+			public const int ic_mr_button_connected_05_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_07_dark = 2130837666;
+			public const int ic_mr_button_connected_06_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_07_light = 2130837667;
+			public const int ic_mr_button_connected_06_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_08_dark = 2130837668;
+			public const int ic_mr_button_connected_07_dark = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_08_light = 2130837669;
+			public const int ic_mr_button_connected_07_light = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_09_dark = 2130837670;
+			public const int ic_mr_button_connected_08_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_09_light = 2130837671;
+			public const int ic_mr_button_connected_08_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_10_dark = 2130837672;
+			public const int ic_mr_button_connected_09_dark = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_10_light = 2130837673;
+			public const int ic_mr_button_connected_09_light = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_11_dark = 2130837674;
+			public const int ic_mr_button_connected_10_dark = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_11_light = 2130837675;
+			public const int ic_mr_button_connected_10_light = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_12_dark = 2130837676;
+			public const int ic_mr_button_connected_11_dark = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_12_light = 2130837677;
+			public const int ic_mr_button_connected_11_light = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_13_dark = 2130837678;
+			public const int ic_mr_button_connected_12_dark = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_13_light = 2130837679;
+			public const int ic_mr_button_connected_12_light = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_14_dark = 2130837680;
+			public const int ic_mr_button_connected_13_dark = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_14_light = 2130837681;
+			public const int ic_mr_button_connected_13_light = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_15_dark = 2130837682;
+			public const int ic_mr_button_connected_14_dark = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_15_light = 2130837683;
+			public const int ic_mr_button_connected_14_light = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_16_dark = 2130837684;
+			public const int ic_mr_button_connected_15_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_16_light = 2130837685;
+			public const int ic_mr_button_connected_15_light = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_17_dark = 2130837686;
+			public const int ic_mr_button_connected_16_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_17_light = 2130837687;
+			public const int ic_mr_button_connected_16_light = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_18_dark = 2130837688;
+			public const int ic_mr_button_connected_17_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_18_light = 2130837689;
+			public const int ic_mr_button_connected_17_light = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_19_dark = 2130837690;
+			public const int ic_mr_button_connected_18_dark = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_19_light = 2130837691;
+			public const int ic_mr_button_connected_18_light = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_20_dark = 2130837692;
+			public const int ic_mr_button_connected_19_dark = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_20_light = 2130837693;
+			public const int ic_mr_button_connected_19_light = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_21_dark = 2130837694;
+			public const int ic_mr_button_connected_20_dark = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_21_light = 2130837695;
+			public const int ic_mr_button_connected_20_light = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_22_dark = 2130837696;
+			public const int ic_mr_button_connected_21_dark = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_22_light = 2130837697;
+			public const int ic_mr_button_connected_21_light = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connecting_00_dark = 2130837698;
+			public const int ic_mr_button_connected_22_dark = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connecting_00_light = 2130837699;
+			public const int ic_mr_button_connected_22_light = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connecting_01_dark = 2130837700;
+			public const int ic_mr_button_connecting_00_dark = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connecting_01_light = 2130837701;
+			public const int ic_mr_button_connecting_00_light = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connecting_02_dark = 2130837702;
+			public const int ic_mr_button_connecting_01_dark = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connecting_02_light = 2130837703;
+			public const int ic_mr_button_connecting_01_light = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connecting_03_dark = 2130837704;
+			public const int ic_mr_button_connecting_02_dark = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connecting_03_light = 2130837705;
+			public const int ic_mr_button_connecting_02_light = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connecting_04_dark = 2130837706;
+			public const int ic_mr_button_connecting_03_dark = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connecting_04_light = 2130837707;
+			public const int ic_mr_button_connecting_03_light = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connecting_05_dark = 2130837708;
+			public const int ic_mr_button_connecting_04_dark = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_05_light = 2130837709;
+			public const int ic_mr_button_connecting_04_light = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_06_dark = 2130837710;
+			public const int ic_mr_button_connecting_05_dark = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_06_light = 2130837711;
+			public const int ic_mr_button_connecting_05_light = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_07_dark = 2130837712;
+			public const int ic_mr_button_connecting_06_dark = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_07_light = 2130837713;
+			public const int ic_mr_button_connecting_06_light = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_08_dark = 2130837714;
+			public const int ic_mr_button_connecting_07_dark = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_08_light = 2130837715;
+			public const int ic_mr_button_connecting_07_light = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_09_dark = 2130837716;
+			public const int ic_mr_button_connecting_08_dark = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_09_light = 2130837717;
+			public const int ic_mr_button_connecting_08_light = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_10_dark = 2130837718;
+			public const int ic_mr_button_connecting_09_dark = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_10_light = 2130837719;
+			public const int ic_mr_button_connecting_09_light = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_11_dark = 2130837720;
+			public const int ic_mr_button_connecting_10_dark = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_11_light = 2130837721;
+			public const int ic_mr_button_connecting_10_light = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_12_dark = 2130837722;
+			public const int ic_mr_button_connecting_11_dark = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_12_light = 2130837723;
+			public const int ic_mr_button_connecting_11_light = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_13_dark = 2130837724;
+			public const int ic_mr_button_connecting_12_dark = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_13_light = 2130837725;
+			public const int ic_mr_button_connecting_12_light = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_14_dark = 2130837726;
+			public const int ic_mr_button_connecting_13_dark = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_14_light = 2130837727;
+			public const int ic_mr_button_connecting_13_light = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_15_dark = 2130837728;
+			public const int ic_mr_button_connecting_14_dark = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_15_light = 2130837729;
+			public const int ic_mr_button_connecting_14_light = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_16_dark = 2130837730;
+			public const int ic_mr_button_connecting_15_dark = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_16_light = 2130837731;
+			public const int ic_mr_button_connecting_15_light = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_17_dark = 2130837732;
+			public const int ic_mr_button_connecting_16_dark = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_17_light = 2130837733;
+			public const int ic_mr_button_connecting_16_light = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_18_dark = 2130837734;
+			public const int ic_mr_button_connecting_17_dark = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_18_light = 2130837735;
+			public const int ic_mr_button_connecting_17_light = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_19_dark = 2130837736;
+			public const int ic_mr_button_connecting_18_dark = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_19_light = 2130837737;
+			public const int ic_mr_button_connecting_18_light = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_20_dark = 2130837738;
+			public const int ic_mr_button_connecting_19_dark = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_20_light = 2130837739;
+			public const int ic_mr_button_connecting_19_light = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_21_dark = 2130837740;
+			public const int ic_mr_button_connecting_20_dark = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_21_light = 2130837741;
+			public const int ic_mr_button_connecting_20_light = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_22_dark = 2130837742;
+			public const int ic_mr_button_connecting_21_dark = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_22_light = 2130837743;
+			public const int ic_mr_button_connecting_21_light = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_disabled_dark = 2130837744;
+			public const int ic_mr_button_connecting_22_dark = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_disabled_light = 2130837745;
+			public const int ic_mr_button_connecting_22_light = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_disconnected_dark = 2130837746;
+			public const int ic_mr_button_disabled_dark = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_disconnected_light = 2130837747;
+			public const int ic_mr_button_disabled_light = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_grey = 2130837748;
+			public const int ic_mr_button_disconnected_dark = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_successstatus = 2130837749;
+			public const int ic_mr_button_disconnected_light = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_vol_type_speaker_dark = 2130837750;
+			public const int ic_mr_button_grey = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_vol_type_speaker_group_dark = 2130837751;
+			public const int ic_successstatus = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_vol_type_speaker_group_light = 2130837752;
+			public const int ic_vol_type_speaker_dark = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_vol_type_speaker_light = 2130837753;
+			public const int ic_vol_type_speaker_group_dark = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_vol_type_tv_dark = 2130837754;
+			public const int ic_vol_type_speaker_group_light = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_vol_type_tv_light = 2130837755;
+			public const int ic_vol_type_speaker_light = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int icon = 2130837756;
+			public const int ic_vol_type_tv_dark = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int icon_0_5_x = 2130837757;
+			public const int ic_vol_type_tv_light = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int icon_1_5_x = 2130837758;
+			public const int icon = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int icon_1_x = 2130837759;
+			public const int icon_0_5_x = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int icon_x = 2130837760;
+			public const int icon_1_5_x = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int icon_xx = 2130837761;
+			public const int icon_1_x = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int icon_xxx = 2130837762;
+			public const int icon_x = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int listSelector = 2130837763;
+			public const int icon_xx = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int loading = 2130837764;
+			public const int icon_xxx = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int Mic = 2130837765;
+			public const int listSelector = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int More = 2130837766;
+			public const int loading = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int motx = 2130837767;
+			public const int Mic = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int mr_button_connected_dark = 2130837768;
+			public const int More = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int mr_button_connected_light = 2130837769;
+			public const int motx = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int mr_button_connecting_dark = 2130837770;
+			public const int mr_button_connected_dark = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int mr_button_connecting_light = 2130837771;
+			public const int mr_button_connected_light = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int mr_button_dark = 2130837772;
+			public const int mr_button_connecting_dark = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int mr_button_light = 2130837773;
+			public const int mr_button_connecting_light = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int mr_dialog_close_dark = 2130837774;
+			public const int mr_button_dark = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int mr_dialog_close_light = 2130837775;
+			public const int mr_button_light = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int mr_dialog_material_background_dark = 2130837776;
+			public const int mr_dialog_close_dark = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int mr_dialog_material_background_light = 2130837777;
+			public const int mr_dialog_close_light = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int mr_group_collapse = 2130837778;
+			public const int mr_dialog_material_background_dark = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int mr_group_expand = 2130837779;
+			public const int mr_dialog_material_background_light = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int mr_media_pause_dark = 2130837780;
+			public const int mr_group_collapse = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int mr_media_pause_light = 2130837781;
+			public const int mr_group_expand = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int mr_media_play_dark = 2130837782;
+			public const int mr_media_pause_dark = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int mr_media_play_light = 2130837783;
+			public const int mr_media_pause_light = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int mr_media_stop_dark = 2130837784;
+			public const int mr_media_play_dark = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int mr_media_stop_light = 2130837785;
+			public const int mr_media_play_light = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int mr_vol_type_audiotrack_dark = 2130837786;
+			public const int mr_media_stop_dark = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int mr_vol_type_audiotrack_light = 2130837787;
+			public const int mr_media_stop_light = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int navigation_empty_icon = 2130837788;
+			public const int mr_vol_type_audiotrack_dark = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int NewCover = 2130837789;
+			public const int mr_vol_type_audiotrack_light = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int noconnection = 2130837790;
+			public const int navigation_empty_icon = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int notification_action_background = 2130837791;
+			public const int NewCover = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int notification_bg = 2130837792;
+			public const int noconnection = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int notification_bg_low = 2130837793;
+			public const int notification_action_background = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int notification_bg_low_normal = 2130837794;
+			public const int notification_bg = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int notification_bg_low_pressed = 2130837795;
+			public const int notification_bg_low = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int notification_bg_normal = 2130837796;
+			public const int notification_bg_low_normal = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int notification_bg_normal_pressed = 2130837797;
+			public const int notification_bg_low_pressed = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int notification_icon_background = 2130837798;
-			
-			// aapt resource value: 0x7f020133
-			public const int notification_template_icon_bg = 2130837811;
-			
-			// aapt resource value: 0x7f020134
-			public const int notification_template_icon_low_bg = 2130837812;
+			public const int notification_bg_normal = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int notification_tile_bg = 2130837799;
+			public const int notification_bg_normal_pressed = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int notify_panel_notification_icon_bg = 2130837800;
+			public const int notification_icon_background = 2130837800;
+			
+			// aapt resource value: 0x7f020135
+			public const int notification_template_icon_bg = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public const int notification_template_icon_low_bg = 2130837814;
 			
 			// aapt resource value: 0x7f020129
-			public const int pausebutton = 2130837801;
+			public const int notification_tile_bg = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int pinkheart = 2130837802;
+			public const int notify_panel_notification_icon_bg = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int playbutton = 2130837803;
+			public const int pausebutton = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int Recent = 2130837804;
+			public const int pinkheart = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int redheart = 2130837805;
+			public const int playbutton = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int roundedbg = 2130837806;
+			public const int Recent = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int roundedbgdark = 2130837807;
+			public const int redheart = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int Storage = 2130837808;
+			public const int roundedbg = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int tool = 2130837809;
+			public const int roundedbgdark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int wearheadphone = 2130837810;
+			public const int Storage = 2130837810;
+			
+			// aapt resource value: 0x7f020133
+			public const int tool = 2130837811;
+			
+			// aapt resource value: 0x7f020134
+			public const int wearheadphone = 2130837812;
 			
 			static Drawable()
 			{
@@ -3840,6 +5483,12 @@ namespace EApp.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f09003f
+			public const int ApplicationName = 2131296319;
+			
+			// aapt resource value: 0x7f09003e
+			public const int Hello = 2131296318;
+			
 			// aapt resource value: 0x7f090015
 			public const int abc_action_bar_home_description = 2131296277;
 			
@@ -3942,8 +5591,8 @@ namespace EApp.Droid
 			// aapt resource value: 0x7f090038
 			public const int character_counter_pattern = 2131296312;
 			
-			// aapt resource value: 0x7f09003e
-			public const int library_name = 2131296318;
+			// aapt resource value: 0x7f090040
+			public const int library_name = 2131296320;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;

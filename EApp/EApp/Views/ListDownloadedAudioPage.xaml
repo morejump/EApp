@@ -6,18 +6,30 @@
     prism:ViewModelLocator.AutowireViewModel="True"
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:behavior="clr-namespace:EApp.Behavior"
+    xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.ListDownloadedAudioPage"
     Title="Downloaded">
     <StackLayout>
         <SearchBar
             Margin="16,0,16,8"
-            Placeholder="Enter name of audio..." />
-        <ListView
+            Placeholder="Enter name of audio" />
+        <syncfusion:SfListView
+            AllowSwiping="True"
+            ItemSize="116"
+            SelectionBackgroundColor="Green"
             x:Name="lstView"
-            HasUnevenRows="True"
             ItemsSource="{Binding MyList}">
-            <ListView.ItemTemplate>
+            
+            <syncfusion:SfListView.RightSwipeTemplate>
+                <DataTemplate>
+                    <controls:SwipeControl
+                        Command="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdDeleteLesson}"
+                        Image="dustbin.png" />
+                </DataTemplate>
+            </syncfusion:SfListView.RightSwipeTemplate>
+            
+            <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnList
@@ -30,11 +42,10 @@
                             Description="{Binding Description}"
                             Thumbnail="{Binding LinkThumbnail}">
                         </controls:ItemOnList>
-
                     </ViewCell>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </syncfusion:SfListView.ItemTemplate>
+        </syncfusion:SfListView>
     </StackLayout>
 
 </ContentPage>

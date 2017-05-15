@@ -19,7 +19,7 @@ namespace EApp.Views
 
         }
 
-        private void Menu_SelectedMenu(object sender, MyMenuItem e)
+        private async void Menu_SelectedMenu(object sender, MyMenuItem e)
         {
             if (IsPresented)
                 IsPresented = !IsPresented;

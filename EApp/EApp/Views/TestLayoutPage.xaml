@@ -4,11 +4,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True"
+    xmlns:renderers="clr-namespace:EApp.Renderers"
     xmlns:controls="clr-namespace:EApp.CustomControl"
+    xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.TestLayoutPage">
-    <controls:MyMediaPlayer
-        cmdTapPlayButton="{Binding cmdTapPlayButon}" 
-                            />
-
+    <syncfusion:SfListView />
 </ContentPage>

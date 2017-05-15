@@ -11,7 +11,6 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnFavouritePage : ContentView
     {
-        public static event EventHandler<Lesson> SwipeToRight_Event;
         // cmd click
         public static BindableProperty cmdClickProperty = BindableProperty.Create(
           propertyName: "cmdClick",
@@ -20,7 +19,6 @@ namespace EApp.CustomControl
           defaultValue: null,
           defaultBindingMode: BindingMode.TwoWay
       );
-
 
         public ICommand cmdClick
         {
