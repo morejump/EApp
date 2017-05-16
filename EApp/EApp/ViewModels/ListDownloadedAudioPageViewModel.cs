@@ -20,6 +20,22 @@ namespace EApp.ViewModels
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
 
+        // temporary list 
+        private ObservableCollection<Lesson> _tempList;
+
+        public ObservableCollection<Lesson> TempList
+        {
+            get { return _tempList; }
+            set
+            {
+                if (_tempList != value)
+                {
+                    _tempList = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+       
         private bool _isCheck;
 
         public bool IsCheck
@@ -35,7 +51,7 @@ namespace EApp.ViewModels
             }
         }
 
-
+        
         private ICommand _cmdCheckFavourite;
 
         public ICommand CmdCheckFavourite
@@ -46,8 +62,7 @@ namespace EApp.ViewModels
 
         void RuncmdCheckFavourite(object obj)
         {
-            //var lesson = obj as Lesson;
-            DependencyService.Get<IAudio>().PlayAudioFile("MySong.mp3");
+           // do something here later
 
         }
         
@@ -93,7 +108,24 @@ namespace EApp.ViewModels
         {
             var lesson = obj as Lesson;
             MyList.Remove(lesson);
+            TempList = new ObservableCollection<Lesson>(MyList);
         }
+        private ICommand _searchCommad;
+
+        public ICommand SearchCommand
+        {
+            get { return _searchCommad = _searchCommad ?? new Command(RunsearchCommad); }
+
+        }
+
+        void RunsearchCommad(object obj)
+        {
+            var searchedText = obj as string;
+            TempList = new ObservableCollection<Lesson>(MyList.Where(d => d.Title.ToLower().Contains(searchedText.ToLower())));
+
+        }
+
+
 
         public ListDownloadedAudioPageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {
@@ -101,6 +133,7 @@ namespace EApp.ViewModels
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
             MyList = new ObservableCollection<Lesson>(LessonRepo.GetAllLesson().Result);
+            TempList = new ObservableCollection<Lesson>(MyList);
         }
 
     }

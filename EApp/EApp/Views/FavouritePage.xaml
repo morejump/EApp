@@ -14,6 +14,7 @@
     >
     <StackLayout>
         <SearchBar
+            behavior:searchbhv.Command="{Binding SearchCommand}"
             Margin="16,0,16,8"
             Placeholder="Enter name of audio..." />
         <syncfusion:SfListView
@@ -21,7 +22,7 @@
             SelectionBackgroundColor="Green"
             x:Name="lstView"
             ItemSize="116"
-            ItemsSource="{Binding MyList}">
+            ItemsSource="{Binding TempList}">
             <syncfusion:SfListView.RightSwipeTemplate>
                 <DataTemplate>
                     <controls:SwipeControl
