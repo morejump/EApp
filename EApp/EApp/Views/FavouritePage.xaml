@@ -5,6 +5,7 @@
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True"
     xmlns:behavior="clr-namespace:EApp.Behavior"
+    xmlns:converters="clr-namespace:EApp.Converter"
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     x:Name="content"
@@ -12,13 +13,26 @@
     x:Class="EApp.Views.FavouritePage"
     Title="Favourites"
     >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:IsVisibelConverter
+                x:Key="isVisiblecvt" />
+            <converters:DisplayLabelConverter
+                x:Key="displayLabel" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <StackLayout>
         <SearchBar
             behavior:searchbhv.Command="{Binding SearchCommand}"
+            IsVisible="{Binding TempList.Count, Converter={StaticResource isVisiblecvt}}"
             Margin="16,0,16,8"
-            Placeholder="Enter name of audio..." />
+            Placeholder="Enter name of audio" />
+        <controls:NothingToShow
+            IsVisible="{Binding TempList.Count, Converter={StaticResource displayLabel} }"
+            />
         <syncfusion:SfListView
             AllowSwiping="True"
+            IsVisible="{Binding TempList.Count, Converter={StaticResource isVisiblecvt}}"
             SelectionBackgroundColor="Green"
             x:Name="lstView"
             ItemSize="116"
@@ -26,6 +40,7 @@
             <syncfusion:SfListView.RightSwipeTemplate>
                 <DataTemplate>
                     <controls:SwipeControl
+                        BackgroundColor="#F44336"
                         Command="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdDeleteLesson}"
                         Image="dustbin.png" />
                 </DataTemplate>
@@ -33,8 +48,9 @@
             <syncfusion:SfListView.LeftSwipeTemplate>
                 <DataTemplate>
                     <controls:SwipeControl
+                        BackgroundColor="#F44336"
                         Command="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdDeleteLesson}"
-                        Image="Dislike.png" />
+                        Image="BrokenHeart01.png" />
                 </DataTemplate>
             </syncfusion:SfListView.LeftSwipeTemplate>
             <syncfusion:SfListView.ItemTemplate>

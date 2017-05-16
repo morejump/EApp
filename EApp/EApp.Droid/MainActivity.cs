@@ -9,6 +9,7 @@ using Android.OS;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
 using FFImageLoading.Forms.Droid;
+using Acr.UserDialogs;
 
 namespace EApp.Droid
 {
@@ -19,11 +20,10 @@ namespace EApp.Droid
         {
             TabLayoutResource = Resource.Layout.tabs;
             ToolbarResource = Resource.Layout.toolbar;
-
             base.OnCreate(bundle);
-
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App(new AndroidInitializer()));
+            UserDialogs.Init(this);
             CachedImageRenderer.Init();
         }
     }

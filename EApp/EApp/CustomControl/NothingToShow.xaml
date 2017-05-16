@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:EApp.CustomControl"
+    x:Class="EApp.CustomControl.NothingToShow">
+    <Grid
+        Margin="0,32,0,0"
+        HorizontalOptions="Center"
+        >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="50" />
+        </Grid.RowDefinitions>
+        <controls:MyImage
+            DownsampleToViewSize="True"
+            Aspect="Fill"
+            Source="IconNothingToShow.png" />
+        <Label
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            Margin="8,0,0,0"
+            Grid.Column="1"
+            FontSize="Medium"
+            Text="Nothing to show!" />
+
+    </Grid>
+</ContentView>

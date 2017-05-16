@@ -16,7 +16,7 @@ namespace EApp.Repository
         {
             // Do something here later :))
             List<Lesson> list = new List<Lesson>();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 2; i++)
             {
                 list.Add(new Lesson
                 {

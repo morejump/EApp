@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Acr.UserDialogs;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +16,6 @@ namespace EApp.CustomControl
         {
             InitializeComponent();
         }
-
 
         public static BindableProperty ImageProperty = BindableProperty.Create(
           propertyName: "Image",
@@ -56,12 +57,26 @@ namespace EApp.CustomControl
         // doing a command when tapping an image
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-
-            if (Command.CanExecute(BindingContext))
+            ConfirmConfig confirm = new ConfirmConfig();
+            confirm.Title = "Warning!!!";
+            confirm.Message = "Would you like to delete this lesson";
+            confirm.SetAction((x =>
             {
-                Command.Execute(BindingContext);
+                if (x)
+                {
+                    // when an user click yes button
+                    if (Command.CanExecute(BindingContext))
+                    {
+                        Command.Execute(BindingContext);
+                    }
+                }
+               
+            }));
 
-            }
+            // instanitate a confirm dialog here 
+            UserDialogs.Instance.Confirm(confirm);
+
+            
         }
     }
 }

@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:converters="clr-namespace:EApp.Converter"
     xmlns:behavior="clr-namespace:EApp.Behavior"
     xmlns:effects="clr-namespace:EApp.Effects"
     prism:ViewModelLocator.AutowireViewModel="True"
@@ -11,6 +12,17 @@
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.RecentPage"
     Title="Recent">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:IsVisibelConverter
+                x:Key="isVisiblecvt" />
+            <converters:DisplayLabelConverter
+                x:Key="displayLabel" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <controls:NothingToShow
+            IsVisible="{Binding MyList.Count, Converter={StaticResource displayLabel} }" />
     <syncfusion:SfListView
         x:Name="lstView"
         AllowSwiping="True"
@@ -21,6 +33,7 @@
         <syncfusion:SfListView.RightSwipeTemplate>
             <DataTemplate>
                 <controls:SwipeControl
+                        BackgroundColor="#F44336"
                     Command="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdDeleteLesson}"
                     Image="dustbin.png" />
             </DataTemplate>
@@ -41,4 +54,5 @@
             </DataTemplate>
         </syncfusion:SfListView.ItemTemplate>
     </syncfusion:SfListView>
+    </StackLayout>
 </ContentPage>

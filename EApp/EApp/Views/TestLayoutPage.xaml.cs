@@ -1,6 +1,8 @@
-﻿using EApp.Service;
+﻿using Acr.UserDialogs;
+using EApp.Service;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,9 +19,27 @@ namespace EApp.Views
         public TestLayoutPage()
         {
             InitializeComponent();
-            //button.Command = new Command(()=> {
-            //    DependencyService.Get<IAudio>().PlayAudioFile("MySong.mp3");
-            //});
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            ConfirmConfig confirm = new ConfirmConfig();
+            confirm.Title = "this is a title";
+            confirm.Message = "would you like to delete this lesson";
+            confirm.SetAction((x =>
+            {
+                if (x)
+                {
+                    // when an user click yes button
+                    Debug.WriteLine("thao handosme" + x);
+                }
+                else
+                {
+                    // when an user click cancel button
+                    Debug.WriteLine("thao handsoke" + x);
+                }
+            }));
+            UserDialogs.Instance.Confirm(confirm);
         }
     }
 }

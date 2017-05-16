@@ -5,6 +5,7 @@ using EApp.Views;
 using Xamarin.Forms;
 using EApp.Service;
 using EApp.Repository;
+using Acr.UserDialogs;
 
 namespace EApp
 {

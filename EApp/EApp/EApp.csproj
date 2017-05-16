@@ -39,6 +39,8 @@
     <Compile Include="Behavior\searchbhv.cs" />
     <Compile Include="Converter\AddPercentConverter.cs" />
     <Compile Include="Converter\BoolToImageConverter.cs" />
+    <Compile Include="Converter\DisplayLabelConverter.cs" />
+    <Compile Include="Converter\IsVisibelConverter.cs" />
     <Compile Include="CustomControl\ItemOnFavouritePage.xaml.cs">
       <DependentUpon>ItemOnFavouritePage.xaml</DependentUpon>
     </Compile>
@@ -51,6 +53,9 @@
     <Compile Include="CustomControl\MyImage.cs" />
     <Compile Include="CustomControl\MyMediaPlayer.xaml.cs">
       <DependentUpon>MyMediaPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\NothingToShow.xaml.cs">
+      <DependentUpon>NothingToShow.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomControl\SwipeControl.xaml.cs">
       <DependentUpon>SwipeControl.xaml</DependentUpon>
@@ -269,6 +274,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CustomControl\SwipeControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomControl\NothingToShow.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
