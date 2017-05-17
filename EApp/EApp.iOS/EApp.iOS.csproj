@@ -246,6 +246,120 @@
   <ItemGroup>
     <BundleResource Include="Resources\MySong.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BlueBookMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blueheart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BookMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BrokenHeart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BrokenHeart01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ButtonRecord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CoverInMasterDetail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CoverMasterDetail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\chiphu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ChiPhu01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Dislike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DownloadedButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dustbin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\errorloading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GreenBookMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_0_5_x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_1_5_x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_1_x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_xx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_xxx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IconNothingToShow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IconRecordAudio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\listSelector.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Mic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\More.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\motx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NewCover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\noconnection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pinkheart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\redheart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RowLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tool.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wearheadphone.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
