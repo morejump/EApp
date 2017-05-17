@@ -57,6 +57,9 @@
     <Compile Include="CustomControl\NothingToShow.xaml.cs">
       <DependentUpon>NothingToShow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomControl\RepeationAudio.xaml.cs">
+      <DependentUpon>RepeationAudio.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomControl\SwipeControl.xaml.cs">
       <DependentUpon>SwipeControl.xaml</DependentUpon>
     </Compile>
@@ -280,6 +283,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CustomControl\NothingToShow.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomControl\RepeationAudio.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

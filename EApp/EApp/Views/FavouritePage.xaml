@@ -24,11 +24,11 @@
     <StackLayout>
         <SearchBar
             behavior:searchbhv.Command="{Binding SearchCommand}"
-            IsVisible="{Binding TempList.Count, Converter={StaticResource isVisiblecvt}}"
+            IsVisible="{Binding MyList.Count, Converter={StaticResource isVisiblecvt}}"
             Margin="16,0,16,8"
             Placeholder="Enter name of audio" />
         <controls:NothingToShow
-            IsVisible="{Binding TempList.Count, Converter={StaticResource displayLabel} }"
+            IsVisible="{Binding MyList.Count, Converter={StaticResource displayLabel} }"
             />
         <syncfusion:SfListView
             AllowSwiping="True"
