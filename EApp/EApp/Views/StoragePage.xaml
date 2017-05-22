@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:EApp.CustomControl"
+    xmlns:converters="clr-namespace:EApp.Converter"
     xmlns:local="clr-namespace:EApp.Converter"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True"
@@ -15,12 +16,18 @@
         <ResourceDictionary>
             <local:AddPercentConverter
                 x:Key="addPercentcvt" />
+            <converters:IsVisibelConverter
+                x:Key="isVisiblecvt" />
+            <converters:DisplayLabelConverter
+                x:Key="displayLabel" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout>
         <SearchBar
             Margin="0,0,0,8"
             Placeholder="Enter name of audio" />
+        <controls:NothingToShow
+            IsVisible="{Binding MyList.Count, Converter={StaticResource displayLabel} }" />
         <syncfusion:SfListView
             SelectionBackgroundColor="Green"
             ItemSize="116"

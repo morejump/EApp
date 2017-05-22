@@ -9,7 +9,11 @@ using Android.OS;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
 using FFImageLoading.Forms.Droid;
-using Acr.UserDialogs;
+using Acr.UserDialogs; 
+using System.Text;
+using System.IO;
+using Java.IO;
+using Android.Provider;
 
 namespace EApp.Droid
 {
@@ -25,7 +29,10 @@ namespace EApp.Droid
             LoadApplication(new App(new AndroidInitializer()));
             UserDialogs.Init(this);
             CachedImageRenderer.Init();
+
+
         }
+ 
     }
 
     public class AndroidInitializer : IPlatformInitializer

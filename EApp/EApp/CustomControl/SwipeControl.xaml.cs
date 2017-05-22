@@ -1,4 +1,5 @@
 ﻿using Acr.UserDialogs;
+using EApp.Dependecy;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -68,9 +69,9 @@ namespace EApp.CustomControl
                     if (Command.CanExecute(BindingContext))
                     {
                         Command.Execute(BindingContext);
+                        DependencyService.Get<IToast>().MakeToast("Deleted");
                     }
                 }
-               
             }));
 
             // instanitate a confirm dialog here 

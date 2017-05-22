@@ -28,7 +28,8 @@ namespace EApp.ViewModels
                {
                    Text="Recent",
                    Type= typeof(RecentPage),
-                   Icon="Recent.png"
+                   Icon="Recent.png",
+                   
                },
                new MyMenuItem
                {
@@ -53,8 +54,8 @@ namespace EApp.ViewModels
                new MyMenuItem
                {
                    Text="Record My Voice",
-                   Type= typeof(RecordMyVoicePage),
-                   Icon="Mic.png"
+                   Icon="Mic.png",
+                   TypePage = TypePage.Action
                }
             };
         }

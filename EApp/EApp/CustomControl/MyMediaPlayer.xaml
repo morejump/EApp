@@ -41,10 +41,10 @@
                         />
 
                 </controls:MyImage.GestureRecognizers>
-                
             </controls:MyImage>
 
             <Label
+                x:Name="lblStart"
                 Margin="8,0,0,0"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
@@ -56,6 +56,7 @@
                 Margin="8,0"
                 Grid.Column="2" />
             <Label
+                x:Name="lblEnd"
                 Margin="0,0,8,0"
                 Grid.Column="3"
                 HorizontalOptions="Center"

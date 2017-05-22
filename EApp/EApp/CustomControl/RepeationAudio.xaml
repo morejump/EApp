@@ -5,7 +5,11 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     x:Class="EApp.CustomControl.RepeationAudio">
     <Grid
+         
         VerticalOptions="Start">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56" />
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition
                 Width="*" />
@@ -13,50 +17,34 @@
                 Width="*" />
             <ColumnDefinition
                 Width="*" />
-            <ColumnDefinition
-                Width="*" />
-            <ColumnDefinition
-                Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition
-                Height="30" />
-        </Grid.RowDefinitions>
         <controls:MyImage
-            WidthRequest="30"
-            HorizontalOptions="Center"
+            Margin="32,0,0,0"
+            HeightRequest="40"
+            WidthRequest="40"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
             DownsampleToViewSize="True"
-            Source="RowLeft.png"
+            Source="Backward.png"
             Aspect="Fill" />
         <controls:MyImage
             Grid.Column="1"
-            WidthRequest="30"
+            HeightRequest="40"
+            WidthRequest="40"
+            VerticalOptions="Center"
             HorizontalOptions="Center"
             DownsampleToViewSize="True"
-            Source="RowLeft.png"
+            Source="Repeat.png"
             Aspect="Fill" />
         <controls:MyImage
+            Margin="0,0,32,0"
             Grid.Column="2"
-            WidthRequest="30"
-            HorizontalOptions="Center"
+            HeightRequest="40"
+            WidthRequest="40"
+            VerticalOptions="Center"
+            HorizontalOptions="End"
             DownsampleToViewSize="True"
-            Source="playbutton.png"
+            Source="Forward.png"
             Aspect="Fill" />
-        <controls:MyImage
-            Grid.Column="3"
-            HorizontalOptions="Center"
-            WidthRequest="30"
-            DownsampleToViewSize="True"
-            Source="RowLeft.png"
-            Aspect="Fill" />
-        
-        <controls:MyImage
-            Grid.Column="4"
-            HorizontalOptions="Center"
-            WidthRequest="30"
-            DownsampleToViewSize="True"
-            Source="RowLeft.png"
-            Aspect="Fill" />
-
     </Grid>
 </ContentView>

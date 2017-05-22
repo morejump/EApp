@@ -1,4 +1,5 @@
-﻿using EApp.Models;
+﻿using EApp.Dependecy;
+using EApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +22,17 @@ namespace EApp.Views
 
         private async void Menu_SelectedMenu(object sender, MyMenuItem e)
         {
+            var list = sender as Syncfusion.ListView.XForms.SfListView;
+
+
             if (IsPresented)
                 IsPresented = !IsPresented;
-            var page = new NavigationPage(Activator.CreateInstance(e.Type) as Page);
-            Detail = page;
+            if (e.TypePage!= TypePage.Action)
+            {
+                var page = new NavigationPage(Activator.CreateInstance(e.Type) as Page);
+                Detail = page;
+            }
+           
         }
 
 

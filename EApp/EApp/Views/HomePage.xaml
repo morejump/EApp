@@ -10,7 +10,7 @@
         <views:MenuPage
             WidthRequest="176"
             x:Name="menu"
-            Title="this is the master page" />
+            Title="Menu" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <NavigationPage>

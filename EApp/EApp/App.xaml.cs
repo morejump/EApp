@@ -17,7 +17,7 @@ namespace EApp
         {
             InitializeComponent();
             //NavigationService.NavigateAsync($"{Pages.NavBar}/{Pages.Storage}");
-            NavigationService.NavigateAsync($"{Pages.Home}");
+            NavigationService.NavigateAsync($"{Pages.TestLayout}");
         }
         protected override void RegisterTypes()
         {
@@ -29,7 +29,6 @@ namespace EApp
             Container.RegisterTypeForNavigation<ListDownloadedAudioPage>();
             Container.RegisterTypeForNavigation<HomePage>();
             Container.RegisterTypeForNavigation<RecentPage>();
-            Container.RegisterTypeForNavigation<RecordMyVoicePage>();
             Container.RegisterTypeForNavigation<StoragePage>();
             Container.RegisterTypeForNavigation<FavouritePage>();
         }
@@ -44,7 +43,6 @@ namespace EApp
         public static string Home = nameof(HomePage);
         public static string Storage = nameof(StoragePage);
         public static string Recent = nameof(RecentPage);
-        public static string Record = nameof(RecordMyVoicePage);
         public static string Favourite = nameof(FavouritePage);
     }
 }
