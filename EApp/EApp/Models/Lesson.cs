@@ -9,11 +9,9 @@ using System.Threading.Tasks;
 
 namespace EApp.Models
 {
-   
-    public class Lesson: BindableBase
-    {
 
-       
+    public class Lesson : BindableBase
+    {
 
         private Level _level;
 
@@ -164,9 +162,9 @@ namespace EApp.Models
         }
         // a list sentence when clicking a lesson
 
-        private List<string> _listSentence;
+        private List<Sentence> _listSentence;
 
-        public List<string> ListSentence
+        public List<Sentence> ListSentence
         {
             get { return _listSentence; }
             set
@@ -181,21 +179,24 @@ namespace EApp.Models
         // constructor here 
         public Lesson()
         {
-            ListSentence = new List<string>();
-            for (int i = 0; i <5; i++)
+            ListSentence = new List<Sentence>();
+            for (int i = 0; i < 5; i++)
             {
-                ListSentence.Add("thao dep trai hihihihihihihihiihihihihihihi");
-                ListSentence.Add("Binh dep trai");
-                ListSentence.Add("Nghia xau trai");
-                ListSentence.Add("Không ai muốn" +
-                    " có những việc như thế này" +
-                    " trước buổi gặp mặt của Thủ tướng với các doanh nghiệp." +
-                    " Nhưng nếu đã xảy ra thì cần nhìn thẳng vào thực tế hành vi nói trên là sự điển hình về việc gi" +
-                    "ải quyết thủ tục hành chính vô cảm, thiếu trách nhiệm");
+                ListSentence.Add(new Sentence
+                {
+                    Text = "Dù khá giả, có điều kiện nhưng một số sao Việt vẫn tin tưởng các thương hiệu" +
+                    " váy cưới trong nước, có giá thành phải chăng"
+                });
+                ListSentence.Add(new Sentence {
+                    Text= "Tin tức, hình ảnh về hotgirl chi phu"
+                });
+                ListSentence.Add(new Sentence
+                {
+                    Text = "Hotgirl Hà Nội đã trở thành một cô gái trưởng thành, sống và lập nghiệp ở Sài Gòn. Chi Pu chia sẻ, " +
+                    "cô thích cuộc sống ở đây và đang tích góp tiền để mua nhà"
+                });
             }
-            
-            }
-
         }
     }
+}
 

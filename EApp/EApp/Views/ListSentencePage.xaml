@@ -19,7 +19,7 @@
                             Margin="16,8"
                             HorizontalTextAlignment="Start"
                             VerticalTextAlignment="Center"
-                            Text="{Binding .}">
+                            Text="{Binding .Text}">
                         </Label>
                 </ViewCell>
             </DataTemplate>

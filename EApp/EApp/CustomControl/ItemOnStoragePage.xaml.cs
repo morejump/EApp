@@ -31,7 +31,7 @@ namespace EApp.CustomControl
             if (view != null && newValue != null)
             {
                 view.MyPercent.Text = view.PerCent.ToString() + "%";
-                view.MyProgressBar.Progress = (double)view.PerCent / 100; // becuase a value of progress bar form 0 to 1
+                view.MyProgressBar.Progress = (double)view.PerCent / 100; // becuase a value of progress bar from 0 to 1
             }
         }
 
@@ -40,7 +40,7 @@ namespace EApp.CustomControl
             get { return (int)GetValue(PerCentProperty); }
             set { SetValue(PerCentProperty, value); }
         }
-
+        // this property is used to set level of lessen including: easy, normal, hard
         public static BindableProperty LevelProperty = BindableProperty.Create(
           propertyName: "Level",
           returnType: typeof(int),
@@ -79,7 +79,7 @@ namespace EApp.CustomControl
             set { SetValue(LevelProperty, value); }
         }
 
-
+        // this property is used to set title of a lesson
         public static BindableProperty TitleProperty = BindableProperty.Create(
           propertyName: "Title",
           returnType: typeof(string),
@@ -104,8 +104,7 @@ namespace EApp.CustomControl
             set { SetValue(TitleProperty, value); }
         }
 
-
-
+        // set an author
         public static BindableProperty AuthorProperty = BindableProperty.Create(
           propertyName: "Author",
           returnType: typeof(string),
@@ -131,7 +130,7 @@ namespace EApp.CustomControl
         }
 
 
-
+        // set a description
         public static BindableProperty DescriptionProperty = BindableProperty.Create(
           propertyName: "Description",
           returnType: typeof(string),
@@ -158,7 +157,7 @@ namespace EApp.CustomControl
         }
 
 
-
+        // set how many user downloaded this lesson
         public static BindableProperty DownloadCountProperty = BindableProperty.Create(
           propertyName: "DownloadCount",
           returnType: typeof(int),
@@ -184,7 +183,7 @@ namespace EApp.CustomControl
         }
 
 
-
+        // set a thumbnail
         public static BindableProperty ThumbnailProperty = BindableProperty.Create(
           propertyName: "Thumbnail",
           returnType: typeof(string),
@@ -214,11 +213,14 @@ namespace EApp.CustomControl
             InitializeComponent();
         }
 
+        // when user tap a download image
+        // manuplating with download process here
         private void TapDownloadImage(object sender, EventArgs e)
         {
             MyImageDownload.IsVisible = false;
             MyProgressBar.IsVisible = true;
-            MyPercent.IsVisible = true;// 
+            MyPercent.IsVisible = true;
+
 
         }
        

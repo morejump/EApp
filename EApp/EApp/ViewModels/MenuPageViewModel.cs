@@ -47,7 +47,7 @@ namespace EApp.ViewModels
                },
                new MyMenuItem
                {
-                   Text="Storage",
+                   Text="Online Store",
                    Type= typeof(StoragePage),
                    Icon="Storage.png"
                },

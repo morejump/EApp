@@ -29,7 +29,6 @@
                 <RowDefinition
                     Height="Auto" />
             </Grid.RowDefinitions>
-            
                 <!--set level here-->
                 <BoxView
                 x:Name="MyLevel"
@@ -146,7 +145,6 @@
                         x:Name="MyPercent"
                         FontSize="20"
                         />
-                  
                 <controls:MyImage
                     Grid.Row="1"
                     VerticalOptions="End"

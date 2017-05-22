@@ -8,7 +8,7 @@ using Prism.Navigation;
 
 namespace EApp.ViewModels
 {
-    public class ListSentencePageViewModel: CoreViewModel
+    public class ListSentencePageViewModel : CoreViewModel
     {
         private string selectedItem;
 
@@ -40,9 +40,9 @@ namespace EApp.ViewModels
             }
         }
 
-        private List<string> _listSentencwe;
+        private List<Sentence> _listSentencwe;
 
-        public List<string> Listentence
+        public List<Sentence> Listentence
         {
             get { return _listSentencwe; }
             set
@@ -60,14 +60,14 @@ namespace EApp.ViewModels
         {
             base.OnNavigatedTo(parameters);
             Lesson lesson = parameters.GetValue<Lesson>("lesson");
-            Listentence = new List<string>(lesson.ListSentence);
+            Listentence = new List<Sentence>(lesson.ListSentence);
         }
 
 
         public ListSentencePageViewModel()
         {
-            
-            
+
+
         }
     }
 }
