@@ -26,6 +26,7 @@ namespace EApp.Droid.Services
 
         public void MakeToast(string message)
         {
+          
             Toast.MakeText(Forms.Context, message, ToastLength.Long).Show();
         }
     }

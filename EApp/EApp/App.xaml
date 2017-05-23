@@ -9,6 +9,9 @@
       <converters:BoolToImageConverter
         x:Key="BoolToImage"
     />
+      <converters:BoolToImageConverter
+          x:Key="BoolToColorConverter"
+    />
     </ResourceDictionary>
   </Application.Resources>
 

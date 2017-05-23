@@ -5,25 +5,91 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Prism.Navigation;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace EApp.ViewModels
 {
     public class ListSentencePageViewModel : CoreViewModel
     {
-        private string selectedItem;
 
-        public string SelectedItem
+        private int _Position;
+
+        public int Position
+        {
+            get { return _Position; }
+            set
+            {
+                if (_Position != value)
+                {
+                    _Position = value;
+                    SelectedItem = FindSentenceByPosition(_Position);
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+
+
+        private Sentence FindSentenceByPosition(int pos)
+        {
+            return Listentence.Where(d => d.Start <= pos && pos <= d.End).FirstOrDefault();
+
+        }
+
+
+        private Sentence _SelectedSentence;
+
+        public Sentence SelectedSentence
+        {
+            get { return _SelectedSentence; }
+            set
+            {
+                if (_SelectedSentence != value)
+                {
+                    _SelectedSentence = value;
+                    if (_SelectedSentence != null)
+                    {
+                        Position = _SelectedSentence.Start;
+                    }
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+
+        private Sentence selectedItem;
+
+        public Sentence SelectedItem
         {
             get { return selectedItem; }
             set
             {
                 if (selectedItem != value)
                 {
+                    if (selectedItem != null)
+                        selectedItem.IsSelected = false;
                     selectedItem = value;
+                    if (selectedItem != null)
+                        selectedItem.IsSelected = true;
                     OnPropertyChanged();
                 }
             }
         }
+        private ICommand _TapItem;
+
+        public ICommand TapItem
+        {
+            get { return _TapItem = _TapItem ?? new Command(RunTapItem); }
+
+        }
+
+        void RunTapItem()
+        {
+
+
+        }
+
 
         private List<int> mylist;
 

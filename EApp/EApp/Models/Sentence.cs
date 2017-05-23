@@ -54,8 +54,23 @@ namespace EApp.Models
 
         public Sentence()
         {
-            Text = "this is a content  ";
         }
+
+        private bool _IsSelected;
+
+        public bool IsSelected
+        {
+            get { return _IsSelected; }
+            set
+            {
+                if (_IsSelected != value)
+                {
+                    _IsSelected = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
 
     }
 }

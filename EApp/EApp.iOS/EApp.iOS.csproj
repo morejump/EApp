@@ -91,7 +91,6 @@
     <Compile Include="Effects\MaxLineLabelIosEffect.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Services\RecordingAudioIOS.cs" />
     <Compile Include="Services\ToastIOS.cs" />
     <None Include="app.config" />
     <None Include="Entitlements.plist" />

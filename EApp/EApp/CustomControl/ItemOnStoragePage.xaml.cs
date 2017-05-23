@@ -3,6 +3,7 @@ using EApp.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -217,12 +218,13 @@ namespace EApp.CustomControl
         // manuplating with download process here
         private void TapDownloadImage(object sender, EventArgs e)
         {
+            //  using dependency service here later
             MyImageDownload.IsVisible = false;
             MyProgressBar.IsVisible = true;
             MyPercent.IsVisible = true;
 
 
         }
-       
+
     }
 }

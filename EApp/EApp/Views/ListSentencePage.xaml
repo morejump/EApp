@@ -3,26 +3,54 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:effects="clr-namespace:EApp.Effects"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:behavior="clr-namespace:EApp.Behavior"
+    xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     prism:ViewModelLocator.AutowireViewModel="True"
     x:Class="EApp.Views.ListSentencePage"
-    Title="Sentences"
-    >
-    <ListView
-        HasUnevenRows="True"
-        ItemsSource="{Binding Listentence}">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                        <Label
-                            Margin="16,8"
-                            HorizontalTextAlignment="Start"
-                            VerticalTextAlignment="Center"
-                            Text="{Binding .Text}">
-                        </Label>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+    Title="Sentences">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:Array
+                x:Key="ArrayColor"
+                Type="{x:Type x:String}">
+                <x:String>#f10e57</x:String>
+                <x:String>#00000000</x:String>
+            </x:Array>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="Auto" />
+            <RowDefinition
+                Height="*" />
+        </Grid.RowDefinitions>
+        <controls:MyMediaPlayer
+            Position="{Binding Position}" />
+        <ListView
+            Grid.Row="1"
+            HasUnevenRows="True"
+            SelectedItem="{Binding SelectedSentence}"
+            ItemsSource="{Binding Listentence}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <BoxView
+                                Color="{Binding IsSelected,Converter={StaticResource BoolToColorConverter},ConverterParameter={StaticResource ArrayColor}}" />
+                            <Label
+                                Margin="16,8"
+                                HorizontalTextAlignment="Start"
+                                Text="{Binding .Text}">
+                            </Label>
+                        </Grid>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </Grid>
 </ContentPage>

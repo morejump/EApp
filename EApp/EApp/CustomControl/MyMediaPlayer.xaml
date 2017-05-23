@@ -8,8 +8,8 @@
     x:Class="EApp.CustomControl.MyMediaPlayer">
     <ContentView.Content>
         <Grid
-           VerticalOptions="Start"
-            BackgroundColor="#E1BEE7"
+            VerticalOptions="Start"
+            BackgroundColor="#f10e57"
             ColumnSpacing="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition
@@ -37,9 +37,8 @@
                 VerticalOptions="Center"
                 Source="playbutton.png">
                 <controls:MyImage.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"
-                        />
-
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped" />
                 </controls:MyImage.GestureRecognizers>
             </controls:MyImage>
 
@@ -62,7 +61,7 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 FontSize="15"
-                Text="0:69" />
+                Text="0:00" />
 
             <controls:MyImage
                 x:Name="MySpeedButton"
@@ -72,12 +71,13 @@
                 HeightRequest="30"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
-                Source="icon_xxx.png">
+                Source="icon_xx.png">
                 <controls:MyImage.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped_1" />
 
                 </controls:MyImage.GestureRecognizers>
-                
+
             </controls:MyImage>
         </Grid>
 
