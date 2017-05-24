@@ -13,6 +13,7 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnStoragePage : ContentView
     {
+        public event EventHandler ClickedDownloadbtn;
 
         // this property is used to set value for  "text "+ % and a progress bar
         // in range 1 to 100
@@ -208,7 +209,7 @@ namespace EApp.CustomControl
             get { return (string)GetValue(ThumbnailProperty); }
             set { SetValue(ThumbnailProperty, value); }
         }
-
+        // constructor here
         public ItemOnStoragePage()
         {
             InitializeComponent();
@@ -218,7 +219,7 @@ namespace EApp.CustomControl
         // manuplating with download process here
         private void TapDownloadImage(object sender, EventArgs e)
         {
-            //  using dependency service here later
+            ClickedDownloadbtn(this, EventArgs.Empty);
             MyImageDownload.IsVisible = false;
             MyProgressBar.IsVisible = true;
             MyPercent.IsVisible = true;

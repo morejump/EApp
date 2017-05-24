@@ -225,6 +225,7 @@
     <Compile Include="Effects\MaxLineLabelDroidEffect.cs" />
     <Compile Include="Effects\SelectedItemColorDroidEffect.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Renderer\ItemOnStorageRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ToastAndroid.cs" />
@@ -402,9 +403,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Backward.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Renderer\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\KiepDamMe.mp3" />
   </ItemGroup>

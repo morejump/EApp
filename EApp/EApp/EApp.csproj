@@ -71,6 +71,7 @@
     <Compile Include="Models\MyMenuItem.cs" />
     <Compile Include="Models\Sentence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\ItemOnStorageView.cs" />
     <Compile Include="Repository\LessonRepository.cs" />
     <Compile Include="Service\ILessonRepository.cs" />
     <Compile Include="Utils\MyUtils.cs" />
@@ -220,7 +221,6 @@
   <ItemGroup>
     <Folder Include="AudioFiles\" />
     <Folder Include="Images\" />
-    <Folder Include="Renderers\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ListDownloadedAudioPage.xaml">
