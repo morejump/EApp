@@ -58,7 +58,6 @@ namespace EApp.ViewModels
         }
 
 
-
         public ICommand SearchCommand
         {
             get { return _cmSearch = _cmSearch ?? new Command(RuncmSearch); }
