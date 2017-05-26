@@ -1,6 +1,7 @@
 ﻿using EApp.Models;
 using EApp.Service;
 using Prism.Navigation;
+using Realms;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,6 +15,7 @@ namespace EApp.ViewModels
 {
     public class RecentPageViewModel: CoreViewModel
     {
+        //
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
         private ObservableCollection<Lesson> _myList;

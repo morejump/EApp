@@ -1,13 +1,16 @@
 ﻿using Prism.Mvvm;
+using Realms;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EApp.Models
 {
-    public class Sentence: BindableBase
+    public class Sentence : RealmObject,INotifyPropertyChanged
     {
         private string _Text;
 
@@ -58,6 +61,8 @@ namespace EApp.Models
 
         private bool _IsSelected;
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public bool IsSelected
         {
             get { return _IsSelected; }
@@ -71,6 +76,9 @@ namespace EApp.Models
             }
         }
 
-
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }

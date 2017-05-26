@@ -3,33 +3,22 @@ using Prism.Mvvm;
 using Realms;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EApp.Models
 {
 
-    public class Lesson : BindableBase
+    public class Lesson : RealmObject,INotifyPropertyChanged
     {
-
         // constructor here 
         public Lesson()
         {
-            ListSentence = new List<Sentence>();
-            for (int i = 0; i < 5; i++)
-            {
-                ListSentence.Add(new Sentence
-                {
-                    Start = 40 * i,
-                    End = 40 * (i + 1) - 1,
-                    Text = "Dù khá giả, có điều kiện nhưng một số sao Việt vẫn tin tưởng các thương hiệu" +
-                    " váy cưới trong nước, có giá thành phải chăng"
-                });
-              
-            }
+            
         }
-
         private String _PathAudio;
 
         public String PathAudio
@@ -43,6 +32,11 @@ namespace EApp.Models
                     OnPropertyChanged();
                 }
             }
+        }
+
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         private Uri _LinkDownload;
@@ -210,6 +204,8 @@ namespace EApp.Models
         // a list sentence when clicking a lesson
 
         private List<Sentence> _listSentence;
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public List<Sentence> ListSentence
         {

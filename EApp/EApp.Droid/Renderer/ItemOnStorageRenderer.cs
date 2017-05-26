@@ -28,7 +28,7 @@ namespace EApp.Droid.Renderer
             // getting a path of folder this application
             var destination = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData),
                     "music");
-            System.Diagnostics.Debug.Write("thaohandsome"+destination);
+            System.Diagnostics.Debug.Write("thaohandsome" + destination);
             // instantiating webclient
             WebClient webClient = new WebClient();
 
@@ -36,7 +36,7 @@ namespace EApp.Droid.Renderer
             e.NewElement.ClickedDownloadbtn += (se, lesson) =>
             {
 
-                webClient.DownloadFileAsync(new Uri("http://zmp3-mp3-s1-te-zmp3-fpthn-2.zadn.vn/5b345109ca4d23137a5c/6595008708557956551?key=F_gZCdKaHkANVdHDl1cs1Q&expires=1495691626"),
+                webClient.DownloadFileAsync(new Uri("http://zmp3-mp3-s1-te-zmp3-fpthn-2.zadn.vn/069996070c43e51dbc52/5937875793534986160?key=cArz9RNC_281n0VB_-D6Pg&expires=1495859980"),
                    destination);
                 //
                 webClient.DownloadProgressChanged += (s, t) =>

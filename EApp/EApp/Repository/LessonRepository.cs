@@ -7,19 +7,24 @@ using EApp.Models;
 using EApp.Service;
 using Realms;
 using EApp.Utils;
+using System.Collections.ObjectModel;
 
 namespace EApp.Repository
 {
     public class LessonRepository : ILessonRepository
     {
+        readonly Realm realm;
+
+        public List<Sentence> ListSentence { get; set; }
         public async Task<Lesson[]> GetAllLesson()
         {
-            // Do something here later :))
+
             List<Lesson> list = new List<Lesson>();
             for (int i = 0; i < 2; i++)
             {
                 list.Add(new Lesson
                 {
+                    ListSentence= new List<Sentence>(this.ListSentence),
                     Title = "this is a title",
                     Author = "more jump ",
                     Description = "Từ đầu năm 3 mình bắt đầu đi thực " +
@@ -38,6 +43,7 @@ namespace EApp.Repository
 
                 list.Add(new Lesson
                 {
+                    ListSentence = new List<Sentence>(this.ListSentence),
                     Title = "thao dep trai nhe",
                     Author = "more jump ",
                     Description = "Từ đầu năm 3 mình bắt đầu đi thực " +
@@ -58,10 +64,43 @@ namespace EApp.Repository
             return list.ToArray();
         }
 
-        // a constructor here
-        public LessonRepository( )
+        public IQueryable<Lesson> GetQueryable()
         {
+            throw new NotImplementedException();
+        }
 
+        public Task<bool> Insert(Lesson item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Update(Lesson item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        // a constructor here
+        public LessonRepository(Realm realm)
+        {
+            this.realm = realm;
+
+            ListSentence = new List<Sentence>();
+            for (int i = 0; i < 5; i++)
+            {
+                ListSentence.Add(new Sentence
+                {
+                    Start = 40 * i,
+                    End = 40 * (i + 1) - 1,
+                    Text = "Dù khá giả, có điều kiện nhưng một số sao Việt vẫn tin tưởng các thương hiệu" +
+                    " váy cưới trong nước, có giá thành phải chăng"
+                });
+
+            }
         }
     }
 }
