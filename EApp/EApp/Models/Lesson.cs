@@ -13,6 +13,53 @@ namespace EApp.Models
     public class Lesson : BindableBase
     {
 
+        // constructor here 
+        public Lesson()
+        {
+            ListSentence = new List<Sentence>();
+            for (int i = 0; i < 5; i++)
+            {
+                ListSentence.Add(new Sentence
+                {
+                    Start = 40 * i,
+                    End = 40 * (i + 1) - 1,
+                    Text = "Dù khá giả, có điều kiện nhưng một số sao Việt vẫn tin tưởng các thương hiệu" +
+                    " váy cưới trong nước, có giá thành phải chăng"
+                });
+              
+            }
+        }
+
+        private String _PathAudio;
+
+        public String PathAudio
+        {
+            get { return _PathAudio; }
+            set
+            {
+                if (_PathAudio != value)
+                {
+                    _PathAudio = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private Uri _LinkDownload;
+
+        public Uri LinkDownload
+        {
+            get { return _LinkDownload; }
+            set
+            {
+                if (_LinkDownload != value)
+                {
+                    _LinkDownload = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private Level _level;
 
         public Level Level
@@ -176,30 +223,7 @@ namespace EApp.Models
                 }
             }
         }
-        // constructor here 
-        public Lesson()
-        {
-            ListSentence = new List<Sentence>();
-            for (int i = 0; i < 5; i++)
-            {
-                ListSentence.Add(new Sentence
-                {
-                    Start =20 * i,
-                    End = 20 * (i+1) - 1,
-                    Text = "Dù khá giả, có điều kiện nhưng một số sao Việt vẫn tin tưởng các thương hiệu" +
-                    " váy cưới trong nước, có giá thành phải chăng"
-                });
-                //ListSentence.Add(new Sentence
-                //{
-                //    Text = "Tin tức, hình ảnh về hotgirl chi phu"
-                //});
-                //ListSentence.Add(new Sentence
-                //{
-                //    Text = "Hotgirl Hà Nội đã trở thành một cô gái trưởng thành, sống và lập nghiệp ở Sài Gòn. Chi Pu chia sẻ, " +
-                //    "cô thích cuộc sống ở đây và đang tích góp tiền để mua nhà"
-                //});
-            }
-        }
+      
     }
 }
 

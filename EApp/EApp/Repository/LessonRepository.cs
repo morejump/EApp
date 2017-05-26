@@ -28,11 +28,12 @@ namespace EApp.Repository
                     "tiếp đón những điều mới lạ môi trường doanh nghiệp. " +
                     "Sau đó mình có đi thực tập vị trí tương đương ở 1 công ty nữa",
                     DownloadCount = 96,
-                    ID = 123,
+                    ID = 456,
                     LinkThumbnail = "chiphu.jpg",
                     IsFavourite = true,
-                    Percent = 40,
-                    Level = Level.normal
+                    Percent = 0,
+                    Level = Level.normal,
+                    PathAudio = "/data/data/EApp.Droid/files/.config/music"
                 });
 
                 list.Add(new Lesson
@@ -49,7 +50,8 @@ namespace EApp.Repository
                     LinkThumbnail = "ChiPhu01.jpg",
                     IsFavourite = false,
                     Percent = 40,
-                    Level = Level.normal
+                    Level = Level.normal,
+                    PathAudio = "/data/data/EApp.Droid/files/.config/music"
                 });
             }
 

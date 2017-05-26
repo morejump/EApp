@@ -201,33 +201,7 @@ namespace EApp.CustomControl
             InitializeComponent();
         }
 
-        private void PanGestureRecognizer_PanUpdated(object sender, PanUpdatedEventArgs e)
-        {
-            // swipe to right side
-            if (e.TotalX > 60)
-            {
-                // firing an event to  page hasing a list view
-                //SwipeToRight_Event?.Invoke(this, BindingContext as Lesson);
-
-                //if (cmdDelete.CanExecute(BindingContext))
-                //{
-                //    cmdDelete.Execute(BindingContext);
-
-                //}
-
-            }
-            // swipe to left side
-            if (e.TotalX < -60)
-            {
-
-                //if (cmdDelete.CanExecute(BindingContext))
-                //{
-                //    cmdDelete.Execute(BindingContext);
-                //}
-
-            }
-
-        }
+       
         // clickinng an item
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {

@@ -26,7 +26,13 @@
             HorizontalOptions="Start"
             DownsampleToViewSize="True"
             Source="Backward.png"
-            Aspect="Fill" />
+            Aspect="Fill">
+            <controls:MyImage.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="TapGestureRecognizer_Tapped" />
+            </controls:MyImage.GestureRecognizers>
+            
+        </controls:MyImage>
         <controls:MyImage
             Grid.Column="1"
             HeightRequest="40"
@@ -35,7 +41,12 @@
             HorizontalOptions="Center"
             DownsampleToViewSize="True"
             Source="Repeat.png"
-            Aspect="Fill" />
+            Aspect="Fill">
+            <controls:MyImage.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="TapGestureRecognizer_Tapped_1" />
+            </controls:MyImage.GestureRecognizers>
+        </controls:MyImage>
         <controls:MyImage
             Margin="0,0,32,0"
             Grid.Column="2"
@@ -45,6 +56,11 @@
             HorizontalOptions="End"
             DownsampleToViewSize="True"
             Source="Forward.png"
-            Aspect="Fill" />
+            Aspect="Fill">
+            <controls:MyImage.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="TapGestureRecognizer_Tapped_2" />
+            </controls:MyImage.GestureRecognizers>
+        </controls:MyImage>
     </Grid>
 </ContentView>

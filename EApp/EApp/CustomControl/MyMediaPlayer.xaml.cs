@@ -11,29 +11,49 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
-using System.IO;
 
 namespace EApp.CustomControl
 {
     public partial class MyMediaPlayer : ContentView
     {
+        bool isFirst = false;
         int i = 0;
-        private IPlaybackController PlaybackController => CrossMediaManager.Current.PlaybackController;
+        private IPlaybackController PlaybackController => Media?.PlaybackController;
+
         // constructor here
         public MyMediaPlayer()
         {
             InitializeComponent();
+
             MySlider.ValueChanged += MySlider_ValueChanged;
+           
         }
 
         private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             if (e.NewValue - e.OldValue > 2 || e.NewValue - e.OldValue < -2)
             {
-                PlaybackController.SeekTo(MySlider.Value);
+                PlaybackController?.SeekTo(MySlider.Value);
             }
         }
 
+
+
+
+        public static BindableProperty DisapearProperty = BindableProperty.Create(
+          propertyName: "Disapear",
+          returnType: typeof(ICommand),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+
+        public ICommand Disapear
+        {
+            get { return (ICommand)GetValue(DisapearProperty); }
+            set { SetValue(DisapearProperty, value); }
+        }
 
         public static BindableProperty TextEndProperty = BindableProperty.Create(
           propertyName: "TextEnd",
@@ -47,6 +67,84 @@ namespace EApp.CustomControl
         {
             get { return (string)GetValue(TextEndProperty); }
             set { SetValue(TextEndProperty, value); }
+        }
+
+
+
+        public static BindableProperty PathProperty = BindableProperty.Create(
+          propertyName: "Path",
+          returnType: typeof(string),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: "",
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+
+        public string Path
+        {
+            get { return (string)GetValue(PathProperty); }
+            set { SetValue(PathProperty, value); }
+        }
+
+
+        public static BindableProperty MediaProperty = BindableProperty.Create(
+          propertyName: "Media",
+          returnType: typeof(IMediaManager),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged: OnMediaChanged
+      );
+
+        private static void OnMediaChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as MyMediaPlayer;
+            if (view != null)
+            {
+                
+                if (view.Media != null)
+                {
+                    view.Media.StatusChanged += view.Media_StatusChanged;
+                    view.Media.PlayingChanged += view.Current_PlayingChanged;
+                    if (view.Media.Status == MediaPlayerStatus.Stopped)
+                    {
+                        view.MyPlayButton.Source = "playbutton.png";
+                    }
+                    else if (view.Media.Status == MediaPlayerStatus.Playing)
+                    {
+                        view.MyPlayButton.Source = "pausebutton.png";
+
+                    }
+                    else
+                    {
+                        if (view.Media.Status == MediaPlayerStatus.Paused)
+                        {
+                            view.MyPlayButton.Source = "playbutton.png";
+
+                        }
+                    }
+                }
+            }
+        }
+
+        private void Media_StatusChanged(object sender, Plugin.MediaManager.Abstractions.EventArguments.StatusChangedEventArgs e)
+        {
+            if (e.Status == MediaPlayerStatus.Stopped || e.Status == MediaPlayerStatus.Paused)
+            {
+                MyPlayButton.Source = "playbutton.png";
+            }
+            else if (e.Status == MediaPlayerStatus.Playing)
+            {
+                MyPlayButton.Source = "pausebutton.png";
+
+            }
+
+        }
+
+        public IMediaManager Media
+        {
+            get { return (IMediaManager)GetValue(MediaProperty); }
+            set { SetValue(MediaProperty, value); }
         }
 
 
@@ -88,7 +186,7 @@ namespace EApp.CustomControl
             if (newv - oldv > 2 || newv - oldv < -2)
             {
                 Debug.WriteLine("new value =" + newv + "-old value=" + oldv);
-                view.PlaybackController.SeekTo(newv);
+                view.PlaybackController?.SeekTo(newv);
             }
         }
 
@@ -135,34 +233,48 @@ namespace EApp.CustomControl
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             // editing it later
-            isTapPlayButton = !isTapPlayButton;
-            if (isTapPlayButton)
+            if (Media.Status == MediaPlayerStatus.Stopped)
             {
-                MyPlayButton.Source = "pausebutton.png";
-                
-                await CrossMediaManager.Current.Play("http://zmp3-mp3-s1-te-zmp3-fpthn-1.zadn.vn/11779c713b35d26b8b24/992888775050630550?key=ip7LPVb1UkVmpS_F51-Fng&expires=1495601215");
-                CrossMediaManager.Current.PlayingChanged += Current_PlayingChanged;
+
+                await Media.Play(Path, MediaFileType.Audio, ResourceAvailability.Local);
+
+            }
+            else if (Media.Status == MediaPlayerStatus.Playing)
+            {
+                await PlaybackController?.PlayPause();
+
             }
             else
             {
-                MyPlayButton.Source = "playbutton.png";
-                await PlaybackController.Pause();
+                if (Media.Status == MediaPlayerStatus.Paused)
+                {
+                    await PlaybackController?.PlayPause();
 
+                }
             }
         }
 
         private void Current_PlayingChanged(object sender, Plugin.MediaManager.Abstractions.EventArguments.PlayingChangedEventArgs e)
         {
-            int min = CrossMediaManager.Current.Duration.Minutes;
-            int sec = CrossMediaManager.Current.Duration.Seconds;
-            //
-            lblEnd.Text = min+ ":" + sec;
-            var timespan = TimeSpan.FromSeconds(Position);
-            lblStart.Text = timespan.ToString(@"mm\:ss");
-            //
-            MySlider.Maximum = e.Duration.TotalSeconds;
+           
+
+            if (isFirst == false)
+            {
+                MySlider.Value = MySlider.Maximum;
+                //
+                MySlider.Maximum = e.Duration.TotalSeconds;
+                isFirst = true;
+
+            }
             MySlider.Value = e.Position.TotalSeconds;
             Position = (int)Math.Round(e.Position.TotalSeconds);
+
+            int min = e.Duration.Minutes;
+            int sec = e.Duration.Seconds;
+            //
+            lblEnd.Text = min + ":" + sec;
+            lblStart.Text = e.Position.ToString(@"mm\:ss");
+
         }
 
         // change an image when tapping a speed button
@@ -180,7 +292,7 @@ namespace EApp.CustomControl
                 i = 0;
 
             }
-           
+
         }
     }
 }
