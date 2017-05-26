@@ -18,7 +18,7 @@
             <x:Array
                 x:Key="ArrayColor"
                 Type="{x:Type x:String}">
-                <x:String>#f10e57</x:String>
+                <x:String>#299617</x:String>
                 <x:String>#00000000</x:String>
             </x:Array>
             <x:Array
@@ -71,7 +71,7 @@
             PlayBackwardCmd="{Binding PlayBackwardCmd}"
             PlayForwardCmd="{Binding PlayForwardCmd}"
             RepeatSentenceCmd="{Binding RepeatSentenceCMD}"
-            BackgroundColor="Green"
+            BackgroundColor="#f10e57"
             Grid.Row="2" />
     </Grid>
 </ContentPage>
