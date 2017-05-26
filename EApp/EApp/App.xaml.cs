@@ -6,8 +6,6 @@ using Xamarin.Forms;
 using EApp.Service;
 using EApp.Repository;
 using Acr.UserDialogs;
-using Plugin.MediaManager.Abstractions;
-using Plugin.MediaManager;
 
 namespace EApp
 {
@@ -24,8 +22,6 @@ namespace EApp
         protected override void RegisterTypes()
         {
             Container.RegisterType<ILessonRepository, LessonRepository>();
-            Container.RegisterInstance(CrossMediaManager.Current);
-
             //
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<TestLayoutPage>();

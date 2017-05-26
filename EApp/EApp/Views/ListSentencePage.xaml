@@ -3,7 +3,6 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:effects="clr-namespace:EApp.Effects"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:converters="clr-namespace:EApp.Converter"
     xmlns:behavior="clr-namespace:EApp.Behavior"
     xmlns:controls="clr-namespace:EApp.CustomControl"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
@@ -13,19 +12,11 @@
     Title="Sentences">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <converters:BoolToImageConverter
-                x:Key="boolToImagecvt" />
             <x:Array
                 x:Key="ArrayColor"
                 Type="{x:Type x:String}">
                 <x:String>#f10e57</x:String>
                 <x:String>#00000000</x:String>
-            </x:Array>
-            <x:Array
-                x:Key="ArrayImage"
-                Type="{x:Type x:String}">
-                <x:String>playbutton.png</x:String>
-                <x:String>pausebutton.png</x:String>
             </x:Array>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -35,17 +26,10 @@
                 Height="Auto" />
             <RowDefinition
                 Height="*" />
-            <RowDefinition
-                Height="Auto" />
         </Grid.RowDefinitions>
         <controls:MyMediaPlayer
-            x:Name="MyMedia"
-            Disapear="{Binding cmdDisapear}"
-            Path="{Binding Path}"
-            Media="{Binding MediaManager}"
             Position="{Binding Position}" />
         <ListView
-            x:Name="MyListView"
             Grid.Row="1"
             HasUnevenRows="True"
             SelectedItem="{Binding SelectedSentence}"
@@ -67,11 +51,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <controls:RepeationAudio
-            PlayBackwardCmd="{Binding PlayBackwardCmd}"
-            PlayForwardCmd="{Binding PlayForwardCmd}"
-            RepeatSentenceCmd="{Binding RepeatSentenceCMD}"
-            BackgroundColor="Green"
-            Grid.Row="2" />
+
     </Grid>
 </ContentPage>

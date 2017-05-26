@@ -16,14 +16,5 @@ namespace EApp.Views
         {
             InitializeComponent();
         }
-
-        protected override void OnDisappearing()
-        {
-            base.OnDisappearing();
-            if (MyMedia.Disapear.CanExecute(""))
-            {
-                MyMedia.Disapear.Execute("");
-            };
-        }
     }
 }

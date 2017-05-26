@@ -18,12 +18,6 @@ namespace EApp.ViewModels
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
         private ICommand _cmSearch;
-
-        public override void OnNavigatedFrom(NavigationParameters parameters)
-        {
-            base.OnNavigatedFrom(parameters);
-
-        }
         // temporary list 
         private ObservableCollection<Lesson> _tempList;
 

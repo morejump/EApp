@@ -9,5 +9,5 @@
     xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.TestLayoutPage">
-    <controls:RepeationAudio />
+    <controls:MyMediaPlayer />
 </ContentPage>

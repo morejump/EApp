@@ -13,7 +13,7 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnStoragePage : ContentView
     {
-        public event EventHandler<Lesson> ClickedDownloadbtn;
+        public event EventHandler ClickedDownloadbtn;
 
         // this property is used to set value for  "text "+ % and a progress bar
         // in range 1 to 100
@@ -22,7 +22,7 @@ namespace EApp.CustomControl
           propertyName: "PerCent",
           returnType: typeof(int),
           declaringType: typeof(ItemOnStoragePage),
-          defaultValue: 0,
+          defaultValue: 60,
           defaultBindingMode: BindingMode.TwoWay,
           propertyChanged: OnPercentChanged
       );
@@ -219,7 +219,7 @@ namespace EApp.CustomControl
         // manuplating with download process here
         private void TapDownloadImage(object sender, EventArgs e)
         {
-            ClickedDownloadbtn(this, (Lesson)BindingContext);
+            ClickedDownloadbtn(this, EventArgs.Empty);
             MyImageDownload.IsVisible = false;
             MyProgressBar.IsVisible = true;
             MyPercent.IsVisible = true;

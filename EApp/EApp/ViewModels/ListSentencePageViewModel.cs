@@ -7,29 +7,11 @@ using System.Threading.Tasks;
 using Prism.Navigation;
 using System.Windows.Input;
 using Xamarin.Forms;
-using Plugin.MediaManager.Abstractions;
-using Plugin.MediaManager;
 
 namespace EApp.ViewModels
 {
     public class ListSentencePageViewModel : CoreViewModel
     {
-
-        private Lesson _lesson;
-
-        public Lesson MyLesson
-        {
-            get { return _lesson; }
-            set
-            {
-                if (_lesson != value)
-                {
-                    _lesson = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
 
         private int _Position;
 
@@ -46,6 +28,7 @@ namespace EApp.ViewModels
                 }
             }
         }
+
 
 
         private Sentence FindSentenceByPosition(int pos)
@@ -93,73 +76,19 @@ namespace EApp.ViewModels
                 }
             }
         }
-        private ICommand _PlayBackwardCmd;
+        private ICommand _TapItem;
 
-        public ICommand PlayBackwardCmd
+        public ICommand TapItem
         {
-            get { return _PlayBackwardCmd = _PlayBackwardCmd ?? new Command(RunPlayBackwardCmd); }
+            get { return _TapItem = _TapItem ?? new Command(RunTapItem); }
 
         }
 
-        void RunPlayBackwardCmd()
+        void RunTapItem()
         {
-            if (Position - 15 <= 0)
-            {
-                MediaManager.Seek(new TimeSpan(0, 0, 0));
-            }
-            else
-            {
-                MediaManager.Seek(new TimeSpan(0, 0, Position - 15));
-            }
-        }
-        private ICommand _PlayForwardCmd;
-
-        public ICommand PlayForwardCmd
-        {
-            get { return _PlayForwardCmd = _PlayForwardCmd ?? new Command(RunPlayForwardCmd); }
-
-        }
-
-
-        void RunPlayForwardCmd()
-        {
-            var LastElement = Listentence[Listentence.Count()-1];
-            if (LastElement!=null)
-            {
-
-                if (Position + 15 >= LastElement.End)
-                {
-                    MediaManager.Seek(new TimeSpan(0, 0, LastElement.End));
-                }
-                else
-                {
-                    MediaManager.Seek(new TimeSpan(0, 0, Position + 15));
-                }
-            }
-           
 
 
         }
-        private ICommand _RepeatSentenceCMD;
-
-        public ICommand RepeatSentenceCMD
-        {
-            get { return _RepeatSentenceCMD = _RepeatSentenceCMD ?? new Command(RunRepeatSentenceCMD); }
-
-        }
-
-        void RunRepeatSentenceCMD()
-        {
-            var start = Listentence.Where(d => d.Start <= Position && Position <= d.End).FirstOrDefault();
-            if (start != null)
-            {
-                MediaManager.Seek(new TimeSpan(0,0,start.Start));
-            }
-                
-        }
-
-
-
 
 
         private List<int> mylist;
@@ -192,65 +121,18 @@ namespace EApp.ViewModels
             }
         }
 
-        private string _path;
-
-        public string Path
-        {
-            get { return _path; }
-            set
-            {
-                if (_path != value)
-                {
-                    _path = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-        private ICommand _cmdDisapear;
-
-        public ICommand cmdDisapear
-        {
-            get { return _cmdDisapear = _cmdDisapear ?? new Command(RuncmdDisapear); }
-
-        }
-
-        void RuncmdDisapear()
-        {
-            MediaManager.Stop();
-            MediaManager.MediaNotificationManager?.StopNotifications();
-            MediaManager.MediaNotificationManager = null;
-            MediaManager = null;
-        }
-
-
 
         public override void OnNavigatedTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
-            MyLesson = parameters.GetValue<Lesson>("lesson");
-            Listentence = new List<Sentence>(MyLesson.ListSentence);
-            Path = MyLesson.PathAudio;
-
-        }
-        private IMediaManager mediaManager;
-
-        public IMediaManager MediaManager
-        {
-            get { return mediaManager; }
-            set
-            {
-                if (mediaManager != value)
-                {
-                    mediaManager = value;
-                    OnPropertyChanged();
-                }
-            }
+            Lesson lesson = parameters.GetValue<Lesson>("lesson");
+            Listentence = new List<Sentence>(lesson.ListSentence);
         }
 
-        // constructor here
-        public ListSentencePageViewModel(IMediaManager mediaManager)
+
+        public ListSentencePageViewModel()
         {
-            this.MediaManager = mediaManager;
+
 
         }
     }

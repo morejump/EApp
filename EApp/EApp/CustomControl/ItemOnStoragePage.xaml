@@ -166,7 +166,7 @@
                 Grid.Row="1"
                 Grid.ColumnSpan="4"
                 HeightRequest="8"
-                />
+                Progress="0.7" />
         </Grid>
 
     </ContentView.Content>
