@@ -5,6 +5,7 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     x:Class="EApp.CustomControl.RepeationAudio">
     <Grid
+         
         VerticalOptions="Start">
         <Grid.RowDefinitions>
             <RowDefinition Height="56" />
@@ -24,7 +25,7 @@
             VerticalOptions="Center"
             HorizontalOptions="Start"
             DownsampleToViewSize="True"
-            Source="IconBack.png"
+            Source="Backward.png"
             Aspect="Fill">
             <controls:MyImage.GestureRecognizers>
                 <TapGestureRecognizer
@@ -39,7 +40,7 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             DownsampleToViewSize="True"
-            Source="IconReload.png"
+            Source="Repeat.png"
             Aspect="Fill">
             <controls:MyImage.GestureRecognizers>
                 <TapGestureRecognizer
@@ -54,7 +55,7 @@
             VerticalOptions="Center"
             HorizontalOptions="End"
             DownsampleToViewSize="True"
-            Source="IconNext.png"
+            Source="Forward.png"
             Aspect="Fill">
             <controls:MyImage.GestureRecognizers>
                 <TapGestureRecognizer

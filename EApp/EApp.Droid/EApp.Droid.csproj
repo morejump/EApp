@@ -423,9 +423,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hello.txt" />
-    <AndroidResource Include="Resources\drawable\IconReload.png" />
-    <AndroidResource Include="Resources\drawable\IconNext.png" />
-    <AndroidResource Include="Resources\drawable\IconBack.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

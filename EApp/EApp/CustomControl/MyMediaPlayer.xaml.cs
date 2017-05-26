@@ -24,6 +24,7 @@ namespace EApp.CustomControl
         public MyMediaPlayer()
         {
             InitializeComponent();
+
             MySlider.ValueChanged += MySlider_ValueChanged;
            
         }
@@ -32,10 +33,12 @@ namespace EApp.CustomControl
         {
             if (e.NewValue - e.OldValue > 2 || e.NewValue - e.OldValue < -2)
             {
-                Position = (int)MySlider.Value;
                 PlaybackController?.SeekTo(MySlider.Value);
             }
         }
+
+
+
 
         public static BindableProperty DisapearProperty = BindableProperty.Create(
           propertyName: "Disapear",
@@ -73,8 +76,7 @@ namespace EApp.CustomControl
           returnType: typeof(string),
           declaringType: typeof(MyMediaPlayer),
           defaultValue: "",
-          defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged: OnMediaChanged
+          defaultBindingMode: BindingMode.TwoWay
       );
 
 
@@ -94,21 +96,14 @@ namespace EApp.CustomControl
           propertyChanged: OnMediaChanged
       );
 
-        private async static void OnMediaChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void OnMediaChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var view = bindable as MyMediaPlayer;
             if (view != null)
             {
                 
-                if (view.Media != null && view.Path!=null)
+                if (view.Media != null)
                 {
-                    if (view.Media.Status == MediaPlayerStatus.Stopped)
-                    {
-
-                        await view.Media.Play(view.Path, MediaFileType.Audio, ResourceAvailability.Local);
-
-                    }
-
                     view.Media.StatusChanged += view.Media_StatusChanged;
                     view.Media.PlayingChanged += view.Current_PlayingChanged;
                     if (view.Media.Status == MediaPlayerStatus.Stopped)
@@ -191,7 +186,6 @@ namespace EApp.CustomControl
             if (newv - oldv > 2 || newv - oldv < -2)
             {
                 Debug.WriteLine("new value =" + newv + "-old value=" + oldv);
-                
                 view.PlaybackController?.SeekTo(newv);
             }
         }
@@ -270,7 +264,6 @@ namespace EApp.CustomControl
                 //
                 MySlider.Maximum = e.Duration.TotalSeconds;
                 isFirst = true;
-                Media.Pause();
 
             }
             MySlider.Value = e.Position.TotalSeconds;

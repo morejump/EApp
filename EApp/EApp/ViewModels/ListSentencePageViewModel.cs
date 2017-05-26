@@ -93,8 +93,6 @@ namespace EApp.ViewModels
                 }
             }
         }
-
-
         private ICommand _PlayBackwardCmd;
 
         public ICommand PlayBackwardCmd
@@ -125,8 +123,8 @@ namespace EApp.ViewModels
 
         void RunPlayForwardCmd()
         {
-            var LastElement = Listentence[Listentence.Count() - 1];
-            if (LastElement != null)
+            var LastElement = Listentence[Listentence.Count()-1];
+            if (LastElement!=null)
             {
 
                 if (Position + 15 >= LastElement.End)
@@ -138,7 +136,7 @@ namespace EApp.ViewModels
                     MediaManager.Seek(new TimeSpan(0, 0, Position + 15));
                 }
             }
-
+           
 
 
         }
@@ -155,9 +153,9 @@ namespace EApp.ViewModels
             var start = Listentence.Where(d => d.Start <= Position && Position <= d.End).FirstOrDefault();
             if (start != null)
             {
-                MediaManager.Seek(new TimeSpan(0, 0, start.Start));
+                MediaManager.Seek(new TimeSpan(0,0,start.Start));
             }
-
+                
         }
 
 
@@ -231,8 +229,6 @@ namespace EApp.ViewModels
             base.OnNavigatedTo(parameters);
             MyLesson = parameters.GetValue<Lesson>("lesson");
             Listentence = new List<Sentence>(MyLesson.ListSentence);
-            if (Listentence.Count > 0)
-                SelectedSentence = Listentence[0];
             Path = MyLesson.PathAudio;
 
         }
@@ -255,7 +251,6 @@ namespace EApp.ViewModels
         public ListSentencePageViewModel(IMediaManager mediaManager)
         {
             this.MediaManager = mediaManager;
-
 
         }
     }
