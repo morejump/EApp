@@ -10,6 +10,10 @@ namespace EApp.Service
     public interface ILessonRepository
     {
         Task<Lesson[]> GetAllLesson();
+        IQueryable<Lesson> GetQueryable();
 
+        Task<bool> Insert(Lesson lesson);
+        Task<bool> Update(Lesson lesson);
+        Task<bool> Delete(int id);
     }
 }

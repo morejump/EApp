@@ -58,6 +58,26 @@ namespace EApp.Repository
             return list.ToArray();
         }
 
+        public IQueryable<Lesson> GetQueryable()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Insert(Lesson lesson)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Update(Lesson lesson)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         // a constructor here
         public LessonRepository( )
         {
