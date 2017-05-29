@@ -90,9 +90,12 @@ namespace EApp.Repository
         public void Insert(Lesson lesson)
         {
             var obj = realm.Find<Lesson>(lesson.ID);
-            if (obj == null)
+            if (obj==null)
             {
-                realm.Write(() => realm.Add(lesson));
+                realm.Write(() =>
+                {
+                    realm.Add(lesson);
+                });
             }
 
         }
@@ -127,9 +130,6 @@ namespace EApp.Repository
         {
             this.realm = realm;
 
-
-            realm.Write(() =>
-            {
                 for (var i = 0; i < 3; i++)
                 {
                     var lesson = new Lesson
@@ -152,7 +152,6 @@ namespace EApp.Repository
                     Insert(lesson);
                    
                 }
-            });
 
         }
     }
