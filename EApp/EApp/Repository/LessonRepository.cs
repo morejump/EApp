@@ -7,6 +7,7 @@ using EApp.Models;
 using EApp.Service;
 using Realms;
 using EApp.Utils;
+using System.Collections.ObjectModel;
 
 namespace EApp.Repository
 {
@@ -21,6 +22,16 @@ namespace EApp.Repository
             {
                 list.Add(new Lesson
                 {
+                    //ListSentence = new ObservableCollection<Sentence>
+                    //{
+                    //    new Sentence
+                    //    {
+                    //Start = 40 * i,
+                    //End = 40 * (i + 1) - 1,
+                    //Text = "Dù khá giả, có điều kiện nhưng một số sao Việt vẫn tin tưởng các thương hiệu" +
+                    //" váy cưới trong nước, có giá thành phải chăng"
+                    //        }
+                    //},
                     Title = "this is a title",
                     Author = "more jump ",
                     Description = "Từ đầu năm 3 mình bắt đầu đi thực " +
@@ -33,12 +44,22 @@ namespace EApp.Repository
                     LinkThumbnail = "chiphu.jpg",
                     IsFavourite = true,
                     Percent = 0,
-                    Level = Level.normal,
+                    //Level = Level.normal,
                     PathAudio = "/data/data/EApp.Droid/files/.config/music"
                 });
 
                 list.Add(new Lesson
                 {
+                    //ListSentence = new ObservableCollection<Sentence>
+                    //{
+                    //    new Sentence
+                    //    {
+                    //Start = 40 * i,
+                    //End = 40 * (i + 1) - 1,
+                    //Text = "Dù khá giả, có điều kiện nhưng một số sao Việt vẫn tin tưởng các thương hiệu" +
+                    //" váy cưới trong nước, có giá thành phải chăng"
+                    //        }
+                    //},
                     Title = "thao dep trai nhe",
                     Author = "more jump ",
                     Description = "Từ đầu năm 3 mình bắt đầu đi thực " +
@@ -51,7 +72,7 @@ namespace EApp.Repository
                     LinkThumbnail = "ChiPhu01.jpg",
                     IsFavourite = false,
                     Percent = 40,
-                    Level = Level.normal,
+                    //Level = Level.normal,
                     PathAudio = "/data/data/EApp.Droid/files/.config/music"
                 });
             }
@@ -106,7 +127,7 @@ namespace EApp.Repository
 
             //return result;
             return false;
-            
+
         }
 
         // a constructor here

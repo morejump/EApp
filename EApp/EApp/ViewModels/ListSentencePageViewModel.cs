@@ -230,7 +230,7 @@ namespace EApp.ViewModels
         {
             base.OnNavigatedTo(parameters);
             MyLesson = parameters.GetValue<Lesson>("lesson");
-            Listentence = new List<Sentence>(MyLesson.ListSentence);
+            //Listentence = new List<Sentence>(MyLesson.ListSentence);
             if (Listentence.Count > 0)
                 SelectedSentence = Listentence[0];
             Path = MyLesson.PathAudio;

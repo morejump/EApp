@@ -43,7 +43,6 @@
             <DataTemplate>
                 <ViewCell>
                     <controls:ItemOnList
-                        Level="{Binding Level}"
                         cmdClick="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmSelectedLesson}"
                         IsFavouriteCommand="{Binding Source={Reference Name=lstView},Path=BindingContext.CmdCheckFavourite}"
                         hasMoreOptions="False"
