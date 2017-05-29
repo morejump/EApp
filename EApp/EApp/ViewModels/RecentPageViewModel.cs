@@ -1,6 +1,7 @@
 ﻿using EApp.Models;
 using EApp.Service;
 using Prism.Navigation;
+using Realms;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -78,7 +79,7 @@ namespace EApp.ViewModels
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<Lesson>(LessonRepo.GetAllLesson().Result);
+            MyList = new ObservableCollection<Lesson>(LessonRepo.GetQueryable());
         }
     }
 }

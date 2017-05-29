@@ -19,7 +19,7 @@ namespace EApp
         {
             InitializeComponent();
             //NavigationService.NavigateAsync($"{Pages.NavBar}/{Pages.Storage}");
-            NavigationService.NavigateAsync($"{Pages.Recent}");
+            NavigationService.NavigateAsync($"{Pages.Home}");
         }
         protected override void RegisterTypes()
         {

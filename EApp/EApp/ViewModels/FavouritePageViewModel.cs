@@ -121,7 +121,7 @@ namespace EApp.ViewModels
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<Lesson>(LessonRepo.GetAllLesson().Result);
+            MyList = new ObservableCollection<Lesson>(LessonRepo.GetQueryable());
             TempList = new ObservableCollection<Lesson>(MyList);
         }
     }

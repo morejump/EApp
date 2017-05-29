@@ -15,35 +15,29 @@ namespace EApp.Models
 
     public class Lesson : RealmObject
     {
+        [PrimaryKey]
+        public long ID { get; set; }
 
-        //constructor here
-        public Lesson()
-        {
-            
-        }
         public String PathAudio { get; set; }
 
         //public Uri LinkDownload { get; set; }
-       
-        //public Level Level { get; set; }
-      
 
-        public int ID { get; set; }
-       
+        //public Level Level { get; set; }
+
         public int Percent { get; set; }
-       
+
         public int DownloadCount { get; set; }
-      
+
         public string Title { get; set; }
-       
+
         public string Description { get; set; }
-        
+
         public string LinkThumbnail { get; set; }
-        
+
         public bool IsFavourite { get; set; }
-       
+
         public bool Recent { get; set; }
-       
+
         public string Author { get; set; }
 
         public IList<Sentence> ListSentence { get; }

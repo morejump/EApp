@@ -36,7 +36,6 @@
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnStoragePage
-                            Level="{Binding Level}"
                             PerCent="{Binding Percent}"
                             Title="{Binding Title}"
                             Author="{Binding Author}"

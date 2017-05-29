@@ -16,13 +16,6 @@ namespace EApp.Models
         public int Start { get; set; }
         public int End { get; set; }
         public bool IsSelected { get; set; }
-        public Sentence()
-        {
-        }
-
-
-       
-     
 
     }
 }

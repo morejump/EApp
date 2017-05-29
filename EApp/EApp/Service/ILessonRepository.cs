@@ -12,8 +12,8 @@ namespace EApp.Service
         Task<Lesson[]> GetAllLesson();
         IQueryable<Lesson> GetQueryable();
 
-        Task<bool> Insert(Lesson lesson);
-        Task<bool> Update(Lesson lesson);
-        Task<bool> Delete(int id);
+        void Insert(Lesson lesson);
+        void Update(Lesson lesson);
+        void Delete(long ID);
     }
 }

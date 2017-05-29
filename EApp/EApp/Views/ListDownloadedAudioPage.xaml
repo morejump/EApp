@@ -51,7 +51,6 @@
                         <controls:ItemOnList
                             hasMoreOptions="False"
                             cmdClick="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmSelectedLesson}"
-                            Level="{Binding Level}"
                             IsFavouriteCommand="{Binding Source={Reference Name=lstView},Path=BindingContext.CmdCheckFavourite}"
                             Author="{Binding Author}"
                             Title="{Binding Title}"

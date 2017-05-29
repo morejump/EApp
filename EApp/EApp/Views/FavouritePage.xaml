@@ -60,7 +60,6 @@
                             cmdClick="{Binding Source={Reference Name=content}, Path=BindingContext.cmSelectedLesson}"
                             cmdDelete="{Binding Source={Reference Name=content}, Path=BindingContext.cmdDeleteLesson}"
                             cmdRemoveFavourite="{Binding Source={Reference Name=content}, Path=BindingContext.cmdRemoveLesson}"
-                            Level="{Binding Level}"
                             Title="{Binding Title}"
                             Thumbnail="{Binding LinkThumbnail}"
                             Author="{Binding Author}"
