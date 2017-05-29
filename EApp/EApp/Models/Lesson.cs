@@ -3,20 +3,23 @@ using Prism.Mvvm;
 using Realms;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EApp.Models
 {
 
-    public class Lesson : BindableBase
+    public class Lesson : RealmObject, INotifyPropertyChanged
     {
 
-        // constructor here 
+        //constructor here
         public Lesson()
         {
-            ListSentence = new List<Sentence>();
+            ListSentence = new ObservableCollection<Sentence>();
             for (int i = 0; i < 5; i++)
             {
                 ListSentence.Add(new Sentence
@@ -26,7 +29,7 @@ namespace EApp.Models
                     Text = "Dù khá giả, có điều kiện nhưng một số sao Việt vẫn tin tưởng các thương hiệu" +
                     " váy cưới trong nước, có giá thành phải chăng"
                 });
-              
+
             }
         }
 
@@ -40,7 +43,7 @@ namespace EApp.Models
                 if (_PathAudio != value)
                 {
                     _PathAudio = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -55,7 +58,7 @@ namespace EApp.Models
                 if (_LinkDownload != value)
                 {
                     _LinkDownload = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -70,7 +73,7 @@ namespace EApp.Models
                 if (_level != value)
                 {
                     _level = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -85,7 +88,7 @@ namespace EApp.Models
                 if (_id != value)
                 {
                     _id = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -99,7 +102,7 @@ namespace EApp.Models
                 if (_percent != value)
                 {
                     _percent = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -114,7 +117,7 @@ namespace EApp.Models
                 if (_downloadCount != value)
                 {
                     _downloadCount = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -129,7 +132,7 @@ namespace EApp.Models
                 if (_title != value)
                 {
                     _title = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -144,7 +147,7 @@ namespace EApp.Models
                 if (_description != value)
                 {
                     _description = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -158,7 +161,7 @@ namespace EApp.Models
                 if (_linkThumbnail != value)
                 {
                     _linkThumbnail = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -173,7 +176,7 @@ namespace EApp.Models
                 if (_isFavourite != value)
                 {
                     _isFavourite = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -188,7 +191,7 @@ namespace EApp.Models
                 if (_recent != value)
                 {
                     _recent = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -203,15 +206,24 @@ namespace EApp.Models
                 if (_author != value)
                 {
                     _author = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
         // a list sentence when clicking a lesson
 
-        private List<Sentence> _listSentence;
+        private ObservableCollection<Sentence> _listSentence;
 
-        public List<Sentence> ListSentence
+        public event PropertyChangedEventHandler PropertyChanged;
+         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        public ObservableCollection<Sentence> ListSentence
         {
             get { return _listSentence; }
             set
@@ -219,7 +231,7 @@ namespace EApp.Models
                 if (_listSentence != value)
                 {
                     _listSentence = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }

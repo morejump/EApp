@@ -1,13 +1,16 @@
 ﻿using Prism.Mvvm;
+using Realms;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EApp.Models
 {
-    public class Sentence: BindableBase
+    public class Sentence: RealmObject, INotifyPropertyChanged
     {
         private string _Text;
 
@@ -19,7 +22,7 @@ namespace EApp.Models
                 if (_Text != value)
                 {
                     _Text = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -33,7 +36,7 @@ namespace EApp.Models
                 if (_Start != value)
                 {
                     _Start = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -47,7 +50,7 @@ namespace EApp.Models
                 if (_End != value)
                 {
                     _End = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -58,6 +61,15 @@ namespace EApp.Models
 
         private bool _IsSelected;
 
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
         public bool IsSelected
         {
             get { return _IsSelected; }
@@ -66,7 +78,7 @@ namespace EApp.Models
                 if (_IsSelected != value)
                 {
                     _IsSelected = value;
-                    OnPropertyChanged();
+                    NotifyPropertyChanged();
                 }
             }
         }

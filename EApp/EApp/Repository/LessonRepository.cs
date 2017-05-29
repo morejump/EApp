@@ -12,9 +12,10 @@ namespace EApp.Repository
 {
     public class LessonRepository : ILessonRepository
     {
+        readonly Realm realm;
+
         public async Task<Lesson[]> GetAllLesson()
         {
-            // Do something here later :))
             List<Lesson> list = new List<Lesson>();
             for (int i = 0; i < 2; i++)
             {
@@ -60,27 +61,58 @@ namespace EApp.Repository
 
         public IQueryable<Lesson> GetQueryable()
         {
-            throw new NotImplementedException();
+            return realm.All<Lesson>();
         }
 
-        public Task<bool> Insert(Lesson lesson)
+        public async Task<bool> Insert(Lesson lesson)
         {
-            throw new NotImplementedException();
+            //var result = await MakeChange(r => r.Add(lesson));
+
+            //return result;
+            return false;
         }
 
-        public Task<bool> Update(Lesson lesson)
+        public async Task<bool> Update(Lesson lesson)
         {
-            throw new NotImplementedException();
+            //var result = await MakeChange(r => r.Add(lesson, true));
+
+            //return result;
+            return false;
         }
 
-        public Task<bool> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            throw new NotImplementedException();
+            //var result = false;
+            //var lesson = realm.Find<Lesson>(id);
+
+            //if (lesson == null) return result;
+
+            //result = await MakeChange(r => r.Remove(lesson));
+
+            //return result;
+            return false;
+        }
+
+        //
+
+        public async Task<bool> MakeChange(Action<Realm> action)
+        {
+            //var result = false;
+
+            //await realm.WriteAsync(action).ContinueWith(t =>
+            //{
+            //    result = !t.IsFaulted && !t.IsCanceled && t.IsCompleted;
+            //});
+
+            //return result;
+            return false;
+            
         }
 
         // a constructor here
-        public LessonRepository( )
+        public LessonRepository(Realm realm)
         {
+            this.realm = realm;
 
         }
     }

@@ -23,6 +23,8 @@ namespace EApp
         }
         protected override void RegisterTypes()
         {
+
+            Container.RegisterInstance(Realms.Realm.GetInstance());
             Container.RegisterType<ILessonRepository, LessonRepository>();
             Container.RegisterInstance(CrossMediaManager.Current);
 
