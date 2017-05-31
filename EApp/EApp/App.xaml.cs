@@ -18,6 +18,7 @@ namespace EApp
         protected override void OnInitialized()
         {
             //
+
             InitializeComponent();
             //NavigationService.NavigateAsync($"{Pages.NavBar}/{Pages.Storage}");
             NavigationService.NavigateAsync($"{Pages.Home}");
