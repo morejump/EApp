@@ -13,8 +13,8 @@ namespace EApp.Service
         IQueryable<LessonItem> GetQueryable();
 
         Task<bool> Insert(LessonItem item);
-        Task<bool> Update(LessonItem item);
-        Task<bool> Delete(long id);
+        void Update(LessonItem item);
+        void Delete(long id);
 
     }
 }

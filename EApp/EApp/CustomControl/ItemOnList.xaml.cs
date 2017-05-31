@@ -12,6 +12,32 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnList : ContentView
     {
+
+        public static BindableProperty ImgFavouriteProperty = BindableProperty.Create(
+          propertyName: "ImgFavourite",
+          returnType: typeof(string),
+          declaringType: typeof(ItemOnList),
+          defaultValue: "",
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged: OnImgFavouriteChanged
+      );
+
+        private static void OnImgFavouriteChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as ItemOnList;
+            if(view!=null && newValue != null)
+            {
+                view.MyFavourite.Source = view.ImgFavourite;
+            }
+        }
+
+        public string ImgFavourite
+        {
+            get { return (string)GetValue(ImgFavouriteProperty); }
+            set { SetValue(ImgFavouriteProperty, value); }
+        }
+
+
         public static BindableProperty cmdClickProperty = BindableProperty.Create(
           propertyName: "cmdClick",
           returnType: typeof(ICommand),
@@ -65,7 +91,6 @@ namespace EApp.CustomControl
             set { SetValue(LevelProperty, value); }
         }
 
-        public bool isFavourite { get; set; }
 
         public static BindableProperty AuthorProperty = BindableProperty.Create(
           propertyName: "Author",
@@ -181,7 +206,7 @@ namespace EApp.CustomControl
             var view = bindable as ItemOnList;
             if (view != null && newValue != null)
             {
-                view.MyDescription.Text = view.Description+"...";
+                view.MyDescription.Text = view.Description + "...";
 
             }
         }
@@ -197,8 +222,7 @@ namespace EApp.CustomControl
         {
             InitializeComponent();
             MyThumbnail.CacheDuration = TimeSpan.FromDays(60);
-            isFavourite = false;
-            this.MyDescription.Text = this.Description;
+            this.MyDescription.Text = this.Description; 
 
         }
 
@@ -223,8 +247,8 @@ namespace EApp.CustomControl
         // this event is fired when tapping heart button
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            MyFavourite.Source = isFavourite ? "heart.png" : "redheart.png";
-            isFavourite = !isFavourite;
+            //MyFavourite.Source = isFavourite ? "heart.png" : "redheart.png";
+            //isFavourite = !isFavourite;
 
             if (IsFavouriteCommand.CanExecute(BindingContext))
             {

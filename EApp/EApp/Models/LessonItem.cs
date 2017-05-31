@@ -23,7 +23,8 @@ namespace EApp.Models
 
         public int Level { get; set; }
 
-        public int ID { get; set; }
+        [PrimaryKey]
+        public long ID { get; set; }
        
         public int Percent { get; set; }
        

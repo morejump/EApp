@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using EApp.Utils;
 
 namespace EApp.ViewModels
 {
@@ -16,9 +17,9 @@ namespace EApp.ViewModels
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
-        private ObservableCollection<LessonItem> _myList;
+        private ObservableCollection<LessonModel> _myList;
 
-        public ObservableCollection<LessonItem> MyList
+        public ObservableCollection<LessonModel> MyList
         {
             get { return _myList; }
             set
@@ -41,7 +42,9 @@ namespace EApp.ViewModels
         void RuncmdDeleteLesson(object obj)
         {
             var lesson = obj as LessonModel;
-            //MyList.Remove(lesson);
+            MyList.Remove(lesson);
+            LessonRepo.Delete(lesson.ID);
+
         }
 
 
@@ -68,9 +71,18 @@ namespace EApp.ViewModels
 
         }
 
+        // do something here later
         void RuncmdCheckFavourite(object obj)
         {
-           // do something here later :))
+            var les = obj as LessonModel;
+            les.IsFavourite = !les.IsFavourite;
+            LessonItem item=  ItemToModelLesson.ModelToItem(les);
+            if (item != null)
+            {
+                LessonRepo.Update(item);
+            }
+
+
 
         }
 
@@ -78,7 +90,9 @@ namespace EApp.ViewModels
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<LessonItem>(LessonRepo.GetQueryable());
+            List<LessonItem> source = LessonRepo.GetQueryable().ToList();
+            MyList = new ObservableCollection<LessonModel>(source.Select(d => ItemToModelLesson.ItemToModel(d)));
+
         }
     }
 }

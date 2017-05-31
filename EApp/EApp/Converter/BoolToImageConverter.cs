@@ -22,7 +22,8 @@ namespace EApp.Converter
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new NotImplementedException();
+            var par = (string[])parameter;
+            return value.ToString() == par[0];
         }
     }
 }

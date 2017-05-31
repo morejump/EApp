@@ -76,6 +76,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\LessonRepository.cs" />
     <Compile Include="Service\ILessonRepository.cs" />
+    <Compile Include="Utils\ItemToModelLesson.cs" />
     <Compile Include="Utils\MyUtils.cs" />
     <Compile Include="ViewModels\CoreViewModel.cs" />
     <Compile Include="ViewModels\FavouritePageViewModel.cs" />

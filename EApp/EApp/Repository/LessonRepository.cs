@@ -17,17 +17,27 @@ namespace EApp.Repository
         public LessonRepository(Realm realm)
         {
             this.realm = realm;
-            realm.Write(() =>
-            {
-                var less = new LessonItem
-                {
-                    Title = "this is a title",
-                    Author = "more jump",
-                    Description = "this is a description"
-                };
 
-                realm.Add(less);
-            });
+            if (realm.All<LessonItem>().ToList<LessonItem>().Count == 0)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    realm.Write(() =>
+                    {
+                        var less = new LessonItem
+                        {
+                            IsFavourite= true,
+                            ID = i,
+                            Title = "this is a title",
+                            Author = "more jump",
+                            Description = "this is a description",
+                        };
+
+                        realm.Add(less);
+                    });
+                }
+                
+            }
 
         }
 
@@ -107,16 +117,24 @@ namespace EApp.Repository
             return null;
         }
 
-        public Task<bool> Update(LessonItem item)
+        public void Update(LessonItem item)
         {
-            return null;
+            realm.Write(() => realm.Add(item, update: true));
         }
 
-        public Task<bool> Delete(long id)
+        public void Delete(long id)
         {
-            return null;
+            LessonItem item = realm.Find<LessonItem>(id);
+            if (item != null)
+            {
+                using (var trans = realm.BeginWrite())
+                {
+                    realm.Remove(item);
+                    trans.Commit();
+                }
+            }
         }
 
-       
+
     }
 }

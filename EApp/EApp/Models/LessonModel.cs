@@ -55,9 +55,9 @@ namespace EApp.Models
             }
         }
 
-        private int _ID;
+        private long _ID;
 
-        public int ID
+        public long ID
         {
             get { return _ID; }
             set
@@ -188,9 +188,9 @@ namespace EApp.Models
             }
         }
 
-        private IList<SentenceItem> _ListSentence;
+        private IList<SentenceModel> _ListSentence;
 
-        public IList<SentenceItem> ListSentence
+        public IList<SentenceModel> ListSentence
         {
             get { return _ListSentence; }
             set
@@ -202,10 +202,5 @@ namespace EApp.Models
                 }
             }
         }
-
-
-
-
-
     }
 }

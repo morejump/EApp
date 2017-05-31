@@ -14,10 +14,18 @@
     Title="Recent">
     <ContentPage.Resources>
         <ResourceDictionary>
+            <x:Array
+                x:Key="parImage"
+                Type="{x:Type x:String}">
+                <x:String>redheart.png</x:String>
+                <x:String>heart.png</x:String>
+            </x:Array>
             <converters:IsVisibelConverter
                 x:Key="isVisiblecvt" />
             <converters:DisplayLabelConverter
                 x:Key="displayLabel" />
+            <converters:BoolToImageConverter
+                x:Key="boolToImage" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout>
@@ -40,16 +48,16 @@
         </syncfusion:SfListView.RightSwipeTemplate>
 
         <syncfusion:SfListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
+            <DataTemplate> 
                     <controls:ItemOnList
+                        ImgFavourite="{Binding IsFavourite, Converter={StaticResource boolToImage}, ConverterParameter={StaticResource parImage} }"
                         cmdClick="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmSelectedLesson}"
                         IsFavouriteCommand="{Binding Source={Reference Name=lstView},Path=BindingContext.CmdCheckFavourite}"
                         hasMoreOptions="False"
                         Author="{Binding Author}"
                         Title="{Binding Title}"
                         Thumbnail="{Binding LinkThumbnail}" />
-                </ViewCell>
+              
             </DataTemplate>
         </syncfusion:SfListView.ItemTemplate>
     </syncfusion:SfListView>
