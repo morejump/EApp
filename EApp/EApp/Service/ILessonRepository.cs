@@ -9,7 +9,12 @@ namespace EApp.Service
 {
     public interface ILessonRepository
     {
-        Task<LessonModel[]> GetAllLesson();
-        
+        //Task<LessonItem[]> GetAllLesson();
+        IQueryable<LessonItem> GetQueryable();
+
+        Task<bool> Insert(LessonItem item);
+        Task<bool> Update(LessonItem item);
+        Task<bool> Delete(long id);
+
     }
 }

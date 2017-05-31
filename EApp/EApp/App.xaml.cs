@@ -17,8 +17,6 @@ namespace EApp
 
         protected override void OnInitialized()
         {
-            //
-
             InitializeComponent();
             //NavigationService.NavigateAsync($"{Pages.NavBar}/{Pages.Storage}");
             NavigationService.NavigateAsync($"{Pages.Home}");
@@ -27,6 +25,7 @@ namespace EApp
         {
 
             Container.RegisterType<ILessonRepository, LessonRepository>();
+            Container.RegisterInstance(Realms.Realm.GetInstance());
             Container.RegisterInstance(CrossMediaManager.Current);
 
             //

@@ -25,9 +25,9 @@ namespace EApp.ViewModels
 
         }
         // temporary list 
-        private ObservableCollection<LessonModel> _tempList;
+        private ObservableCollection<LessonItem> _tempList;
 
-        public ObservableCollection<LessonModel> TempList
+        public ObservableCollection<LessonItem> TempList
         {
             get { return _tempList; }
             set
@@ -42,9 +42,9 @@ namespace EApp.ViewModels
 
 
         // an item source here
-        private ObservableCollection<LessonModel> _myList;
+        private ObservableCollection<LessonItem> _myList;
 
-        public ObservableCollection<LessonModel> MyList
+        public ObservableCollection<LessonItem> MyList
         {
             get { return _myList; }
             set
@@ -68,7 +68,7 @@ namespace EApp.ViewModels
         void RuncmSearch(object obj)
         {
             var searchedText = obj as string;
-            TempList = new ObservableCollection<LessonModel>(MyList.Where(d => d.Title.ToLower().Contains(searchedText.ToLower())));
+            //TempList = new ObservableCollection<LessonModel>(MyList.Where(d => d.Title.ToLower().Contains(searchedText.ToLower())));
         }
 
         private ICommand _cmSelectedLesson;
@@ -99,8 +99,8 @@ namespace EApp.ViewModels
         async void RuncmdDeleteLesson(object obj)
         {
             var less = obj as LessonModel;
-            MyList.Remove(less);
-            TempList = new ObservableCollection<LessonModel>(MyList);
+            //MyList.Remove(less);
+            //TempList = new ObservableCollection<LessonModel>(MyList);
         }
 
         // remove a lesson from a favourite when swiping an item to left side
@@ -121,8 +121,8 @@ namespace EApp.ViewModels
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<LessonModel>(LessonRepo.GetAllLesson().Result);
-            TempList = new ObservableCollection<LessonModel>(MyList);
+            MyList = new ObservableCollection<LessonItem>(LessonRepo.GetQueryable());
+            TempList = new ObservableCollection<LessonItem>(MyList);
         }
     }
 }

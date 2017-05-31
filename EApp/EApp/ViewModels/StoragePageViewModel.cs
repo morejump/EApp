@@ -14,9 +14,9 @@ namespace EApp.ViewModels
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
-        private ObservableCollection<LessonModel> _myList;
+        private ObservableCollection<LessonItem> _myList;
 
-        public ObservableCollection<LessonModel> MyList
+        public ObservableCollection<LessonItem> MyList
         {
             get { return _myList; }
             set
@@ -34,7 +34,7 @@ namespace EApp.ViewModels
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<LessonModel>(LessonRepo.GetAllLesson().Result);
+            MyList = new ObservableCollection<LessonItem>(LessonRepo.GetQueryable());
         }
     }
 }
