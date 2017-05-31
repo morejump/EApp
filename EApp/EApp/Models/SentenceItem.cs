@@ -10,19 +10,13 @@ using System.Threading.Tasks;
 
 namespace EApp.Models
 {
-    public class Sentence: RealmObject
+    public class SentenceItem : RealmObject
     {
         public string Text { get; set; }
         public int Start { get; set; }
         public int End { get; set; }
         public bool IsSelected { get; set; }
-        public Sentence()
-        {
-        }
 
-
-       
-     
-
+      
     }
 }

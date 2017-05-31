@@ -13,20 +13,15 @@ using System.Threading.Tasks;
 namespace EApp.Models
 {
 
-    public class Lesson : RealmObject
+    public class LessonItem: RealmObject
     {
 
-        //constructor here
-        public Lesson()
-        {
-            
-        }
-        public String PathAudio { get; set; }
+        public string PathAudio { get; set; }
 
-        //public Uri LinkDownload { get; set; }
-       
-        //public Level Level { get; set; }
-      
+        // change two properties later: LinkDownload, Level
+        public string LinkDownload { get; set; }
+
+        public int Level { get; set; }
 
         public int ID { get; set; }
        
@@ -46,7 +41,7 @@ namespace EApp.Models
        
         public string Author { get; set; }
 
-        public IList<Sentence> ListSentence { get; }
+        public IList<SentenceItem> ListSentence { get; }
 
 
 

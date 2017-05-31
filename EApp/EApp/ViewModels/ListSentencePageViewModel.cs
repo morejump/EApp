@@ -15,9 +15,9 @@ namespace EApp.ViewModels
     public class ListSentencePageViewModel : CoreViewModel
     {
 
-        private Lesson _lesson;
+        private LessonItem _lesson;
 
-        public Lesson MyLesson
+        public LessonItem MyLesson
         {
             get { return _lesson; }
             set
@@ -48,16 +48,16 @@ namespace EApp.ViewModels
         }
 
 
-        private Sentence FindSentenceByPosition(int pos)
+        private SentenceItem FindSentenceByPosition(int pos)
         {
             return Listentence.Where(d => d.Start <= pos && pos <= d.End).FirstOrDefault();
 
         }
 
 
-        private Sentence _SelectedSentence;
+        private SentenceItem _SelectedSentence;
 
-        public Sentence SelectedSentence
+        public SentenceItem SelectedSentence
         {
             get { return _SelectedSentence; }
             set
@@ -75,9 +75,9 @@ namespace EApp.ViewModels
         }
 
 
-        private Sentence selectedItem;
+        private SentenceItem selectedItem;
 
-        public Sentence SelectedItem
+        public SentenceItem SelectedItem
         {
             get { return selectedItem; }
             set
@@ -179,9 +179,9 @@ namespace EApp.ViewModels
             }
         }
 
-        private List<Sentence> _listSentencwe;
+        private List<SentenceItem> _listSentencwe;
 
-        public List<Sentence> Listentence
+        public List<SentenceItem> Listentence
         {
             get { return _listSentencwe; }
             set
@@ -229,7 +229,7 @@ namespace EApp.ViewModels
         public override void OnNavigatedTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
-            MyLesson = parameters.GetValue<Lesson>("lesson");
+            MyLesson = parameters.GetValue<LessonItem>("lesson");
             //Listentence = new List<Sentence>(MyLesson.ListSentence);
             if (Listentence.Count > 0)
                 SelectedSentence = Listentence[0];

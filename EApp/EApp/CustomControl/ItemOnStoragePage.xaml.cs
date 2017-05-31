@@ -13,7 +13,7 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnStoragePage : ContentView
     {
-        public event EventHandler<Lesson> ClickedDownloadbtn;
+        public event EventHandler<LessonItem> ClickedDownloadbtn;
 
         // this property is used to set value for  "text "+ % and a progress bar
         // in range 1 to 100
@@ -219,7 +219,7 @@ namespace EApp.CustomControl
         // manuplating with download process here
         private void TapDownloadImage(object sender, EventArgs e)
         {
-            ClickedDownloadbtn(this, (Lesson)BindingContext);
+            ClickedDownloadbtn(this, (LessonItem)BindingContext);
             MyImageDownload.IsVisible = false;
             MyProgressBar.IsVisible = true;
             MyPercent.IsVisible = true;

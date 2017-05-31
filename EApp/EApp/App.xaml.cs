@@ -19,12 +19,11 @@ namespace EApp
         {
             InitializeComponent();
             //NavigationService.NavigateAsync($"{Pages.NavBar}/{Pages.Storage}");
-            NavigationService.NavigateAsync($"{Pages.Recent}");
+            NavigationService.NavigateAsync($"{Pages.Home}");
         }
         protected override void RegisterTypes()
         {
 
-            Container.RegisterInstance(Realms.Realm.GetInstance());
             Container.RegisterType<ILessonRepository, LessonRepository>();
             Container.RegisterInstance(CrossMediaManager.Current);
 

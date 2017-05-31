@@ -25,9 +25,9 @@ namespace EApp.ViewModels
 
         }
         // temporary list 
-        private ObservableCollection<Lesson> _tempList;
+        private ObservableCollection<LessonModel> _tempList;
 
-        public ObservableCollection<Lesson> TempList
+        public ObservableCollection<LessonModel> TempList
         {
             get { return _tempList; }
             set
@@ -42,9 +42,9 @@ namespace EApp.ViewModels
 
 
         // an item source here
-        private ObservableCollection<Lesson> _myList;
+        private ObservableCollection<LessonModel> _myList;
 
-        public ObservableCollection<Lesson> MyList
+        public ObservableCollection<LessonModel> MyList
         {
             get { return _myList; }
             set
@@ -68,7 +68,7 @@ namespace EApp.ViewModels
         void RuncmSearch(object obj)
         {
             var searchedText = obj as string;
-            TempList = new ObservableCollection<Lesson>(MyList.Where(d => d.Title.ToLower().Contains(searchedText.ToLower())));
+            TempList = new ObservableCollection<LessonModel>(MyList.Where(d => d.Title.ToLower().Contains(searchedText.ToLower())));
         }
 
         private ICommand _cmSelectedLesson;
@@ -82,7 +82,7 @@ namespace EApp.ViewModels
         void RuncmSelectedLesson(object obj)
         {
             NavigationParameters param = new NavigationParameters();
-            param.Add("lesson", obj as Lesson);
+            param.Add("lesson", obj as LessonModel);
             navigationService.NavigateAsync(Pages.ListSentence, param);
 
         }
@@ -98,9 +98,9 @@ namespace EApp.ViewModels
 
         async void RuncmdDeleteLesson(object obj)
         {
-            var less = obj as Lesson;
+            var less = obj as LessonModel;
             MyList.Remove(less);
-            TempList = new ObservableCollection<Lesson>(MyList);
+            TempList = new ObservableCollection<LessonModel>(MyList);
         }
 
         // remove a lesson from a favourite when swiping an item to left side
@@ -121,8 +121,8 @@ namespace EApp.ViewModels
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<Lesson>(LessonRepo.GetAllLesson().Result);
-            TempList = new ObservableCollection<Lesson>(MyList);
+            MyList = new ObservableCollection<LessonModel>(LessonRepo.GetAllLesson().Result);
+            TempList = new ObservableCollection<LessonModel>(MyList);
         }
     }
 }

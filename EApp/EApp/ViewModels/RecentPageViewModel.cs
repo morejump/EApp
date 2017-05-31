@@ -16,9 +16,9 @@ namespace EApp.ViewModels
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
-        private ObservableCollection<Lesson> _myList;
+        private ObservableCollection<LessonModel> _myList;
 
-        public ObservableCollection<Lesson> MyList
+        public ObservableCollection<LessonModel> MyList
         {
             get { return _myList; }
             set
@@ -40,7 +40,7 @@ namespace EApp.ViewModels
 
         void RuncmdDeleteLesson(object obj)
         {
-            var lesson = obj as Lesson;
+            var lesson = obj as LessonModel;
             MyList.Remove(lesson);
         }
 
@@ -56,7 +56,7 @@ namespace EApp.ViewModels
         void RuncmSelectedLesson(object obj)
         {
             NavigationParameters param = new NavigationParameters();
-            param.Add("lesson", obj as Lesson);
+            param.Add("lesson", obj as LessonModel);
             navigationService.NavigateAsync(Pages.ListSentence, param);
 
         }
@@ -78,7 +78,7 @@ namespace EApp.ViewModels
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<Lesson>(LessonRepo.GetAllLesson().Result);
+            MyList = new ObservableCollection<LessonModel>(LessonRepo.GetAllLesson().Result);
         }
     }
 }

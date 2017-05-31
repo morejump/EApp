@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using EApp.Models;
 using EApp.Service;
-using Realms;
 using EApp.Utils;
 using System.Collections.ObjectModel;
 
@@ -13,14 +12,13 @@ namespace EApp.Repository
 {
     public class LessonRepository : ILessonRepository
     {
-        readonly Realm realm;
 
-        public async Task<Lesson[]> GetAllLesson()
+        public async Task<LessonModel[]> GetAllLesson()
         {
-            List<Lesson> list = new List<Lesson>();
+            List<LessonModel> list = new List<LessonModel>();
             for (int i = 0; i < 2; i++)
             {
-                list.Add(new Lesson
+                list.Add(new LessonModel
                 {
                     //ListSentence = new ObservableCollection<Sentence>
                     //{
@@ -48,7 +46,7 @@ namespace EApp.Repository
                     PathAudio = "/data/data/EApp.Droid/files/.config/music"
                 });
 
-                list.Add(new Lesson
+                list.Add(new LessonModel
                 {
                     //ListSentence = new ObservableCollection<Sentence>
                     //{
@@ -80,60 +78,10 @@ namespace EApp.Repository
             return list.ToArray();
         }
 
-        public IQueryable<Lesson> GetQueryable()
+
+      
+        public LessonRepository( )
         {
-            return realm.All<Lesson>();
-        }
-
-        public async Task<bool> Insert(Lesson lesson)
-        {
-            //var result = await MakeChange(r => r.Add(lesson));
-
-            //return result;
-            return false;
-        }
-
-        public async Task<bool> Update(Lesson lesson)
-        {
-            //var result = await MakeChange(r => r.Add(lesson, true));
-
-            //return result;
-            return false;
-        }
-
-        public async Task<bool> Delete(int id)
-        {
-            //var result = false;
-            //var lesson = realm.Find<Lesson>(id);
-
-            //if (lesson == null) return result;
-
-            //result = await MakeChange(r => r.Remove(lesson));
-
-            //return result;
-            return false;
-        }
-
-        //
-
-        public async Task<bool> MakeChange(Action<Realm> action)
-        {
-            //var result = false;
-
-            //await realm.WriteAsync(action).ContinueWith(t =>
-            //{
-            //    result = !t.IsFaulted && !t.IsCanceled && t.IsCompleted;
-            //});
-
-            //return result;
-            return false;
-
-        }
-
-        // a constructor here
-        public LessonRepository(Realm realm)
-        {
-            this.realm = realm;
 
         }
     }
