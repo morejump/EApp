@@ -18,7 +18,7 @@ namespace EApp.CustomControl
           returnType: typeof(string),
           declaringType: typeof(ItemOnList),
           defaultValue: "",
-          defaultBindingMode: BindingMode.TwoWay,
+          defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnImgFavouriteChanged
       );
 
@@ -247,9 +247,6 @@ namespace EApp.CustomControl
         // this event is fired when tapping heart button
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            //MyFavourite.Source = isFavourite ? "heart.png" : "redheart.png";
-            //isFavourite = !isFavourite;
-
             if (IsFavouriteCommand.CanExecute(BindingContext))
             {
                 IsFavouriteCommand.Execute(BindingContext);

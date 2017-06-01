@@ -41,7 +41,7 @@
         <syncfusion:SfListView.RightSwipeTemplate>
             <DataTemplate>
                 <controls:SwipeControl
-                        BackgroundColor="#F44336"
+                    BackgroundColor="#F44336"
                     Command="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdDeleteLesson}"
                     Image="dustbin.png" />
             </DataTemplate>
@@ -57,7 +57,6 @@
                         Author="{Binding Author}"
                         Title="{Binding Title}"
                         Thumbnail="{Binding LinkThumbnail}" />
-              
             </DataTemplate>
         </syncfusion:SfListView.ItemTemplate>
     </syncfusion:SfListView>
