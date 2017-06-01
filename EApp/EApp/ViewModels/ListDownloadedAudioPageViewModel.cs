@@ -50,7 +50,6 @@ namespace EApp.ViewModels
             }
         }
 
-        
         private ICommand _cmdCheckFavourite;
 
         public ICommand CmdCheckFavourite
@@ -120,7 +119,7 @@ namespace EApp.ViewModels
         void RunsearchCommad(object obj)
         {
             var searchedText = obj as string;
-            //TempList = new ObservableCollection<LessonModel>(MyList.Where(d => d.Title.ToLower().Contains(searchedText.ToLower())));
+            //TempList = new ObservableCollection<LessonModel>();
 
         }
 

@@ -24,19 +24,19 @@
     <StackLayout>
         <SearchBar
             behavior:searchbhv.Command="{Binding SearchCommand}"
-            IsVisible="{Binding MyList.Count, Converter={StaticResource isVisiblecvt}}"
+            IsVisible="{Binding TempList.Count, Converter={StaticResource isVisiblecvt}}"
             Margin="16,0,16,8"
             Placeholder="Enter name of audio" />
         <controls:NothingToShow
-            IsVisible="{Binding MyList.Count, Converter={StaticResource displayLabel} }"
+            IsVisible="{Binding TempList.Count, Converter={StaticResource displayLabel} }"
             />
         <syncfusion:SfListView
             AllowSwiping="True"
-            IsVisible="{Binding TempList.Count, Converter={StaticResource isVisiblecvt}}"
+            IsVisible="{Binding MyList.Count, Converter={StaticResource isVisiblecvt}}"
             SelectionBackgroundColor="Green"
             x:Name="lstView"
             ItemSize="116"
-            ItemsSource="{Binding TempList}">
+            ItemsSource="{Binding MyList}">
             <syncfusion:SfListView.RightSwipeTemplate>
                 <DataTemplate>
                     <controls:SwipeControl
@@ -47,9 +47,9 @@
             </syncfusion:SfListView.RightSwipeTemplate>
             <syncfusion:SfListView.LeftSwipeTemplate>
                 <DataTemplate>
-                    <controls:SwipeControl
+                    <controls:RemoveLessonControl
                         BackgroundColor="#F44336"
-                        Command="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdDeleteLesson}"
+                        Command="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmdRemoveLesson}"
                         Image="BrokenHeart01.png" />
                 </DataTemplate>
             </syncfusion:SfListView.LeftSwipeTemplate>

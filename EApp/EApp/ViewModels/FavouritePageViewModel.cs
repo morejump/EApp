@@ -1,5 +1,6 @@
 ﻿using EApp.Models;
 using EApp.Service;
+using EApp.Utils;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
@@ -19,32 +20,10 @@ namespace EApp.ViewModels
         ILessonRepository LessonRepo;
         private ICommand _cmSearch;
 
-        public override void OnNavigatedFrom(NavigationParameters parameters)
-        {
-            base.OnNavigatedFrom(parameters);
-
-        }
-        // temporary list 
-        private ObservableCollection<LessonItem> _tempList;
-
-        public ObservableCollection<LessonItem> TempList
-        {
-            get { return _tempList; }
-            set
-            {
-                if (_tempList != value)
-                {
-                    _tempList = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-
         // an item source here
-        private ObservableCollection<LessonItem> _myList;
+        private ObservableCollection<LessonModel> _myList;
 
-        public ObservableCollection<LessonItem> MyList
+        public ObservableCollection<LessonModel> MyList
         {
             get { return _myList; }
             set
@@ -57,18 +36,18 @@ namespace EApp.ViewModels
             }
         }
 
-
-
         public ICommand SearchCommand
         {
             get { return _cmSearch = _cmSearch ?? new Command(RuncmSearch); }
 
         }
 
+        // code this functionality later
         void RuncmSearch(object obj)
         {
             var searchedText = obj as string;
-            //TempList = new ObservableCollection<LessonModel>(MyList.Where(d => d.Title.ToLower().Contains(searchedText.ToLower())));
+            MyList = new ObservableCollection<LessonModel>(TempList.Where(x=>x.IsFavourite== true && x.Title.ToLower().Contains(searchedText.ToLower())));
+
         }
 
         private ICommand _cmSelectedLesson;
@@ -99,11 +78,10 @@ namespace EApp.ViewModels
         async void RuncmdDeleteLesson(object obj)
         {
             var less = obj as LessonModel;
-            //MyList.Remove(less);
-            //TempList = new ObservableCollection<LessonModel>(MyList);
+            MyList.Remove(less);
+            LessonRepo.Delete(less.ID);
         }
 
-        // remove a lesson from a favourite when swiping an item to left side
         private ICommand _cmdRemoveLesson;
 
         public ICommand cmdRemoveLesson
@@ -111,18 +89,42 @@ namespace EApp.ViewModels
             get { return _cmdRemoveLesson = _cmdRemoveLesson ?? new Command(RuncmdRemoveLesson); }
 
         }
-
+        // Removing a lesson from favourite list
         void RuncmdRemoveLesson(object obj)
         {
+            var les = obj as LessonModel;
+            les.IsFavourite = !les.IsFavourite;
+            MyList.Remove(les);
+            LessonItem item = ItemToModelLesson.ModelToItem(les);
+            if (item != null)
+            {
+                LessonRepo.Update(item);
+            }
 
         }
 
+        private List<LessonModel> _TempList;
+
+        public List<LessonModel> TempList
+        {
+            get { return _TempList; }
+            set
+            {
+                if (_TempList != value)
+                {
+                    _TempList = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+         
         public FavouritePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<LessonItem>(LessonRepo.GetQueryable());
-            TempList = new ObservableCollection<LessonItem>(MyList);
+            List<LessonItem> source = LessonRepo.GetQueryable().ToList();
+            TempList = new List<LessonModel>(source.Select(d => ItemToModelLesson.ItemToModel(d)));
+            MyList = new ObservableCollection<LessonModel>(TempList.Where((l) => l.IsFavourite));
         }
     }
 }

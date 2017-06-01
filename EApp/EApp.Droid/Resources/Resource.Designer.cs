@@ -63,6 +63,8 @@ namespace EApp.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::EApp.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::EApp.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::EApp.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::PCLStorage.Resource.String.ApplicationName = global::EApp.Droid.Resource.String.ApplicationName;
+			global::PCLStorage.Resource.String.Hello = global::EApp.Droid.Resource.String.Hello;
 			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_fade_in = global::EApp.Droid.Resource.Animation.abc_fade_in;
 			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_fade_out = global::EApp.Droid.Resource.Animation.abc_fade_out;
 			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::EApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;

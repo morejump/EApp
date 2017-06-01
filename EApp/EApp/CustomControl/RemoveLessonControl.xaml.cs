@@ -2,7 +2,6 @@
 using EApp.Dependecy;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,26 +10,26 @@ using Xamarin.Forms;
 
 namespace EApp.CustomControl
 {
-    public partial class SwipeControl : ContentView
+    public partial class RemoveLessonControl : ContentView
     {
-        public SwipeControl()
+        public RemoveLessonControl()
         {
             InitializeComponent();
         }
-
         public static BindableProperty ImageProperty = BindableProperty.Create(
-          propertyName: "Image",
-          returnType: typeof(string),
-          declaringType: typeof(SwipeControl),
-          defaultValue: null,
-          defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged: OnImageChanged
-      );
+         propertyName: "Image",
+         returnType: typeof(string),
+         declaringType: typeof(RemoveLessonControl),
+         defaultValue: null,
+         defaultBindingMode: BindingMode.TwoWay,
+         propertyChanged: OnImageChanged
+     );
 
         private static void OnImageChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            var view = bindable as SwipeControl;
+            var view = bindable as RemoveLessonControl;
             view.myImage.Source = view.Image;
+
         }
 
         public string Image
@@ -43,7 +42,7 @@ namespace EApp.CustomControl
         public static BindableProperty CommandProperty = BindableProperty.Create(
           propertyName: "Command",
           returnType: typeof(ICommand),
-          declaringType: typeof(SwipeControl),
+          declaringType: typeof(RemoveLessonControl),
           defaultValue: null,
           defaultBindingMode: BindingMode.TwoWay
       );
@@ -56,28 +55,12 @@ namespace EApp.CustomControl
         // doing a command when tapping an image
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-                ConfirmConfig confirm = new ConfirmConfig();
-                confirm.Title = "Warning!!!";
-                confirm.Message = "Would you like to delete this lesson";
-                confirm.SetAction((x =>
-                {
-                    if (x)
-                    {
-                        if (Command.CanExecute(BindingContext))
-                        {
-                            Command.Execute(BindingContext);
-                            DependencyService.Get<IToast>().MakeToast("Deleted");
-                        }
-                    }
-                }));
-
-                // instanitate a confirm dialog here 
-                UserDialogs.Instance.Confirm(confirm);
-         
+            if (Command.CanExecute(BindingContext))
+            {
+                Command.Execute(BindingContext);
             }
-
-
-
         }
-    }
 
+
+    }
+}

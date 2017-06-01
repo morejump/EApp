@@ -22,17 +22,33 @@ namespace EApp.Repository
             {
                 for (int i = 0; i < 4; i++)
                 {
+
                     realm.Write(() =>
                     {
                         var less = new LessonItem
                         {
                             IsFavourite= true,
                             ID = i,
-                            Title = "this is a title",
-                            Author = "more jump",
-                            Description = "this is a description",
+                            Title = "thao dep trai is a title",
+                            Author = "more jump hihi",
+                            Description = "Nothing to show here is a description",
+                            PathAudio= "/data/data/EApp.Droid/files/.config/music"
                         };
 
+                        //adding sentences to a Lesson
+                        for (int j = 1; j < 5; j++)
+                        {
+                            var sen = new SentenceItem
+                            {
+                                Text = "English is either the" +
+                                " official language or one of the official languages " +
+                                "in almost 60 sovereign states. It is the most commonly spoken ",
+                                Start = j,
+                                End = j * 20
+                            };
+                            less.ListSentence.Add(sen);
+                        }
+                        //
                         realm.Add(less);
                     });
                 }

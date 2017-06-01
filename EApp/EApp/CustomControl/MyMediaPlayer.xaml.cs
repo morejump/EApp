@@ -243,6 +243,7 @@ namespace EApp.CustomControl
             {
 
                 await Media.Play(Path, MediaFileType.Audio, ResourceAvailability.Local);
+                Debug.WriteLine("thaohandosme" + Path);
 
             }
             else if (Media.Status == MediaPlayerStatus.Playing)

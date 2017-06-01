@@ -15,9 +15,9 @@ namespace EApp.ViewModels
     public class ListSentencePageViewModel : CoreViewModel
     {
 
-        private LessonItem _lesson;
+        private LessonModel _lesson;
 
-        public LessonItem MyLesson
+        public LessonModel MyLesson
         {
             get { return _lesson; }
             set
@@ -46,18 +46,18 @@ namespace EApp.ViewModels
                 }
             }
         }
-
-
-        private SentenceItem FindSentenceByPosition(int pos)
+        // getting list senetence here :))
+       
+        private SentenceModel FindSentenceByPosition(int pos)
         {
             return Listentence.Where(d => d.Start <= pos && pos <= d.End).FirstOrDefault();
 
         }
 
 
-        private SentenceItem _SelectedSentence;
+        private SentenceModel _SelectedSentence;
 
-        public SentenceItem SelectedSentence
+        public SentenceModel SelectedSentence
         {
             get { return _SelectedSentence; }
             set
@@ -75,9 +75,9 @@ namespace EApp.ViewModels
         }
 
 
-        private SentenceItem selectedItem;
+        private SentenceModel selectedItem;
 
-        public SentenceItem SelectedItem
+        public SentenceModel SelectedItem
         {
             get { return selectedItem; }
             set
@@ -179,9 +179,9 @@ namespace EApp.ViewModels
             }
         }
 
-        private List<SentenceItem> _listSentencwe;
+        private List<SentenceModel> _listSentencwe;
 
-        public List<SentenceItem> Listentence
+        public List<SentenceModel> Listentence
         {
             get { return _listSentencwe; }
             set
@@ -229,10 +229,12 @@ namespace EApp.ViewModels
         public override void OnNavigatedTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
-            MyLesson = parameters.GetValue<LessonItem>("lesson");
-            //Listentence = new List<Sentence>(MyLesson.ListSentence);
+            MyLesson = parameters.GetValue<LessonModel>("lesson");
+            Listentence = new List<SentenceModel>(MyLesson.ListSentence);
             if (Listentence.Count > 0)
+            {
                 SelectedSentence = Listentence[0];
+            }
             Path = MyLesson.PathAudio;
 
         }
