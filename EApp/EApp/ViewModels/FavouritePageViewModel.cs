@@ -19,6 +19,21 @@ namespace EApp.ViewModels
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
         private ICommand _cmSearch;
+        // 
+        private List<LessonModel> _TempList;
+
+        public List<LessonModel> TempList
+        {
+            get { return _TempList; }
+            set
+            {
+                if (_TempList != value)
+                {
+                    _TempList = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         // an item source here
         private ObservableCollection<LessonModel> _myList;
@@ -42,11 +57,10 @@ namespace EApp.ViewModels
 
         }
 
-        // code this functionality later
         void RuncmSearch(object obj)
         {
             var searchedText = obj as string;
-            MyList = new ObservableCollection<LessonModel>(TempList.Where(x=>x.IsFavourite== true && x.Title.ToLower().Contains(searchedText.ToLower())));
+            MyList = new ObservableCollection<LessonModel>(TempList.Where(x => x.IsFavourite == true && x.Title.ToLower().Contains(searchedText.ToLower())));
 
         }
 
@@ -60,8 +74,16 @@ namespace EApp.ViewModels
 
         void RuncmSelectedLesson(object obj)
         {
+            var les = obj as LessonModel;
+            les.TimeAccess = DateTimeOffset.Now;
+            LessonItem item = ItemToModelLesson.ModelToItem(les);
+            if (item != null)
+            {
+                LessonRepo.Update(item);
+            }
+
             NavigationParameters param = new NavigationParameters();
-            param.Add("lesson", obj as LessonModel);
+            param.Add("lesson", les);
             navigationService.NavigateAsync(Pages.ListSentence, param);
 
         }
@@ -103,20 +125,6 @@ namespace EApp.ViewModels
 
         }
 
-        private List<LessonModel> _TempList;
-
-        public List<LessonModel> TempList
-        {
-            get { return _TempList; }
-            set
-            {
-                if (_TempList != value)
-                {
-                    _TempList = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
          
         public FavouritePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {

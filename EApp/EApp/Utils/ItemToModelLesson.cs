@@ -14,6 +14,7 @@ namespace EApp.Utils
         {
             return new LessonItem
             {
+                TimeAccess= model.TimeAccess,
                 Author = model.Author,
                 Description = model.Description,
                 Title = model.Title,
@@ -47,6 +48,7 @@ namespace EApp.Utils
         {
             return new LessonModel
             {
+                TimeAccess= item.TimeAccess,
                 Author = item.Author,
                 Description = item.Description,
                 Title = item.Title,

@@ -58,8 +58,16 @@ namespace EApp.ViewModels
 
         void RuncmSelectedLesson(object obj)
         {
+            var les = obj as LessonModel;
+            les.TimeAccess = DateTimeOffset.Now;
+            LessonItem item = ItemToModelLesson.ModelToItem(les);
+            if (item != null)
+            {
+                LessonRepo.Update(item);
+            }
+
             NavigationParameters param = new NavigationParameters();
-            param.Add("lesson", obj as LessonModel);
+            param.Add("lesson", les);
             navigationService.NavigateAsync(Pages.ListSentence, param);
 
         }
@@ -81,7 +89,6 @@ namespace EApp.ViewModels
             {
                 LessonRepo.Update(item);
             }
-
 
 
         }

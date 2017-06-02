@@ -15,10 +15,10 @@ namespace EApp.Models
 
     public class LessonItem: RealmObject
     {
+        public DateTimeOffset TimeAccess { get; set; }
 
         public string PathAudio { get; set; }
 
-        // change two properties later: LinkDownload, Level
         public string LinkDownload { get; set; }
 
         public int Level { get; set; }

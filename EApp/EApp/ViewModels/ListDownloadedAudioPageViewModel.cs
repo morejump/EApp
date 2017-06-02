@@ -1,5 +1,6 @@
 ﻿using EApp.Models;
 using EApp.Service;
+using EApp.Utils;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
@@ -19,10 +20,9 @@ namespace EApp.ViewModels
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
 
-        // temporary list 
-        private ObservableCollection<LessonItem> _tempList;
+        private ObservableCollection<LessonModel> _tempList;
 
-        public ObservableCollection<LessonItem> TempList
+        public ObservableCollection<LessonModel> TempList
         {
             get { return _tempList; }
             set
@@ -60,13 +60,18 @@ namespace EApp.ViewModels
 
         void RuncmdCheckFavourite(object obj)
         {
-           // do something here later
-
+            var les = obj as LessonModel;
+            les.IsFavourite = !les.IsFavourite;
+            LessonItem item = ItemToModelLesson.ModelToItem(les);
+            if (item != null)
+            {
+                LessonRepo.Update(item);
+            }
         }
         
-        private ObservableCollection<LessonItem> _myList;
+        private ObservableCollection<LessonModel> _myList;
 
-        public ObservableCollection<LessonItem> MyList
+        public ObservableCollection<LessonModel> MyList
         {
             get { return _myList; }
             set
@@ -88,12 +93,19 @@ namespace EApp.ViewModels
 
         void RuncmSelectedLesson(object obj)
         {
+            var les = obj as LessonModel;
+            les.TimeAccess = DateTimeOffset.Now;
+            LessonItem item = ItemToModelLesson.ModelToItem(les);
+            if (item != null)
+            {
+                LessonRepo.Update(item);
+            }
+
             NavigationParameters param = new NavigationParameters();
-            param.Add("lesson", obj as LessonModel);
+            param.Add("lesson", les);
             navigationService.NavigateAsync(Pages.ListSentence, param);
 
         }
-        // delete command
         private ICommand _cmdDeleteLesson;
 
         public ICommand cmdDeleteLesson
@@ -105,8 +117,8 @@ namespace EApp.ViewModels
         void RuncmdDeleteLesson(object obj)
         {
             var lesson = obj as LessonModel;
-            //MyList.Remove(lesson);
-            //TempList = new ObservableCollection<LessonModel>(MyList);
+            MyList.Remove(lesson);
+            LessonRepo.Delete(lesson.ID);
         }
         private ICommand _searchCommad;
 
@@ -119,7 +131,7 @@ namespace EApp.ViewModels
         void RunsearchCommad(object obj)
         {
             var searchedText = obj as string;
-            //TempList = new ObservableCollection<LessonModel>();
+            MyList = new ObservableCollection<LessonModel>(TempList.Where(x => x.Title.ToLower().Contains(searchedText.ToLower())));
 
         }
 
@@ -130,8 +142,9 @@ namespace EApp.ViewModels
             IsCheck = false;
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<LessonItem>(LessonRepo.GetQueryable());
-            TempList = new ObservableCollection<LessonItem>(MyList);
+            List<LessonItem> source = LessonRepo.GetQueryable().ToList();
+            MyList = new ObservableCollection<LessonModel>(source.Select(d => ItemToModelLesson.ItemToModel(d)));
+            TempList = new ObservableCollection<LessonModel>(MyList);
         }
 
     }

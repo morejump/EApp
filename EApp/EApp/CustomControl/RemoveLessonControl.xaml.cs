@@ -55,10 +55,24 @@ namespace EApp.CustomControl
         // doing a command when tapping an image
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            if (Command.CanExecute(BindingContext))
+            ConfirmConfig confirm = new ConfirmConfig();
+            confirm.Title = "Warning!!!";
+            confirm.Message = "Would you like to remove this lesson from favourite list";
+            confirm.SetAction((x =>
             {
-                Command.Execute(BindingContext);
-            }
+                if (x)
+                {
+                    if (Command.CanExecute(BindingContext))
+                    {
+                        Command.Execute(BindingContext);
+                        DependencyService.Get<IToast>().MakeToast("Removed");
+                    }
+                }
+            }));
+
+            // instanitating a confirm dialog here 
+            UserDialogs.Instance.Confirm(confirm);
+
         }
 
 

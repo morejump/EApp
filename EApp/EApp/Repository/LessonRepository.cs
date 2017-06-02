@@ -27,6 +27,7 @@ namespace EApp.Repository
                     {
                         var less = new LessonItem
                         {
+                            Level=1,
                             IsFavourite= true,
                             ID = i,
                             Title = "thao dep trai is a title",

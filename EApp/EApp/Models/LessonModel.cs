@@ -9,6 +9,21 @@ namespace EApp.Models
 {
     public class LessonModel: BindableBase
     {
+        private DateTimeOffset _TimeAccess;
+
+        public DateTimeOffset TimeAccess
+        {
+            get { return _TimeAccess; }
+            set
+            {
+                if (_TimeAccess != value)
+                {
+                    _TimeAccess = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
 
         private string _PathAudio;
 

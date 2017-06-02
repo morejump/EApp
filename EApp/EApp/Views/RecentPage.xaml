@@ -50,6 +50,7 @@
         <syncfusion:SfListView.ItemTemplate>
             <DataTemplate> 
                     <controls:ItemOnList
+                        Level="{Binding Level}"
                         ImgFavourite="{Binding IsFavourite, Converter={StaticResource boolToImage}, ConverterParameter={StaticResource parImage} }"
                         cmdClick="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmSelectedLesson}"
                         IsFavouriteCommand="{Binding Source={Reference Name=lstView},Path=BindingContext.CmdCheckFavourite}"

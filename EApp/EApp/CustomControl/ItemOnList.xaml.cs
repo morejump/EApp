@@ -18,7 +18,7 @@ namespace EApp.CustomControl
           returnType: typeof(string),
           declaringType: typeof(ItemOnList),
           defaultValue: "",
-          defaultBindingMode: BindingMode.OneWay,
+          defaultBindingMode: BindingMode.TwoWay,
           propertyChanged: OnImgFavouriteChanged
       );
 
@@ -69,12 +69,12 @@ namespace EApp.CustomControl
             {
                 if (view.Level == 0)
                 {
-                    view.MyLevel.BackgroundColor = Color.Blue;
+                    view.MyLevel.BackgroundColor = Color.Yellow;
 
                 }
                 if (view.Level == 1)
                 {
-                    view.MyLevel.BackgroundColor = Color.Purple;
+                    view.MyLevel.BackgroundColor = Color.Blue;
 
                 }
                 if (view.Level == 2)
