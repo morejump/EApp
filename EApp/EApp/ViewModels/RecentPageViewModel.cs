@@ -47,7 +47,6 @@ namespace EApp.ViewModels
 
         }
 
-
         private ICommand _cmSelectedLesson;
 
         public ICommand cmSelectedLesson
@@ -65,7 +64,6 @@ namespace EApp.ViewModels
             {
                 LessonRepo.Update(item);
             }
-            
             NavigationParameters param = new NavigationParameters();
             param.Add("lesson", les);
             navigationService.NavigateAsync(Pages.ListSentence, param);
@@ -91,13 +89,20 @@ namespace EApp.ViewModels
 
         }
 
+        // when get outside this page
+        public override void OnNavigatedFrom(NavigationParameters parameters)
+        {
+            MyList = new ObservableCollection<LessonModel>(from d in MyList orderby d.TimeAccess descending select d);
+        }
+
         public RecentPageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
             List<LessonItem> source = LessonRepo.GetQueryable().ToList();
             MyList = new ObservableCollection<LessonModel>(source.Select(d => ItemToModelLesson.ItemToModel(d)));
-           
+            MyList = new ObservableCollection<LessonModel>(from d in MyList orderby d.TimeAccess descending select d);
+
         }
     }
 }

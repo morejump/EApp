@@ -124,7 +124,6 @@ namespace EApp.ViewModels
             }
 
         }
-
          
         public FavouritePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {
