@@ -13,7 +13,7 @@ using EApp.Utils;
 
 namespace EApp.ViewModels
 {
-    public class RecentPageViewModel: CoreViewModel
+    public class RecentPageViewModel : CoreViewModel
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
@@ -65,7 +65,7 @@ namespace EApp.ViewModels
             {
                 LessonRepo.Update(item);
             }
-
+            
             NavigationParameters param = new NavigationParameters();
             param.Add("lesson", les);
             navigationService.NavigateAsync(Pages.ListSentence, param);
@@ -79,17 +79,15 @@ namespace EApp.ViewModels
 
         }
 
-        // do something here later
         void RuncmdCheckFavourite(object obj)
         {
             var les = obj as LessonModel;
             les.IsFavourite = !les.IsFavourite;
-            LessonItem item=  ItemToModelLesson.ModelToItem(les);
+            LessonItem item = ItemToModelLesson.ModelToItem(les);
             if (item != null)
             {
                 LessonRepo.Update(item);
             }
-
 
         }
 
@@ -99,7 +97,7 @@ namespace EApp.ViewModels
             this.LessonRepo = LessonRepo;
             List<LessonItem> source = LessonRepo.GetQueryable().ToList();
             MyList = new ObservableCollection<LessonModel>(source.Select(d => ItemToModelLesson.ItemToModel(d)));
-
+           
         }
     }
 }

@@ -12,9 +12,10 @@ namespace EApp.Utils
 
         public static LessonItem ModelToItem(LessonModel model)
         {
-            return new LessonItem
+            List<SentenceItem> listSentenItem = new List<SentenceItem>(model.ListSentence.Select(d => ModelToItem(d)));
+            LessonItem item = new LessonItem()
             {
-                TimeAccess= model.TimeAccess,
+                TimeAccess = model.TimeAccess,
                 Author = model.Author,
                 Description = model.Description,
                 Title = model.Title,
@@ -22,14 +23,19 @@ namespace EApp.Utils
                 IsFavourite = model.IsFavourite,
                 ID = model.ID,
                 Percent = model.Percent,
-                //ListSentence = model.ListSentence.Select(d => ModelToItem(d)).ToList(),
                 Level = model.Level,
                 DownloadCount = model.DownloadCount,
                 PathAudio = model.PathAudio,
                 Recent = model.Recent
-
             };
 
+            foreach (var itemList in listSentenItem)
+            {
+                item.ListSentence.Add(itemList);
+
+            }
+            return item;
+           
         }
         public static SentenceItem ModelToItem(SentenceModel model)
         {
@@ -46,9 +52,9 @@ namespace EApp.Utils
 
         public static LessonModel ItemToModel(LessonItem item )
         {
-            return new LessonModel
+            LessonModel model = new LessonModel()
             {
-                TimeAccess= item.TimeAccess,
+                TimeAccess = item.TimeAccess,
                 Author = item.Author,
                 Description = item.Description,
                 Title = item.Title,
@@ -56,12 +62,16 @@ namespace EApp.Utils
                 IsFavourite = item.IsFavourite,
                 ID = item.ID,
                 Percent = item.Percent,
-                ListSentence = item.ListSentence.Select(d=> ItemToModel(d)).ToList(),
                 Level = item.Level,
                 DownloadCount = item.DownloadCount,
                 PathAudio = item.PathAudio,
                 Recent = item.Recent
+
             };
+            model.ListSentence = new List<SentenceModel>(item.ListSentence.Select(d => ItemToModel(d)));
+
+            return model;
+            
         }
 
         public static SentenceModel ItemToModel(SentenceItem item)

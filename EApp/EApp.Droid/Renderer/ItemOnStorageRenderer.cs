@@ -35,7 +35,7 @@ namespace EApp.Droid.Renderer
             // when clicking a download button
             e.NewElement.ClickedDownloadbtn += (se, lesson) =>
             {
-                webClient.DownloadFileAsync(new Uri("http://zmp3-mp3-s1-te-zmp3-fpthn-1.zadn.vn/8dd60495ead1038f5ac0/6060086830176173737?key=tHULpthN2ReuyHIXovzhlQ&expires=1496376533"),
+                webClient.DownloadFileAsync(new Uri("http://zmp3-mp3-s1-te-zmp3-fpthn-1.zadn.vn/e62895289d6c74322d7d/2980323981024852696?key=cVL5dK0vXSsWPv7Og_d0FQ&expires=1496806601"),
                    destination);
                 //
                 webClient.DownloadProgressChanged += (s, t) =>

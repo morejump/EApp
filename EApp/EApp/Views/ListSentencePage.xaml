@@ -59,7 +59,7 @@
                             <Label
                                 Margin="16,8"
                                 HorizontalTextAlignment="Start"
-                                Text="{Binding .Text}">
+                                Text="{Binding .Text,Mode=OneWay}">
                             </Label>
                         </Grid>
 

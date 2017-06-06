@@ -14,6 +14,7 @@ namespace EApp.Service
 
         Task<bool> Insert(LessonItem item);
         void Update(LessonItem item);
+        void UpdateTime(long id, DateTimeOffset Date);
         void Delete(long id);
 
     }

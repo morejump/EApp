@@ -135,8 +135,6 @@ namespace EApp.ViewModels
 
         }
 
-
-
         public ListDownloadedAudioPageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {
             IsCheck = false;

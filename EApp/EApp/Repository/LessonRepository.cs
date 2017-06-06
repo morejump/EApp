@@ -17,7 +17,6 @@ namespace EApp.Repository
         public LessonRepository(Realm realm)
         {
             this.realm = realm;
-
             if (realm.All<LessonItem>().ToList<LessonItem>().Count == 0)
             {
                 for (int i = 0; i < 4; i++)
@@ -27,25 +26,26 @@ namespace EApp.Repository
                     {
                         var less = new LessonItem
                         {
-                            Level=1,
-                            IsFavourite= true,
+                            TimeAccess = DateTimeOffset.Now,
+                            Level = 1,
+                            IsFavourite = true,
                             ID = i,
-                            Title = "thao dep trai is a title",
+                            Title = " " + i + "    thao dep trai is a title",
                             Author = "more jump hihi",
                             Description = "Nothing to show here is a description",
-                            PathAudio= "/data/data/EApp.Droid/files/.config/music"
+                            PathAudio = "/data/data/EApp.Droid/files/.config/music"
                         };
 
                         //adding sentences to a Lesson
-                        for (int j = 1; j < 5; j++)
+                        for (int j = 0; j < 5; j++)
                         {
                             var sen = new SentenceItem
                             {
-                                Text = "English is either the" +
+                                Text = "  " + j + "Thao is either the" +
                                 " official language or one of the official languages " +
                                 "in almost 60 sovereign states. It is the most commonly spoken ",
-                                Start = j,
-                                End = j * 20
+                                Start = 20 * j,
+                                End = 20 * j + 20,
                             };
                             less.ListSentence.Add(sen);
                         }
@@ -53,7 +53,7 @@ namespace EApp.Repository
                         realm.Add(less);
                     });
                 }
-                
+
             }
 
         }
@@ -152,6 +152,17 @@ namespace EApp.Repository
             }
         }
 
-
+        public void UpdateTime(long id, DateTimeOffset Date)
+        {
+            LessonItem item = realm.Find<LessonItem>(id);
+            if (item != null)
+            {
+                using (var trans = realm.BeginWrite())
+                {
+                    item.TimeAccess = Date;
+                    trans.Commit();
+                }
+            }
+        }
     }
-}
+    }
