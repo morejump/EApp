@@ -25,7 +25,6 @@ namespace EApp.CustomControl
         {
             InitializeComponent();
             MySlider.ValueChanged += MySlider_ValueChanged;
-           
         }
 
         private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)

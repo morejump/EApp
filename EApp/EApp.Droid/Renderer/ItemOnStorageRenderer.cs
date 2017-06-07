@@ -15,6 +15,7 @@ using EApp.Droid.Renderer;
 using EApp.CustomControl;
 using System.Net;
 using System.IO;
+using Realms;
 
 // Android Renderer
 [assembly: ExportRenderer(typeof(ItemOnStoragePage), typeof(ItemOnStorageRenderer))]
@@ -22,6 +23,7 @@ namespace EApp.Droid.Renderer
 {
     public class ItemOnStorageRenderer : VisualElementRenderer<ItemOnStoragePage>
     {
+
         protected override void OnElementChanged(ElementChangedEventArgs<ItemOnStoragePage> e)
         {
             base.OnElementChanged(e);
