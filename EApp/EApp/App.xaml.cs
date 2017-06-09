@@ -25,6 +25,7 @@ namespace EApp
         {
 
             Container.RegisterType<ILessonRepository, LessonRepository>();
+            Container.RegisterType<IStorageRepository, StorageRepository>();
             Container.RegisterInstance(Realms.Realm.GetInstance());
             Container.RegisterInstance(CrossMediaManager.Current);
 

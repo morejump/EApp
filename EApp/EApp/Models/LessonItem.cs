@@ -15,6 +15,9 @@ namespace EApp.Models
 
     public class LessonItem: RealmObject
     {
+        [PrimaryKey]
+        public long ID { get; set; }
+
         public DateTimeOffset TimeAccess { get; set; }
 
         public string PathAudio { get; set; }
@@ -22,9 +25,6 @@ namespace EApp.Models
         public string LinkDownload { get; set; }
 
         public int Level { get; set; }
-
-        [PrimaryKey]
-        public long ID { get; set; }
        
         public int Percent { get; set; }
        

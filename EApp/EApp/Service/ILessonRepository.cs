@@ -9,9 +9,7 @@ namespace EApp.Service
 {
     public interface ILessonRepository
     {
-        //Task<LessonItem[]> GetAllLesson();
         IQueryable<LessonItem> GetQueryable();
-
         Task<bool> Insert(LessonItem item);
         void Update(LessonItem item);
         void UpdateTime(long id, DateTimeOffset Date);

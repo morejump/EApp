@@ -1,5 +1,6 @@
 ﻿using EApp.Models;
 using EApp.Utils;
+using PCLStorage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,19 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnStoragePage : ContentView
     {
-        public event EventHandler<LessonItem> ClickedDownloadbtn;
+        public string PathDownload { get; set; }
+        public async Task PCLStorageSample()
+        {
+            IFolder rootFolder = FileSystem.Current.LocalStorage;
+            IFolder folder = await rootFolder.CreateFolderAsync("MySubFolder",
+                CreationCollisionOption.OpenIfExists);
+            IFile file = await folder.CreateFileAsync("answer.txt",
+                CreationCollisionOption.ReplaceExisting);
+            await file.WriteAllTextAsync("42");
+        }
+
+        public event EventHandler<LessonModel> ClickedDownloadbtn;
+
 
         // this property is used to set value for  "text "+ % and a progress bar
         // in range 1 to 100
@@ -219,7 +232,7 @@ namespace EApp.CustomControl
         // manuplating with download process here
         private void TapDownloadImage(object sender, EventArgs e)
         {
-            ClickedDownloadbtn(this, (LessonItem)BindingContext);
+            ClickedDownloadbtn(this, (LessonModel)BindingContext);
             MyImageDownload.IsVisible = false;
             MyProgressBar.IsVisible = true;
             MyPercent.IsVisible = true;

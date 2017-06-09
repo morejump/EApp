@@ -1,5 +1,6 @@
 ﻿using EApp.Models;
 using EApp.Service;
+using EApp.Utils;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,9 @@ namespace EApp.ViewModels
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
-        private ObservableCollection<LessonItem> _myList;
+        private ObservableCollection<LessonModel> _myList;
 
-        public ObservableCollection<LessonItem> MyList
+        public ObservableCollection<LessonModel> MyList
         {
             get { return _myList; }
             set
@@ -29,12 +30,26 @@ namespace EApp.ViewModels
             }
         }
 
+        IStorageRepository _StorageRepo;
 
-        public StoragePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
+        public  StoragePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo, IStorageRepository StorageRepo)
         {
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
-            MyList = new ObservableCollection<LessonItem>(LessonRepo.GetQueryable());
+            _StorageRepo = StorageRepo;
+            GetData();
+            
         }
+
+        async void GetData()
+        {
+            if (MyList == null)
+            {
+                var searchResult = await _StorageRepo.SearchLesson("hihi");
+                MyList = new ObservableCollection<LessonModel>(searchResult);
+            }
+        }
+
+  
     }
 }

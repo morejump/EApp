@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using EApp.Utils;
+using Firebase.Xamarin.Database;
 
 namespace EApp.ViewModels
 {
@@ -77,7 +78,7 @@ namespace EApp.ViewModels
 
         }
 
-        void RuncmdCheckFavourite(object obj)
+        async void RuncmdCheckFavourite(object obj)
         {
             var les = obj as LessonModel;
             les.IsFavourite = !les.IsFavourite;
@@ -86,6 +87,18 @@ namespace EApp.ViewModels
             {
                 LessonRepo.Update(item);
             }
+
+           await AddItemToFireBaseAsync(les);
+
+        }
+        
+        // this function is used to test firebase
+        async Task AddItemToFireBaseAsync( LessonModel les)
+        {
+            var firebase = new FirebaseClient("https://eapp-7095b.firebaseio.com");
+            var item = await firebase
+                        .Child("lesson")
+                        .PostAsync(les);
 
         }
 

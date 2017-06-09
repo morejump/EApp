@@ -12,7 +12,6 @@ namespace EApp.ViewModels
     {
         public virtual void OnNavigatedFrom(NavigationParameters parameters)
         {
-             
         }
 
         public virtual void OnNavigatedTo(NavigationParameters parameters)
