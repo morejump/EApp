@@ -17,6 +17,7 @@ namespace EApp.CustomControl
     public partial class MyMediaPlayer : ContentView
     {
         bool isFirst = false;
+
         int i = 0;
         private IPlaybackController PlaybackController => Media?.PlaybackController;
 
