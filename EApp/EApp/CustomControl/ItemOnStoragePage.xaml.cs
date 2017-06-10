@@ -1,4 +1,5 @@
 ﻿using EApp.Models;
+using EApp.Service;
 using EApp.Utils;
 using PCLStorage;
 using System;
@@ -7,18 +8,37 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace EApp.CustomControl
 {
     public partial class ItemOnStoragePage : ContentView
     {
+
+
+        public static BindableProperty CmdInsertProperty = BindableProperty.Create(
+          propertyName: "CmdInsert",
+          returnType: typeof(ICommand),
+          declaringType: typeof(ItemOnStoragePage),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+
+
+        public ICommand CmdInsert
+        {
+            get { return (ICommand)GetValue(CmdInsertProperty); }
+            set { SetValue(CmdInsertProperty, value); }
+        }
+
+
         public static BindableProperty IsVisibleProgressBarProperty = BindableProperty.Create(
           propertyName: "IsVisibleProgressBar",
           returnType: typeof(bool),
           declaringType: typeof(ItemOnStoragePage),
-          defaultValue: false,
+          defaultValue: true,
           defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnVisibleProgressbar
       );
@@ -337,7 +357,7 @@ namespace EApp.CustomControl
             set { SetValue(ThumbnailProperty, value); }
         }
         // constructor here
-        public ItemOnStoragePage()
+        public ItemOnStoragePage( )
         {
             InitializeComponent();
         }
@@ -346,11 +366,18 @@ namespace EApp.CustomControl
         //  // manuplating with download process here
         private void TapDownloadImage(object sender, EventArgs e)
         {
+            LessonModel Les = BindingContext as LessonModel;
+            // checking linkdownload before downloading 
             if (String.IsNullOrEmpty(LinkDownload) || String.IsNullOrWhiteSpace(LinkDownload)) return;
-            ClickedDownloadbtn?.Invoke(this, (LessonModel)BindingContext);
+            ClickedDownloadbtn?.Invoke(this, Les);
             MyImageDownload.IsVisible = false;
             MyProgressBar.IsVisible = true;
             MyPercent.IsVisible = true;
+            // adding  a new lesson to database when process download ends
+            if (CmdInsert.CanExecute(BindingContext))
+            {
+                CmdInsert.Execute(BindingContext);
+            }
 
 
         }

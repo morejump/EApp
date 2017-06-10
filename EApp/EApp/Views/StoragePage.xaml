@@ -28,12 +28,18 @@
         <controls:NothingToShow
             IsVisible="{Binding MyList.Count, Converter={StaticResource displayLabel} }" />
         <syncfusion:SfListView
+            x:Name="myList"
             SelectionBackgroundColor="Green"
             ItemSize="116"
             ItemsSource="{Binding MyList}">
             <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
                     <controls:ItemOnStoragePage
+                        CmdInsert="{Binding Source={Reference Name=myList}, Path=BindingContext.CmdInsert}"
+                        IsFavourite="{Binding IsFavourite}"
+                        ID="{Binding ID}"
+                        PathAudio="{Binding PathAudio}"
+                        LinkDownload="{Binding LinkDownload}"
                         Author="{Binding Author}"
                         Title="{Binding Title}"
                         Description="{Binding Description}"

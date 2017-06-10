@@ -8,6 +8,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace EApp.ViewModels
 {
@@ -15,6 +17,8 @@ namespace EApp.ViewModels
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
+        IStorageRepository _StorageRepo;
+
         private ObservableCollection<LessonModel> _myList;
 
         public ObservableCollection<LessonModel> MyList
@@ -29,8 +33,21 @@ namespace EApp.ViewModels
                 }
             }
         }
+        private ICommand _CmdInsert;
 
-        IStorageRepository _StorageRepo;
+        public ICommand CmdInsert
+        {
+            get { return _CmdInsert = _CmdInsert ?? new Command(RunCmdInsert); }
+
+        }
+
+        void RunCmdInsert(object obj)
+        {
+            var les = obj as LessonModel;
+            LessonRepo.Update(ItemToModelLesson.ModelToItem(les));
+        }
+
+
 
         public  StoragePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo, IStorageRepository StorageRepo)
         {

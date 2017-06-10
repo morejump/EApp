@@ -10,7 +10,7 @@ namespace EApp.Service
     public interface ILessonRepository
     {
         IQueryable<LessonItem> GetQueryable();
-        Task<bool> Insert(LessonItem item);
+        void Insert(LessonItem item);
         void Update(LessonItem item);
         void UpdateTime(long id, DateTimeOffset Date);
         void Delete(long id);

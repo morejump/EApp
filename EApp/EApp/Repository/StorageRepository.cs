@@ -24,7 +24,7 @@ namespace EApp.Repository
             var items = await firebase
                 .Child("myenity")
                 .OrderByKey()
-                .LimitToFirst(10)
+                .LimitToFirst(5)
                 .OnceAsync<LessonModel>();
 
 
@@ -32,16 +32,18 @@ namespace EApp.Repository
             {
                 LessonModel les = new LessonModel()
                 {
+                    ListSentence = new List<SentenceModel>(item.Object.ListSentence),
+                    ID=1234321,
                     Title = item.Object.Title,
                     Author = item.Object.Author,
                     Description = item.Object.Description,
-                    Level = item.Object.Level
+                    Level = item.Object.Level,
+                    LinkDownload= "http://zmp3-mp3-s1-te-zmp3-fpthn-1.zadn.vn/11779c713b35d26b8b24/992888775050630550?key=pKjSGlnTjlJWXTn54hIhjA&expires=1497178419"
                 };
                 list.Add(les);
             }
 
             return list;
-
 
         }
 
