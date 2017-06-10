@@ -30,6 +30,8 @@ namespace EApp.Repository
 
             foreach (var item in items)
             {
+                // adding more fields later
+
                 LessonModel les = new LessonModel()
                 {
                     ListSentence = new List<SentenceModel>(item.Object.ListSentence),
