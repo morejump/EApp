@@ -38,8 +38,6 @@ namespace EApp.Models
         
         public bool IsFavourite { get; set; }
        
-        public bool Recent { get; set; }
-       
         public string Author { get; set; }
 
         public IList<SentenceItem> ListSentence { get; }

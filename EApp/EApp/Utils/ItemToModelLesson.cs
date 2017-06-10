@@ -26,7 +26,6 @@ namespace EApp.Utils
                 Level = model.Level,
                 DownloadCount = model.DownloadCount,
                 PathAudio = model.PathAudio,
-                Recent = model.Recent
             };
 
             foreach (var itemList in listSentenItem)
@@ -65,7 +64,6 @@ namespace EApp.Utils
                 Level = item.Level,
                 DownloadCount = item.DownloadCount,
                 PathAudio = item.PathAudio,
-                Recent = item.Recent
 
             };
             model.ListSentence = new List<SentenceModel>(item.ListSentence.Select(d => ItemToModel(d)));

@@ -10,8 +10,7 @@
     xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="EApp.Views.StoragePage"
-    Title="Online Store"
-    >
+    Title="Online Store">
     <ContentPage.Resources>
         <ResourceDictionary>
             <local:AddPercentConverter
@@ -34,21 +33,18 @@
             ItemsSource="{Binding MyList}">
             <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <controls:ItemOnStoragePage
-                            Level="{Binding Level}"
-                            PerCent="{Binding Percent}"
-                            Title="{Binding Title}"
-                            Author="{Binding Author}"
-                            Description="{Binding Description}"
-                            DownloadCount="{Binding DownloadCount}"
-                            Thumbnail="{Binding LinkThumbnail}" />
-                    </ViewCell>
-                </DataTemplate>
-               
-            </syncfusion:SfListView.ItemTemplate>
-            
-        </syncfusion:SfListView>
+                    <controls:ItemOnStoragePage
+                        Author="{Binding Author}"
+                        Title="{Binding Title}"
+                        Description="{Binding Description}"
+                        DownloadCount="{Binding DownloadCount}"
+                        Level="{Binding Level}"
+                        />
 
+                </DataTemplate>
+
+            </syncfusion:SfListView.ItemTemplate>
+
+        </syncfusion:SfListView>
     </StackLayout>
 </ContentPage>

@@ -42,7 +42,7 @@ namespace EApp.Models
 
         private string _LinkDownload;
 
-        public string MyProperty
+        public string LinkDownload
         {
             get { return _LinkDownload; }
             set
@@ -174,20 +174,7 @@ namespace EApp.Models
             }
         }
 
-        private bool _Recent;
-
-        public bool Recent
-        {
-            get { return _Recent; }
-            set
-            {
-                if (_Recent != value)
-                {
-                    _Recent = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
+      
         private string _Author;
 
         public string Author

@@ -14,18 +14,132 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnStoragePage : ContentView
     {
-        public string PathDownload { get; set; }
-        public async Task PCLStorageSample()
+        public static BindableProperty IsVisibleProgressBarProperty = BindableProperty.Create(
+          propertyName: "IsVisibleProgressBar",
+          returnType: typeof(bool),
+          declaringType: typeof(ItemOnStoragePage),
+          defaultValue: false,
+          defaultBindingMode: BindingMode.OneWay,
+          propertyChanged: OnVisibleProgressbar
+      );
+
+        private static void OnVisibleProgressbar(BindableObject bindable, object oldValue, object newValue)
         {
-            IFolder rootFolder = FileSystem.Current.LocalStorage;
-            IFolder folder = await rootFolder.CreateFolderAsync("MySubFolder",
-                CreationCollisionOption.OpenIfExists);
-            IFile file = await folder.CreateFileAsync("answer.txt",
-                CreationCollisionOption.ReplaceExisting);
-            await file.WriteAllTextAsync("42");
+            var view = bindable as ItemOnStoragePage;
+            if (view != null && newValue != null)
+            {
+                view.MyProgressBar.IsVisible = view.IsVisibleProgressBar;
+            }
+        }
+
+        public bool IsVisibleProgressBar
+        {
+            get { return (bool)GetValue(IsVisibleProgressBarProperty); }
+            set { SetValue(IsVisibleProgressBarProperty, value); }
+        }
+
+
+        public static BindableProperty IDProperty = BindableProperty.Create(
+          propertyName: "ID",
+          returnType: typeof(long),
+          declaringType: typeof(ItemOnStoragePage),
+          defaultValue:default(long),
+          defaultBindingMode: BindingMode.OneWay
+      );
+        public long ID
+        {
+            get { return (long)GetValue(IDProperty); }
+            set { SetValue(IDProperty, value); }
         }
 
         public event EventHandler<LessonModel> ClickedDownloadbtn;
+
+
+
+        public static BindableProperty ListSentenceProperty = BindableProperty.Create(
+          propertyName: "ListSentence",
+          returnType: typeof(IList<SentenceModel>),
+          declaringType: typeof(ItemOnStoragePage),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.OneWay
+      );
+
+
+        public IList<SentenceModel> ListSentence
+        {
+            get { return (IList<SentenceModel>)GetValue(ListSentenceProperty); }
+            set { SetValue(ListSentenceProperty, value); }
+        }
+
+
+
+        public static BindableProperty IsFavouriteProperty = BindableProperty.Create(
+          propertyName: "IsFavourite",
+          returnType: typeof(bool),
+          declaringType: typeof(ItemOnStoragePage),
+          defaultValue: false,
+          defaultBindingMode: BindingMode.OneWay
+      );
+
+
+
+        public bool IsFavourite
+        {
+            get { return (bool)GetValue(IsFavouriteProperty); }
+            set { SetValue(IsFavouriteProperty, value); }
+        }
+
+
+        public static BindableProperty LinkThumbnailProperty = BindableProperty.Create(
+          propertyName: "LinkThumbnail",
+          returnType: typeof(string),
+          declaringType: typeof(ItemOnStoragePage),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.OneWay
+      );
+
+
+
+        public string LinkThumbnail
+        {
+            get { return (string)GetValue(LinkThumbnailProperty); }
+            set { SetValue(LinkThumbnailProperty, value); }
+        }
+
+
+
+        public static BindableProperty LinkDownloadProperty = BindableProperty.Create(
+          propertyName: "LinkDownload",
+          returnType: typeof(string),
+          declaringType: typeof(ItemOnStoragePage),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.OneWay
+      );
+
+
+
+        public string LinkDownload
+        {
+            get { return (string)GetValue(LinkDownloadProperty); }
+            set { SetValue(LinkDownloadProperty, value); }
+        }
+
+
+        public static BindableProperty PathAudioProperty = BindableProperty.Create(
+          propertyName: "PathAudio",
+          returnType: typeof(string),
+          declaringType: typeof(ItemOnStoragePage),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.OneWay
+      );
+
+
+
+        public string PathAudio
+        {
+            get { return (string)GetValue(PathAudioProperty); }
+            set { SetValue(PathAudioProperty, value); }
+        }
 
 
         // this property is used to set value for  "text "+ % and a progress bar
@@ -36,7 +150,7 @@ namespace EApp.CustomControl
           returnType: typeof(int),
           declaringType: typeof(ItemOnStoragePage),
           defaultValue: 0,
-          defaultBindingMode: BindingMode.TwoWay,
+          defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnPercentChanged
       );
 
@@ -100,7 +214,7 @@ namespace EApp.CustomControl
           returnType: typeof(string),
           declaringType: typeof(ItemOnStoragePage),
           defaultValue: "No Title",
-          defaultBindingMode: BindingMode.TwoWay,
+          defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnTitleChanged
       );
 
@@ -125,7 +239,7 @@ namespace EApp.CustomControl
           returnType: typeof(string),
           declaringType: typeof(ItemOnStoragePage),
           defaultValue: "No Author",
-          defaultBindingMode: BindingMode.TwoWay,
+          defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnAuthorChanged
       );
 
@@ -151,7 +265,7 @@ namespace EApp.CustomControl
           returnType: typeof(string),
           declaringType: typeof(ItemOnStoragePage),
           defaultValue: "No Description",
-          defaultBindingMode: BindingMode.TwoWay,
+          defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnDescriptionChanged
       );
 
@@ -178,7 +292,7 @@ namespace EApp.CustomControl
           returnType: typeof(int),
           declaringType: typeof(ItemOnStoragePage),
           defaultValue: 40,
-          defaultBindingMode: BindingMode.TwoWay,
+          defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnDownloadChanged
       );
 
@@ -204,7 +318,7 @@ namespace EApp.CustomControl
           returnType: typeof(string),
           declaringType: typeof(ItemOnStoragePage),
           defaultValue: "avatar.png",
-          defaultBindingMode: BindingMode.TwoWay,
+          defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnThumbnailChanged
       );
 
@@ -228,11 +342,12 @@ namespace EApp.CustomControl
             InitializeComponent();
         }
 
-        // when user tap a download image
-        // manuplating with download process here
+        //  // when user tap a download image
+        //  // manuplating with download process here
         private void TapDownloadImage(object sender, EventArgs e)
         {
-            ClickedDownloadbtn(this, (LessonModel)BindingContext);
+            if (String.IsNullOrEmpty(LinkDownload) || String.IsNullOrWhiteSpace(LinkDownload)) return;
+            ClickedDownloadbtn?.Invoke(this, (LessonModel)BindingContext);
             MyImageDownload.IsVisible = false;
             MyProgressBar.IsVisible = true;
             MyPercent.IsVisible = true;

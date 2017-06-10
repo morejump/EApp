@@ -25,23 +25,29 @@ namespace EApp.Droid.Renderer
 {
     public class ItemOnStorageRenderer : VisualElementRenderer<ItemOnStoragePage>
     {
+        public ItemOnStorageRenderer()
+        {
+
+        }
 
         protected override void OnElementChanged(ElementChangedEventArgs<ItemOnStoragePage> e)
         {
             base.OnElementChanged(e);
 
-            var destination = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData),
-                    "music");
-           
             WebClient webClient = new WebClient();
+
+            string PathAudio = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData),
+                    e.NewElement.ID.ToString());
+
+            e.NewElement.PathAudio = PathAudio;
 
             // when clicking a download button
             e.NewElement.ClickedDownloadbtn += (se, lesson) =>
             {
-                
-                //downloading audio file
-                webClient.DownloadFileAsync(new Uri("http://zmp3-mp3-s1-te-zmp3-fpthn-1.zadn.vn/11779c713b35d26b8b24/992888775050630550?key=OjXHFJiBmcGwZBc11U_3rQ&expires=1497004684"),
-                   destination);
+
+                //downloading audio file to local with link download
+                webClient.DownloadFileAsync(new Uri(e.NewElement.LinkDownload),
+                   e.NewElement.PathAudio);
                 //
                 webClient.DownloadProgressChanged += (s, t) =>
                 {
@@ -50,7 +56,7 @@ namespace EApp.Droid.Renderer
                 //
                 webClient.DownloadFileCompleted += (s, t) =>
                 {
-                    e.NewElement.PathDownload = "";
+                    e.NewElement.IsVisibleProgressBar = false;
 
                 };
             };
