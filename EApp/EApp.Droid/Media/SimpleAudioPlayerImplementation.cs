@@ -63,7 +63,12 @@ namespace EApp.Droid.Media
         /// Indicates if the currently loaded audio file is playing
         ///</Summary>
         public bool IsPlaying
-        { get { return player == null ? false : player.IsPlaying; } }
+        { get {
+
+                return player == null ? false : player.IsPlaying;
+                //return player.IsPlaying;
+
+            } }
 
         public bool Loop
         {

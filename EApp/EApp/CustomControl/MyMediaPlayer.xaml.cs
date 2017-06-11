@@ -24,6 +24,36 @@ namespace EApp.CustomControl
         }
 
         public EventHandler ClickPlayBtnEvent;
+
+       
+        public static BindableProperty IsPlayingProperty = BindableProperty.Create(
+          propertyName: "IsPlaying",
+          returnType: typeof(bool),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: true,
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged: OnIsPlayingChanged
+      );
+
+        private static void OnIsPlayingChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as MyMediaPlayer;
+            if (view.IsPlaying)
+            {
+                view.MyPlayButton.Source = "playbutton.png";
+            }
+            else
+            {
+                view.MyPlayButton.Source = "pausebutton.png";
+            }
+        }
+
+        public bool IsPlaying
+        {
+            get { return (bool)GetValue(IsPlayingProperty); }
+            set { SetValue(IsPlayingProperty, value); }
+        }
+
         public static BindableProperty TextEndProperty = BindableProperty.Create(
           propertyName: "TextEnd",
           returnType: typeof(string),
@@ -58,19 +88,24 @@ namespace EApp.CustomControl
 
         public static BindableProperty MaxValueProperty = BindableProperty.Create(
           propertyName: "MaxValue",
-          returnType: typeof(int),
+          returnType: typeof(double),
           declaringType: typeof(MyMediaPlayer),
-          defaultValue: 0,
+          defaultValue: default(double),
           defaultBindingMode: BindingMode.TwoWay,
           propertyChanged: OnMaxValueChanged
       );
 
         private static void OnMaxValueChanged(BindableObject bindable, object oldValue, object newValue)
         {
-           
+            double newVal = (double)newValue;
+            var view = bindable as MyMediaPlayer;
+            if (newValue != null)
+            {
+                view.MySlider.Maximum = newVal;
+            }
         }
 
-        public int MaxValue
+        public double MaxValue
         {
             get { return (int)GetValue(MaxValueProperty); }
             set { SetValue(MaxValueProperty, value); }
@@ -117,7 +152,8 @@ namespace EApp.CustomControl
         // change an image when tapping a play button
         private  void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            ClickPlayBtnEvent?.Invoke(this, EventArgs.Empty);
+
+                ClickPlayBtnEvent?.Invoke(this, EventArgs.Empty);
 
         }
 

@@ -31,6 +31,21 @@ namespace EApp.ViewModels
             }
         }
 
+        private bool _IsExit;
+
+        public bool IsExit
+        {
+            get { return _IsExit; }
+            set
+            {
+                if (_IsExit != value)
+                {
+                    _IsExit = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
 
         private int _Position;
 
@@ -47,6 +62,7 @@ namespace EApp.ViewModels
                 }
             }
         }
+
         // getting list senetence here :))
        
         private SentenceModel FindSentenceByPosition(int pos)
@@ -141,8 +157,6 @@ namespace EApp.ViewModels
 
         }
 
-
-
         private List<int> mylist;
 
         public List<int> MyList
@@ -187,7 +201,7 @@ namespace EApp.ViewModels
                 }
             }
         }
-       
+
         public override void OnNavigatedTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);

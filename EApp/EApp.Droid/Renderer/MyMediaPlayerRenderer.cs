@@ -24,26 +24,52 @@ namespace EApp.Droid.Renderer
     public class MyMediaPlayerRenderer : VisualElementRenderer<MyMediaPlayer>
     {
         MyMediaPlayer view;
-        
-        SimpleAudioPlayerImplementation player;
+
+        SimpleAudioPlayerImplementation media;
 
         protected override void OnElementChanged(ElementChangedEventArgs<MyMediaPlayer> e)
         {
             base.OnElementChanged(e);
             // do something here later
             view = e.NewElement;
-            player = new SimpleAudioPlayerImplementation();
+            media = new SimpleAudioPlayerImplementation();
+           
+           
             view.ClickPlayBtnEvent += (s, arg) =>
             {
-                if (view.Path != null)
+                view.IsPlaying = media.IsPlaying;
+                if (media.IsPlaying == true)
                 {
-                    player.Load(view.Path);
-                    player.Play();
+                    media.Pause();
+                    return;
+                }
+                if (media.IsPlaying == false)
+                {
+                    media.Play();
                 }
             };
 
+
+        }
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+            if (e.PropertyName == "Path")
+            {
+                if (view.Path != null)
+                {
+                    media.Load(view.Path);
+                    view.MaxValue = media.Duration;
+                }
+            }
+
         }
 
-      
+        protected override void OnDetachedFromWindow()
+        {
+            base.OnDetachedFromWindow();
+            media.Stop();
+        }
+
     }
 }
