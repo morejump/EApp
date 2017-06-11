@@ -195,6 +195,12 @@
     <Reference Include="Plugin.MediaManager.Forms.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Plugin.MediaManager.Forms.0.4.0\lib\xamarinios\Plugin.MediaManager.Forms.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="Plugin.SimpleAudioPlayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.SimpleAudioPlayer.0.8.2\lib\Xamarin.iOS10\Plugin.SimpleAudioPlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.SimpleAudioPlayer.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.SimpleAudioPlayer.0.8.2\lib\Xamarin.iOS10\Plugin.SimpleAudioPlayer.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="Prism, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Prism.Core.6.3.0\lib\Xamarin.iOS10\Prism.dll</HintPath>
     </Reference>

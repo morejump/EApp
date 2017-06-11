@@ -63,7 +63,7 @@
                 FontSize="15"
                 Text="0:00" />
 
-            <controls:MyImage
+            <!--<controls:MyImage
                 x:Name="MySpeedButton"
                 Margin="0,0,16,0"
                 Grid.Column="4"
@@ -78,7 +78,7 @@
 
                 </controls:MyImage.GestureRecognizers>
 
-            </controls:MyImage>
+            </controls:MyImage>-->
         </Grid>
 
     </ContentView.Content>

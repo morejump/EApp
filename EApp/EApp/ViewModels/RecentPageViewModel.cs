@@ -65,6 +65,8 @@ namespace EApp.ViewModels
             {
                 LessonRepo.Update(item);
             }
+            // navigating to list sentence page and attaching lesson
+
             NavigationParameters param = new NavigationParameters();
             param.Add("lesson", les);
             navigationService.NavigateAsync(Pages.ListSentence, param);
@@ -88,19 +90,9 @@ namespace EApp.ViewModels
                 LessonRepo.Update(item);
             }
 
-           await AddItemToFireBaseAsync(les);
-
         }
         
-        // this function is used to test firebase
-        async Task AddItemToFireBaseAsync( LessonModel les)
-        {
-            var firebase = new FirebaseClient("https://eapp-7095b.firebaseio.com");
-            var item = await firebase
-                        .Child("lesson")
-                        .PostAsync(les);
-
-        }
+      
 
         // when get outside this page
         public override void OnNavigatedFrom(NavigationParameters parameters)

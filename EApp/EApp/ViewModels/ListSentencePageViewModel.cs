@@ -9,6 +9,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using Plugin.MediaManager.Abstractions;
 using Plugin.MediaManager;
+using System.IO;
 
 namespace EApp.ViewModels
 {
@@ -105,14 +106,7 @@ namespace EApp.ViewModels
 
         void RunPlayBackwardCmd()
         {
-            if (Position - 15 <= 0)
-            {
-                MediaManager.Seek(new TimeSpan(0, 0, 0));
-            }
-            else
-            {
-                MediaManager.Seek(new TimeSpan(0, 0, Position - 15));
-            }
+
         }
         private ICommand _PlayForwardCmd;
 
@@ -125,20 +119,7 @@ namespace EApp.ViewModels
 
         void RunPlayForwardCmd()
         {
-            var LastElement = Listentence[Listentence.Count() - 1];
-            if (LastElement != null)
-            {
-
-                if (Position + 15 >= LastElement.End)
-                {
-                    MediaManager.Seek(new TimeSpan(0, 0, LastElement.End));
-                }
-                else
-                {
-                    MediaManager.Seek(new TimeSpan(0, 0, Position + 15));
-                }
-            }
-
+            
 
 
         }
@@ -155,12 +136,10 @@ namespace EApp.ViewModels
             var start = Listentence.Where(d => d.Start <= Position && Position <= d.End).FirstOrDefault();
             if (start != null)
             {
-                MediaManager.Seek(new TimeSpan(0, 0, start.Start));
+                // do something here
             }
 
         }
-
-
 
 
 
@@ -208,24 +187,7 @@ namespace EApp.ViewModels
                 }
             }
         }
-        private ICommand _cmdDisapear;
-
-        public ICommand cmdDisapear
-        {
-            get { return _cmdDisapear = _cmdDisapear ?? new Command(RuncmdDisapear); }
-
-        }
-
-        void RuncmdDisapear()
-        {
-            MediaManager.Stop();
-            MediaManager.MediaNotificationManager?.StopNotifications();
-            MediaManager.MediaNotificationManager = null;
-            MediaManager = null;
-        }
-
-
-
+       
         public override void OnNavigatedTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
@@ -236,28 +198,11 @@ namespace EApp.ViewModels
                 SelectedSentence = Listentence[0];
             }
             Path = MyLesson.PathAudio;
-
-        }
-        private IMediaManager mediaManager;
-
-        public IMediaManager MediaManager
-        {
-            get { return mediaManager; }
-            set
-            {
-                if (mediaManager != value)
-                {
-                    mediaManager = value;
-                    OnPropertyChanged();
-                }
-            }
         }
 
         // constructor here
-        public ListSentencePageViewModel(IMediaManager mediaManager)
+        public ListSentencePageViewModel()
         {
-            this.MediaManager = mediaManager;
-
 
         }
     }

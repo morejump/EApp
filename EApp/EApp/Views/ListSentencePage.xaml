@@ -40,9 +40,7 @@
         </Grid.RowDefinitions>
         <controls:MyMediaPlayer
             x:Name="MyMedia"
-            Disapear="{Binding cmdDisapear}"
             Path="{Binding Path}"
-            Media="{Binding MediaManager}"
             Position="{Binding Position}" />
         <ListView
             x:Name="MyListView"

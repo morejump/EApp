@@ -20,10 +20,7 @@ namespace EApp.Views
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            if (MyMedia.Disapear.CanExecute(""))
-            {
-                MyMedia.Disapear.Execute("");
-            };
+           
         }
     }
 }
