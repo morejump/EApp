@@ -41,7 +41,7 @@
         <controls:MyMediaPlayer
             x:Name="MyMedia"
             Path="{Binding Path}"
-            Position="{Binding Position}" />
+             />
         <ListView
             x:Name="MyListView"
             Grid.Row="1"

@@ -16,6 +16,8 @@ using Xamarin.Forms.Platform.Android;
 using EApp.Droid.Interface;
 using EApp.Droid.Media;
 using System.ComponentModel;
+using System.Threading.Tasks;
+using Java.Lang;
 
 [assembly: ExportRenderer(typeof(MyMediaPlayer), typeof(MyMediaPlayerRenderer))]
 
@@ -25,25 +27,64 @@ namespace EApp.Droid.Renderer
     {
         MyMediaPlayer view;
         
-        SimpleAudioPlayerImplementation player;
+        SimpleAudioPlayerImplementation media;
 
         protected override void OnElementChanged(ElementChangedEventArgs<MyMediaPlayer> e)
         {
             base.OnElementChanged(e);
             // do something here later
             view = e.NewElement;
-            player = new SimpleAudioPlayerImplementation();
+            media = new SimpleAudioPlayerImplementation();
+            media.PlaybackEnded += Media_PlaybackEnded;
+            Task.Run(() =>
+            {
+                while(true){
+                    view.ValueSlider = media.CurrentPosition;
+                    Task.Delay(200);
+                }
+            });
+            view.ValueSliderChangedEvent += (s, arg) =>
+            {
+                media.Seek(arg);
+            };
+
             view.ClickPlayBtnEvent += (s, arg) =>
             {
-                if (view.Path != null)
+                view.IsPlaying = media.IsPlaying;
+                if (media.IsPlaying== false)
                 {
-                    player.Load(view.Path);
-                    player.Play();
+                    media.Play();
+                    return;
+                }
+                if (media.IsPlaying)
+                {
+                    media.Pause();
                 }
             };
 
         }
 
-      
+        private void Media_PlaybackEnded(object sender, EventArgs e)
+        {
+            view.IsPlaying = true;
+        }
+
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+            if (e.PropertyName == "Path")
+            {
+                media.Load(view.Path);
+                view.MaxValueSlider = media.Duration;
+            }
+        }
+
+        protected override void OnDetachedFromWindow()
+        {
+            base.OnDetachedFromWindow();
+            media.Stop();
+        }
+
+
     }
 }

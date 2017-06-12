@@ -21,9 +21,93 @@ namespace EApp.CustomControl
         public MyMediaPlayer()
         {
             InitializeComponent();
+            MySlider.ValueChanged += MySlider_ValueChanged;
+        }
+        public EventHandler ClickPlayBtnEvent;
+        public EventHandler<double> ValueSliderChangedEvent;
+
+
+        private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            if(e.NewValue-e.OldValue>2 || e.NewValue - e.OldValue < -2)
+            {
+                ValueSliderChangedEvent.Invoke(this, e.NewValue);
+            }
         }
 
-        public EventHandler ClickPlayBtnEvent;
+        public static BindableProperty ValueSliderProperty = BindableProperty.Create(
+          propertyName: "ValueSlider",
+          returnType: typeof(double),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: default(double),
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged: OnValueSliderChanged
+      );
+
+        private static void OnValueSliderChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var newVal = (double)newValue;
+            var view = bindable as MyMediaPlayer;
+            view.MySlider.Value = newVal;
+        }
+
+        public double ValueSlider
+        {
+            get { return (double)GetValue(ValueSliderProperty); }
+            set { SetValue(ValueSliderProperty, value); }
+        }
+
+        public static BindableProperty MaxValueSliderProperty = BindableProperty.Create(
+          propertyName: "MaxValueSlider",
+          returnType: typeof(double),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: default(double),
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged: OnMaxValueSliderChanged
+      );
+
+        private static void OnMaxValueSliderChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var newVal = (double)newValue;
+            var view = bindable as MyMediaPlayer;
+            view.MySlider.Maximum = newVal;
+        }
+
+        public double MaxValueSlider
+        {
+            get { return (double)GetValue(MaxValueSliderProperty); }
+            set { SetValue(MaxValueSliderProperty, value); }
+        }
+
+        public static BindableProperty IsPlayingProperty = BindableProperty.Create(
+          propertyName: "IsPlaying",
+          returnType: typeof(bool),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: true,
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged: OnIsPlayingChanged
+      );
+
+        private static void OnIsPlayingChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as MyMediaPlayer;
+            var newVal = (bool)newValue;
+            if (newVal)
+            {
+                view.MyPlayButton.Source = "playbutton.png";
+            }
+            else
+            {
+                view.MyPlayButton.Source = "pausebutton.png";
+            }
+        }
+
+        public bool IsPlaying
+        {
+            get { return (bool)GetValue(IsPlayingProperty); }
+            set { SetValue(IsPlayingProperty, value); }
+        }
+
         public static BindableProperty TextEndProperty = BindableProperty.Create(
           propertyName: "TextEnd",
           returnType: typeof(string),
@@ -56,46 +140,7 @@ namespace EApp.CustomControl
         }
 
 
-        public static BindableProperty MaxValueProperty = BindableProperty.Create(
-          propertyName: "MaxValue",
-          returnType: typeof(int),
-          declaringType: typeof(MyMediaPlayer),
-          defaultValue: 0,
-          defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged: OnMaxValueChanged
-      );
-
-        private static void OnMaxValueChanged(BindableObject bindable, object oldValue, object newValue)
-        {
-           
-        }
-
-        public int MaxValue
-        {
-            get { return (int)GetValue(MaxValueProperty); }
-            set { SetValue(MaxValueProperty, value); }
-        }
-
-        public static BindableProperty PositionProperty = BindableProperty.Create(
-          propertyName: "Position",
-          returnType: typeof(int),
-          declaringType: typeof(MyMediaPlayer),
-          defaultValue: 0,
-          defaultBindingMode: BindingMode.TwoWay,
-          propertyChanged: OnPositionChanged
-      );
-
-        private static void OnPositionChanged(BindableObject bindable, object oldValue, object newValue)
-        {
-        }
-
-        public int Position
-        {
-            get { return (int)GetValue(PositionProperty); }
-            set { SetValue(PositionProperty, value); }
-        }
-
-
+       
         public bool isTapPlayButton { get; set; }
 
         public static BindableProperty cmdTapPlayButtonProperty = BindableProperty.Create(
@@ -112,11 +157,10 @@ namespace EApp.CustomControl
             set { SetValue(cmdTapPlayButtonProperty, value); }
         }
 
-
-
         // change an image when tapping a play button
         private  void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
+
             ClickPlayBtnEvent?.Invoke(this, EventArgs.Empty);
 
         }
