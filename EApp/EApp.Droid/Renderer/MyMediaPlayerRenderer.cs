@@ -16,6 +16,9 @@ using Xamarin.Forms.Platform.Android;
 using EApp.Droid.Interface;
 using EApp.Droid.Media;
 using System.ComponentModel;
+using Java.Lang;
+using System.Threading;
+using System.Threading.Tasks;
 
 [assembly: ExportRenderer(typeof(MyMediaPlayer), typeof(MyMediaPlayerRenderer))]
 
@@ -24,7 +27,6 @@ namespace EApp.Droid.Renderer
     public class MyMediaPlayerRenderer : VisualElementRenderer<MyMediaPlayer>
     {
         MyMediaPlayer view;
-
         SimpleAudioPlayerImplementation media;
 
         protected override void OnElementChanged(ElementChangedEventArgs<MyMediaPlayer> e)
@@ -33,21 +35,33 @@ namespace EApp.Droid.Renderer
             // do something here later
             view = e.NewElement;
             media = new SimpleAudioPlayerImplementation();
-           
-           
-            view.ClickPlayBtnEvent += (s, arg) =>
+            // create a new thread to update UI
+            Task.Run(()=> {
+                while (true)
+                {
+                    view.SliderValue = media.CurrentPosition;
+                    Task.Delay(200);
+                }
+            });
+            view.ValueChangeEvent += (s, arg) =>
             {
-                view.IsPlaying = media.IsPlaying;
-                if (media.IsPlaying == true)
-                {
-                    media.Pause();
-                    return;
-                }
-                if (media.IsPlaying == false)
-                {
-                    media.Play();
-                }
+                media.Seek(arg);
+
             };
+
+            view.ClickPlayBtnEvent += (s, arg) =>
+                            {
+                                view.IsPlaying = media.IsPlaying;
+                                if (media.IsPlaying == true)
+                                {
+                                    media.Pause();
+                                    return;
+                                }
+                                if (media.IsPlaying == false)
+                                {
+                                    media.Play();
+                                }
+                            };
 
 
         }

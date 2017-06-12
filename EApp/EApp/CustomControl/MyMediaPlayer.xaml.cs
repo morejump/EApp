@@ -21,11 +21,41 @@ namespace EApp.CustomControl
         public MyMediaPlayer()
         {
             InitializeComponent();
+            MySlider.ValueChanged += MySlider_ValueChanged;
+        }
+
+        private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            if (e.NewValue- e.OldValue>2 || e.NewValue-e.OldValue<-2)
+            {
+                ValueChangeEvent?.Invoke(this, MySlider.Value);
+            }
         }
 
         public EventHandler ClickPlayBtnEvent;
+        public EventHandler<double> ValueChangeEvent;
 
-       
+        public static BindableProperty SliderValueProperty = BindableProperty.Create(
+          propertyName: "SliderValue",
+          returnType: typeof(double),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: default(double),
+          defaultBindingMode: BindingMode.TwoWay,
+          propertyChanged: OnSliderValueChanged
+      );
+
+        private static void OnSliderValueChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as MyMediaPlayer;
+            view.MySlider.Value = view.SliderValue;
+        }
+
+        public double SliderValue
+        {
+            get { return (double)GetValue(SliderValueProperty); }
+            set { SetValue(SliderValueProperty, value); }
+        }
+
         public static BindableProperty IsPlayingProperty = BindableProperty.Create(
           propertyName: "IsPlaying",
           returnType: typeof(bool),
@@ -85,7 +115,7 @@ namespace EApp.CustomControl
             set { SetValue(PathProperty, value); }
         }
 
-
+        // max value for a slider
         public static BindableProperty MaxValueProperty = BindableProperty.Create(
           propertyName: "MaxValue",
           returnType: typeof(double),
@@ -131,7 +161,6 @@ namespace EApp.CustomControl
         }
 
 
-        public bool isTapPlayButton { get; set; }
 
         public static BindableProperty cmdTapPlayButtonProperty = BindableProperty.Create(
           propertyName: "cmdTapPlayButton",
