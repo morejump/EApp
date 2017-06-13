@@ -23,12 +23,12 @@ namespace EApp.Droid.Interface
         ///<Summary>
         /// Length of audio in seconds
         ///</Summary>
-        double Duration { get; }
+        int Duration { get; }
 
         ///<Summary>
         /// Current position of audio playback in seconds
         ///</Summary>
-        double CurrentPosition { get; }
+        int CurrentPosition { get; }
 
         ///<Summary>
         /// Playback volume 0 to 1 where 0 is no-sound and 1 is full volume
@@ -38,7 +38,7 @@ namespace EApp.Droid.Interface
         ///<Summary>
         /// Balance left/right: -1 is 100% left : 0% right, 1 is 100% right : 0% left, 0 is equal volume left/right
         ///</Summary>
-        double Balance { get; set; }
+        int Balance { get; set; }
 
         ///<Summary>
         /// Indicates if the currently loaded audio file is playing
@@ -79,6 +79,6 @@ namespace EApp.Droid.Interface
         ///<Summary>
         /// Set the current playback position (in seconds)
         ///</Summary>
-        void Seek(double position);
+        void Seek(int position);
     }
 }

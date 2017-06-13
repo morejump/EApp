@@ -18,7 +18,7 @@ namespace EApp.CustomControl
     {
 
         public EventHandler ClickPlayBtnEvent;
-        public EventHandler<double> ValueSliderChangedEvent;
+        public EventHandler<int> ValueSliderChangedEvent;
 
         // constructor here
         public MyMediaPlayer()
@@ -29,10 +29,10 @@ namespace EApp.CustomControl
 
         private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            double oldVal = (double)e.OldValue;
-            double newVal = (double)e.NewValue;
+            int oldVal = (int)e.OldValue;
+            int newVal = (int)e.NewValue;
 
-            if (newVal - oldVal > 2 || oldVal - newVal > 2)
+            if (newVal - oldVal > 2000 || oldVal - newVal > 2000)
             {
                 ValueSliderChangedEvent.Invoke(this, newVal);
             }
@@ -40,45 +40,45 @@ namespace EApp.CustomControl
 
         public static BindableProperty ValueSliderProperty = BindableProperty.Create(
           propertyName: "ValueSlider",
-          returnType: typeof(double),
+          returnType: typeof(int),
           declaringType: typeof(MyMediaPlayer),
-          defaultValue: default(double),
+          defaultValue: default(int),
           defaultBindingMode: BindingMode.TwoWay,
           propertyChanged: OnValueSliderChanged
       );
 
         private static void OnValueSliderChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            var newVal = (double)newValue;
+            var newVal = (int)newValue;
             var view = bindable as MyMediaPlayer;
             view.MySlider.Value = newVal;
         }
 
-        public double ValueSlider
+        public int ValueSlider
         {
-            get { return (double)GetValue(ValueSliderProperty); }
+            get { return (int)GetValue(ValueSliderProperty); }
             set { SetValue(ValueSliderProperty, value); }
         }
 
         public static BindableProperty MaxValueSliderProperty = BindableProperty.Create(
           propertyName: "MaxValueSlider",
-          returnType: typeof(double),
+          returnType: typeof(int),
           declaringType: typeof(MyMediaPlayer),
-          defaultValue: default(double),
+          defaultValue: default(int),
           defaultBindingMode: BindingMode.TwoWay,
           propertyChanged: OnMaxValueSliderChanged
       );
 
         private static void OnMaxValueSliderChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            var newVal = (double)newValue;
+            var newVal = (int)newValue;
             var view = bindable as MyMediaPlayer;
             view.MySlider.Maximum = newVal;
         }
 
-        public double MaxValueSlider
+        public int MaxValueSlider
         {
-            get { return (double)GetValue(MaxValueSliderProperty); }
+            get { return (int)GetValue(MaxValueSliderProperty); }
             set { SetValue(MaxValueSliderProperty, value); }
         }
 

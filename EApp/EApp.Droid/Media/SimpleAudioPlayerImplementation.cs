@@ -30,14 +30,14 @@ namespace EApp.Droid.Media
         ///<Summary>
         /// Length of audio in seconds
         ///</Summary>
-        public double Duration
-        { get { return player == null ? 0 : ((double)player.Duration) / 1000.0; } }
+        public int Duration
+        { get { return player == null ? 0 : (player.Duration); } }
 
         ///<Summary>
         /// Current position of audio playback in seconds
         ///</Summary>
-        public double CurrentPosition
-        { get { return player == null ? 0 : ((double)player.CurrentPosition) / 1000.0; } }
+        public int CurrentPosition
+        { get { return player == null ? 0 : (player.CurrentPosition); } }
 
         ///<Summary>
         /// Playback volume (0 to 1)
@@ -77,6 +77,8 @@ namespace EApp.Droid.Media
         ///</Summary>
         public bool CanSeek
         { get { return player == null ? false : true; } }
+
+        int ISimpleAudioPlayer.Balance { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         string path;
 
@@ -138,11 +140,11 @@ namespace EApp.Droid.Media
         ///<Summary>
         /// Set the current playback position (in seconds)
         ///</Summary>
-        public void Seek(double position)
+        public void Seek(int position)
         {
             if (player != null)
             {
-                player.SeekTo((int)position * 1000); 
+                player.SeekTo(position); 
             }
         }
 

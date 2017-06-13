@@ -70,9 +70,6 @@ namespace EApp.Models
                 }
             }
         }
-
-
-
-
+       
     }
 }

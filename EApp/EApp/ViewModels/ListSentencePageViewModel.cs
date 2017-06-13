@@ -50,8 +50,8 @@ namespace EApp.ViewModels
        
         private SentenceModel FindSentenceByPosition(int pos)
         {
-            return Listentence.Where(d => d.Start <= pos && pos <= d.End).FirstOrDefault();
-
+             return Listentence.Where(d => d.Start/1000 < pos && pos  < d.End/1000).FirstOrDefault();
+             
         }
 
 
@@ -67,7 +67,7 @@ namespace EApp.ViewModels
                     _SelectedSentence = value;
                     if (_SelectedSentence != null)
                     {
-                        Position = _SelectedSentence.Start;
+                        Position = _SelectedSentence.Start/1000;
                     }
                     OnPropertyChanged();
                 }
@@ -194,7 +194,7 @@ namespace EApp.ViewModels
             Listentence = new List<SentenceModel>(MyLesson.ListSentence);
             if (Listentence.Count > 0)
             {
-                SelectedSentence = Listentence[0];
+               // SelectedSentence = Listentence[0];
             }
             Path = MyLesson.PathAudio;
         }
