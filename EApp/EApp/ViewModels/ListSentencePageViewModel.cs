@@ -47,7 +47,6 @@ namespace EApp.ViewModels
                 }
             }
         }
-        // getting list senetence here :))
        
         private SentenceModel FindSentenceByPosition(int pos)
         {

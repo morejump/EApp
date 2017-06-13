@@ -53,6 +53,7 @@
             <Slider
                 x:Name="MySlider"
                 Margin="8,0"
+                Value="0"
                 Grid.Column="2" />
             <Label
                 x:Name="lblEnd"

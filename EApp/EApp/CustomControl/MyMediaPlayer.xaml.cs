@@ -17,21 +17,24 @@ namespace EApp.CustomControl
     public partial class MyMediaPlayer : ContentView
     {
 
+        public EventHandler ClickPlayBtnEvent;
+        public EventHandler<double> ValueSliderChangedEvent;
+
         // constructor here
         public MyMediaPlayer()
         {
             InitializeComponent();
             MySlider.ValueChanged += MySlider_ValueChanged;
         }
-        public EventHandler ClickPlayBtnEvent;
-        public EventHandler<double> ValueSliderChangedEvent;
-
 
         private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            if(e.NewValue-e.OldValue>2 || e.NewValue - e.OldValue < -2)
+            double oldVal = (double)e.OldValue;
+            double newVal = (double)e.NewValue;
+
+            if (newVal - oldVal > 2 || oldVal - newVal > 2)
             {
-                ValueSliderChangedEvent.Invoke(this, e.NewValue);
+                ValueSliderChangedEvent.Invoke(this, newVal);
             }
         }
 
@@ -123,7 +126,6 @@ namespace EApp.CustomControl
         }
 
 
-
         public static BindableProperty PathProperty = BindableProperty.Create(
           propertyName: "Path",
           returnType: typeof(string),
@@ -140,7 +142,6 @@ namespace EApp.CustomControl
         }
 
 
-       
         public bool isTapPlayButton { get; set; }
 
         public static BindableProperty cmdTapPlayButtonProperty = BindableProperty.Create(
@@ -158,15 +159,12 @@ namespace EApp.CustomControl
         }
 
         // change an image when tapping a play button
-        private  void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
 
             ClickPlayBtnEvent?.Invoke(this, EventArgs.Empty);
 
         }
 
-        
-
-      
     }
 }

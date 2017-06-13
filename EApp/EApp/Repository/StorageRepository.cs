@@ -40,7 +40,7 @@ namespace EApp.Repository
                     Author = item.Object.Author,
                     Description = item.Object.Description,
                     Level = item.Object.Level,
-                    LinkDownload= "http://zmp3-mp3-s1-te-zmp3-fpthn-1.zadn.vn/11779c713b35d26b8b24/992888775050630550?key=pKjSGlnTjlJWXTn54hIhjA&expires=1497178419"
+                    LinkDownload= "http://r1.hot.c68.vdc.nixcdn.com/68bfba520210b2481f28f781de00cf46/593eb060/NhacCuaTui905/ChoVuaLongEm-DuyManh-4099288.mp3?t=1497281559703"
                 };
                 list.Add(les);
             }

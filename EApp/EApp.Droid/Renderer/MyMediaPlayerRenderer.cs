@@ -26,23 +26,16 @@ namespace EApp.Droid.Renderer
     public class MyMediaPlayerRenderer : VisualElementRenderer<MyMediaPlayer>
     {
         MyMediaPlayer view;
-        
         SimpleAudioPlayerImplementation media;
 
         protected override void OnElementChanged(ElementChangedEventArgs<MyMediaPlayer> e)
         {
             base.OnElementChanged(e);
-            // do something here later
             view = e.NewElement;
+            //
             media = new SimpleAudioPlayerImplementation();
             media.PlaybackEnded += Media_PlaybackEnded;
-            Task.Run(() =>
-            {
-                while(true){
-                    view.ValueSlider = media.CurrentPosition;
-                    Task.Delay(200);
-                }
-            });
+
             view.ValueSliderChangedEvent += (s, arg) =>
             {
                 media.Seek(arg);
@@ -51,19 +44,18 @@ namespace EApp.Droid.Renderer
             view.ClickPlayBtnEvent += (s, arg) =>
             {
                 view.IsPlaying = media.IsPlaying;
-                if (media.IsPlaying== false)
+                if (!media.IsPlaying)
                 {
                     media.Play();
-                    return;
                 }
-                if (media.IsPlaying)
+                else
                 {
                     media.Pause();
                 }
             };
 
         }
-
+     
         private void Media_PlaybackEnded(object sender, EventArgs e)
         {
             view.IsPlaying = true;
@@ -74,17 +66,30 @@ namespace EApp.Droid.Renderer
             base.OnElementPropertyChanged(sender, e);
             if (e.PropertyName == "Path")
             {
+
                 media.Load(view.Path);
                 view.MaxValueSlider = media.Duration;
+
+                Task.Run(() =>
+                {
+                    while (true)
+                    {
+                        view.ValueSlider = media.CurrentPosition;
+                        Task.Delay(200);
+                    }
+                });
+                media.Play();
+                view.IsPlaying = false;
             }
+             
         }
 
         protected override void OnDetachedFromWindow()
         {
             base.OnDetachedFromWindow();
             media.Stop();
+            media = null;
         }
-
-
+         
     }
 }

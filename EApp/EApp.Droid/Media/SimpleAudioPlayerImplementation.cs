@@ -141,7 +141,9 @@ namespace EApp.Droid.Media
         public void Seek(double position)
         {
             if (player != null)
-                player.SeekTo((int)position * 1000);
+            {
+                player.SeekTo((int)position * 1000); 
+            }
         }
 
         ///<Summary>
