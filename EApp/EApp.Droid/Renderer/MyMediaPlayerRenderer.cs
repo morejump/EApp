@@ -25,6 +25,7 @@ namespace EApp.Droid.Renderer
 {
     public class MyMediaPlayerRenderer : VisualElementRenderer<MyMediaPlayer>
     {
+        // just for updating a commit
         MyMediaPlayer view;
         SimpleAudioPlayerImplementation media;
 
