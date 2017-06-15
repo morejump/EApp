@@ -22,25 +22,22 @@ namespace EApp.Repository
 
             var firebase = new FirebaseClient("https://eapp-7095b.firebaseio.com");
             var items = await firebase
-                .Child("myenity")
+                .Child("e_upload")
                 .OrderByKey()
-                .LimitToFirst(5)
+                .LimitToFirst(20)
                 .OnceAsync<LessonModel>();
-
 
             foreach (var item in items)
             {
-                // adding more fields later
-
                 LessonModel les = new LessonModel()
                 {
                     ListSentence = new List<SentenceModel>(item.Object.ListSentence),
-                    ID=1234321,
+                    ID = item.Object.ID,
                     Title = item.Object.Title,
                     Author = item.Object.Author,
                     Description = item.Object.Description,
                     Level = item.Object.Level,
-                    LinkDownload= "http://r1.hot.c68.vdc.nixcdn.com/68bfba520210b2481f28f781de00cf46/593eb060/NhacCuaTui905/ChoVuaLongEm-DuyManh-4099288.mp3?t=1497281559703"
+                    LinkDownload = item.Object.LinkDownload
                 };
                 list.Add(les);
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -60,13 +61,14 @@ namespace EApp.CustomControl
 
 
 
+
         public ICommand RepeatSentenceCmd
         {
             get { return (ICommand)GetValue(RepeatSentenceCmdProperty); }
             set { SetValue(RepeatSentenceCmdProperty, value); }
         }
 
-       
+
         // when tapping play backward image
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
@@ -86,6 +88,7 @@ namespace EApp.CustomControl
         // when tapping a playforward image
         private void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
+
             if (PlayForwardCmd.CanExecute(""))
             {
                 PlayForwardCmd.Execute("");

@@ -10,14 +10,13 @@ using Xamarin.Forms;
 using Plugin.MediaManager.Abstractions;
 using Plugin.MediaManager;
 using System.IO;
+using System.Diagnostics;
 
 namespace EApp.ViewModels
 {
     public class ListSentencePageViewModel : CoreViewModel
     {
-
         private LessonModel _lesson;
-
         public LessonModel MyLesson
         {
             get { return _lesson; }
@@ -30,7 +29,6 @@ namespace EApp.ViewModels
                 }
             }
         }
-
 
         private int _Position;
 
@@ -47,11 +45,10 @@ namespace EApp.ViewModels
                 }
             }
         }
-       
+
         private SentenceModel FindSentenceByPosition(int pos)
         {
-             return Listentence.Where(d => d.Start/1000 < pos && pos  < d.End/1000).FirstOrDefault();
-             
+            return Listentence.Where(d => d.Start * 1000 < pos && pos < d.End * 1000).FirstOrDefault();
         }
 
 
@@ -67,9 +64,8 @@ namespace EApp.ViewModels
                     _SelectedSentence = value;
                     if (_SelectedSentence != null)
                     {
-                        Position = _SelectedSentence.Start/1000;
+                        OnPropertyChanged();
                     }
-                    OnPropertyChanged();
                 }
             }
         }
@@ -93,7 +89,50 @@ namespace EApp.ViewModels
                 }
             }
         }
+        private bool _TapRepeat;
 
+        public bool TapRepeat
+        {
+            get { return _TapRepeat; }
+            set
+            {
+                if (_TapRepeat != value)
+                {
+                    _TapRepeat = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private bool _TapBackward;
+
+        public bool TapBackward
+        {
+            get { return _TapBackward; }
+            set
+            {
+                if (_TapBackward != value)
+                {
+                    _TapBackward = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private bool _TapForward;
+
+        public bool TapForward
+        {
+            get { return _TapForward; }
+            set
+            {
+                if (_TapForward != value)
+                {
+                    _TapForward = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         private ICommand _PlayBackwardCmd;
 
@@ -105,7 +144,7 @@ namespace EApp.ViewModels
 
         void RunPlayBackwardCmd()
         {
-
+            TapBackward = !TapBackward;
         }
         private ICommand _PlayForwardCmd;
 
@@ -116,10 +155,9 @@ namespace EApp.ViewModels
         }
 
 
-        void RunPlayForwardCmd()
+        void RunPlayForwardCmd(object obj)
         {
-            
-
+            TapForward = !TapForward;
 
         }
         private ICommand _RepeatSentenceCMD;
@@ -132,15 +170,14 @@ namespace EApp.ViewModels
 
         void RunRepeatSentenceCMD()
         {
-            var start = Listentence.Where(d => d.Start <= Position && Position <= d.End).FirstOrDefault();
-            if (start != null)
-            {
-                // do something here
-            }
+            //var start = Listentence.Where(d => d.Start <= Position && Position <= d.End).FirstOrDefault();
+            //if (start != null)
+            //{
+            //    // do something here
+            //}
+            TapRepeat = !TapRepeat;
 
         }
-
-
 
         private List<int> mylist;
 
@@ -186,20 +223,19 @@ namespace EApp.ViewModels
                 }
             }
         }
-       
+
         public override void OnNavigatedTo(NavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
             MyLesson = parameters.GetValue<LessonModel>("lesson");
             Listentence = new List<SentenceModel>(MyLesson.ListSentence);
-            
             Path = MyLesson.PathAudio;
         }
-
-        // constructor here
         public ListSentencePageViewModel()
         {
 
         }
+
+     
     }
 }

@@ -37,7 +37,7 @@ namespace EApp.Droid.Renderer
             media = new SimpleAudioPlayerImplementation();
             media.PlaybackEnded += Media_PlaybackEnded;
 
-            view.ValueSliderChangedEvent += (s, arg) =>
+            MyMediaPlayer.ValueSliderChangedEvent += (s, arg) =>
             {
                 media.Seek(arg);
             };
@@ -62,7 +62,7 @@ namespace EApp.Droid.Renderer
             view.IsPlaying = true;
         }
 
-        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        protected override async void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
             if (e.PropertyName == "Path")
@@ -70,8 +70,7 @@ namespace EApp.Droid.Renderer
 
                 media.Load(view.Path);
                 view.MaxValueSlider = media.Duration;
-
-                Task.Run(() =>
+               await Task.Run(() =>
                 {
                     while (true)
                     {
@@ -79,6 +78,7 @@ namespace EApp.Droid.Renderer
                         Task.Delay(200);
                     }
                 });
+
                 media.Play();
                 view.IsPlaying = false;
             }
@@ -89,8 +89,8 @@ namespace EApp.Droid.Renderer
         {
             base.OnDetachedFromWindow();
             media.Stop();
-            media = null;
+
         }
-         
+
     }
 }

@@ -40,6 +40,9 @@
         </Grid.RowDefinitions>
         <controls:MyMediaPlayer
             x:Name="MyMedia"
+            TapBackward="{Binding TapBackward}"
+            TapForward="{Binding TapForward}"
+            SentenceModel="{Binding SelectedSentence}"
             ValueSlider="{Binding Position}"
             Path="{Binding Path}"
              />

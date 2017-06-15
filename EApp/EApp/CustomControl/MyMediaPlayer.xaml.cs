@@ -1,4 +1,5 @@
-﻿using Plugin.MediaManager;
+﻿using EApp.Models;
+using Plugin.MediaManager;
 using Plugin.MediaManager.Abstractions;
 using Plugin.MediaManager.Abstractions.Enums;
 using Plugin.MediaManager.Abstractions.Implementations;
@@ -18,7 +19,7 @@ namespace EApp.CustomControl
     {
 
         public EventHandler ClickPlayBtnEvent;
-        public EventHandler<int> ValueSliderChangedEvent;
+        public static EventHandler<int> ValueSliderChangedEvent;
 
         // constructor here
         public MyMediaPlayer()
@@ -36,6 +37,96 @@ namespace EApp.CustomControl
             {
                 ValueSliderChangedEvent.Invoke(this, newVal);
             }
+        }
+
+
+      //  public static BindableProperty SelectedItemProperty = BindableProperty.Create(
+      //    propertyName: "SelectedItem",
+      //    returnType: typeof(SentenceModel),
+      //    declaringType: typeof(MyMediaPlayer),
+      //    defaultValue: null,
+      //    defaultBindingMode: BindingMode.OneWay
+      //);
+
+      //  //private static void OnSelectedItemChanged(BindableObject bindable, object oldValue, object newValue)
+      //  //{
+      //  //    var view = bindable as MyMediaPlayer;
+
+      //  //}
+
+      //  public SentenceModel SelectedItem
+      //  {
+      //      get { return (SentenceModel)GetValue(SelectedItemProperty); }
+      //      set { SetValue(SelectedItemProperty, value); }
+      //  }
+
+
+      //  public static BindableProperty TapRepeatProperty = BindableProperty.Create(
+      //    propertyName: "TapRepeat",
+      //    returnType: typeof(bool),
+      //    declaringType: typeof(MyMediaPlayer),
+      //    defaultValue: null,
+      //    defaultBindingMode: BindingMode.OneWay,
+      //    propertyChanged: OnTapRepeatChanged
+      //);
+
+      //  private static void OnTapRepeatChanged(BindableObject bindable, object oldValue, object newValue)
+      //  {
+      //      var view = bindable as MyMediaPlayer;
+      //      if (view.SelectedItem != null && view != null)
+      //      {
+      //          ValueSliderChangedEvent?.Invoke(null, view.SelectedItem.Start * 1000);
+      //      }
+
+      //  }
+
+      //  public bool TapRepeat
+      //  {
+      //      get { return (bool)GetValue(TapRepeatProperty); }
+      //      set { SetValue(TapRepeatProperty, value); }
+      //  }
+
+
+        public static BindableProperty TapBackwardProperty = BindableProperty.Create(
+          propertyName: "TapBackward",
+          returnType: typeof(bool),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: false,
+          defaultBindingMode: BindingMode.OneWay,
+          propertyChanged: OnTapBackwardChanged
+      );
+
+        private static void OnTapBackwardChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as MyMediaPlayer;
+            ValueSliderChangedEvent.Invoke(null, view.ValueSlider -3000);
+        }
+
+        public bool TapBackward
+        {
+            get { return (bool)GetValue(TapBackwardProperty); }
+            set { SetValue(TapBackwardProperty, value); }
+        }
+
+        public static BindableProperty TapForwardProperty = BindableProperty.Create(
+          propertyName: "TapForward",
+          returnType: typeof(bool),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: false,
+          defaultBindingMode: BindingMode.OneWay,
+          propertyChanged: OnTapForwardChanged
+      );
+
+        private static void OnTapForwardChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as MyMediaPlayer;
+            ValueSliderChangedEvent.Invoke(null, view.ValueSlider + 3000);
+        }
+
+        public bool TapForward
+        {
+            get { return (bool)GetValue(TapForwardProperty); }
+            set { SetValue(TapForwardProperty, value); }
         }
 
         public static BindableProperty ValueSliderProperty = BindableProperty.Create(
@@ -59,6 +150,34 @@ namespace EApp.CustomControl
             get { return (int)GetValue(ValueSliderProperty); }
             set { SetValue(ValueSliderProperty, value); }
         }
+
+
+
+        public static BindableProperty SentenceModelProperty = BindableProperty.Create(
+          propertyName: "SentenceModel",
+          returnType: typeof(SentenceModel),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.OneWay,
+          propertyChanged: OnSentenceModelChanged
+      );
+
+        private static void OnSentenceModelChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var newVal = newValue as SentenceModel;
+            var view = bindable as MyMediaPlayer;
+            if (view != null && newVal != null) 
+            {
+                ValueSliderChangedEvent?.Invoke(null, newVal.Start*1000);
+            }
+        }
+
+        public SentenceModel SentenceModel
+        {
+            get { return (SentenceModel)GetValue(SentenceModelProperty); }
+            set { SetValue(SentenceModelProperty, value); }
+        }
+
 
         public static BindableProperty MaxValueSliderProperty = BindableProperty.Create(
           propertyName: "MaxValueSlider",
