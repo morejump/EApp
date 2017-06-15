@@ -49,7 +49,7 @@
                 VerticalOptions="Center"
                 Grid.Column="1"
                 FontSize="15"
-                Text="0:00" />
+                Text="lol" />
             <Slider
                 x:Name="MySlider"
                 Margin="8,0"
@@ -62,7 +62,7 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 FontSize="15"
-                Text="0:00" />
+                Text="lol" />
 
             <!--<controls:MyImage
                 x:Name="MySpeedButton"

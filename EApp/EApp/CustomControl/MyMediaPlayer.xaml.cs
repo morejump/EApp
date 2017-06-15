@@ -136,6 +136,12 @@ namespace EApp.CustomControl
             var newVal = (int)newValue;
             var view = bindable as MyMediaPlayer;
             view.MySlider.Value = newVal;
+            //TimeSpan time = TimeSpan.FromMilliseconds(newVal);
+            //if (time != null)
+            //{
+            //    view.lblStart.Text = time.ToString(@"mm\:ss");
+
+            //}
         }
 
         public int ValueSlider
@@ -186,6 +192,11 @@ namespace EApp.CustomControl
             var newVal = (int)newValue;
             var view = bindable as MyMediaPlayer;
             view.MySlider.Maximum = newVal;
+            //TimeSpan time = TimeSpan.FromMilliseconds(newVal);
+            //if (time != null)
+            //{
+            //    view.lblEnd.Text = time.ToString(@"mm\:ss");
+            //}
         }
 
         public int MaxValueSlider
@@ -222,21 +233,6 @@ namespace EApp.CustomControl
             get { return (bool)GetValue(IsPlayingProperty); }
             set { SetValue(IsPlayingProperty, value); }
         }
-
-        public static BindableProperty TextEndProperty = BindableProperty.Create(
-          propertyName: "TextEnd",
-          returnType: typeof(string),
-          declaringType: typeof(MyMediaPlayer),
-          defaultValue: "",
-          defaultBindingMode: BindingMode.TwoWay
-      );
-
-        public string TextEnd
-        {
-            get { return (string)GetValue(TextEndProperty); }
-            set { SetValue(TextEndProperty, value); }
-        }
-
 
         public static BindableProperty PathProperty = BindableProperty.Create(
           propertyName: "Path",
