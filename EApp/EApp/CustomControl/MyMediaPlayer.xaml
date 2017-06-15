@@ -9,7 +9,7 @@
     <ContentView.Content>
         <Grid
             VerticalOptions="Start"
-            BackgroundColor="#f10e57"
+            BackgroundColor="#E4E4E4"
             ColumnSpacing="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition

@@ -75,7 +75,6 @@
             PlayBackwardCmd="{Binding PlayBackwardCmd}"
             PlayForwardCmd="{Binding PlayForwardCmd}"
             RepeatSentenceCmd="{Binding RepeatSentenceCMD}"
-            BackgroundColor="#f10e57"
             Grid.Row="2" />
     </Grid>
 </ContentPage>

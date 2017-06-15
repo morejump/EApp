@@ -5,6 +5,7 @@
     xmlns:controls="clr-namespace:EApp.CustomControl"
     x:Class="EApp.CustomControl.RepeationAudio">
     <Grid
+        BackgroundColor="#E4E4E4"
         VerticalOptions="Start">
         <Grid.RowDefinitions>
             <RowDefinition Height="56" />
