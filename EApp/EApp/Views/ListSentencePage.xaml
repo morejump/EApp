@@ -40,6 +40,8 @@
         </Grid.RowDefinitions>
         <controls:MyMediaPlayer
             x:Name="MyMedia"
+            TapRepeat="{Binding TapRepeat}"
+            SelectedItem="{Binding SelectedItem}"
             TapBackward="{Binding TapBackward}"
             TapForward="{Binding TapForward}"
             SentenceModel="{Binding SelectedSentence}"

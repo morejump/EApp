@@ -170,11 +170,6 @@ namespace EApp.ViewModels
 
         void RunRepeatSentenceCMD()
         {
-            //var start = Listentence.Where(d => d.Start <= Position && Position <= d.End).FirstOrDefault();
-            //if (start != null)
-            //{
-            //    // do something here
-            //}
             TapRepeat = !TapRepeat;
 
         }

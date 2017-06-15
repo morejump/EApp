@@ -40,51 +40,51 @@ namespace EApp.CustomControl
         }
 
 
-      //  public static BindableProperty SelectedItemProperty = BindableProperty.Create(
-      //    propertyName: "SelectedItem",
-      //    returnType: typeof(SentenceModel),
-      //    declaringType: typeof(MyMediaPlayer),
-      //    defaultValue: null,
-      //    defaultBindingMode: BindingMode.OneWay
-      //);
+        public static BindableProperty SelectedItemProperty = BindableProperty.Create(
+          propertyName: "SelectedItem",
+          returnType: typeof(SentenceModel),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.OneWay
+      );
 
-      //  //private static void OnSelectedItemChanged(BindableObject bindable, object oldValue, object newValue)
-      //  //{
-      //  //    var view = bindable as MyMediaPlayer;
+        //private static void OnSelectedItemChanged(BindableObject bindable, object oldValue, object newValue)
+        //{
+        //    var view = bindable as MyMediaPlayer;
 
-      //  //}
+        //}
 
-      //  public SentenceModel SelectedItem
-      //  {
-      //      get { return (SentenceModel)GetValue(SelectedItemProperty); }
-      //      set { SetValue(SelectedItemProperty, value); }
-      //  }
+        public SentenceModel SelectedItem
+        {
+            get { return (SentenceModel)GetValue(SelectedItemProperty); }
+            set { SetValue(SelectedItemProperty, value); }
+        }
 
 
-      //  public static BindableProperty TapRepeatProperty = BindableProperty.Create(
-      //    propertyName: "TapRepeat",
-      //    returnType: typeof(bool),
-      //    declaringType: typeof(MyMediaPlayer),
-      //    defaultValue: null,
-      //    defaultBindingMode: BindingMode.OneWay,
-      //    propertyChanged: OnTapRepeatChanged
-      //);
+        public static BindableProperty TapRepeatProperty = BindableProperty.Create(
+          propertyName: "TapRepeat",
+          returnType: typeof(bool),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: false,
+          defaultBindingMode: BindingMode.OneWay,
+          propertyChanged: OnTapRepeatChanged
+      );
 
-      //  private static void OnTapRepeatChanged(BindableObject bindable, object oldValue, object newValue)
-      //  {
-      //      var view = bindable as MyMediaPlayer;
-      //      if (view.SelectedItem != null && view != null)
-      //      {
-      //          ValueSliderChangedEvent?.Invoke(null, view.SelectedItem.Start * 1000);
-      //      }
+        private static void OnTapRepeatChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            var view = bindable as MyMediaPlayer;
+            if (view.SelectedItem != null && view != null)
+            {
+                ValueSliderChangedEvent?.Invoke(null, view.SelectedItem.Start * 1000);
+            }
 
-      //  }
+        }
 
-      //  public bool TapRepeat
-      //  {
-      //      get { return (bool)GetValue(TapRepeatProperty); }
-      //      set { SetValue(TapRepeatProperty, value); }
-      //  }
+        public bool TapRepeat
+        {
+            get { return (bool)GetValue(TapRepeatProperty); }
+            set { SetValue(TapRepeatProperty, value); }
+        }
 
 
         public static BindableProperty TapBackwardProperty = BindableProperty.Create(
@@ -99,7 +99,7 @@ namespace EApp.CustomControl
         private static void OnTapBackwardChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var view = bindable as MyMediaPlayer;
-            ValueSliderChangedEvent.Invoke(null, view.ValueSlider -3000);
+            ValueSliderChangedEvent.Invoke(null, view.ValueSlider - 3000);
         }
 
         public bool TapBackward
@@ -166,9 +166,9 @@ namespace EApp.CustomControl
         {
             var newVal = newValue as SentenceModel;
             var view = bindable as MyMediaPlayer;
-            if (view != null && newVal != null) 
+            if (view != null && newVal != null)
             {
-                ValueSliderChangedEvent?.Invoke(null, newVal.Start*1000);
+                ValueSliderChangedEvent?.Invoke(null, newVal.Start * 1000);
             }
         }
 
