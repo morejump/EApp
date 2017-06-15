@@ -126,22 +126,24 @@ namespace EApp.CustomControl
           propertyName: "ValueSlider",
           returnType: typeof(int),
           declaringType: typeof(MyMediaPlayer),
-          defaultValue: default(int),
+          defaultValue: 0,
           defaultBindingMode: BindingMode.TwoWay,
           propertyChanged: OnValueSliderChanged
       );
 
         private static void OnValueSliderChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            var newVal = (int)newValue;
-            var view = bindable as MyMediaPlayer;
-            view.MySlider.Value = newVal;
-            //TimeSpan time = TimeSpan.FromMilliseconds(newVal);
-            //if (time != null)
-            //{
-            //    view.lblStart.Text = time.ToString(@"mm\:ss");
+            Device.BeginInvokeOnMainThread(
+                () =>
+                {
+                    int newVal = (int)newValue;
+                    MyMediaPlayer view = bindable as MyMediaPlayer;
+                    view.MySlider.Value = newVal;
+                    TimeSpan time = TimeSpan.FromMilliseconds(newVal);
+                    view.lblStart.Text = time.ToString(@"mm\:ss");
+                }
+                );
 
-            //}
         }
 
         public int ValueSlider
@@ -149,8 +151,6 @@ namespace EApp.CustomControl
             get { return (int)GetValue(ValueSliderProperty); }
             set { SetValue(ValueSliderProperty, value); }
         }
-
-
 
         public static BindableProperty SentenceModelProperty = BindableProperty.Create(
           propertyName: "SentenceModel",
@@ -189,14 +189,16 @@ namespace EApp.CustomControl
 
         private static void OnMaxValueSliderChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            var newVal = (int)newValue;
-            var view = bindable as MyMediaPlayer;
-            view.MySlider.Maximum = newVal;
-            //TimeSpan time = TimeSpan.FromMilliseconds(newVal);
-            //if (time != null)
-            //{
-            //    view.lblEnd.Text = time.ToString(@"mm\:ss");
-            //}
+
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                var newVal = (int)newValue;
+                var view = bindable as MyMediaPlayer;
+                view.MySlider.Maximum = newVal;
+                TimeSpan time = TimeSpan.FromMilliseconds(newVal);
+                view.lblEnd.Text = time.ToString(@"mm\:ss");
+            });
+
         }
 
         public int MaxValueSlider

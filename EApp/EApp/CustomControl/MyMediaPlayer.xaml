@@ -49,7 +49,7 @@
                 VerticalOptions="Center"
                 Grid.Column="1"
                 FontSize="15"
-                Text="lol" />
+                 />
             <Slider
                 x:Name="MySlider"
                 Margin="8,0"
