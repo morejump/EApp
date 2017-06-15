@@ -17,7 +17,6 @@ namespace EApp.CustomControl
 {
     public partial class MyMediaPlayer : ContentView
     {
-
         public EventHandler ClickPlayBtnEvent;
         public static EventHandler<int> ValueSliderChangedEvent;
 
@@ -39,7 +38,6 @@ namespace EApp.CustomControl
             }
         }
 
-
         public static BindableProperty SelectedItemProperty = BindableProperty.Create(
           propertyName: "SelectedItem",
           returnType: typeof(SentenceModel),
@@ -48,11 +46,6 @@ namespace EApp.CustomControl
           defaultBindingMode: BindingMode.OneWay
       );
 
-        //private static void OnSelectedItemChanged(BindableObject bindable, object oldValue, object newValue)
-        //{
-        //    var view = bindable as MyMediaPlayer;
-
-        //}
 
         public SentenceModel SelectedItem
         {
