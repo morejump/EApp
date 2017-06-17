@@ -5,6 +5,7 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,10 +48,40 @@ namespace EApp.ViewModels
             LessonRepo.Update(ItemToModelLesson.ModelToItem(les));
         }
 
+        private ObservableCollection<string> _ListCategory;
+
+        public ObservableCollection<string> ListCategory
+        {
+            get { return _ListCategory; }
+            set
+            {
+                if (_ListCategory != value)
+                {
+                    _ListCategory = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private string _SelectedCategory;
+
+        public string SelectedCategory
+        {
+            get { return _SelectedCategory; }
+            set
+            {
+                if (_SelectedCategory != value)
+                {
+                    _SelectedCategory = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
 
         public  StoragePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo, IStorageRepository StorageRepo)
         {
+            GetListCategory();
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
             _StorageRepo = StorageRepo;
@@ -66,7 +97,16 @@ namespace EApp.ViewModels
                 MyList = new ObservableCollection<LessonModel>(searchResult);
             }
         }
-
+        private void GetListCategory()
+        {
+            ListCategory = new ObservableCollection<string>()
+            {
+                "Thế giới",
+                "Xã hội",
+                "Thể thao",
+                "Tin Tức"
+            };
+        }
   
     }
 }

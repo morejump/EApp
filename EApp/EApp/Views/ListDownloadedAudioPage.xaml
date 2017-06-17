@@ -29,13 +29,13 @@
     </ContentPage.Resources>
     <StackLayout>
         <SearchBar
+            Placeholder="Entering a name of podcast"
             Margin="16,0,16,8"
             IsVisible="{Binding TempList.Count, Converter={StaticResource isVisiblecvt}}"
-            behavior:searchbhv.Command="{Binding SearchCommand}"
-            Placeholder="Enter name of audio" />
+            behavior:searchbhv.Command="{Binding SearchCommand}" />
         <controls:NothingToShow
             IsVisible="{Binding MyList.Count, Converter={StaticResource displayLabel} }" />
-        
+
         <syncfusion:SfListView
             AllowSwiping="True"
             IsVisible="{Binding MyList.Count, Converter={StaticResource isVisiblecvt}}"

@@ -26,7 +26,7 @@
             behavior:searchbhv.Command="{Binding SearchCommand}"
             IsVisible="{Binding TempList.Count, Converter={StaticResource isVisiblecvt}}"
             Margin="16,0,16,8"
-            Placeholder="Enter name of audio" />
+            Placeholder="Entering a name of podcast" />
         <controls:NothingToShow
             IsVisible="{Binding TempList.Count, Converter={StaticResource displayLabel} }"
             />
