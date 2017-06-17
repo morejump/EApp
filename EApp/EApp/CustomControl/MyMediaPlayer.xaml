@@ -49,6 +49,7 @@
                 VerticalOptions="Center"
                 Grid.Column="1"
                 FontSize="15"
+                Text="00:00"
                  />
             <Slider
                 x:Name="MySlider"
@@ -64,22 +65,21 @@
                 FontSize="15"
                 Text="lol" />
 
-            <!--<controls:MyImage
-                x:Name="MySpeedButton"
+            <controls:MyImage
+                x:Name="MyEyesBtn"
                 Margin="0,0,16,0"
                 Grid.Column="4"
                 Aspect="Fill"
                 HeightRequest="30"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
-                Source="icon_xx.png">
+                Source="ic_eyes.png">
                 <controls:MyImage.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="TapGestureRecognizer_Tapped_1" />
-
+                        Tapped="TapEyesButton" />
                 </controls:MyImage.GestureRecognizers>
 
-            </controls:MyImage>-->
+            </controls:MyImage>
         </Grid>
 
     </ContentView.Content>

@@ -29,6 +29,67 @@ namespace EApp.ViewModels
                 }
             }
         }
+        private string[] _ArrayColor;
+
+        public string[] ArrayColor
+        {
+            get { return _ArrayColor; }
+            set
+            {
+                if (_ArrayColor != value)
+                {
+                    _ArrayColor = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private Color _ColorBoxView;
+
+        public Color ColorBoxView
+        {
+            get { return _ColorBoxView; }
+            set
+            {
+                if (_ColorBoxView != value)
+                {
+                    _ColorBoxView = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private ICommand _TapEyesBtn;
+
+        public ICommand TapEyesBtn
+        {
+            get { return _TapEyesBtn = _TapEyesBtn ?? new Command(RunTapEyesBtn); }
+
+        }
+
+        void RunTapEyesBtn(object obj)
+        {
+            var isTapEyesBtn = (bool)obj;
+            if (isTapEyesBtn)
+            {
+                ArrayColor = new string[]
+            {
+                "#909090",
+                "25961B"
+            };
+
+            };
+           // else
+           // {
+           //     ArrayColor = new string[]
+           //{
+           //     "#909090",
+           //     "25961B"
+           //};
+           // }
+
+        }
+
 
         private int _Position;
 
@@ -228,7 +289,11 @@ namespace EApp.ViewModels
         }
         public ListSentencePageViewModel()
         {
-
+            ArrayColor = new string[]
+            {
+                "#909090",
+                "25961B"
+            };
         }
 
      

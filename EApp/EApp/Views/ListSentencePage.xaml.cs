@@ -15,6 +15,7 @@ namespace EApp.Views
         public ListSentencePage()
         {
             InitializeComponent();
+            
         }
 
         protected override void OnDisappearing()

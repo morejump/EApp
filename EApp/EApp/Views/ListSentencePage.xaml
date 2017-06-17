@@ -15,6 +15,8 @@
         <ResourceDictionary>
             <converters:BoolToImageConverter
                 x:Key="boolToImagecvt" />
+            <converters:BoolToColorConverter
+                x:Key="boolToColorcvt" />
             <x:Array
                 x:Key="ArrayColor"
                 Type="{x:Type x:String}">
@@ -40,6 +42,7 @@
         </Grid.RowDefinitions>
         <controls:MyMediaPlayer
             x:Name="MyMedia"
+            TapEyesBtn="{Binding TapEyesBtn}"
             TapRepeat="{Binding TapRepeat}"
             SelectedItem="{Binding SelectedItem}"
             TapBackward="{Binding TapBackward}"
@@ -59,8 +62,10 @@
                     <ViewCell>
                         <Grid>
                             <BoxView
-                                Color="{Binding IsSelected,Converter={StaticResource BoolToColorConverter},ConverterParameter={StaticResource ArrayColor}}" />
+                                x:Name="boxview"
+                                Color="{Binding .IsSelected,Converter={StaticResource boolToColorcvt}, ConverterParameter={StaticResource ArrayColor}}" />
                             <Label
+                                TextColor="#909090"
                                 Margin="16,8"
                                 HorizontalTextAlignment="Start"
                                 Text="{Binding .Text,Mode=OneWay}">

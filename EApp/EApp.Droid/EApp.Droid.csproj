@@ -477,6 +477,8 @@
     <EmbeddedResource Include="Resources\raw\KiepDamMe.mp3" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_eyes.png" />
+    <AndroidResource Include="Resources\drawable\ic_close_eyes.png" />
     <None Include="FodyWeavers.xml" />
     <AndroidAsset Include="Assets\KiepDamMe.mp3" />
     <Content Include="hello.txt" />

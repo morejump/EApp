@@ -17,12 +17,14 @@ namespace EApp.CustomControl
 {
     public partial class MyMediaPlayer : ContentView
     {
+        private bool isTapEyesBtn;
         public EventHandler ClickPlayBtnEvent;
         public static EventHandler<int> ValueSliderChangedEvent;
 
         // constructor here
         public MyMediaPlayer()
         {
+            isTapEyesBtn = false;
             InitializeComponent();
             MySlider.ValueChanged += MySlider_ValueChanged;
         }
@@ -36,6 +38,23 @@ namespace EApp.CustomControl
             {
                 ValueSliderChangedEvent.Invoke(this, newVal);
             }
+        }
+
+
+        public static BindableProperty TapEyesBtnProperty = BindableProperty.Create(
+          propertyName: "TapEyesBtn",
+          returnType: typeof(ICommand),
+          declaringType: typeof(MyMediaPlayer),
+          defaultValue: null,
+          defaultBindingMode: BindingMode.TwoWay
+      );
+
+        
+
+        public ICommand TapEyesBtn
+        {
+            get { return (ICommand)GetValue(TapEyesBtnProperty); }
+            set { SetValue(TapEyesBtnProperty, value); }
         }
 
         public static BindableProperty SelectedItemProperty = BindableProperty.Create(
@@ -275,6 +294,24 @@ namespace EApp.CustomControl
             ClickPlayBtnEvent?.Invoke(this, EventArgs.Empty);
 
         }
-
+        // when tapping a eyes button
+        private void TapEyesButton(object sender, EventArgs e)
+        {
+            //var view = sender as MyMediaPlayer;
+            if (isTapEyesBtn == false)
+            {
+                MyEyesBtn.Source = "ic_close_eyes.png";
+                isTapEyesBtn = !isTapEyesBtn;
+            }
+            else
+            {
+                MyEyesBtn.Source = "ic_eyes.png";
+                isTapEyesBtn = !isTapEyesBtn;
+            }
+            if (TapEyesBtn.CanExecute(isTapEyesBtn))
+            {
+                TapEyesBtn.Execute(isTapEyesBtn);
+            }
+        }
     }
 }

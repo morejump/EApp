@@ -32,6 +32,9 @@
         <controls:NothingToShow
             IsVisible="{Binding MyList.Count, Converter={StaticResource displayLabel} }" />
     <syncfusion:SfListView
+        SwipeThreshold="30"
+        SelectionMode="None"
+        SelectionGesture="Hold"
         x:Name="lstView"
         AllowSwiping="True"
         RowSpacing="0"
