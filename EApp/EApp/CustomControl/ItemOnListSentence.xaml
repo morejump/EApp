@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:EApp.Converter"
+    x:Class="EApp.CustomControl.ItemOnListSentence">
+    <ContentView.Resources>
+        <ResourceDictionary>
+
+            <converters:BoolToImageConverter
+                x:Key="boolToImagecvt" />
+            <converters:BoolToColorConverter
+                x:Key="boolToColorcvt" />
+            <x:Array
+                x:Key="ArrayColor"
+                Type="{x:Type x:String}">
+                <x:String>#4CAF50</x:String>
+                <x:String>#00000000</x:String>
+            </x:Array>
+            <x:Array
+                x:Key="ArrayImage"
+                Type="{x:Type x:String}">
+                <x:String>playbutton.png</x:String>
+                <x:String>pausebutton.png</x:String>
+            </x:Array>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Grid>
+            <BoxView
+                x:Name="MyBackground" />
+            <Label
+                x:Name="MyText"
+                TextColor="Black"
+                Margin="16,8"
+                HorizontalTextAlignment="Start">
+            </Label>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

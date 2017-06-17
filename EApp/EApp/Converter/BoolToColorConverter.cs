@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Globalization;
 using Xamarin.Forms;
 
@@ -10,6 +11,7 @@ namespace EApp.Converter
         {
             bool val = (bool)value;
             string[] par = (string[])parameter;
+        
             return val ? Color.FromHex(par[0]) : Color.FromHex(par[1]);
         }
 

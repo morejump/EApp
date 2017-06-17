@@ -29,31 +29,17 @@ namespace EApp.ViewModels
                 }
             }
         }
-        private string[] _ArrayColor;
 
-        public string[] ArrayColor
+        private bool _isTapEyesBtn;
+
+        public bool isTapEyesBtn
         {
-            get { return _ArrayColor; }
+            get { return _isTapEyesBtn; }
             set
             {
-                if (_ArrayColor != value)
+                if (_isTapEyesBtn != value)
                 {
-                    _ArrayColor = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-        private Color _ColorBoxView;
-
-        public Color ColorBoxView
-        {
-            get { return _ColorBoxView; }
-            set
-            {
-                if (_ColorBoxView != value)
-                {
-                    _ColorBoxView = value;
+                    _isTapEyesBtn = value;
                     OnPropertyChanged();
                 }
             }
@@ -69,25 +55,7 @@ namespace EApp.ViewModels
 
         void RunTapEyesBtn(object obj)
         {
-            var isTapEyesBtn = (bool)obj;
-            if (isTapEyesBtn)
-            {
-                ArrayColor = new string[]
-            {
-                "#909090",
-                "25961B"
-            };
-
-            };
-           // else
-           // {
-           //     ArrayColor = new string[]
-           //{
-           //     "#909090",
-           //     "25961B"
-           //};
-           // }
-
+             isTapEyesBtn = (bool)obj;
         }
 
 
@@ -289,11 +257,7 @@ namespace EApp.ViewModels
         }
         public ListSentencePageViewModel()
         {
-            ArrayColor = new string[]
-            {
-                "#909090",
-                "25961B"
-            };
+           
         }
 
      

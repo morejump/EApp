@@ -20,7 +20,7 @@
             <x:Array
                 x:Key="ArrayColor"
                 Type="{x:Type x:String}">
-                <x:String>#299617</x:String>
+                <x:String>#4CAF50</x:String>
                 <x:String>#00000000</x:String>
             </x:Array>
             <x:Array
@@ -60,18 +60,11 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid>
-                            <BoxView
-                                x:Name="boxview"
-                                Color="{Binding .IsSelected,Converter={StaticResource boolToColorcvt}, ConverterParameter={StaticResource ArrayColor}}" />
-                            <Label
-                                TextColor="#909090"
-                                Margin="16,8"
-                                HorizontalTextAlignment="Start"
-                                Text="{Binding .Text,Mode=OneWay}">
-                            </Label>
-                        </Grid>
-
+                        <controls:ItemOnListSentence
+                            IsTapEyesBtn="{Binding Source={x:Reference Name=MyListView}, Path=BindingContext.isTapEyesBtn}"
+                            IsSelected="{Binding .IsSelected}"
+                            Text="{Binding .Text,Mode=OneWay}"
+                            />
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

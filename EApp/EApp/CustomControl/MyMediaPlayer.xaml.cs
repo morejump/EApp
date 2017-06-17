@@ -46,7 +46,7 @@ namespace EApp.CustomControl
           returnType: typeof(ICommand),
           declaringType: typeof(MyMediaPlayer),
           defaultValue: null,
-          defaultBindingMode: BindingMode.TwoWay
+          defaultBindingMode: BindingMode.OneWay
       );
 
         
@@ -202,7 +202,7 @@ namespace EApp.CustomControl
           returnType: typeof(int),
           declaringType: typeof(MyMediaPlayer),
           defaultValue: default(int),
-          defaultBindingMode: BindingMode.TwoWay,
+          defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnMaxValueSliderChanged
       );
 
@@ -231,7 +231,7 @@ namespace EApp.CustomControl
           returnType: typeof(bool),
           declaringType: typeof(MyMediaPlayer),
           defaultValue: true,
-          defaultBindingMode: BindingMode.TwoWay,
+          defaultBindingMode: BindingMode.OneWay,
           propertyChanged: OnIsPlayingChanged
       );
 
@@ -260,7 +260,7 @@ namespace EApp.CustomControl
           returnType: typeof(string),
           declaringType: typeof(MyMediaPlayer),
           defaultValue: "",
-          defaultBindingMode: BindingMode.TwoWay
+          defaultBindingMode: BindingMode.OneWay
       );
 
 
