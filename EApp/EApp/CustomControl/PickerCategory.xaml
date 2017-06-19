@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="EApp.CustomControl.PickerCategory">
+    <Grid ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition
+                Width="30" />
+            <ColumnDefinition
+                Width="*" />
+        </Grid.ColumnDefinitions>
+       
+        <Image
+            HeightRequest="30"
+            WidthRequest="30"
+            Source="arrow_picker.png" />
+        <Picker
+            x:Name="MyPicker"
+            Title="Choosing category"
+            Grid.Column="1"
+            />
+    </Grid>
+</ContentView>

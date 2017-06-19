@@ -89,6 +89,7 @@ namespace EApp.CustomControl
         public ItemOnListSentence()
         {
             InitializeComponent();
+            MyBackground.Color = Color.White;
         }
     }
 }

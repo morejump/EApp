@@ -21,16 +21,14 @@
                 x:Key="displayLabel" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    <StackLayout>
+    <StackLayout Spacing="0" >
         <SearchBar
-            Margin="0,0,16,8"
+            Margin="0,0,16,0"
             Placeholder="Entering a name of podcast" />
-        <Picker
-            x:Name="PickerCategory"
-            ItemsSource="{Binding ListCategory}"
-            SelectedItem="{Binding SelectedCategory}"
-            Margin="16,0,16,8"
-            Title="Choose category" />
+        <controls:PickerCategory
+            Title="Choosing category"
+            Margin="16,0,16,8" />
+      
         <controls:NothingToShow
             IsVisible="{Binding MyList.Count, Converter={StaticResource displayLabel} }" />
         <syncfusion:SfListView
