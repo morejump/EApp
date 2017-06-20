@@ -1,4 +1,5 @@
-﻿using EApp.Models;
+﻿using Acr.UserDialogs;
+using EApp.Models;
 using EApp.Service;
 using EApp.Utils;
 using Plugin.Connectivity;
@@ -17,6 +18,7 @@ namespace EApp.ViewModels
 {
     public class StoragePageViewModel : CoreViewModel
     {
+        AlertConfig alert = new AlertConfig();
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
         IStorageRepository _StorageRepo;
@@ -91,6 +93,12 @@ namespace EApp.ViewModels
             if(con== true)
             {
                 GetData();
+            }
+            else
+            {
+                alert.Message = "No Internet is availabe now!";
+                alert.Title = "Sorry!";
+                UserDialogs.Instance.Alert(alert);
             }
 
         }
