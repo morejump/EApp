@@ -14,6 +14,7 @@ namespace EApp.CustomControl
 {
     public partial class ItemOnStoragePage : ContentView
     {
+        public event EventHandler<LessonModel> ClickedDownloadbtn;
 
 
         public static BindableProperty CmdInsertProperty = BindableProperty.Create(
@@ -71,7 +72,6 @@ namespace EApp.CustomControl
             set { SetValue(IDProperty, value); }
         }
 
-        public event EventHandler<LessonModel> ClickedDownloadbtn;
 
 
 
@@ -180,6 +180,13 @@ namespace EApp.CustomControl
             {
                 view.MyPercent.Text = view.PerCent.ToString() + "%";
                 view.MyProgressBar.Progress = (double)view.PerCent / 100; // becuase a value of progress bar from 0 to 1
+                if (view.PerCent == 100)
+                {
+                    if (view.CmdInsert.CanExecute(view.BindingContext))
+                    {
+                        view.CmdInsert.Execute(view.BindingContext);
+                    }
+                }
             }
         }
 
@@ -373,10 +380,14 @@ namespace EApp.CustomControl
             MyProgressBar.IsVisible = true;
             MyPercent.IsVisible = true;
             // adding  a new lesson to database when process download ends
-            if (CmdInsert.CanExecute(BindingContext))
+            if (PerCent == 100)
             {
-                CmdInsert.Execute(BindingContext);
+                if (CmdInsert.CanExecute(BindingContext))
+                {
+                    CmdInsert.Execute(BindingContext);
+                }
             }
+           
 
 
         }

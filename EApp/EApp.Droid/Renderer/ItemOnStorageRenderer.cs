@@ -33,7 +33,6 @@ namespace EApp.Droid.Renderer
         protected override void OnElementChanged(ElementChangedEventArgs<ItemOnStoragePage> e)
         {
             base.OnElementChanged(e);
-            //e.NewElement.PathAudio = PathAudio;
             // when clicking a download button
             e.NewElement.ClickedDownloadbtn += (se, lesson) =>
             {
@@ -41,7 +40,6 @@ namespace EApp.Droid.Renderer
 
                 string PathAudio = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData),
                         lesson.ID.ToString());
-                System.Diagnostics.Debug.WriteLine("thaohandsome"+lesson.Author);
                 lesson.PathAudio = PathAudio;
                 //downloading audio file to local with link download
                 webClient.DownloadFileAsync(new Uri(lesson.LinkDownload),
@@ -56,12 +54,7 @@ namespace EApp.Droid.Renderer
 
                     }
                 };
-                // checking this event later
-                //webClient.DownloadFileCompleted += (s, t) =>
-                //{
-                //    e.NewElement.IsVisibleProgressBar = false;
-
-                //};
+             
             };
         }
     }
