@@ -74,7 +74,7 @@ namespace EApp.Droid.Renderer
                     while (true)
                     {
                         view.ValueSlider = media.CurrentPosition;
-                        Task.Delay(1000);
+                       Task.Delay(1000);
                     }
                 });
 

@@ -6,8 +6,6 @@ using Xamarin.Forms;
 using EApp.Service;
 using EApp.Repository;
 using Acr.UserDialogs;
-using Plugin.MediaManager.Abstractions;
-using Plugin.MediaManager;
 
 namespace EApp
 {
@@ -27,8 +25,6 @@ namespace EApp
             Container.RegisterType<ILessonRepository, LessonRepository>();
             Container.RegisterType<IStorageRepository, StorageRepository>();
             Container.RegisterInstance(Realms.Realm.GetInstance());
-            Container.RegisterInstance(CrossMediaManager.Current);
-
             //
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<TestLayoutPage>();

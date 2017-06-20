@@ -15,7 +15,10 @@ namespace EApp.Repository
 {
     public class StorageRepository : IStorageRepository
     {
+        public StorageRepository()
+        {
 
+        }
         public async Task<List<LessonModel>> SearchLesson(string keyword)
         {
             List<LessonModel> list = new List<LessonModel>();

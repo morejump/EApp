@@ -1,6 +1,7 @@
 ﻿using EApp.Models;
 using EApp.Service;
 using EApp.Utils;
+using Plugin.Connectivity;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ using Xamarin.Forms;
 
 namespace EApp.ViewModels
 {
-    public class StoragePageViewModel: CoreViewModel
+    public class StoragePageViewModel : CoreViewModel
     {
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
@@ -79,17 +80,31 @@ namespace EApp.ViewModels
         }
 
 
-        public  StoragePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo, IStorageRepository StorageRepo)
+         public  StoragePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo, IStorageRepository StorageRepo)
         {
             GetListCategory();
             this.navigationService = navigationService;
             this.LessonRepo = LessonRepo;
             _StorageRepo = StorageRepo;
-            GetData();
-            
+            CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
+            var con = CrossConnectivity.Current.IsConnected;
+            if(con== true)
+            {
+                GetData();
+            }
+
         }
 
-        async void GetData()
+        private void Current_ConnectivityChanged(object sender, Plugin.Connectivity.Abstractions.ConnectivityChangedEventArgs e)
+        {
+            if(MyList== null && e.IsConnected== true)
+            {
+                GetData();
+            }
+          
+        }
+
+        private async void GetData()
         {
             if (MyList == null)
             {
@@ -97,16 +112,17 @@ namespace EApp.ViewModels
                 MyList = new ObservableCollection<LessonModel>(searchResult);
             }
         }
+
         private void GetListCategory()
-        {
-            ListCategory = new ObservableCollection<string>()
+            {
+                ListCategory = new ObservableCollection<string>()
             {
                 "Thế giới",
                 "Xã hội",
                 "Thể thao",
                 "Tin Tức"
             };
+            }
+
         }
-  
     }
-}

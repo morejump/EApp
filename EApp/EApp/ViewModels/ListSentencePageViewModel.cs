@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 using Prism.Navigation;
 using System.Windows.Input;
 using Xamarin.Forms;
-using Plugin.MediaManager.Abstractions;
-using Plugin.MediaManager;
 using System.IO;
 using System.Diagnostics;
 
