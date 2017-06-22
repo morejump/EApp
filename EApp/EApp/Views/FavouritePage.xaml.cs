@@ -1,4 +1,5 @@
 ﻿using EApp.CustomControl;
+using EApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,8 +20,7 @@ namespace EApp.Views
             InitializeComponent();
 
         }
-        
 
-
+       
     }
 }

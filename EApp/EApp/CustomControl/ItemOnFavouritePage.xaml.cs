@@ -201,15 +201,7 @@ namespace EApp.CustomControl
             InitializeComponent();
         }
 
-       
-        // clickinng an item
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            if (cmdClick.CanExecute(BindingContext))
-            {
-                cmdClick.Execute(BindingContext);
-            }
-        }
+      
 
     }
 }

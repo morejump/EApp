@@ -31,6 +31,7 @@
             IsVisible="{Binding TempList.Count, Converter={StaticResource displayLabel} }"
             />
         <syncfusion:SfListView
+            behavior:SfListView.CommandSeletedItem="{Binding cmSelectedLesson}"
             AllowSwiping="True"
             IsVisible="{Binding MyList.Count, Converter={StaticResource isVisiblecvt}}"
             SelectionBackgroundColor="Green"
@@ -57,7 +58,6 @@
                 <DataTemplate>
                     <ViewCell>
                         <controls:ItemOnFavouritePage
-                            cmdClick="{Binding Source={Reference Name=content}, Path=BindingContext.cmSelectedLesson}"
                             cmdDelete="{Binding Source={Reference Name=content}, Path=BindingContext.cmdDeleteLesson}"
                             cmdRemoveFavourite="{Binding Source={Reference Name=content}, Path=BindingContext.cmdRemoveLesson}"
                             Level="{Binding Level}"
@@ -68,6 +68,10 @@
                     </ViewCell>
                 </DataTemplate>
             </syncfusion:SfListView.ItemTemplate>
+            <!--<syncfusion:SfListView.Behaviors>
+                <behavior:SfListView
+                    CommandSeletedItem="{Binding cmSelectedLesson}" />
+            </syncfusion:SfListView.Behaviors>-->
         </syncfusion:SfListView>
     </StackLayout>
 

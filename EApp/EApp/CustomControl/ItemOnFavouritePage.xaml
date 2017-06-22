@@ -81,11 +81,7 @@
             Grid.Column="2"
             Grid.RowSpan="3"
             Margin="8,8,0,8" />
-        <Grid.GestureRecognizers>
-            <TapGestureRecognizer
-                NumberOfTapsRequired="2"
-                Tapped="TapGestureRecognizer_Tapped" />
-        </Grid.GestureRecognizers>
+      
     </Grid>
 
 </ContentView>

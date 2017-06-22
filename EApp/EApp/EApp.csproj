@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="Behavior\listView.cs" />
     <Compile Include="Behavior\searchbhv.cs" />
+    <Compile Include="Behavior\SfListView.cs" />
     <Compile Include="Converter\AddPercentConverter.cs" />
     <Compile Include="Converter\BoolToColorConverter.cs" />
     <Compile Include="Converter\BoolToImageConverter.cs" />

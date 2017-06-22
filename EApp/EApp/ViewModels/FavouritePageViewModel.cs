@@ -19,7 +19,7 @@ namespace EApp.ViewModels
         readonly INavigationService navigationService;
         ILessonRepository LessonRepo;
         private ICommand _cmSearch;
-        // 
+        //
         private List<LessonModel> _TempList;
 
         public List<LessonModel> TempList
@@ -124,7 +124,7 @@ namespace EApp.ViewModels
             }
 
         }
-         
+
         public FavouritePageViewModel(INavigationService navigationService, ILessonRepository LessonRepo)
         {
             this.navigationService = navigationService;

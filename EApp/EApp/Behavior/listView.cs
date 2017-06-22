@@ -22,9 +22,10 @@ namespace EApp.Behavior
         private static void OnCommandChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var list = bindable as ListView;
+            var list01 = bindable as Syncfusion.ListView.XForms.SfListView;
             if (list == null)
                 return;
-
+            list01.ItemTapped += List01_ItemTapped;
             list.ItemTapped += (sender, e) =>
             {
                 // do something here
@@ -39,6 +40,9 @@ namespace EApp.Behavior
 
         }
 
-       
+        private static void List01_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
