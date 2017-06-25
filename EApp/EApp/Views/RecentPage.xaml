@@ -32,10 +32,8 @@
         <controls:NothingToShow
             IsVisible="{Binding MyList.Count, Converter={StaticResource displayLabel} }" />
     <syncfusion:SfListView
-        SwipeThreshold="30"
-        SelectionMode="None"
-        SelectionGesture="Hold"
-        x:Name="lstView"
+            behavior:SfListView.CommandSeletedItem="{Binding cmSelectedLesson}"
+            x:Name="lstView"
         AllowSwiping="True"
         RowSpacing="0"
         ItemSize="116"
@@ -55,7 +53,6 @@
                     <controls:ItemOnList
                         Level="{Binding Level}"
                         ImgFavourite="{Binding IsFavourite, Converter={StaticResource boolToImage}, ConverterParameter={StaticResource parImage} }"
-                        cmdClick="{Binding Source={Reference Name=lstView}, Path=BindingContext.cmSelectedLesson}"
                         IsFavouriteCommand="{Binding Source={Reference Name=lstView},Path=BindingContext.CmdCheckFavourite}"
                         hasMoreOptions="False"
                         Author="{Binding Author}"

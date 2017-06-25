@@ -252,14 +252,6 @@ namespace EApp.CustomControl
                 IsFavouriteCommand.Execute(BindingContext);
             }
         }
-        // this event is fired when tapping an item
-        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
-        {
-
-            if (cmdClick.CanExecute(BindingContext))
-            {
-                cmdClick.Execute(BindingContext);
-            }
-        }
+      
     }
 }
