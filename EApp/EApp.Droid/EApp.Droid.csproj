@@ -486,6 +486,7 @@
     <AndroidResource Include="Resources\drawable\ic_eyes.png" />
     <AndroidResource Include="Resources\drawable\ic_close_eyes.png" />
     <AndroidResource Include="Resources\drawable\arrow_picker.png" />
+    <AndroidResource Include="Resources\drawable\ic_setting.png" />
     <None Include="FodyWeavers.xml" />
     <AndroidAsset Include="Assets\KiepDamMe.mp3" />
     <Content Include="hello.txt" />

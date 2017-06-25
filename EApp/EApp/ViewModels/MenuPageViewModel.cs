@@ -53,8 +53,8 @@ namespace EApp.ViewModels
                },
                new MyMenuItem
                {
-                   Text="Record My Voice",
-                   Icon="Mic.png",
+                   Text="Setting",
+                   Icon="ic_setting.png",
                    TypePage = TypePage.Action
                }
             };

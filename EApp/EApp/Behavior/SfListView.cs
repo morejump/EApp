@@ -29,7 +29,7 @@ namespace EApp.Behavior
             if (newValue == null|| view==null)
                 return;
 
-            view.ItemTapped += (s,e)=>{
+            view.ItemDoubleTapped += (s,e)=>{
                 ((ICommand)newValue).Execute(e.ItemData);
             };
         }
