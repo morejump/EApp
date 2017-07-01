@@ -23,6 +23,8 @@ namespace EApp.Repository
         {
             List<LessonModel> list = new List<LessonModel>();
 
+            //
+
             var firebase = new FirebaseClient("https://eapp-7095b.firebaseio.com");
             var items = await firebase
                 .Child("e_upload")
